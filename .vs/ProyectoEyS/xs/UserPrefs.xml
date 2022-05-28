@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{01746CE3-E502-4D9F-A4C9-365EF5B29285}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmListarUsr.cs">
+    <Files>
+      <File FileName="ProyectoEyS/frmListarUsr.cs" Line="111" Column="1" />
+      <File FileName="ProyectoEyS/frmAddUsuario.cs" Line="112" Column="28" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_emp.cs" Line="258" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProyectoEyS" expanded="True" selected="True">
+            <Node name="ProyectoEyS" expanded="True">
+              <Node name="Datos" expanded="True" />
+              <Node name="Entidades" expanded="True">
+                <Node name="Vistas" expanded="True" />
+              </Node>
+              <Node name="Negocio" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ProyectoEyS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../ProyectoEyS/Datos/Dt_tbl_emp.cs" line="73" offsetX="3789" offsetY="1368" expression="idr" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmAddCargo.cs" relfile="ProyectoEyS/frmAddCargo.cs" line="166" column="9" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="290" column="18" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="291" column="19" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="292" column="19" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="293" column="18" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="295" column="27" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="152" column="37" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

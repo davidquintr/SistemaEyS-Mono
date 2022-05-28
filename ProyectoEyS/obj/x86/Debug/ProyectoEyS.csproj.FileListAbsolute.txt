@@ -1,0 +1,323 @@
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.ValueTuple.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Microsoft.Win32.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/netstandard.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.AppContext.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Collections.Concurrent.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Collections.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Collections.NonGeneric.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Collections.Specialized.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.ComponentModel.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.ComponentModel.EventBasedAsync.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.ComponentModel.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.ComponentModel.TypeConverter.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Console.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Data.Common.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.Contracts.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.Debug.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.FileVersionInfo.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.Process.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.StackTrace.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.TextWriterTraceListener.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.Tools.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.TraceSource.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Diagnostics.Tracing.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Drawing.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Dynamic.Runtime.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Globalization.Calendars.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Globalization.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Globalization.Extensions.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.Compression.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.Compression.ZipFile.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.FileSystem.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.FileSystem.DriveInfo.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.FileSystem.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.FileSystem.Watcher.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.IsolatedStorage.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.MemoryMappedFiles.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.Pipes.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.IO.UnmanagedMemoryStream.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Linq.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Linq.Expressions.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Linq.Parallel.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Linq.Queryable.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.Http.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.NameResolution.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.NetworkInformation.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.Ping.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.Requests.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.Security.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.Sockets.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.WebHeaderCollection.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.WebSockets.Client.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Net.WebSockets.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.ObjectModel.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Reflection.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Reflection.Extensions.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Reflection.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Resources.Reader.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Resources.ResourceManager.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Resources.Writer.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.VisualC.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Extensions.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Handles.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.InteropServices.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Numerics.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Serialization.Formatters.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Serialization.Json.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Serialization.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.Serialization.Xml.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Claims.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Cryptography.Csp.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Cryptography.Encoding.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Cryptography.Primitives.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Cryptography.X509Certificates.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.Principal.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Security.SecureString.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Text.Encoding.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Text.Encoding.Extensions.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Text.RegularExpressions.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.Overlapped.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.Tasks.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.Tasks.Parallel.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.Thread.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.ThreadPool.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Threading.Timer.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Xml.ReaderWriter.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Xml.XDocument.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Xml.XmlDocument.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Xml.XmlSerializer.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Xml.XPath.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/System.Xml.XPath.XDocument.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.Core.XForms.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.Licensing.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.SfPicker.XForms.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Core.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Platform.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Xaml.dll
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Core.pdb
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Core.xml
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Xaml.pdb
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Xaml.xml
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.Core.XForms.xml
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/eros/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.Core.XForms.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.Licensing.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.SfPicker.XForms.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Core.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Platform.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Xaml.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Core.pdb
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Core.xml
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Xaml.pdb
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Xamarin.Forms.Xaml.xml
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/Syncfusion.Core.XForms.xml
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/gdk-sharp.dll
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/bin/Debug/gdk-sharp.dll.config
+/home/dspp/Projects/ProyectoEyS - april 20 - 2/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/BouncyCastle.Crypto.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/Ubiety.Dns.Core.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/ZstdNet.dll
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.pdb
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.xml
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/davidquint/Projects/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/BouncyCastle.Crypto.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/Ubiety.Dns.Core.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/ZstdNet.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.pdb
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/ZstdNet.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.pdb
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/CairoSharp.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/ZstdNet.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.pdb
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/ZstdNet.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.pdb
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/ProyectoEyS.pdb
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/ZstdNet.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Buffers.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/System.Memory.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.pdb
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/Google.Protobuf.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Debug/MySql.Data.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Debug/ProyectoEyS.pdb

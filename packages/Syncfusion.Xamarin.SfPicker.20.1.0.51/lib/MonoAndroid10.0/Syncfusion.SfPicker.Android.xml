@@ -1,0 +1,2201 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPicker.Android</name>
+    </assembly>
+    <members>
+        <member name="T:Com.Syncfusion.SfPicker.SelectionController">
+            <summary>
+            Represents the selection behavior
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SelectionController.picker">
+            <summary>
+            Represents the picker object
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.#ctor(Com.Syncfusion.SfPicker.SfPicker)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SelectionController"/> class.
+            </summary>
+            <param name="picker"> The picker instance </param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.UpdateSelectionFromSelectionProperty(System.Object,System.Object)">
+            <summary>
+            Update the selection from selection property
+            </summary>
+            <param name="oldvalue">old value of selected item</param>
+            <param name="newvalue">new value of selected item</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.AssignSelectedIndexFromSelectedItem">
+            <summary>
+            Assigning the selected index from selected item property
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.AssignSelectedItemFromSelectedIndex">
+            <summary>
+            Assigning the selected item from selected index property
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.UpdateSelectionFromItemSource">
+            <summary>
+            Update the selected item and selected index property after changing the item source
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.AssignSelectedItem">
+            <summary>
+            Assigning the selected item property
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.AssignSelectedIndex">
+            <summary>
+             Assigning the selected index property
+            </summary>
+            <returns><c>true</c>, if selected index was assigned, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.CompareItems(System.Collections.IList)">
+            <summary>
+            Compare new items from selected item
+            </summary>
+            <returns><c>true</c>, if items was equal, <c>false</c> otherwise.</returns>
+            <param name="items">collection of items.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SelectionController.CompareIndex(System.Collections.IList)">
+            <summary>
+            Compare new index from selected index
+            </summary>
+            <returns><c>true</c>, if index was equal, <c>false</c> otherwise.</returns>
+            <param name="items">collection of index.</param>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.SfParentPicker">
+            <summary>
+            Represents the Sf parent picker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.controlWidth">
+            <summary>
+            The width of the control.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.controlHeight">
+            <summary>
+            The height of the control.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.visibleItems">
+            <summary>
+            The visible items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.isMultiColumn">
+            <summary>
+            The is multiple column.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.middleItemPosition">
+            <summary>
+            The middle item position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.pickerEngineCollection">
+            <summary>
+            The picker engine collection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.isSelectionUpdatedManually">
+            <summary>
+            The is selection updated manually.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.headerViewCollection">
+            <summary>
+            The header view collection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.actualDataSource">
+            <summary>
+            The actual data source.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.selectionBorderColor">
+            <summary>
+            The color of the selected item border color.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.selectedItemTextColor">
+            <summary>
+            The color of the selected item text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.unselectedItemTextColor">
+            <summary>
+             The color of the unselected item text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.previousItems">
+            <summary>
+            The previous items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.selectedItem">
+            <summary>
+            The Selected Item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.selectedIndex">
+            <summary>
+            The selected index.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.singleColumnSelectedItem">
+            <summary>
+            The single column selected Item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.worker">
+            <summary>
+            Background worker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.pickerEventArgs">
+            <summary>
+            Picker Event Arguments.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.seletedIndexCollection">
+            <summary>
+            The s Index Collection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.singleColumnPreviousItem">
+            <summary>
+            The Single Column Previous Item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.singleColumnNewItem">
+            <summary>
+            The Single Column New Item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.parentPickerLayout">
+            <summary>
+            The layout.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.newItems">
+            <summary>
+            The New Items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.dataSource">
+            <summary>
+            The Data source.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.rowHeight">
+            <summary>
+            The row height.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.superParent">
+            <summary>
+            The super parent.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.columnHeaderStringCollection">
+            <summary>
+            The Column Header String Collection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.isUpdated">
+            <summary>
+            The boolean is updated.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.isNeedToUpdate">
+            <summary>
+            The Boolean is need to update.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.isLoaded">
+            <summary>
+            The is loaded.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.isIndexChanged">
+            <summary>
+            Index changed field.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfParentPicker.customView">
+            <summary>
+            Custom view field.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.#ctor(Android.Content.Context,Com.Syncfusion.SfPicker.SfPicker)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfParentPicker"/> class. 
+            </summary>
+            <param name="context">The Context.</param>
+            <param name="picker">The Picker.</param>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.ControlWidth">
+            <summary>
+             Gets or sets the Control Width.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.ControlHeight">
+            <summary>
+            Gets or sets the Control Height.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.VisibleItems">
+            <summary>
+             Gets or sets the Visible Items.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.IsMultiColumn">
+            <summary>
+             Gets or sets a value indicating whether the is multiple column.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.MiddleItemPosition">
+            <summary>
+            Gets or sets the is Middle Item Position.
+             </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.PickerEngineCollection">
+            <summary>
+             Gets or sets the Picker Engine Collection.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.HeaderViewCollection">
+            <summary>
+             Gets or sets the  Header View Collection.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.ActualDataSource">
+            <summary>
+             Gets or sets the Actual Data Source
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SeletedIndexCollection">
+            <summary>
+             Gets or sets the S Index Collection.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.IsSelectionUpdatedManually">
+            <summary>
+            Gets or sets a value indicating whether is selection updated manually.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SelectionBorderColor">
+            <summary>
+             Gets or sets the  Selected Item Border Color.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SelectedItemTextColor">
+            <summary>
+             Gets or sets the  Selected Item text Color.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.UnSelectedItemTextColor">
+            <summary>
+             Gets or sets the  Un Selected Item text Color.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.PreviousItems">
+            <summary>
+             Gets or sets the  Previous Items.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.NewItems">
+            <summary>
+            Gets or sets the new items.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SingleColumnPreviousItem">
+            <summary>
+            Gets or sets the single column previous item.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SingleColumnNewItem">
+            <summary>
+            Gets or sets the single column new item.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SuperParent">
+            <summary>
+            Gets or sets the super parent.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.Rowheight">
+            <summary>
+            Gets or sets the row height.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SelectedIndex">
+            <summary>
+            Gets or sets the selected index.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.PickerViewLoadedEventArgs">
+            <summary>
+            Gets or sets the Picker View Loaded Event Arguments
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.IsIndexChanged">
+             <summary>
+            Gets or sets a value indicating whether the value of Is index changed property.
+             </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.CustomView">
+            <summary>
+            Gets or sets the value of custom view property
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SelectedItem">
+            <summary>
+            Gets or sets the Selected Item.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SelectionChnagedEventArgs">
+            <summary>
+            Gets or sets the selection changed event argument.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfParentPicker.SingleColumnSelectedItem">
+            <summary>
+            Gets or sets the Single Column Selected Item.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.OnPickerViewLoaded(Com.Syncfusion.SfPicker.PickerViewEventsArgs)">
+            <summary>
+            On Picker view Loaded.
+            </summary>
+            <param name="args">The argument.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.ParenPickerDispose">
+            <summary>
+            The dispose method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.UpdateView">
+            <summary>
+            Update the picker views.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.UpdateControl">
+            <summary>
+            The Update Control.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.OnSelectionChanged(Com.Syncfusion.SfPicker.SelectionChangedEventArgs)">
+            <summary>
+            The On Selection Changed Event.
+            </summary>
+            <param name="args">The Argument.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.UpdateSelectionView">
+            <summary>
+            Update the Selection in Picker View
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.UpdateCustomization">
+            <summary>
+            Updates the customization.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.CalculateVisibleItems">
+            <summary>
+            Calculates the visible items.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            On draw method.
+            </summary>
+            <param name="canvas">The Canvas.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.Dispose(System.Boolean)">
+            <summary>
+            Dispose method
+            </summary>
+            <param name="disposing">The disposing</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.Worker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            The worker work Event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The argument.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.RemoveAndAddView(Com.Syncfusion.SfPicker.SfPickerEngine)">
+            <summary>
+            Method used to Remove and add the picker engine from the view.
+            </summary>
+            <param name="picker">The picker.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfParentPicker.ClearEngine">
+            <summary>
+            The clear engine method.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.PickerMode">
+            <summary>
+            The Picker Mode.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerMode.Default">
+            <summary>
+            The Default Mode.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerMode.Dialog">
+            <summary>
+            The Dialog Mode.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.SfPicker">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPicker"/> class.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.backgroundColor">
+            <summary>
+            Represents the color of the background.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.windowContent">
+            <summary>
+            Represents the of windowContent.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.popupLayout">
+            <summary>
+            Represents the popupLayout.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.displayMemberPath">
+            <summary>
+            Represents the display member path.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.popupHeight">
+            <summary>
+            Represents the height of the popup.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.popupWidth">
+            <summary>
+            Represents the width of the popup.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.dataSource">
+            <summary>
+            Represents the data source.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.itemsSource">
+            <summary>
+            Represents the items source.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectedIndex">
+            <summary>
+            Represents the index of the selected.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.actualSelectedItems">
+            <summary>
+            Represents the actual selected items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectedItemTextColor">
+            <summary>
+            Represents the color of the selected item text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerBackgroundColor">
+            <summary>
+            Represents the color of the header background.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerTextColor">
+            <summary>
+            Represents the color of the header text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderTextColor">
+            <summary>
+            Represents the color of the column header text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderBackgroundColor">
+            <summary>
+            Represents the color of the column header background.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.unselectedItemTextColor">
+            <summary>
+            Represents the color of the un selected item text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectionBorderColor">
+            <summary>
+            Represents the color of the selected item background.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.itemHeight">
+            <summary>
+            Represents the height of the item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.isShow">
+            <summary>
+            Represents the is show.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.isSelectionChanged">
+            <summary>
+            Represents item is selected or not
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.enableLooping">
+            <summary>
+            Represents the is enableLooping.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.window">
+            <summary>
+            Represents the window.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.customHeaderView">
+            <summary>
+            Represents the custom header view.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.customFooterView">
+            <summary>
+            Represents the custom footer view.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.pickerDisplayMode">
+            <summary>
+            Represents the picker display mode.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerHeight">
+            <summary>
+            Represents the height of the header.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.footerHeight">
+            <summary>
+            Represents the height of the footer.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.isUpdated">
+            <summary>
+            Represents the is updated.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.borderLineCollection">
+            <summary>
+            Represents the border line collection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.isSingleIndexSelection">
+            <summary>
+            Represents the is single index selection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectedItem">
+            <summary>
+            Represents the selected item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.previousSelectedItem">
+            <summary>
+            Represents the previous selected item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.parentPicker">
+            <summary>
+            Represents the parent picker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.showHeader">
+            <summary>
+            Represents the show header.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.showFooter">
+            <summary>
+            Represents the show footer.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.showColumnHeader">
+            <summary>
+            Represents the show column header.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderHeight">
+            <summary>
+            Represents the height of the column header.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderText">
+            <summary>
+            Represents the column header text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerFontAttribute">
+            <summary>
+            Represents the header font attribute.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerfontSize">
+            <summary>
+            Represents the size of the header font.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerFontFamily">
+            <summary>
+            Represents the header font family.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderFontAttribute">
+            <summary>
+            Represents the column header font attribute.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.isSelectedItemUpdateManually">
+            <summary>
+            Represents the column header font attribute.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderFontSize">
+            <summary>
+            Represents the size of the column header font.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.columnHeaderFontFamily">
+            <summary>
+            Represents the column header font family.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.unselectedRowFontAttribute">
+            <summary>
+            Represents the un selected row font attribute.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.unselectedRowFontSize">
+            <summary>
+            Represents the size of the un selected row font.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.unselectedRowFontFamily">
+            <summary>
+            Represents the un selected row font family.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectionController">
+            <summary>
+            Represents the selection controller filed
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectedRowFontAttribute">
+            <summary>
+            Represents the selected row font attribute.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectedRowFontSize">
+            <summary>
+            Represents the size of the selected row font.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.selectedRowFontFamily">
+            <summary>
+            Represents the selected row font family.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.borderColor">
+            <summary>
+            Represents the color of the border.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerText">
+            <summary>
+            Represents the header text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.showGrayOut">
+            <summary>
+            Represents the show gray out.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.metrics">
+            <summary>
+            Represents the metrics.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.resource">
+            <summary>
+            Represents the resource.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.okbutton">
+            <summary>
+            Represents the ok button.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.cancelButton">
+            <summary>
+            Represents the cancel button.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.okbuttonBackgroundColor">
+            <summary>
+            Represents the ok button background color.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.cancelButtonBackgroundColor">
+            <summary>
+            Represents the cancel button background color.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.okbuttonTextColor">
+            <summary>
+            Represents the ok button text color.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.cancelButtonTextColor">
+            <summary>
+            Represents the cancel button text color.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.footerLayout">
+            <summary>
+            Represents the footer layout.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.mainLayout">
+            <summary>
+            Represents the main Layout
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.midPickerline">
+            <summary>
+            Represents the Line objects
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.midPickerline2">
+            <summary>
+            Represents the Line objects
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.midPickerline3">
+            <summary>
+            Represents the Line objects
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.midPickerline4">
+            <summary>
+            Represents the Line objects
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.footerView">
+            <summary>
+            Represents the footerView
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.headerTextView">
+            <summary>
+            Represents the header text view.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.automationId">
+            <summary>
+            AutomationId field.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.previousItems">
+            <summary>
+            Represents the previous items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.newItems">
+            <summary>
+            Represents the new items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.spinEnded">
+            <summary>
+            Spin ended field
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.border">
+            <summary>
+            Represents the border field.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.currentapiVersion">
+            <summary>
+            Represents the current android version
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.isOrientationChanged">
+            <summary>
+            Represents the orientation change.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPicker.closingEventArgs">
+            <summary>
+            Closing event args.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.#ctor(Android.Content.Context)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPicker"/> class.
+            </summary>
+            <param name="context">The Context.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPicker"/> class.
+            </summary>
+            <param name="context">The Context.</param>
+            <param name="attrs">The Attribute.</param>
+            <param name="defStyle">The style.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPicker"/> class.
+            </summary>
+            <param name="context">The Context.</param>
+            <param name="attrs">The Attribute.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPicker"/> class.
+            </summary>
+            <param name="context">The Context.</param>
+            <param name="attrs">The Attribute.</param>
+            <param name="defStyleAttr">The style attribute.</param>
+            <param name="defStyleRes">The style resolution.</param>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.OnPickerItemLoaded">
+            <summary>
+            Occurs when on picker item loaded.
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.Opened">
+            <summary>
+            Occurs when opened.
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.Closed">
+            <summary>
+            Occurs when closed.
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.Closing">
+            <summary>
+            Occurs before closed
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.OnSelectionChanged">
+            <summary>
+            Occurs when on selection changed.
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.OkButtonClicked">
+            <summary>
+            Occurs when ok button clicked.
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.CancelButtonClicked">
+            <summary>
+            Occurs when cancel button clicked.
+            </summary>
+        </member>
+        <member name="E:Com.Syncfusion.SfPicker.SfPicker.OnColumnLoaded">
+            <summary>
+            The On Column Loaded Event.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.DisplayMemberPath">
+            <summary>
+            Gets or sets the display member path.
+            </summary>
+            <value>The display member path.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.BackgroundColor">
+            <summary>
+            Gets or sets the color of the background.
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ItemsSource">
+            <summary>
+            Gets or sets the items source.
+            </summary>
+            <value>The items source.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderHeight">
+            <summary>
+            Gets or sets the height of the header.
+            </summary>
+            <value>The height of the header.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.FooterHeight">
+            <summary>
+            Gets or sets the height of the footer.
+            </summary>
+            <value>The height of the footer.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.PickerHeight">
+            <summary>
+            Gets or sets the height of the picker.
+            </summary>
+            <value>The height of the picker.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.PickerMode">
+            <summary>
+            Gets or sets the picker mode.
+            </summary>
+            <value>The picker mode.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether is open.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether enable Auto Reverse.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether show header.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether show footer.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ShowColumnHeader">
+            <summary>
+            Gets or sets a value indicating whether show column header.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderHeight">
+            <summary>
+            Gets or sets the height of the column header.
+            </summary>
+            <value>The height of the column header.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderText">
+            <summary>
+            Gets or sets the column header text.
+            </summary>
+            <value>The column header text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ItemHeight">
+            <summary>
+            Gets or sets the height of the item.
+            </summary>
+            <value>The height of the item.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectedItemTextcolor">
+            <summary>
+            Gets or sets the selected item text color.
+            </summary>
+            <value>The selected item text color.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the header background.
+            </summary>
+            <value>The color of the header background.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the column header background.
+            </summary>
+            <value>The color of the column header background.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.UnSelectedItemTextColor">
+            <summary>
+            Gets or sets the color of the un selected item text.
+            </summary>
+            <value>The color of the un selected item text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectionBorderColor">
+            <summary>
+            Gets or sets the color of the selected item border.
+            </summary>
+            <value>The color of the selected item background.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderView">
+            <summary>
+            Gets or sets the header view.
+            </summary>
+            <value>The header view.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.FooterView">
+            <summary>
+            Gets or sets the footer view.
+            </summary>
+            <value>The footer view.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderText">
+            <summary>
+            Gets or sets the header text.
+            </summary>
+            <value>The header text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.PickerWidth">
+            <summary>
+            Gets or sets the width of the picker.
+            </summary>
+            <value>The width of the picker.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectedItem">
+            <summary>
+            Gets or sets the selected item.
+            </summary>
+            <value>The selected item.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderTypeface">
+            <summary>
+            Gets or sets the header typeface.
+            </summary>
+            <value>The header typeface.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderTextSize">
+            <summary>
+            Gets or sets the size of the header text.
+            </summary>
+            <value>The size of the header text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderTypeface">
+            <summary>
+            Gets or sets the column header typeface.
+            </summary>
+            <value>The column header typeface.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderTextSize">
+            <summary>
+            Gets or sets the size of the column header text.
+            </summary>
+            <value>The size of the column header text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.UnSelectedItemTypeface">
+            <summary>
+            Gets or sets the un selected item typeface.
+            </summary>
+            <value>The un selected item typeface.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.UnSelectedItemTextSize">
+            <summary>
+            Gets or sets the size of the un selected item text.
+            </summary>
+            <value>The size of the un selected item text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectedItemTypeface">
+            <summary>
+            Gets or sets the selected item typeface.
+            </summary>
+            <value>The selected item typeface.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectedItemTextSize">
+            <summary>
+            Gets or sets the size of the selected item text.
+            </summary>
+            <value>The size of the selected item text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected.
+            </summary>
+            <value>The index of the selected.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderTextColor">
+            <summary>
+            Gets or sets the color of the header text.
+            </summary>
+            <value>The color of the header text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderTextColor">
+            <summary>
+            Gets or sets the color of the column header text.
+            </summary>
+            <value>The color of the column header text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.OkButton">
+            <summary>
+            Gets or sets the ok button.
+            </summary>
+            <value>The ok button.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.CancelButton">
+            <summary>
+            Gets or sets the cancel button.
+            </summary>
+            <value>The cancel button.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.OKButtonBackgroundColor">
+            <summary>
+            Gets or sets the color of the ok button background.
+            </summary>
+            <value>The color of the ok button background.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.CancelButtonBackgroundColor">
+            <summary>
+            Gets or sets the color of the cancel button background.
+            </summary>
+            <value>The color of the cancel button background.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.OKButtonTextColor">
+            <summary>
+            Gets or sets the color of the ok button text.
+            </summary>
+            <value>The color of the ok button text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.CancelButtonTextColor">
+            <summary>
+            Gets or sets the color of the cancel button text.
+            </summary>
+            <value>The color of the cancel button text.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.IsSingleIndexSelection">
+            <summary>
+            Gets or sets a value indicating whether the is single index selection.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.IsCollectionUpdated">
+            <summary>
+            Gets or sets a value indicating whether the collection is updated or not.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.IsDataTemplateSelectorApplied">
+            <summary>
+            Gets or sets a value indicating whether the template selector applied or not.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.AutomationId">
+            <summary>
+            Gets or sets the AutomationId
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.IsSelectedItemUpdateManually">
+            <summary>
+            Gets or sets a value indicating whether the is single index selection.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.IsOrientationChanged">
+            <summary>
+            Gets or sets a value indicating whether the is orientation is changed or not.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.PreviousItems">
+            <summary>
+            Gets or sets the new items.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.Window">
+            <summary>
+            Gets or sets the new Window.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.NewItems">
+            <summary>
+            Gets or sets the new items.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.BorderLineCollection">
+            <summary>
+            Gets or sets the border line collection.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.PickerViewEventsArgs">
+            <summary>
+            Gets or sets the picker view events arguments.
+            </summary>
+            <value>The picker view events arguments.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectionChangedEventArgs">
+            <summary>
+            Gets or sets the selection changed event arguments.
+            </summary>
+            <value>The selection changed event arguments.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnLoadedEventArgs">
+            <summary>
+            Gets or sets the column loaded event arguments.
+            </summary>
+            <value>The column loaded event arguments.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ShowGrayOut">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Com.Syncfusion.SfPicker.SfPicker"/> show gray out.
+            </summary>
+            <value><c>true</c> if show gray out; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ParentPicker">
+            <summary>
+            Gets or sets a value parent picker.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ActualSelectedItem">
+            <summary>
+            Gets or sets the actual selected item.
+            </summary>
+            <value>The actual selected item.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.HeaderFontFamily">
+            <summary>
+            Gets or sets the header font family.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderFontFamily">
+            <summary>
+            Gets or sets the column header font family.
+            </summary>
+            <value>The column header font family.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.UnSelectedItemFontFamily">
+            <summary>
+            Gets or sets the un selected item font family.
+            </summary>
+            <value>The un selected item font family.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectedItemFontFamily">
+            <summary>
+            Gets or sets the selected item font family.
+            </summary>
+            <value>The selected item font family.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.Resource">
+            <summary>
+            Gets or sets the resource.
+            </summary>
+            <value>The resource.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SelectionController">
+            <summary>
+            Gets or sets the SelectionController.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.SpinEnded">
+            <summary>
+            Gets or sets a value indicating whether the SpinEnded
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPicker.XForms_Android">
+            <summary>
+            Gets or sets a value indicating whether the field is XForms_Android or not.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Open">
+            <summary>
+            The open method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Close">
+            <summary>
+            The Close method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnPickerViewLoaded(Com.Syncfusion.SfPicker.PickerViewEventsArgs)">
+            <summary>
+            On picker view loaded.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnOpened(System.EventArgs)">
+            <summary>
+            On opened method.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnClosed(System.EventArgs)">
+            <summary>
+            On the closed.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            On the Closing.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.SelectionChanged(Com.Syncfusion.SfPicker.SelectionChangedEventArgs)">
+            <summary>
+            Selection changed method.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnOkButtonClicked(Com.Syncfusion.SfPicker.SelectionChangedEventArgs)">
+            <summary>
+            On ok button clicked.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnCancelButtonClicked(Com.Syncfusion.SfPicker.SelectionChangedEventArgs)">
+            <summary>
+            On cancel button clicked.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.ColumnHeaderViewLoaded(Com.Syncfusion.SfPicker.ColumnLoadedEventArgs)">
+            <summary>
+            Column header view loaded.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.UpdateControl">
+            <summary>
+            Updates the control.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Refresh">
+            <summary>
+            The Refresh Method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.UpdatePopup">
+            <summary>
+            The Update Pop Up Method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.UpdateParentSelectedItem">
+            <summary>
+            Update parent picker selected item
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Dispose(System.Boolean)">
+            <summary>
+            The Dispose method.
+            </summary>
+            <param name="disposing">The disposing.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnConfigurationChanged(Android.Content.Res.Configuration)">
+            <summary>
+            Update the orientation 
+            </summary>
+            <param name="newConfig">to get the orientation</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnSizeChanged(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            On size changed.
+            </summary>
+            <param name="w">The width.</param>
+            <param name="h">The height.</param>
+            <param name="oldw">The Old w.</param>
+            <param name="oldh">The Old h.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Occurs when the layout gets changed.
+            </summary>
+            <param name="changed">If set to <c>true</c> changed.</param>
+            <param name="left">The Left Parameter.</param>
+            <param name="top">The Top Parameter.</param>
+            <param name="right">The Right Parameter.</param>
+            <param name="bottom">The Bottom Parameter.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            On draw method.
+            </summary>
+            <param name="canvas">The Canvas.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.GetRippleDrawable(Android.Graphics.Color,Android.Graphics.Color)">
+            <summary>
+            Ripple effects
+            </summary>
+            <param name="backgroundColor">background Color</param>
+            <param name="rippleColor">ripple Color</param>
+            <returns>return color</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.GetColorSelector(Android.Graphics.Color)">
+            <summary>
+            Color State List
+            </summary>
+            <param name="pressedColor">pressed state</param>
+            <returns>return color</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.RemoveChildFromParent(Android.Views.View)">
+            <summary>
+            Remove the child from the parent
+            </summary>
+            <param name="childView">The child view</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.OpenDialog">
+            <summary>
+            It calls when picker isOpen is true.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.CloseDialog(System.Boolean)">
+            <summary>
+            It calls when Picker IsOpen property is false
+            </summary>
+            <param name="value">closing value</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.ShowFooterViewVisibility">
+            <summary>
+            Show footer visibility.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.UpdateInitialSelection">
+            <summary>
+            The update initial selection Method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.CheckValidSelection(System.Object)">
+            <summary>
+            The Check Valid Selection.
+            </summary>
+            <param name="selItem">The Selected item.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Ok_Click(System.Object,System.EventArgs)">
+            <summary>
+            The Okay Click Method.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            The Cancel Click Method.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Window_DismissEvent(System.Object,System.EventArgs)">
+            <summary>
+            The Window Dismiss Event.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The E value.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.ContentView_Touch(System.Object,Android.Views.View.TouchEventArgs)">
+            <summary>
+            This event is used to close the picker when we touch outside the picker
+            </summary>
+            <param name="sender">sender as object</param>
+            <param name="e">e as touch event argument</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.PopupLayout_Touch(System.Object,Android.Views.View.TouchEventArgs)">
+            <summary>
+            This event is used to open the picker when we touch inside the picker
+            </summary>
+            <param name="sender">sender as object</param>
+            <param name="e">e as touch event argument</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.SfPicker_SelectedItemCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            SelectedItem collection change event handler
+            </summary>
+            <param name="sender"> it is picker object</param>
+            <param name="e"> it is a notify collection changed event args </param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.SfPicker_SelectedIndexCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            SelectedIndex collection change event handler
+            </summary>
+            <param name="sender">it is picker object</param>
+            <param name="e">it is a notify collection changed event args</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.MapAttributes(Android.Content.Context,Android.Util.IAttributeSet,System.Int32,System.Int32)">
+            <summary>
+            Maps the attributes.
+            </summary>
+            <param name="context">Context Property.</param>
+            <param name="attributes">Attributes Value.</param>
+            <param name="styleAttributes">Style attributes.</param>
+            <param name="styleRes">Style resource.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.ToPickerMode(System.Int32)">
+            <summary>
+            Converts integer to PickerMode
+            </summary>
+            <returns>The pickerModeValue.</returns>
+            <param name="pickerModeValue">precision value.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPicker.Initialize">
+            <summary>
+            Initialize this instance.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.PickerViewEventsArgs">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.PickerViewEventsArgs"/> class. 
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerViewEventsArgs.listNo">
+            <summary>
+            The List Number.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerViewEventsArgs.itemIndex">
+            <summary>
+            The Item Index.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerViewEventsArgs.item">
+            <summary>
+            The Item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerViewEventsArgs.customView">
+            <summary>
+            The Custom View.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PickerViewEventsArgs.CustomView">
+            <summary>
+            Gets or sets the Custom View.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PickerViewEventsArgs.Column">
+            <summary>
+            Gets the list Number.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PickerViewEventsArgs.Row">
+            <summary>
+            Gets the row.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PickerViewEventsArgs.Item">
+            <summary>
+            Gets or sets the item.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.SelectionChangedEventArgs">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SelectionChangedEventArgs"/> class. 
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SelectionChangedEventArgs.oldItems">
+            <summary>
+            The Old Items.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SelectionChangedEventArgs.newItems">
+            <summary>
+            The New Items.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SelectionChangedEventArgs.OldValue">
+            <summary>
+            Gets or sets the Old Value.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SelectionChangedEventArgs.NewValue">
+            <summary>
+            Gets or sets the New Value.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.PickerLoadedEventArgs">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.PickerLoadedEventArgs"/> class. 
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerLoadedEventArgs.listNo">
+            <summary>
+            The List Number.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PickerLoadedEventArgs.listWidth">
+            <summary>
+            The list Width.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PickerLoadedEventArgs.ListIndex">
+            <summary>
+            Gets the list index.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PickerLoadedEventArgs.ListWidth">
+            <summary>
+            Gets or sets the list Width.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.PopupOpenedEventArgs">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.PopupOpenedEventArgs"/> class. 
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.PopupOpenedEventArgs.isShadowEffect">
+            <summary>
+            The is Shadow Effect.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.PopupOpenedEventArgs.IsShadowEffect">
+            <summary>
+            Gets or sets a value indicating whether the is shadow effect.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs"/> class. 
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.customView">
+            <summary>
+            The Custom View.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.columnWidth">
+            <summary>
+            The Column Width.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.enableLooping">
+            <summary>
+            The enable Auto Reverse.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.listNo">
+            <summary>
+            The List Number.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.Coulmn">
+            <summary>
+            Gets the Column.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.CustomView">
+            <summary>
+            Gets or sets the Custom View.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether enable Auto Reverse.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.ColumnLoadedEventArgs.ColumnWidth">
+            <summary>
+            Gets or sets the column width.
+            </summary>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.SfLine">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfLine"/> class.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfLine.dividerView">
+            <summary>
+            Represents the divider view.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfLine.#ctor(Android.Content.Context)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfLine"/> class.
+            </summary>
+            <param name="context">The Context.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfLine.Dispose(System.Boolean)">
+            <summary>
+            Dispose the specified disposing.
+            </summary>
+            <param name="disposing">If set to <c>true</c> disposing.</param>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.SfPickerEngine">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPickerEngine"/> class. 
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.handler">
+            <summary>
+            Represents the handler.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.paint">
+            <summary>
+            Represents the paint.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.flag">
+            <summary>
+            Represents the flag.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.scroller">
+            <summary>
+            Represents the scroll field.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.columnEnableLooping">
+            <summary>
+            The enable auto reverse for column.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.velocityTracker">
+            <summary>
+            Represents the velocity tracker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.runnable">
+            <summary>
+            Represents the runnable.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.rectangle">
+            <summary>
+            Represents the rectangle.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.rectCurrentItem">
+            <summary>
+            Represents the rectangle current item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.customRect">
+            <summary>
+            Represents the rectangle current item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.dataSource">
+            <summary>
+            Represents the data source.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.maxWidthText">
+            <summary>
+            Represents the max width text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.visibleItemCount">
+            <summary>
+            Represents the visible item count.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.drawnItemCount">
+            <summary>
+            Represents the visible item count.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.halfDrawnItemCount">
+            <summary>
+            Represents the half drawn item count.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.textMaxWidth">
+            <summary>
+            Represents the width of the text max.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.textMaxHeight">
+            <summary>
+            Represents the width of the text max.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.itemTextSize">
+            <summary>
+            Represents the size of the item text.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.itemSpace">
+            <summary>
+            Represents the item space.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.itemHeight">
+            <summary>
+            Represents the height of the item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.halfItemHeight">
+            <summary>
+            Represents the height of the item.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.centrePoint">
+            <summary>
+            Represents the centre point.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.selectedItemPosition">
+            <summary>
+            Represents the selected item position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.currentItemPosition">
+            <summary>
+            Represents the current item position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.minFlingY">
+            <summary>
+            Represents the minimum fling y.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.maxFlingY">
+            <summary>
+            Represents the minimum fling y.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.minimumVelocity">
+            <summary>
+            Represents the minimum velocity.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.wheelCenterX">
+            <summary>
+            Represents the wheel center x.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.wheelCenterY">
+            <summary>
+            Represents the wheel center x.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.drawnCenterX">
+            <summary>
+            Represents the drawn center x.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.drawnCenterY">
+            <summary>
+            Represents the drawn center x.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.customCenterX">
+            <summary>
+            Represents the drawn center x.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.scrollOffsetY">
+            <summary>
+            Represents the scroll offset y.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.textMaxWidthPosition">
+            <summary>
+            Represents the text max width position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.lastPointY">
+            <summary>
+            Represents the last point y.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.downPointY">
+            <summary>
+            Represents the down point y.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.touchSlop">
+            <summary>
+            Represents the touch slop.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.hasSameWidth">
+            <summary>
+            Represents the width of the has same.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.engineDisplayMemberPath">
+            <summary>
+            Represents the engine display member path.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isCyclic">
+            <summary>
+            Represents the is cyclic.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isCurved">
+            <summary>
+            Represents the is curved.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isClick">
+            <summary>
+            Represents the is click.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isForceFinishScroll">
+            <summary>
+            Represents the is force finish scroll.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isLastUpdate">
+            <summary>
+            Represents the is last update.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.parentPicker">
+            <summary>
+            Represents the parent picker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isSelectionCall">
+            <summary>
+            Represents the is selection call.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.superparent">
+            <summary>
+            Represents the super parent.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.worker">
+            <summary>
+            Represents the background worker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.pickerIndex">
+            <summary>
+            Represents the index of the picker.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.customViewCollection">
+            <summary>
+            Represents the custom view collection.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.minimumStartPos">
+            <summary>
+            Represents the minimum start position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.maximumEndPos">
+            <summary>
+            Represents the minimum start position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.previousMidPos">
+            <summary>
+            Represents the previous middle position.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.halfWheelHeight">
+            <summary>
+            Represents the height of the half wheel.
+            </summary>
+        </member>
+        <member name="F:Com.Syncfusion.SfPicker.SfPickerEngine.isTouchHandled">
+            <summary>
+            Represents the is touch handled.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.#ctor(Android.Content.Context,System.Collections.IList,System.Boolean,Com.Syncfusion.SfPicker.SfParentPicker,System.Int32,Com.Syncfusion.SfPicker.SfPicker,System.Collections.ObjectModel.ObservableCollection{Android.Views.View},System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SfPicker.SfPickerEngine"/> class. 
+            </summary>
+            <param name="context">The Context.</param>
+            <param name="dataSource">The picker Data source.</param>
+            <param name="cyclic">The Cyclic.</param>
+            <param name="picker">The Picker.</param>
+            <param name="index">The Index.</param>
+            <param name="superpicker">The Super Picker.</param>
+            <param name="customview">Custom view.</param>
+            <param name="displayMember">Display Member.</param>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerEngine.SelectedItemPosition">
+            <summary>
+            Gets or sets the m selected item position.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerEngine.PickerIndex">
+            <summary>
+            Gets or sets the picker index.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerEngine.ColumnEnableLooping">
+            <summary>
+            Gets or sets a value indicating whether Enable Auto Reverse.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerEngine.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerEngine.ScrollOffsetY">
+            <summary>
+            Gets or sets of Scroll offset of y
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.Run">
+            <summary>
+            The Run Method.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.OnTouchEvent(Android.Views.MotionEvent)">
+            <summary>
+            Override On Touch Event.
+            </summary>
+            <param name="e">The e value.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.ConvertToBitmap(Android.Views.View)">
+            <summary>
+            The Convert To Bit Map.
+            </summary>
+            <param name="layout">The Layout.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.EngineDispose">
+            <summary>
+            The Engine Dispose.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.OnMeasure(System.Int32,System.Int32)">
+            <summary>
+            The Override On Measure Method.
+            </summary>
+            <param name="widthMeasureSpec">The Width Measure.</param>
+            <param name="heightMeasureSpec">The Height Measure.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.OnSizeChanged(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Override On size changed Method.
+            </summary>
+            <param name="w">The W value.</param>
+            <param name="h">The H Value.</param>
+            <param name="oldw">The old Width.</param>
+            <param name="oldh">The Old Height.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            Override On Draw Method.
+            </summary>
+            <param name="canvas">The Canvas.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.Dispose(System.Boolean)">
+            <summary>
+            Dispose method
+            </summary>
+            <param name="disposing">The disposing</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.UpdateCustomViewCollection">
+            <summary>
+            Update the custom view collection while changing the index with custom view.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.UpdateVisibleItemCount">
+            <summary>
+            The Update Visible Item Count.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.ComputeTextSize">
+            <summary>
+            The Compute Text Size.
+            </summary>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.Worker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            The worker work Event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The Argument.</param>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.MeasureSize(Android.Views.MeasureSpecMode,System.Int32,System.Int32)">
+            <summary>
+            The Measure Size.
+            </summary>
+            <param name="mode">The mode.</param>
+            <param name="sizeExpect">The Size Expect.</param>
+            <param name="sizeActual">The size actual</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.IsPosInRang(System.Int32)">
+            <summary>
+            The is Position Range.
+            </summary>
+            <param name="position">The Position.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.ComputeSpace(System.Int32)">
+            <summary>
+            The Compute Space.
+            </summary>
+            <param name="degree">The Degree.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerEngine.ComputeDistanceToEndPoint(System.Int32)">
+            <summary>
+            The Compute Distance To End Point
+            </summary>
+            <param name="remainder">The remainder.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="T:Com.Syncfusion.SfPicker.SfPickerResources">
+            <summary>
+            Picker resources
+            </summary>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerResources.Context">
+            <summary>
+            Gets or sets the context.
+            </summary>
+            <value>The context.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerResources.ResourceManager">
+            <summary>
+            Gets or sets the resource manager.
+            </summary>
+            <value>The resource manager.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerResources.Culture">
+            <summary>
+            Gets the culture.
+            </summary>
+            <value>The culture.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerResources.OKText">
+            <summary>
+            Gets the localized string.
+            </summary>
+            <value>The items count.</value>
+        </member>
+        <member name="P:Com.Syncfusion.SfPicker.SfPickerResources.CancelText">
+            <summary>
+            Gets the localized string.
+            </summary>
+            <value>The items count.</value>
+        </member>
+        <member name="M:Com.Syncfusion.SfPicker.SfPickerResources.GetString(System.Globalization.CultureInfo,System.String)">
+            <summary>
+            Gets the localized string.
+            </summary>
+            <returns>The string.</returns>
+            <param name="culture">Culture info</param>
+            <param name="text">Text type</param>
+        </member>
+    </members>
+</doc>

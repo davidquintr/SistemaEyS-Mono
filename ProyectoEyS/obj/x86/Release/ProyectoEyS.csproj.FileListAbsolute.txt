@@ -1,0 +1,652 @@
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/dspp/Projects/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/dspp/Projects/ProyectoEyS 1 - 05/ProyectoEyS 29 - 04/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/dspp/Projects/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/ProyectoEyS 01 - 05/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 2 v2.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/5 - 2 v2.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 2 v3.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 2 v3.3 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/labjcinco28/Descargas/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/5 - 4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 10 v1.2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/5 - 11 AUX ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 11 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 11 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 11 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 11 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/5 - 14 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 15 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 17 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 17 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/CairoSharp.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 21 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/dspp/Projects/5 - 21 v4 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 21 v5 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 23 v2 ProyectoEyS/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe

@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPicker.XForms.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfPicker.XForms.UWP.PickerMethods">
+            <summary>
+            Creates PickerMethods class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.PickerMethods.Dispose(Syncfusion.SfPicker.XForms.SfPicker)">
+            <summary>
+            Raises the picker Dispose event.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping">
+            <summary>
+            Sf picker mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.OnSfPickerPropertiesChanged(System.String,Syncfusion.SfPicker.XForms.SfPicker,Syncfusion.UI.Xaml.Controls.Input.SfPicker)">
+            <summary>
+            Raises the sf picker properties changed event.
+            </summary>
+            <param name="propertyName">Property name.</param>
+            <param name="formsRotator">Forms Rotator.</param>
+            <param name="nativeRotator">Native Rotator.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.ConvertDataTableToItemSource(Syncfusion.SfPicker.XForms.SfPicker,Syncfusion.UI.Xaml.Controls.Input.SfPicker,System.Data.DataTable)">
+            <summary>
+            Method for Converting DataTableTo ItemSource
+            </summary>
+            <param name="formsPicker">param as forms picker</param>
+            <param name="nativePicker">param as native picker</param>
+            <param name="dataTable">param as DataTable</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.ConvertDataTableToItems(Syncfusion.SfPicker.XForms.SfPicker,Syncfusion.UI.Xaml.Controls.Input.SfPicker,System.Object,System.Data.DataTable)">
+            <summary>
+            Method for Converting DataTableTo ItemSource
+            </summary>
+            <param name="formsPicker">param as forms picker</param>
+            <param name="nativePicker">param as native picker</param>
+            <param name="displayMemberPath">param as displayMemberPath</param>
+            <param name="dataTable">param as DataTable</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.SetNativeObject(System.Type,System.Object,System.Object)">
+            <summary>
+            Method for  SetNativeObject. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.GetNativeObject(System.Type,System.Object)">
+            <summary>
+            Method for  GetNativeObject. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.CompareItems(System.Collections.IList)">
+            <summary>
+            Method for CompareItems
+            </summary>
+            <param name="items">param as items</param>
+            <returns>returns either true or false</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerMapping.CompareIndex(System.Collections.IList)">
+            <summary>
+            method for CompareIndex
+            </summary>
+            <param name="items">parameter as items</param>
+            <returns>returns either true or false</returns>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.UWP.ItemViewConverter">
+            <summary>
+            Class for SfPicker ItemViewConverter. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.ItemViewConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Method for SfPicker Convert object. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.ItemViewConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Method for SfPicker ConvertBack object. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer">
+            <summary>
+            SfPicker renderer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.Picker">
+            <summary>
+            The rotator
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.nativePicker">
+            <summary>
+            The native SfPicker
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.PickerMapping">
+            <summary>
+            The SfPicker mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{Syncfusion.SfPicker.XForms.SfPicker})">
+            <summary>
+            Raises the element changed event.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.TriggerInternalMethod(System.Type,System.Object,System.String,System.Object[])">
+             <summary>
+            Method for  SfPicker TriggerInternalMethod object.
+             </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.SetInternalProperty(System.Type,System.Object,System.String,System.Object,Syncfusion.SfPicker.XForms.SfPicker)">
+             <summary>
+            Method for  SfPicker SetInternalProperty.
+             </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Raises the element property changed event.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.GetPropertiesChanged(System.Type,System.Object)">
+            <summary>
+            Raises the get properties changed event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.GetWindowsColor(Xamarin.Forms.Color)">
+            <summary>
+            Method to the get windows Color.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.ConvertFormsToNativeView(Xamarin.Forms.View,Syncfusion.SfPicker.XForms.SfPicker,Xamarin.Forms.Rectangle)">
+            <summary>
+            Converts the forms to native view.
+            </summary>
+            <returns>The forms to native view.</returns>
+            <param name="view">The View.</param>
+            <param name="_picker">The Picker.</param>
+            <param name="rect">The Rectangle.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.Dispose(System.Boolean)">
+            <summary>
+            Method to the raise Dispose Event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.Init">
+            <summary>
+            Method to the Initialise PickerRenderer.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.UWP.SfDatePickerRenderer">
+            <summary>
+            SfDatePicker renderer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.UWP.SfDatePickerRenderer.Init">
+            <summary>
+            Initializes a new instance of the <see cref="!:Syncfusion.SfPicker.XForms.UWP.SfDatePickerRenderer"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.UWP.SfTimePickerRenderer">
+            <summary>
+            SfTimePicker renderer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.UWP.SfTimePickerRenderer.Init">
+            <summary>
+            Initializes a new instance of the <see cref="!:Syncfusion.SfPicker.XForms.UWP.SfTimePickerRenderer"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

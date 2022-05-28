@@ -1,0 +1,3411 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPicker.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.XForms.Pickers.PickerMode">
+            <summary>
+            Set Enum values for PickerMode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerMode.Default">
+            <summary>
+            Represents the default mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerMode.Dialog">
+            <summary>
+            Represents the dialog mode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.DateFormat">
+            <summary>
+            Set Enum values for DateFormat.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.M_d_yyyy">
+            <summary>
+            Represents the month day year in m/d/yyyy format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.MM_dd_yyyy">
+            <summary>
+            Represents the month day year in mm/dd/yyyy format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.MM_yyyy">
+            <summary>
+            Represents the month year in MM/yyyy format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.MMM_yyyy">
+            <summary>
+             Represents the month year in mmm/yyyy format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.yyyy_MM_dd">
+            <summary>
+            Represents the year month day in yyyy/mm/dd format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.dd_MMM_yyyy">
+            <summary>
+            Represents the day month year in dd/mmm/yyyy format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.dd_MM_yyyy">
+            <summary>
+            Represents the day month year in dd/MM/yyyy format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DateFormat.dd_MM">
+            <summary>
+            Represents the day month in dd/MM format
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.TimeFormat">
+            <summary>
+            Set Enum values for TimeFormat.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.h_mm_tt">
+            <summary>
+            Represents the hour minutes and meridian in h/mm/tt format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.hh_mm_tt">
+            <summary>
+            Represents the hour minutes and meridian in hh/mm/tt format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.H_mm">
+            <summary>
+            Represents the hour minutes H/mm format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.HH_mm">
+            <summary>
+            Represents the hour minutes in HH/mm format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.h_mm_ss_tt">
+            <summary>
+            Represents the hour, minutes, seconds and meridian in h/mm/ss/tt format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.hh_mm_ss_tt">
+            <summary>
+            Represents the hour, minutes, seconds and meridian in hh/mm/ss/tt format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.H_mm_ss">
+            <summary>
+            Represents the hour, minutes and seconds in h/mm/ss format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimeFormat.HH_mm_ss">
+            <summary>
+            Represents the hour, minutes and seconds  in HH/mm/ss format.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.PickerHelper.PickerBase">
+            <summary>
+            Contains date picker property and methods.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerModeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerMode"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderTextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderTextColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.IsOpenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsOpen. This enables animation, styling, binding, etc.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ColumnHeaderTextColor. This enables animation, styling, binding, etc.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderFontFamilyProperty">
+            <summary>
+            Backing store for the ColumnHeaderFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderFontAttributeProperty">
+            <summary>
+            Backing store for the HeaderFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.BorderColorProperty">
+            <summary>
+            Backing store for the BorderColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ShowFooterProperty">
+            <summary>
+            Backing store for the ShowFooter property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerHeightProperty">
+            <summary>
+            Backing store for the PickerHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemFontFamilyProperty">
+            <summary>
+            Backing store for the UnselectedItemFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.FooterHeightProperty">
+            <summary>
+            Backing store for the FooterHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderBackgroundColorProperty">
+            <summary>
+            Backing store for the ColumnHeaderBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderBackgroundColor. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.BackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for BackgroundColor. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OKButtonBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for OKButtonBackgroundColor. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.CancelButtonBackgroundColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CancelButtonBackgroundColor. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OKButtonTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for OKButtonTextColor. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectionBackgroundColorProperty">
+            <summary>
+            Backing store for the SelectionBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemTextColorProperty">
+            <summary>
+            Backing store for the UnselectedItemTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderFontAttributeProperty">
+            <summary>
+            Backing store for the ColumnHeaderFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerWidthProperty">
+            <summary>
+            Backing store for the PickerWidth property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderFontFamilyProperty">
+            <summary>
+            Backing store for the HeaderFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemFontAttributeProperty">
+            <summary>
+            Backing store for the UnselectedItemFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ShowHeaderProperty">
+            <summary>
+            Backing store for the ShowHeader property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderFontSizeProperty">
+            <summary>
+            Backing store for the HeaderFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemFontSizeProperty">
+            <summary>
+            Backing store for the UnselectedItemFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemTextColorProperty">
+            <summary>
+            Backing store for the SelectedItemTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ShowColumnHeaderProperty">
+            <summary>
+            Backing store for the ShowColumnHeader property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderHeightProperty">
+            <summary>
+            Backing store for the ColumnHeaderHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderHeightProperty">
+            <summary>
+            Backing store for the HeaderHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderFontSizeProperty">
+            <summary>
+            Backing store for the ColumnHeaderFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemFontSizeProperty">
+            <summary>
+            Backing store for the SelectedItemFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemFontFamilyProperty">
+            <summary>
+            Backing store for the SelectedItemFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ItemHeightProperty">
+            <summary>
+            Backing store for the ItemHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemFontAttributeProperty">
+            <summary>
+            Backing store for the SelectedItemFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.CancelButtonTextColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CancelButtonTextColor. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.EnableLoopingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableLooping. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderViewProperty">
+            <summary>
+            Backing store for the HeaderView property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.FooterViewProperty">
+            <summary>
+            Backing store for the FooterView property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.pickerUI">
+            <summary>
+            The forms SfPicker control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.mainGrid">
+            <summary>
+            The main grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.parent">
+            <summary>
+             Represents the parent.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Pickers.PickerHelper.PickerBase"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderTextColor">
+            <summary>
+            Gets or sets header text color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether gets or sets is open. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.BorderColor">
+            <summary>
+            Gets or sets the value of the BorderColor. This property can be used to change the border color of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderTextColor">
+            <summary>
+            Gets or sets column header text color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderBackgroundColor">
+            <summary>
+            Gets or sets the value of the ColumnHeaderBackgroundColor. This property can be used to change the background color of the column header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderBackgroundColor">
+            <summary>
+            Gets or sets header background color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.BackgroundColor">
+            <summary>
+            Gets or sets background color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerMode">
+            <summary>
+            Gets or sets picker mode. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OKButtonBackgroundColor">
+            <summary>
+            Gets or sets ok button background color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.CancelButtonBackgroundColor">
+            <summary>
+            Gets or sets cancel button background color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OKButtonTextColor">
+            <summary>
+            Gets or sets ok button text color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.CancelButtonTextColor">
+            <summary>
+            Gets or sets cancel button text color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemTextColor">
+            <summary>
+            Gets or sets the value of SelectedItemTextColor. This property can be used to change the text color of selected item in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemTextColor">
+            <summary>
+            Gets or sets the value of UnselectedItemTextColor. This property can be used to change the the text color of unselected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectionBackgroundColor">
+            <summary>
+            Gets or sets the value of SelectionBackgroundColor. This property can be used to change the background color of selected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderFontAttribute">
+            <summary>
+            Gets or sets the value of HeaderFontAttribute that indicates the font attributes of header text in <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderFontFamily">
+            <summary>
+            Gets or sets the value of HeaderFontFamily that indicates font family of header text in <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/>.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderFontAttribute">
+            <summary>
+            Gets or sets the value of ColumnHeaderFontAttribute that indicates font attributes of column header text.
+            </summary>
+            <value>The column header font attribute.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderFontFamily">
+            <summary>
+            Gets or sets the value of ColumnHeaderFontFamily that indicates font family of column header text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemFontAttribute">
+            <summary>
+            Gets or sets the value of UnselectedItemFontAttribute that indicates font attributes of the unselected items text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemFontFamily">
+            <summary>
+            Gets or sets the value of UnselectedItemFontFamily that indicates the font family of unselected items text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemFontAttribute">
+            <summary>
+            Gets or sets the value of SelectedItemFontAttribute that indicates font attributes of selected item text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemFontFamily">
+            <summary>
+            Gets or sets the value of SelectedItemFontFamily that indicates the font family of selected item text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderFontSize">
+            <summary>
+            Gets or sets  the value of the HeaderFontSize. This property can be used to change the size of the header font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderFontSize">
+            <summary>
+            Gets or sets the value of ColumnHeaderFontSize. This property can be used to change the size of the column header font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UnselectedItemFontSize">
+            <summary>
+            Gets or sets the value of the UnselectedItemFontSize. This property can be used to change the size of the unselected item font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.SelectedItemFontSize">
+            <summary>
+            Gets or sets the value of SelectedItemFontSize. This property can be used to change the size of the selected item font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether header of the control is shown or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether footer of the control is shown or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ShowColumnHeader">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether column header is shown or not in the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderHeight">
+            <summary>
+            Gets or sets the value of HeaderHeight. This property can be used to customize the height of the header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.FooterHeight">
+            <summary>
+            Gets or sets the value of FooterHeight. This property can be used to customize the height of the footer in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ColumnHeaderHeight">
+            <summary>
+            Gets or sets the value of ColumnHeaderHeight. This property can be used to customize the height of the column header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerHeight">
+            <summary>
+            Gets or sets the value of PickerHeight. This property can be used to change the height of the Picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerWidth">
+            <summary>
+            Gets or sets the value of PickerWidth. This property can be used to change the width of the Picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.ItemHeight">
+            <summary>
+            Gets or sets the value of the ItemHeight. This property can be used to customize the height of each picker item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.HeaderView">
+            <summary>
+            Gets or sets the value of HeaderView. This property can be used to customize the of header in Picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.FooterView">
+            <summary>
+            Gets or sets the value of FooterView. This property can be used to customize the footer in Picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.Parent">
+            <summary>
+            Gets or sets the value of Parent. This property indicates a layout that holds <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/>.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether gets or sets enable looping. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.PickerUI">
+            <summary>
+            Gets or sets the value of the PickerUI.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.MainGrid">
+            <summary>
+            Gets or sets the value of the main grid.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultColumnHeaderTextColor">
+            <summary>
+            Get default value of ColumnHeaderTextColor.
+            </summary>
+            <returns>returns default color for control column header text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultColumnHeaderBackgroundColor">
+            <summary>
+            Get default value of ColumnHeaderBackgroundColor.
+            </summary>
+            <returns>returns default color for control column header background.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultHeaderBackgroundColor">
+            <summary>
+            Get default value of HeaderBackgroundColor.
+            </summary>
+            <returns>returns default color for control header background.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultBackgroundColor">
+            <summary>
+            Get default value of BackgroundColor.
+            </summary>
+            <returns>returns default color for control background.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultButtonTextColor">
+            <summary>
+            Get default value of button text color.
+            </summary>
+            <returns>returns default color for control selected item text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultButtonBackgroundColor">
+            <summary>
+            Get default value of Button BackgroundColor.
+            </summary>
+            <returns>returns default color for control button background.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultSelectedItemTextColor">
+            <summary>
+            Get default value of SelectedItemText.
+            </summary>
+            <returns>returns default color for control selected item text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultHeaderFontSize">
+            <summary>
+            Get default value of Header font size.
+            </summary>
+            <returns>returns default value for control header font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetUnselectedItemTextColor">
+            <summary>
+            Get default value of UnselectedItem Text Color.
+            </summary>
+            <returns>returns default color for control unselected item text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultColumnHeaderSize">
+            <summary>
+            Get default value of temFontSize.
+            </summary>
+            <returns>returns default value for control item font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultSelectionBackgroundColor">
+            <summary>
+            Get default value of SelectionBackgroundColor.
+            </summary>
+            <returns>returns default color for control selection background.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultUnselectedItemFontSize">
+            <summary>
+            Get default value of temFontSize.
+            </summary>
+            <returns>returns default value for control item font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultSelectedItemFontSize">
+            <summary>
+            Get default value of temFontSize.
+            </summary>
+            <returns>returns default value for control item font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetDefaultBorderColor">
+            <summary>
+            Get default value of BorderColor.
+            </summary>
+            <returns>returns default color for control border.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.GetHeaderTextColor">
+            <summary>
+            Get default value of button text color.
+            </summary>
+            <returns>returns default color for control selected item text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnPickerModePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Picker mode property changed.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnBorderColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles BorderColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnEnableLoopingPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles EnableLooping changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnShowHeaderPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ShowHeader changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnShowColumnHeaderPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ShowColumnHeader changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnShowFooterPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ShowFooter changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnColumnHeaderHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnFooterHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles FooterHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnPickerHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles PickerHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnPickerWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles PickerWidth changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnItemsHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ItemsHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnColumnHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnColumnHeaderBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles BackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnOKButtonBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles BackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnCancelButtonBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles CancelButtonBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnOKButtonTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles OkButtonTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnCancelButtonTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles CancelButtonTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnColumnHeaderFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnColumnHeaderFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnColumnHeaderFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnSelectedItemFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnSelectedItemFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnSelectedItemFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnUnSelectedItemFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnUnSelectedItemFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnUnSelectedItemFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnSelectedItemTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnUnSelectedItemTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnSelectionBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectionBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnHeaderViewPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderView changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnFooterViewPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles FooterView changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.OnIsOpenPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles IsOpen changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.UpdatePickerMode">
+            <summary>
+            Updates the picker mode of the parent picker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.PickerHelper.PickerBase.InitializeElements">
+            <summary>
+            Initializes the elements.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.PickerHelper.PickerEngine">
+            <summary>
+            Internal Picker engine class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.DateChangedEventArgs">
+            <summary>
+            Date changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.DateChangedEventArgs.OldValue">
+            <summary>
+            Gets the value of OldDate.
+            </summary>
+            <value>The removed items.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.DateChangedEventArgs.NewValue">
+            <summary>
+            Gets the value of NewDate.
+            </summary>
+            <value>The added items.</value>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.DatePickerStaticText">
+            <summary>
+            DatePickerStaticText class contains the static texts used in SfDatePicker class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.EndMonthText">
+            <summary>
+            Sets the value for End month text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.NumberOneText">
+            <summary>
+            Sets the value for NumberOne text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.ZeroTextLimit">
+            <summary>
+            Sets the value for zerotext limit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.StartDayMonthValue">
+            <summary>
+            Sets the value for start day month.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.MonthText">
+            <summary>
+            Sets the value for month text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.DayText">
+            <summary>
+            Sets the value for day text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.YearText">
+            <summary>
+            Sets the value for year text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.DatePickerStaticText.HeaderText">
+            <summary>
+            Sets the value for header text.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.SfDatePicker">
+            <summary>
+            SfDatePicker is a picker control with collections of date. You can customize it by setting start date, end date, date format etc.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.DateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.Date"/> dependency property. This property can be used to change the date of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.FormatProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.Format"/> dependency property. This property can be used to change the format of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.OkCommandProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.OkCommand"/> dependency property. This property can be used to change the ok command of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.CancelCommandProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.CancelCommand"/> dependency property. This property can be used to change the cancel command of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.CommandParameterProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.CommandParameter"/> dependency property. This property can be used to change the command parameter of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.MinimumDateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.MinimumDate"/> dependency property. This property can be used to change the minimum date of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.MaximumDateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.MaximumDate"/> dependency property. This property can be used to change the maximum date of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.MonthHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.MonthHeaderText"/> dependency property. This property can be used to change the month header text of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.YearIntervalProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.YearInterval"/> dependency property. This property can be used to change the year interval of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.DayHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.DayHeaderText"/> dependency property. This property can be used to change the day header text of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.HeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.HeaderText"/> dependency property. This property can be used to change the header text of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.YearHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.YearHeaderText"/> dependency property. This property can be used to change the year header text of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.DayIntervalProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.DayInterval"/> dependency property. This property can be used to change the day interval of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.MonthIntervalProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfDatePicker.MonthInterval"/> dependency property. This property can be used to change the month interval of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.dateChangedEventArgs">
+            <summary>
+            Date changed event arguments field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.previousDate">
+            <summary>
+            Previous date field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.spinEnded">
+            <summary>
+            Indicate SpinEnded or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfDatePicker.shouldIncludeZeroText">
+            <summary>
+            The should include zero text.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfDatePicker.Opened">
+            <summary>
+            The OpendedEvent occurs when open the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfDatePicker.Closed">
+            <summary>
+            The ClosedEvent occurs when close the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfDatePicker.Closing">
+            <summary>
+              The ClosingEvent occurs when close the <see cref="T:Syncfusion.XForms.Pickers.SfDatePicker"/> control
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfDatePicker.DateSelected">
+            <summary>
+            It represents the date changed event.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfDatePicker.OkButtonClicked">
+            <summary>
+            Occurs when the default OK button clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfDatePicker.CancelButtonClicked">
+            <summary>
+            Occurs when the default Cancel button clicked.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.MinimumDate">
+            <summary>
+            Gets or sets the date that defines the minimum date. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.Format">
+            <summary>
+            Gets or sets the date format. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.OkCommand">
+            <summary>
+            Gets or sets the value of the Command. It invokes when the button is activated. It is a bindale property.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.CommandParameter">
+            <summary>
+            Gets or sets the value of the CommandParameter, which is a parameter to pass the Command property. This is a bindable property.
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.CancelCommand">
+            <summary>
+            Gets or sets the value of the Command. It invokes when the button is activated. It is a bindale property.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.MonthHeaderText">
+            <summary>
+            Gets or sets the month text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.MaximumDate">
+            <summary>
+            Gets or sets the date that defines the maximum date. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.YearHeaderText">
+            <summary>
+            Gets or sets year text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.DayInterval">
+            <summary>
+            Gets or sets day interval This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.MonthInterval">
+            <summary>
+            Gets or sets month interval. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.YearInterval">
+            <summary>
+            Gets or sets year interval. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.DayHeaderText">
+            <summary>
+            Gets or sets day text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.Date">
+            <summary>
+            Gets or sets the date that defines the current selected date. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.HeaderText">
+            <summary>
+            Gets or sets header text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfDatePicker.ShouldIncludeZeroText">
+            <summary>
+            Gets or sets a value indicating whether gets or sets header text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateSelectedDate(System.String,System.String,System.String)">
+            <summary>
+            Method that is used to update selected date.
+            </summary>
+            <param name="month">month.</param>
+            <param name="day">day.</param>
+            <param name="year">year.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCommandPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles command property changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnFormatPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles date format changed event.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCancelCommandPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles command property changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCommandParameterPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Calls the command parameter method when the property is changed.
+            </summary>
+            <param name="bindable">Bindable object of SfButton.</param>
+            <param name="oldValue">Command parameter old value of SfButton.</param>
+            <param name="newValue">Command parameter new value of SfButton.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnMinimumDatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles minimum date changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnMaximumDatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles maximum date changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnMonthHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles month text changed event.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnDayHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles day changed event.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnYearHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles year text changed event.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnDayIntervalPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles day interval changed event.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles the header text property changed.
+            </summary>
+            <param name="bindable">The bindable.</param>
+            <param name="oldValue">The oldvalue.</param>
+            <param name="newValue">The newvalue.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnMonthIntervalPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles month interval changed event.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnYearIntervalPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles year interval changed event.
+            </summary>
+            <param name="bindable">bindable property.</param>
+            <param name="oldValue">old value.</param>
+            <param name="newValue">new Value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetFormattedYear(System.Int32)">
+            <summary>
+            Get the Formatted year.
+            </summary>
+            <param name="i"> format year.</param>
+            <returns> formatted year.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnDatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles date changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateHeaderText">
+            <summary>
+            Update header text.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCommandParameterPropertyChanged">
+            <summary>
+            Calls the CanExecute method when the property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCommandPropertyChanged">
+            <summary>
+            Command property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCancelCommandPropertyChanged">
+            <summary>
+            Cancel command property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCommandCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Call the Commands can execute changed method.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnCancelCommandCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Call the Commands can execute changed method.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.InitializeElements">
+            <summary>
+            Initializes the elements.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.PickerUI_Closed(System.Object,System.EventArgs)">
+            <summary>
+            Picker dialog closed event method.
+            </summary>
+            <param name="sender">The sender object.</param>
+            <param name="e">Empty event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.PickerUI_Closing(System.Object,Syncfusion.XForms.Core.CancelEventArgs)">
+            <summary>
+            DatePicker Closing events
+            </summary>
+            <param name="sender">picker object</param>
+            <param name="e">cancel event argument</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.PickerUI_Opened(System.Object,System.EventArgs)">
+            <summary>
+            Picker dialog open event method.
+            </summary>
+            <param name="sender">The sender object.</param>
+            <param name="e">Empty event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.PickerUI_SpinEnded(System.Object,System.EventArgs)">
+            <summary>
+            Picker Spin Ended event.
+            </summary>
+            <param name="sender"> picker obhect.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.InitializeCollections">
+            <summary>
+            The Update values method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateColumnBasedOnFormat">
+            <summary>
+            Updates the column based on date format.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetYears">
+            <summary>
+            Get the years.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetMonths">
+            <summary>
+            Get the months.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetFormattedMonth(System.Int32)">
+            <summary>
+            Get the formatted month.
+            </summary>
+            <param name="i"> format month.</param>
+            <returns>formatted month.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetDays">
+            <summary>
+            Get the days.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetZeroTextBasedOnFormat(System.Double)">
+            <summary>
+            The Zero text based on format.
+            </summary>
+            <param name="value">value field.</param>
+            <returns>zero text based on value.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateDays(System.Int32,System.Collections.ObjectModel.ObservableCollection{System.String})">
+            <summary>
+            Update the days in items source.
+            </summary>
+            <param name="index">index field.</param>
+            <param name="days">days field.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateDateColumn(System.Collections.ObjectModel.ObservableCollection{System.String},System.Collections.ObjectModel.ObservableCollection{System.String},System.Collections.ObjectModel.ObservableCollection{System.String})">
+            <summary>
+            Update the items source.
+            </summary>
+            <param name="days">days field.</param>
+            <param name="months">months field.</param>
+            <param name="years">years field.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateHeaders">
+            <summary>
+            Update the column header.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.GetFormatCase">
+            <summary>
+            Get the format case.
+            </summary>
+            <returns>formatted string.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.ValidateDate">
+            <summary>
+            Validate date method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.UpdateSelectedRow">
+            <summary>
+            Updates the selected row.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.PickerUI_CancelButtonClicked(System.Object,Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Calcel button clicked.
+            </summary>
+            <param name="sender">picker object.</param>
+            <param name="e">selection changed event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.PickerUI_OkButtonClicked(System.Object,Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Ok button clicked event.
+            </summary>
+            <param name="sender">picker object.</param>
+            <param name="e">selection changed event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfDatePicker.OnSelectionDateUpdate">
+            <summary>
+            On Selection date update.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.SfTimePicker">
+            <summary>
+            SfTimePicker is a picker control allows you to pick a time value. You can customize it by setting start time, end time, Time format etc.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.FormatProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.Format"/> dependency property. This property can be used to change the format of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.TimeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.Time"/> dependency property. This property can be used to change the time of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.HourHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.HourHeaderText"/> dependency property. This property can be used to change the hour header text of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.MinutesHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.MinutesHeaderText"/> dependency property. This property can be used to change the minutes header text of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.OkCommandProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.OkCommand"/> dependency property. This property can be used to change the ok command of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.CancelCommandProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.CancelCommand"/> dependency property. This property can be used to change the cancel command of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.CommandParameterProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.CommandParameter"/> dependency property. This property can be used to change the command parameter of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.SecondsHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.SecondsHeaderText"/> dependency property. This property can be used to change the seconds header text of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.HourIntervalProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.HourInterval"/> dependency property. This property can be used to change the hour interval of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.MinuteIntervalProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.MinuteInterval"/> dependency property. This property can be used to change the minute interval of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.SecondIntervalProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.SecondInterval"/> dependency property. This property can be used to change the second interval of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.HeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.HeaderText"/> dependency property. This property can be used to change the header text of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.MeridiemHeaderTextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Pickers.SfTimePicker.MeridiemHeaderText"/> dependency property. This property can be used to change the meridiem header text of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.shouldIncludeZeroText">
+            <summary>
+            The should include zero text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.showSeconds">
+            <summary>
+            The show seconds.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.showMeridiem">
+            <summary>
+            The show meridiem.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.SfTimePicker.timeChangedEventArgs">
+            <summary>
+            Time changed event arguments field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfTimePicker.TimeSelected">
+            <summary>
+            It represents the time changed event.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfTimePicker.OkButtonClicked">
+            <summary>
+            Occurs when the default OK button clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfTimePicker.CancelButtonClicked">
+            <summary>
+            Occurs when the default Cancel button clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfTimePicker.Opened">
+            <summary>
+            The OpendedEvent occurs when open the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfTimePicker.Closed">
+            <summary>
+            The ClosedEvent occurs when close the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Pickers.SfTimePicker.Closing">
+            <summary>
+              The ClosingEvent occurs when close the <see cref="T:Syncfusion.XForms.Pickers.SfTimePicker"/> control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.Format">
+            <summary>
+            Gets or sets the time format. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.HourHeaderText">
+            <summary>
+            Gets or sets the hour text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.MinutesHeaderText">
+            <summary>
+            Gets or sets minutes text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.OkCommand">
+            <summary>
+            Gets or sets the value of the Command. It invokes when the button is activated. It is a bindale property.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.CommandParameter">
+            <summary>
+            Gets or sets the value of the CommandParameter, which is a parameter to pass the Command property. This is a bindable property.
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.CancelCommand">
+            <summary>
+            Gets or sets the value of the Command. It invokes when the button is activated. It is a bindale property.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.SecondsHeaderText">
+            <summary>
+            Gets or sets seconds text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.MeridiemHeaderText">
+            <summary>
+            Gets or sets meridiem text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.HourInterval">
+            <summary>
+            Gets or sets hour interval This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.MinuteInterval">
+            <summary>
+            Gets or sets minute interval. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.SecondInterval">
+            <summary>
+            Gets or sets second interval. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.HeaderText">
+            <summary>
+            Gets or sets header text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.Time">
+            <summary>
+            Gets or sets the time that defines the current selected time. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.ShowMeridiem">
+            <summary>
+            Gets or sets a value indicating whether gets or sets the value to enable or disable the meridiem.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.ShowSeconds">
+            <summary>
+            Gets or sets a value indicating whether gets or sets the value to enable or disable the seconds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.SfTimePicker.ShouldIncludeZeroText">
+            <summary>
+            Gets or sets a value indicating whether gets or sets the value to enable or disable the seconds.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.GetMeridiem">
+            <summary>
+            Method that is used to get the day values.
+            </summary>
+            <returns>collection of string.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.GetHours(System.Boolean)">
+            <summary>
+            Method that used to get the year values.
+            </summary>
+            <param name="isTwelveHourFormat">value field.</param>
+            <returns>collection of string.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.GetMinutes">
+            <summary>
+            Method that is used to get the month values.
+            </summary>
+            <returns>collection of string.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.GetSeconds">
+            <summary>
+            Method that is used to get the month values.
+            </summary>
+            <returns>collection of string.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.UpdateSelectedTime(System.String,System.String,System.String,System.String)">
+            <summary>
+            Method that is used to update selected time.
+            </summary>
+            <param name="hour">hours.</param>
+            <param name="minute">minutes.</param>
+            <param name="second">seconds.</param>
+            <param name="meridiem">meridiem.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.UpdateColumnData(System.Collections.ObjectModel.ObservableCollection{System.String},System.Collections.ObjectModel.ObservableCollection{System.String},System.Collections.ObjectModel.ObservableCollection{System.String},System.Collections.ObjectModel.ObservableCollection{System.String})">
+            <summary>
+            Updates column data.
+            </summary>
+            <param name="hours">hours.</param>
+            <param name="minutes">minutes.</param>
+            <param name="seconds">seconds.</param>
+            <param name="meridiem">meridiem.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnTimePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles time changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnFormatPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles time format changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnHourHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles hour text changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnMinutesHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles minutes changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnSecondsHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles seconds text changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnMeridiemHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles meridiem text changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnHourIntervalPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles hour interval changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnMinuteIntervalPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles minute interval changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCommandPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles command property changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnSecondIntervalPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles second interval changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles the header text property changed.
+            </summary>
+            <param name="bindable">The bindable.</param>
+            <param name="oldValue">The oldvalue.</param>
+            <param name="newValue">The newvalue.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCancelCommandPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles command property changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.GetZeroTextBasedOnValue(System.Double)">
+            <summary>
+            Updates the zero value based on time.
+            </summary>
+            <param name="value">value.</param>
+            <returns>The zero text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCommandParameterPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Calls the command parameter method when the property is changed.
+            </summary>
+            <param name="bindable">Bindable object of TimePicker.</param>
+            <param name="oldValue">Command parameter old value of TimePicker.</param>
+            <param name="newValue">Command parameter new value of TimePicker.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.UpdateColumnBasedOnFormat">
+            <summary>
+            Updates the column values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.UpdateHeaderText">
+            <summary>
+            Update header text.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.InitializeElements">
+            <summary>
+            Initializes the elements.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.PickerUI_Closing(System.Object,Syncfusion.XForms.Core.CancelEventArgs)">
+            <summary>
+            Time Picker Closing events.
+            </summary>
+            <param name="sender">picker object</param>
+            <param name="e">cancel event argument</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.PickerUI_Closed(System.Object,System.EventArgs)">
+            <summary>
+            Picker dialog closed event method.
+            </summary>
+            <param name="sender">The sender object.</param>
+            <param name="e">Empty event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.PickerUI_Opened(System.Object,System.EventArgs)">
+            <summary>
+            Picker dialog open event method.
+            </summary>
+            <param name="sender">The sender object.</param>
+            <param name="e">Empty event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.PickerUI_SpinEnded(System.Object,System.EventArgs)">
+            <summary>
+            Picker spin ended method.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.PickerUI_OkButtonClicked(System.Object,Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Ok button clicked event method.
+            </summary>
+            <param name="sender">object of the picker.</param>
+            <param name="e">selection changed event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.PickerUI_CancelButtonClicked(System.Object,Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Cancel button clicked event method.
+            </summary>
+            <param name="sender">object of the picker.</param>
+            <param name="e">selection changed event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.InitializeCollections">
+            <summary>
+            The Update values method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnSelectionTimeUpdate">
+            <summary>
+            On Selection time update.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCommandParameterPropertyChanged">
+            <summary>
+            Calls the CanExecute method when the property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCommandPropertyChanged">
+            <summary>
+            Command property changed method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCancelCommandPropertyChanged">
+            <summary>
+            Cancel command property changed method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCommandCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Call the Commands can execute changed method.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">Event argumetns.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.OnCancelCommandCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Call the Commands can execute changed method.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">Event Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.UpdateSelectedRow">
+            <summary>
+            Updates the current time.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.GetZeroTextBasedOnFormat(System.Double)">
+            <summary>
+            Updates the zero value based on time.
+            </summary>
+            <param name="value">value.</param>
+            <returns>The zero text. </returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Pickers.SfTimePicker.UpdateHeaderFooter">
+            <summary>
+            Updates the header and footer.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.TimeChangedEventArgs">
+            <summary>
+            Time changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.TimeChangedEventArgs.OldValue">
+            <summary>
+            Gets the value of Previous time.
+            </summary>
+            <value>The removed items.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Pickers.TimeChangedEventArgs.NewValue">
+            <summary>
+            Gets the value of Current time.
+            </summary>
+            <value>The added items.</value>
+        </member>
+        <member name="T:Syncfusion.XForms.Pickers.TimePickerStaticText">
+            <summary>
+            TimePickerStaticText class contains the static texts used in SfTimePicker class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.HourText">
+            <summary>
+            Sets the value for hour text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.MinuteText">
+            <summary>
+            Sets the value for minute text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.SecondText">
+            <summary>
+            Sets the value for second text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.FormatText">
+            <summary>
+            Sets the value for format text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.HeaderText">
+            <summary>
+            Sets the value for header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.StartMinuteValue">
+            <summary>
+            Sets the value for start minute.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.EndMinuteValue">
+            <summary>
+            Sets the value for end minute.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.StartHourValue">
+            <summary>
+            Sets the value for starthour.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.ZeroTextLimit">
+            <summary>
+            Sets the value for zero text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.IncrementValue">
+            <summary>
+            Sets the value for increment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.EndHourValue">
+            <summary>
+            Sets the value for end hour.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.AMText">
+            <summary>
+            Sets the value for AM text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Pickers.TimePickerStaticText.PMText">
+            <summary>
+            Sets the value for PM text.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.PickerResourceManager">
+            <summary>
+            Picker resource manager.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.PickerResourceManager.Manager">
+            <summary>
+            Gets or sets value to the resource manager.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs">
+            <summary>
+            Column loaded event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs.Column">
+            <summary>
+            Gets the column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs.ColumnWidth">
+            <summary>
+            Gets or sets the width of the column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether this.
+            </summary>
+            <value><c>true</c> if enable looping; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.DialogOpenEventArgs">
+            <summary>
+            Dialog open event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.DialogOpenEventArgs.IsGrayout">
+            <summary>
+            Gets or sets a value indicating whether IsGrayout or not./>
+            is grayout.
+            </summary>
+            <value><c>true</c> if is grayout; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.PickerMode">
+            <summary>
+            Contains values for the PickerMode enumeration that about to open the SfPicker in either normal or pop-up.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.PickerMode.Default">
+            <summary>
+            Represents the default mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.PickerMode.Dialog">
+            <summary>
+            Represents the dialog mode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.IPickerInterface">
+            <summary>
+            The <see cref="T:Syncfusion.SfPicker.XForms.IPickerInterface"/> class represents <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> interface.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.IPickerInterface.Open(Syncfusion.SfPicker.XForms.SfPicker)">
+            <summary>
+            Represents the Open a specified picker.
+            </summary>
+            <param name="picker">Picker instance.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.IPickerInterface.Close(Syncfusion.SfPicker.XForms.SfPicker)">
+            <summary>
+            Represents the Close a specified picker.
+            </summary>
+            <param name="picker">Picker instance.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.IPickerInterface.Dispose(Syncfusion.SfPicker.XForms.SfPicker)">
+            <summary>
+            Represents the dispose of specified picker.
+            </summary>
+            <param name="picker">Picker instance.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.PickerViewEventArgs">
+            <summary>
+            Picker view event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.PickerViewEventArgs.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.PickerViewEventArgs.Item">
+            <summary>
+            Gets the item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.PickerViewEventArgs.Row">
+            <summary>
+            Gets the row.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.PickerViewEventArgs.Column">
+            <summary>
+            Gets the column.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SelectionChangedEventArgs">
+            <summary>
+            Selection changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SelectionChangedEventArgs.OldValue">
+            <summary>
+            Gets the old value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SelectionChangedEventArgs.NewValue">
+            <summary>
+            Gets the new value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker">
+            <summary>
+            <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> represents the SfPicker class that allows you pick an item among a list of items that can be customized with custom view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ItemTemplateProperty">
+            <summary>
+            Backing store for the ItemTemplate property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontAttributeProperty">
+            <summary>
+            Backing store for the HeaderFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontFamilyProperty">
+            <summary>
+            Backing store for the HeaderFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontAttributeProperty">
+            <summary>
+            Backing store for the ColumnHeaderFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontFamilyProperty">
+            <summary>
+            Backing store for the ColumnHeaderFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontAttributeProperty">
+            <summary>
+            Backing store for the UnSelectedItemFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontFamilyProperty">
+            <summary>
+            Backing store for the UnSelectedItemFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontAttributeProperty">
+            <summary>
+            Backing store for the SelectedItemFontAttribute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontFamilyProperty">
+            <summary>
+            Backing store for the SelectedItemFontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.PickerModeProperty">
+            <summary>
+            Backing store for the PickerMode property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemTextColorProperty">
+            <summary>
+            Backing store for the UnSelectedItemTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.BorderColorProperty">
+            <summary>
+            Backing store for the BorderColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderBackgroundColorProperty">
+            <summary>
+            Backing store for the HeaderBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderBackgroundColorProperty">
+            <summary>
+            Backing store for the ColumnHeaderBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderTextColorProperty">
+            <summary>
+            Backing store for the ColumnHeaderTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderTextColorProperty">
+            <summary>
+            Backing store for the HeaderTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.BackgroundColorProperty">
+            <summary>
+            Backing store for the BackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderTextProperty">
+            <summary>
+            Backing store for the ColumnHeaderText property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemProperty">
+            <summary>
+            Backing store for the SelectedItem property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedIndexProperty">
+            <summary>
+            Backing store for the SelectedIndex property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderTextProperty">
+            <summary>
+            Backing store for the HeaderText property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderHeightProperty">
+            <summary>
+            Backing store for the HeaderHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.FooterHeightProperty">
+            <summary>
+            Backing store for the FooterHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderHeightProperty">
+            <summary>
+            Backing store for the ColumnHeaderHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontSizeProperty">
+            <summary>
+            Backing store for the HeaderFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontSizeProperty">
+            <summary>
+            Backing store for the ColumnHeaderFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontSizeProperty">
+            <summary>
+            Backing store for the UnSelectedItemFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontSizeProperty">
+            <summary>
+            Backing store for the SelectedItemFontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.PickerHeightProperty">
+            <summary>
+            Backing store for the PickerHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.PickerWidthProperty">
+            <summary>
+            Backing store for the PickerWidth property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ItemsHeightProperty">
+            <summary>
+            Backing store for the ItemsHeight property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectionBackgroundColorProperty">
+            <summary>
+            Backing store for the SelectionBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.IsOpenProperty">
+            <summary>
+            Backing store for the IsOpen property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.DisplayMemberPathProperty">
+            <summary>
+            Backing store for the DisplayMemberPath property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ShowHeaderProperty">
+            <summary>
+            Backing store for the ShowHeader property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.EnableLoopingProperty">
+            <summary>
+            Backing store for the EnableLooping property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ShowFooterProperty">
+            <summary>
+            Backing store for the ShowFooter property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ShowColumnHeaderProperty">
+            <summary>
+            Backing store for the ShowColumnHeader property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.HeaderViewProperty">
+            <summary>
+            Backing store for the HeaderView property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.FooterViewProperty">
+            <summary>
+            Backing store for the FooterView property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemTextColorProperty">
+            <summary>
+            Backing store for the SelectedItemTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.ItemsSourceProperty">
+            <summary>
+            Backing store for the ItemsSource property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.OKButtonBackgroundColorProperty">
+            <summary>
+            Backing store for the OkButtonBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonBackgroundColorProperty">
+            <summary>
+            Backing store for the CancelButtonBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.OKButtonTextColorProperty">
+            <summary>
+            Backing store for the OkButtonTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonTextColorProperty">
+            <summary>
+            Backing store for the CancelButtonTextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.minHeight">
+            <summary>
+            Represents the minimum height.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.minWidth">
+            <summary>
+             Represents the minimum width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.parent">
+            <summary>
+             Represents the parent.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.XForms.SfPicker.nativeObject">
+            <summary>
+             Represents the native object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.PickerViewEventhandler">
+            <summary>
+            Represents an event handler of PickerViewEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.OpendedEventhandler">
+            <summary>
+            Represents opended event handler of OpendedEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.OkButtonEventhandler">
+            <summary>
+            Represents the open button event handler of OkButtonEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.ClosedEventhandler">
+            <summary>
+            Represents the closed event handler of ClosedEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.SelectionChangedChangedEventhandler">
+            <summary>
+            Represents the selection changed event handler of SelectionChangedChangedEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonEventhandler">
+            <summary>
+            Represents the cancel button event handler of CancelButtonEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPicker.ColumnLoadedEventhandler">
+            <summary>
+            Represents the column loaded event handler of ColumnLoadedEvent in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+            <param name="sender">sender.</param>
+            <param name="e">event arguments.</param>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.Opened">
+            <summary>
+            The OpendedEvent occurs when open the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.OnPickerItemLoaded">
+            <summary>
+            The PickerViewEvent occurs when a picker item is loaded in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.Closing">
+            <summary>
+              The ClosingEvent occurs when close the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.Closed">
+            <summary>
+            The ClosedEvent occurs when close the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.SelectionChanged">
+            <summary>
+            The SelectionChangedChangedEvent occurs when selection of picker item is changed in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.OkButtonClicked">
+            <summary>
+            The OkButtonEvent occurs when click the open button of the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonClicked">
+            <summary>
+            The CancelButtonEvent occurs when click the cancel button of the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.OnColumnLoaded">
+            <summary>
+            The ColumnLoadedEvent occurs when column is loaded in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.XForms.SfPicker.SpinEnded">
+            <summary>
+            Occurs when spin ended.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.Parent">
+            <summary>
+            Gets or sets the value of Parent. This property indicates a layout that holds <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/>.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ItemTemplate">
+            <summary>
+            Gets or sets an instance of the Template class that defines the visual structure of a SfPicker item.
+            </summary>
+            <value>The default value is null.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontAttribute">
+            <summary>
+            Gets or sets the value of HeaderFontAttribute that indicates the font attributes of header text in <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontFamily">
+            <summary>
+            Gets or sets the value of HeaderFontFamily that indicates font family of header text in <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/>.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontAttribute">
+            <summary>
+            Gets or sets the value of ColumnHeaderFontAttribute that indicates font attributes of column header text.
+            </summary>
+            <value>The column header font attribute.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontFamily">
+            <summary>
+            Gets or sets the value of ColumnHeaderFontFamily that indicates font family of column header text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontAttribute">
+            <summary>
+            Gets or sets the value of UnSelectedItemFontAttribute that indicates font attributes of the unselected items text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontFamily">
+            <summary>
+            Gets or sets the value of UnSelectedItemFontFamily that indicates the font family of unselected items text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontAttribute">
+            <summary>
+            Gets or sets the value of SelectedItemFontAttribute that indicates font attributes of selected item text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontFamily">
+            <summary>
+            Gets or sets the value of SelectedItemFontFamily that indicates the font family of selected item text.
+            </summary>
+            <value>The header font family.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PickerMode">
+            <summary>
+            Gets or sets the value of the PickerMode that indicates display mode of the control either as a dialog or default standalone representation.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemTextColor">
+            <summary>
+            Gets or sets the value of UnSelectedItemTextColor. This property can be used to change the the text color of unselected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.BorderColor">
+            <summary>
+            Gets or sets the value of the BorderColor. This property can be used to change the border color of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the value of the HeaderBackgroundColor. This property can be used to change the background color of header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderBackgroundColor">
+            <summary>
+            Gets or sets the value of the ColumnHeaderBackgroundColor. This property can be used to change the background color of the column header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderTextColor">
+            <summary>
+            Gets or sets the value of ColumnHeaderTextColor. This property can be used to change the text color of the column header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderTextColor">
+            <summary>
+            Gets or sets the value of HeaderTextColor. This property can be used to change the text color of the header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.BackgroundColor">
+            <summary>
+            Gets or sets the value of the BackgroundColor. This property can be used to change the background color of the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderText">
+            <summary>
+            Gets or sets the value of the ColumnHeaderText. It has a collection of header text when the control represents multi-column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItem">
+            <summary>
+            Gets or sets the value that indicates SelectedItem. It has a collection of selected items when the control represents multi-column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedIndex">
+            <summary>
+            Gets or sets the value that indicates SelectedIndex. It has a collection of selected index when the control represents multi-column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderText">
+            <summary>
+            Gets or sets the value of HeaderText. This property can be used to change the text of the header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderHeight">
+            <summary>
+            Gets or sets the value of HeaderHeight. This property can be used to customize the height of the header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.FooterHeight">
+            <summary>
+            Gets or sets the value of FooterHeight. This property can be used to customize the height of the footer in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderHeight">
+            <summary>
+            Gets or sets the value of ColumnHeaderHeight. This property can be used to customize the height of the column header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderFontSize">
+            <summary>
+            Gets or sets  the value of the HeaderFontSize. This property can be used to change the size of the header font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ColumnHeaderFontSize">
+            <summary>
+            Gets or sets the value of ColumnHeaderFontSize. This property can be used to change the size of the column header font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.UnSelectedItemFontSize">
+            <summary>
+            Gets or sets the value of the UnSelectedItemFontSize. This property can be used to change the size of the unselected item font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemFontSize">
+            <summary>
+            Gets or sets the value of SelectedItemFontSize. This property can be used to change the size of the selected item font in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PickerHeight">
+            <summary>
+            Gets or sets the value of PickerHeight. This property can be used to change the height of the Picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PickerWidth">
+            <summary>
+            Gets or sets the value of PickerWidth. This property can be used to change the width of the Picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ItemHeight">
+            <summary>
+            Gets or sets the value of the ItemHeight. This property can be used to customize the height of each picker item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectionBackgroundColor">
+            <summary>
+            Gets or sets the value of SelectionBackgroundColor. This property can be used to change the background color of selected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether gets or sets  the value that indicates the state of Dialog whether it is opened or closed in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.DisplayMemberPath">
+            <summary>
+            Gets or sets a path to a value on the source object to serve as the visual representation of the object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether header of the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control is shown or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether each forward iteration is followed by a backward iteration or not in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether footer of the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control is shown or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ShowColumnHeader">
+            <summary>
+            Gets or sets a value indicating whether gets or sets a value that indicates whether column header is shown or not in the <see cref="T:Syncfusion.SfPicker.XForms.SfPicker"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.HeaderView">
+            <summary>
+            Gets or sets the value of HeaderView. This property can be used to customize the of header in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.FooterView">
+            <summary>
+            Gets or sets the value of FooterView. This property can be used to customize the footer in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.SelectedItemTextColor">
+            <summary>
+            Gets or sets the value of SelectedItemTextColor. This property can be used to change the text color of selected item in SfPicker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.OKButtonBackgroundColor">
+            <summary>
+            Gets or sets background color of the ok button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonBackgroundColor">
+            <summary>
+            Gets or sets background color of the cancel button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.OKButtonTextColor">
+            <summary>
+            Gets or sets text color of the ok button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.CancelButtonTextColor">
+            <summary>
+            Gets or sets text color of the cancel button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.ItemsSource">
+            <summary>
+            Gets or sets a collection of items that can be populated as picker items and get rendered at run-time based on the Template provided.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+            <value>The native object.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.XForms.SfPicker.PropertiesChanged">
+            <summary>
+            Gets or sets the list of property names.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Dispose">
+            <summary>
+            Releases all resource used by the object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke when theme changes.
+            </summary>
+            <param name="oldTheme">Old theme name.</param>
+            <param name="newTheme">New theme name.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke at whenever common theme changes.
+            </summary>
+            <param name="oldTheme">Old theme name.</param>
+            <param name="newTheme">New theme name.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            To get the initial set of color's from theme dictionary.
+            </summary>
+            <returns>Return the Picker theme dictionary.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSpinEnded(System.EventArgs)">
+            <summary>
+            On the spin ended.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Open">
+            <summary>
+            Opens the dialog when the control in Dialog mode.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.Close">
+            <summary>
+            Closes the dialog when the control in Dialog mode.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnGetView(Syncfusion.SfPicker.XForms.PickerViewEventArgs)">
+            <summary>
+            Occurs when each item getting loaded. Users can customize the items or its view using its event parameters.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnOpened(System.EventArgs)">
+            <summary>
+            Occurs when the dialog getting opened.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnClosed(System.EventArgs)">
+            <summary>
+            Occurs after the dialog will be closed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnClosing(Syncfusion.XForms.Core.CancelEventArgs)">
+            <summary>
+            Occurs when the dialog getting close.
+            </summary>
+            <param name="args">cancel args</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectionChanged(Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the user selects an item from unselected items.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnCancelButtonClicked(Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the default Cancel button clicked.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnOkButtonClicked(Syncfusion.SfPicker.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the default OK button clicked.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.ColumnLoaded(Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs)">
+            <summary>
+            Occurs when each column getting loaded. Users can customize the column using its event parameters.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnPickerPropertyChanged(System.String)">
+            <summary>
+            Handles On Picker Property Changed event.
+            </summary>
+            <param name="propertyName">changed property name.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+            <returns>size request.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnItemTemplatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ItemTemplate changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnUnSelectedItemFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnUnSelectedItemFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectedItemFontAttributePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemFontAttribute changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectedItemFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemFontFamily changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnPickerModePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles PickerMode changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnUnSelectedItemTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnBorderColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles BorderColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles BackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderText changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectedItemPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItem changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectedIndexPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedIndex changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderText changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnFooterHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles FooterHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnColumnHeaderFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ColumnHeaderFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnUnSelectedItemFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles UnSelectedItemFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectedItemFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemFontSize changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnPickerHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles PickerHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnPickerWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles PickerWidth changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnItemsHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ItemsHeight changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectionBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectionBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnIsOpenPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles IsOpen changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnDisplayMemberPathPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles DisplayMemberPath changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnShowHeaderPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ShowHeader changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnEnableLoopingPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles EnableLooping changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnShowFooterPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ShowFooter changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnShowColumnHeaderPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ShowColumnHeader changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnHeaderViewPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HeaderView changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnFooterViewPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles FooterView changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnSelectedItemTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles SelectedItemTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnItemsSourcePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles ItemsSource changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnOKButtonBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles OkButtonBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnCancelButtonBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles CancelButtonBackgroundColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnOKButtonTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles OkButtonTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.OnCancelButtonTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles CancelButtonTextColor changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetUnSelectedItemTextColor">
+            <summary>
+            Get default value of UnSelectedItem Text Color.
+            </summary>
+            <returns>returns default color for control unselected item text.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultBorderColor">
+            <summary>
+            Get default value of BorderColor.
+            </summary>
+            <returns>returns default color for control border.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultHeaderBackgroundColor">
+            <summary>
+            Get default value of HeaderBackgroundColor.
+            </summary>
+            <returns>returns default color for control header background.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultColumnHeaderBackgroundColor">
+            <summary>
+            Get default value of ColumnHeaderBackgroundColor.
+            </summary>
+            <returns>returns default color for control column header background.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultColumnHeaderTextColor">
+            <summary>
+            Get default value of ColumnHeaderTextColor.
+            </summary>
+            <returns>returns default color for control column header text.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultHeaderTextColor">
+            <summary>
+            Get default value of HeaderTextColor.
+            </summary>
+            <returns>returns default color for control header text.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultBackgroundColor">
+            <summary>
+            Get default value of BackgroundColor.
+            </summary>
+            <returns>returns default color for control background.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultSelectedItemFontSize">
+            <summary>
+            Get default value of temFontSize.
+            </summary>
+            <returns>returns default value for control item font size.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultUnSelectedItemFontSize">
+            <summary>
+            Get default value of temFontSize.
+            </summary>
+            <returns>returns default value for control item font size.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultColumnHeaderSize">
+            <summary>
+            Get default value of temFontSize.
+            </summary>
+            <returns>returns default value for control item font size.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultHeaderFontSize">
+            <summary>
+            Get default value of Header font size.
+            </summary>
+            <returns>returns default value for control header font size.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultSelectionBackgroundColor">
+            <summary>
+            Get default value of SelectionBackgroundColor.
+            </summary>
+            <returns>returns default color for control selection background.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultSelectedItemTextColor">
+            <summary>
+            Get default value of SelectedItemText.
+            </summary>
+            <returns>returns default color for control selected item text.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultButtonBackgroundColor">
+            <summary>
+            Get default value of Button BackgroundColor.
+            </summary>
+            <returns>returns default color for control button background.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPicker.GetDefaultButtonTextColor">
+            <summary>
+            Get default value of SelectedItemText.
+            </summary>
+            <returns>returns default color for control selected item text.</returns>
+        </member>
+        <member name="T:Syncfusion.SfPicker.XForms.SfPickerStyles">
+            <summary>
+            Holds the theme style for the picker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.XForms.SfPickerStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.XForms.SfPickerStyles" /> class.
+            </summary>
+        </member>
+    </members>
+</doc>

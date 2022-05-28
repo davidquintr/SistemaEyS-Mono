@@ -1,0 +1,1375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPicker.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfPicker.iOS.PickerMode">
+            <summary>
+            The Picker mode enumeration contains a dialog and standalone mode
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.PickerMode.Default">
+            <summary>
+            Displays the control as standalone representation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.PickerMode.Dialog">
+            <summary>
+            Displays the control as dialog representation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.PickerEngine">
+            <summary>
+            Represent the picker engine class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.PickerEngine.picker">
+            <summary>
+            Represents the Picker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.PickerEngine.#ctor(Syncfusion.SfPicker.iOS.SfPicker)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.iOS.PickerEngine"/> class. 
+            </summary>
+            <param name="picker">The picker instance.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.PickerEngine.UpdateFrame">
+            <summary>
+            The Update Frame.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.PickerEngine.Dispose(System.Boolean)">
+            <summary>
+            Dispose the specified disposing.
+            </summary>
+            <param name="disposing">If set to <c>true</c> disposing.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.CustomPickerModel">
+            <summary>
+            Represents the custom picker model.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.loopingCount">
+            <summary>
+            Represents the looping count.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.picker">
+            <summary>
+            Represents the picker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.pickerEngine">
+            <summary>
+            Represents the picker engine.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.isSelected">
+            <summary>
+            Represents the is selected.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.count">
+            <summary>
+            Represents the count
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.remainder">
+            <summary>
+            Represents the remainder
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.CustomPickerModel.selectedItemCollection">
+            <summary>
+            Represents the selected item collection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.#ctor(Syncfusion.SfPicker.iOS.SfPicker,Syncfusion.SfPicker.iOS.PickerEngine)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.iOS.CustomPickerModel"/> class.
+            </summary>
+            <param name="picker">The picker instance.</param>
+            <param name="pickerEngine">The picker engine instance.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.GetComponentCount(UIKit.UIPickerView)">
+            <summary>
+            Override Get Component Count.
+            </summary>
+            <param name="pickerView">The Picker view.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.GetRowsInComponent(UIKit.UIPickerView,System.nint)">
+            <summary>
+            Get the rows in component.
+            </summary>
+            <returns>The rows in component.</returns>
+            <param name="pickerView">The picker view instance.</param>
+            <param name="component">The component number.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.GetRowHeight(UIKit.UIPickerView,System.nint)">
+            <summary>
+            Gets the height of the row.
+            </summary>
+            <returns>The row height.</returns>
+            <param name="pickerView">The picker view instance.</param>
+            <param name="component">The component number.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.Selected(UIKit.UIPickerView,System.nint,System.nint)">
+            <summary>
+            Selected the specified pickerView, row and component.
+            </summary>
+            <param name="pickerView">The picker view instance.</param>
+            <param name="row">The row number.</param>
+            <param name="component">The component number.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.GetView(UIKit.UIPickerView,System.nint,System.nint,UIKit.UIView)">
+            <summary>
+            Gets the picker view.
+            </summary>
+            <returns>The view.</returns>
+            <param name="pickerView">The picker view instance.</param>
+            <param name="row">The row number.</param>
+            <param name="component">The component number.</param>
+            <param name="view">The custom view.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.GetComponentWidth(UIKit.UIPickerView,System.nint)">
+            <summary>
+            Gets the width of the component.
+            </summary>
+            <returns>The component width.</returns>
+            <param name="pickerView">The picker view instance.</param>
+            <param name="component">The component number.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.Dispose(System.Boolean)">
+            <summary>
+            The override Disposing Method.
+            </summary>
+            <param name="disposing">The Disposing.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.IsSelectedItem(System.Int32,System.Int32,UIKit.UILabel)">
+            <summary>
+            Get the row component for multicolumn picker
+            </summary>
+            <param name="row">The Picker current row.</param>
+            <param name="component">The Component.</param>
+            <param name="label">The Label.</param>
+            <returns>Returns boolean value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.CustomPickerModel.IsSelectedItem(System.Int32)">
+            <summary>
+            Get the row component for single column picker
+            </summary>
+            <param name="row">The Picker current row.</param>
+            <returns>Returns boolean value.</returns>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.ColumnLoadedEventArgs">
+            <summary>
+            Represents the column loaded event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.ColumnLoadedEventArgs.Column">
+            <summary>
+            Gets the column.
+            </summary>
+            <value>The column value.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.ColumnLoadedEventArgs.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether enable looping.
+            </summary>
+            <value>The column.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.ColumnLoadedEventArgs.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.ColumnLoadedEventArgs.ColumnWidth">
+            <summary>
+            Gets or sets the width of the column.
+            </summary>
+            <value>The width of the column.</value>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.PickerViewEventArgs">
+            <summary>
+            Represents the picker view event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.PickerViewEventArgs.Item">
+            <summary>
+            Gets the item.
+            </summary>
+            <value>The picker item.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.PickerViewEventArgs.Row">
+            <summary>
+            Gets the row.
+            </summary>
+            <value>The row number.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.PickerViewEventArgs.Column">
+            <summary>
+            Gets the column.
+            </summary>
+            <value>The column number.</value>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SelectionChangedEventArgs">
+            <summary>
+            Represents the selection changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SelectionChangedEventArgs.OldValue">
+            <summary>
+            Gets the old value.
+            </summary>
+            <value>The old selected value.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SelectionChangedEventArgs.NewValue">
+            <summary>
+            Gets the new value.
+            </summary>
+            <value>The new selected value.</value>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker">
+            <summary>
+            Represents the picker class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.cancelButton">
+            <summary>
+            The cancel button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.okbutton">
+            <summary>
+            The ok button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.picker">
+            <summary>
+            The picker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.itemsSource">
+            <summary>
+            The items source.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.enableLooping">
+            <summary>
+            The enable auto reverse.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isMaterialDesign">
+            <summary>
+            Material design renderer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.internalCornerRadius">
+            <summary>
+            Internal corner radius.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerHeight">
+            <summary>
+            The height of the header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.footerHeight">
+            <summary>
+            The height of the footer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.pickerMode">
+            <summary>
+            The picker mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.enableGrayOverlay">
+            <summary>
+            The enable gray overlay field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isPopUpOpen">
+            <summary>
+            The is pop up open.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.tempFrame">
+            <summary>
+            The temp frame.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.pickerWidth">
+            <summary>
+            The width of the picker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.pickerHeight">
+            <summary>
+            The height of the picker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.displayMemberPath">
+            <summary>
+            The display member path.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.rowHeight">
+            <summary>
+            The height of the row.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.showColumnHeader">
+            <summary>
+            The show column header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.showHeader">
+            <summary>
+            The show header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.showFooter">
+            <summary>
+            The show footer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerView">
+            <summary>
+            The header view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.footerView">
+            <summary>
+            The footer view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.internalHeaderView">
+            <summary>
+            The internal header view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.internalFooterView">
+            <summary>
+            The internal footer view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderView">
+            <summary>
+            The column header view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderHeight">
+            <summary>
+            The height of the column header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.parentView">
+            <summary>
+            The parent view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerLabel">
+            <summary>
+            The header label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerBorderView">
+            <summary>
+            The header border view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderBorderView">
+            <summary>
+            The column header border view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.pickerBorderView">
+            <summary>
+            The picker border view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.footerBorderView">
+            <summary>
+            The footer border view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.borderColor">
+            <summary>
+            The color of the border.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerText">
+            <summary>
+            The header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderText">
+            <summary>
+            The column header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.pickerColumnCount">
+            <summary>
+            The picker column count.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.dataSourceCollection">
+            <summary>
+            The temporary data source list.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectedItemSourceList">
+            <summary>
+            The selected item source list.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.enableLoopingCollection">
+            <summary>
+            The temporary Boolean source list.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectedRowTextColor">
+            <summary>
+            The color of the selected row text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.unselectedrowtextcolor">
+            <summary>
+            The color of the unselected row text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.newValue">
+            <summary>
+            The new value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.oldValue">
+            <summary>
+            The old value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectedItem">
+            <summary>
+            The selected item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isSelectedItemUpdated">
+            <summary>
+            The is selected item updated.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.previousSelectedItem">
+            <summary>
+            The previous selected item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerFont">
+            <summary>
+            The header font.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderFont">
+            <summary>
+            The column header font.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectedItemFont">
+            <summary>
+            The selected item font.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.unselecteditemFont">
+            <summary>
+            The unselected item font.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.tempHeight">
+            <summary>
+            The height of the temp.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isSelectedIndexUpdated">
+            <summary>
+            The is selected index updated.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerBackgroundColor">
+            <summary>
+            The color of the header background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectionBorderColor">
+            <summary>
+            The color of the header background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderbackgroundColor">
+            <summary>
+            The color of the column header background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.headerTextColor">
+            <summary>
+            The color of the header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnHeaderTextColor">
+            <summary>
+            The color of the column header text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectedIndex">
+            <summary>
+            The index of the selected.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isTouched">
+            <summary>
+            isTouch field indicates the touches interaction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.okbuttonBackgroundColor">
+            <summary>
+            The color of the ok button background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.cancelButtonBackgroundColor">
+            <summary>
+            The color of the cancel button background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.okbuttonTextColor">
+            <summary>
+            The color of the ok button text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.cancelButtonTextColor">
+            <summary>
+            The color of the cancel button text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.iscalled">
+            <summary>
+            The is called.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isHit">
+            <summary>
+            The is hit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.automationId">
+            <summary>
+            AutomationId field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectedIndexSourceList">
+            <summary>
+            The selected index source list.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnWidthCollection">
+            <summary>
+            The column width collection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.selectionChangedargs">
+            <summary>
+            The selection changed argument.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.columnLoadedEventArgs">
+            <summary>
+            The column loaded event arguments.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.tempWidth">
+            <summary>
+            The width of the temp.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.rowLength">
+            <summary>
+            The length of the row.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.isitemssourcechanged">
+            <summary>
+            The is items source changed.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.resource">
+            <summary>
+            The resource.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.spinEnded">
+            <summary>
+            Spin ended field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPicker.iOS.SfPicker.cancelEventArgs">
+            <summary>
+            The cancel event arguments.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.iOS.SfPicker"/> class.
+            </summary>
+            <param name="handle">The Handle.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfPicker.iOS.SfPicker"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.CancelButtonEventhandler">
+            <summary>
+            Cancel Button Event Handler.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.PickerViewEventhandler">
+            <summary>
+            Delegate Picker View Event handler.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The e value.</param>
+            <returns>Returns a value.</returns>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.SelectionChangedChangedEventhandler">
+            <summary>
+            Delegate Selection Changed Event Handler.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.OkButtonEventhandler">
+            <summary>
+            Delegate Ok Button Event Handler.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.ColumnLoadedEventhandler">
+            <summary>
+            Delegate Column loaded event handler.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.ClosedEventhandler">
+            <summary>
+            Delegate Closed Event Handler.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPicker.OpenedEventhandler">
+            <summary>
+            Delegate Opened Event Handler Method.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The e value.</param>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.OnPickerItemLoaded">
+            <summary>
+            Occurs when on picker item loaded.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.SelectionChanged">
+            <summary>
+            Occurs when selection changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.OkButtonClicked">
+            <summary>
+            Occurs when ok button clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.CancelButtonClicked">
+            <summary>
+            Occurs when cancel button clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.OnColumnLoaded">
+            <summary>
+            Occurs when on column loaded.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.Closed">
+            <summary>
+            Occurs when on dialog closed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.Opened">
+            <summary>
+            Occurs when on dialog opened.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPicker.iOS.SfPicker.Closing">
+            <summary>
+            Occurs when on dialog closed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.Frame">
+            <summary>
+            Gets or sets the frame of the control.
+            </summary>
+            <value>The frame.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectionBorderColor">
+            <summary>
+            Gets or sets background color of the control
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.BackgroundColor">
+            <summary>
+            Gets or sets background color of the control
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the header background.
+            </summary>
+            <value>The color of the header background.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.DisplayMemberPath">
+            <summary>
+            Gets or sets the display member path.
+            </summary>
+            <value>The display member path.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.HeaderTextColor">
+            <summary>
+            Gets or sets the color of the header text.
+            </summary>
+            <value>The color of the header text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnHeaderTextColor">
+            <summary>
+            Gets or sets the color of the column header text.
+            </summary>
+            <value>The color of the column header text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnHeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the column header background.
+            </summary>
+            <value>The color of the column header background.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.HeaderFont">
+            <summary>
+            Gets or sets  the value that indicating font of header text
+            </summary>
+            <value>The header font.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnHeaderFont">
+            <summary>
+            Gets or sets the value that indicating that font of selected item text
+            </summary>
+            <value>The column header font.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectedItemFont">
+            <summary>
+            Gets or sets  the value that indicating that font of selected item text
+            </summary>
+            <value>The column header font.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.UnSelectedItemFont">
+            <summary>
+            Gets or sets the value that indicating that font of unselected items text
+            </summary>
+            <value>The column header font.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnHeaderText">
+            <summary>
+            Gets or sets the column header text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectedItem">
+            <summary>
+            Gets or sets the Selected Item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectedIndex">
+            <summary>
+            Gets or sets the Selected Index.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.OKButtonTextColor">
+            <summary>
+            Gets or sets text color of ok button
+            </summary>
+            <value>The color of the ok button text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.CancelButtonTextColor">
+            <summary>
+            Gets or sets text color of cancel button
+            </summary>
+            <value>The color of the cancel button text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.OKButtonBackgroundColor">
+            <summary>
+            Gets or sets background color of ok button
+            </summary>
+            <value>The color of the ok button background.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.CancelButtonBackgroundColor">
+            <summary>
+            Gets or sets background color of cancel button
+            </summary>
+            <value>The color of the cancel button background.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ItemsSource">
+            <summary>
+            Gets or sets a collection of items that can be populated as picker items and get rendered at run-time based on the Template provided
+            </summary>
+            <value>The items source.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.HeaderText">
+            <summary>
+            Gets or sets the value that indicating header of the control
+            </summary>
+            <value>The header text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ItemHeight">
+            <summary>
+            Gets or sets  the value that determines the height of the items
+            </summary>
+            <value>The height of the row.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnCount">
+            <summary>
+            Gets the number of columns in the picker
+            </summary>
+            <value>The height of the row.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.HeaderHeight">
+            <summary>
+            Gets or sets the value that determines the height of the header
+            </summary>
+            <value>The height of the header.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.PickerHeight">
+            <summary>
+            Gets or sets the value that determines the height of the picker dialog
+            </summary>
+            <value>The height of the picker.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.PickerWidth">
+            <summary>
+            Gets or sets the value that determines the width of the picker dialog
+            </summary>
+            <value>The width of the picker.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.FooterHeight">
+            <summary>
+            Gets or sets the value that determines the height of the footer
+            </summary>
+            <value>The height of the footer.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether auto reverse of picker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.EnableGrayOverlay">
+            <summary>
+            Gets or sets a value indicating whether to enable the gray overlay in dialog mode
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnHeaderHeight">
+            <summary>
+            Gets or sets the value that determines the height of the column header.
+            </summary>
+            <value>The height of the column header.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.PickerMode">
+            <summary>
+            Gets or sets the value that indicating display mode of the control either as a dialog or default standalone representation
+            </summary>
+            <value>The picker mode.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether is open.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether Show Header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether in show footer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ShowColumnHeader">
+            <summary>
+            Gets or sets a value indicating whether show column header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.HeaderView">
+            <summary>
+            Gets or sets the value of view that will hold on Header
+            </summary>
+            <value>The header view.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.FooterView">
+            <summary>
+            Gets or sets the value of view that will hold on Footer
+            </summary>
+            <value>The footer view.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectedItemTextColor">
+            <summary>
+            Gets or sets text color of selected items
+            </summary>
+            <value>The color of the selected row text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.UnSelectedItemTextColor">
+            <summary>
+            Gets or sets text color of unselected items
+            </summary>
+            <value>The color of the un selected row text.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.BorderColor">
+            <summary>
+            Gets or sets border color of the control
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.AutomationId">
+            <summary>
+            Gets or sets the AutomationId
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.EnableLoopingCollection">
+            <summary>
+            Gets or sets the data source list.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectedItemSourceList">
+            <summary>
+             Gets or sets the selected item source list.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.OkButton">
+            <summary>
+            Gets or sets the ok button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.CancelButton">
+            <summary>
+            Gets or sets the cancel button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.DataSource">
+            <summary>
+            Gets or sets the data source list.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsAdded">
+            <summary>
+            Gets or sets a value indicating whether in item source collection is added or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsItemsSourceChanged">
+            <summary>
+            Gets or sets a value indicating whether the is items source changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.InternalCornerRadius">
+            <summary>
+            Gets or sets a value picker radius.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsMaterialDesign">
+            <summary>
+            Gets or sets a value indicating whether is material view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.TempWidth">
+            <summary>
+            Gets or sets the temporary width.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.Rowlength">
+            <summary>
+            Gets or sets the temporary width.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectionChangedargs">
+            <summary>
+            Gets or sets the selection changed event argument.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.ColumnWidthCollection">
+            <summary>
+            Gets or sets the column width collection.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.NewValue">
+            <summary>
+            Gets or sets the new value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.OldValue">
+            <summary>
+            Gets or sets the old value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsSelectedItemUpdated">
+            <summary>
+            Gets or sets a value indicating whether is selected index updated.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsSelectedIndexUpdated">
+            <summary>
+            Gets or sets a value indicating whether is selected item updated.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.IsHit">
+            <summary>
+            Gets or sets a value indicating whether is hit.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SelectedIndexSourceList">
+            <summary>
+            Gets or sets the SelectedItem SourceList.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.Resource">
+            <summary>
+            Gets or sets the resource.
+            </summary>
+            <value>The resource.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPicker.SpinEnded">
+            <summary>
+            Gets or sets a value indicating whether the SpinEnded
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.Open">
+            <summary>
+            Opens the dialog when the control in Dialog mode
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.Close">
+            <summary>
+            Closes the dialog when the control in Dialog mode
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.LayoutSubviews">
+            <summary>
+            Override Layout sub views.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AwakeFromNib">
+            <summary>
+            The method overrides the AwakeFromNib
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.TouchesEnded(Foundation.NSSet,UIKit.UIEvent)">
+            <summary>
+            The override method for touches ended.
+            </summary>
+            <param name="touches">The touches.</param>
+            <param name="evt">The event.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.HitTest(CoreGraphics.CGPoint,UIKit.UIEvent)">
+            <summary>
+            Hits the test.
+            </summary>
+            <returns>The test.</returns>
+            <param name="point">The Point.</param>
+            <param name="uievent">The U i event.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnSelectionChanged(Syncfusion.SfPicker.iOS.SelectionChangedEventArgs)">
+            <summary>
+             Occurs when the user selects an item from unselected items.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnGetView(Syncfusion.SfPicker.iOS.PickerViewEventArgs)">
+            <summary>
+            Occurs when each item getting loaded. Users can customize the items or its view using its event parameters
+            </summary>
+            <returns>The get view.</returns>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnOkButtonClicked(Syncfusion.SfPicker.iOS.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the default OK button clicked
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnCancelButtonClicked(Syncfusion.SfPicker.iOS.SelectionChangedEventArgs)">
+            <summary>
+            Occurs when the default Cancel button clicked
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.ColumnLoaded(Syncfusion.SfPicker.iOS.ColumnLoadedEventArgs)">
+            <summary>
+            Occurs when each column getting loaded. Users can customize the column using its event parameters
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnClosed(System.EventArgs)">
+            <summary>
+            Occurs when the dialog getting closed.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Occurs when the dialog getting closed.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OnOpened(System.EventArgs)">
+            <summary>
+            Occurs when the dialog getting opened.
+            </summary>
+            <param name="args">The Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.GetLayoutDirection">
+            <summary>
+            Uses the RTL Orientation.
+            </summary>
+            <returns><c>true</c>, if RTL Orientation was used, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.Dispose(System.Boolean)">
+            <summary>
+            The dispose method.
+            </summary>
+            <param name="disposing">The disposing.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.ChangeOrientation">
+            <summary>
+            Uses of device orientation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.ApplyShadow">
+            <summary>
+            Applies the shadow for picker when picker mode is open.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.ApplyMaterialUI">
+            <summary>
+            Material view for picker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.Initialize">
+            <summary>
+            Update the picker control views.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdateAutomationID">
+            <summary>
+            Update Automation ID
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.PreviewerDefaultValue">
+            <summary>
+            Previewers the default value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AddPickerControlViews">
+            <summary>
+            Adds the picker control views.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AddColumnHeaderViews">
+            <summary>
+            Adds the column header views.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AddFooterView">
+            <summary>
+            Adds the footer view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AddHeaderView">
+            <summary>
+            Adds the header view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdatePickerMode">
+            <summary>
+            Updates the picker mode.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdatePopUpVisibility">
+            <summary>
+            Updates the pop up visibility.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdateSelectionBorder">
+            <summary>
+            Updates the picker selection border color.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdatePickerFrame">
+            <summary>
+            Updates the picker frame.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.GetColumnCount">
+            <summary>
+            Gets the column count.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdatePickerItems">
+            <summary>
+            Updates the picker items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdateSelectedItem">
+            <summary>
+            Updates the selected item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdateSelectedIndex">
+            <summary>
+            Updates the index of the selected.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.OkButton_TouchUpInside(System.Object,System.EventArgs)">
+            <summary>
+            Ok the button touch up inside.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The E value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.CancelButton_TouchUpInside(System.Object,System.EventArgs)">
+            <summary>
+            Cancels the button touch up inside.
+            </summary>
+            <param name="sender">The Sender.</param>
+            <param name="e">The E value.</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AssignSelectedIndexFromSelectedItem">
+            <summary>
+            Assigning the SelectedItem from selected index property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AssignSelectedItemFromSelectedIndex">
+            <summary>
+            Assigning the SelectedItem from selected index property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AssignSelectedItem">
+            <summary>
+            Assigning the SelectedItem property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.AssignSelectedIndex">
+            <summary>
+            Assigning the SelectedIndex property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.CompareItems(System.Collections.IList)">
+            <summary>
+            Compare new items from SelectedItem
+            </summary>
+            <param name="items">collection of items</param>
+            <returns>it's return boolean type</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.CompareIndex(System.Collections.IList)">
+            <summary>
+            Compare new index from SelectedIndex
+            </summary>
+            <param name="items">collection of index</param>
+            <returns>it's return boolean type</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.SelectedItem_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            SelectedItem collection changed
+            </summary>
+            <param name="sender">sender is picker</param>
+            <param name="e">e is NotifyCollectionChangedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.SelectedIndex_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            SelectedIndex collection changed
+            </summary>
+            <param name="sender">sender is picker</param>
+            <param name="e">e is NotifyCollectionChangedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.IsCompareObjects(System.Collections.IList,System.Collections.IList)">
+            <summary>
+            Compares the old and new objects
+            </summary>
+            <param name="newCollection">collection of items</param>
+            <param name="oldCollection">collection of item</param>
+            <returns>it's return boolean type</returns>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.Handle_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Collection Changed event for ItemSource
+            </summary>
+            <param name="sender">sender is picker</param>
+            <param name="e">e is NotifyCollectionChangedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdateSelectedItemCollection">
+            <summary>
+            Update the SelectedItemCollection based on ItemSource collection changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPicker.UpdateSelectionFromItemSource">
+            <summary>
+            Update the SelectedItem and SelectedIndex property after changing the item source
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPicker.iOS.SfPickerResources">
+            <summary>
+            Picker Resources
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPickerResources.ResourceManager">
+            <summary>
+            Gets or sets the resource manager.
+            </summary>
+            <value>The resource manager.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPickerResources.Culture">
+            <summary>
+            Gets the culture.
+            </summary>
+            <value>The culture.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPickerResources.OKText">
+            <summary>
+            Gets the localized string.
+            </summary>
+            <value>The OK String.</value>
+        </member>
+        <member name="P:Syncfusion.SfPicker.iOS.SfPickerResources.CancelText">
+            <summary>
+            Gets the cancel text.
+            </summary>
+            <value>The cancel text.</value>
+        </member>
+        <member name="M:Syncfusion.SfPicker.iOS.SfPickerResources.GetString(System.Globalization.CultureInfo,System.String)">
+            <summary>
+            Gets the localized string.
+            </summary>
+            <returns>The string.</returns>
+            <param name="culture">Culture value.</param>
+            <param name="text">Text value.</param>
+        </member>
+    </members>
+</doc>
