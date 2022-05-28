@@ -68,8 +68,7 @@ namespace ProyectoEyS
 
         protected void OnBtnCerrarClicked(object sender, EventArgs e) {
             this.Destroy();
-        }
-
+        
         protected void OnBtnEventExtClicked(object sender, EventArgs e) {
             frmEstablecerEventos eventosExtra = new frmEstablecerEventos();
             eventosExtra.alterMode();
