@@ -3,12 +3,16 @@ using Gtk;
 using Entidades;
 using Vistas;
 using Datos;
+using Negocio;
 
 namespace ProyectoEyS {
     public partial class frmEstablecerEventos : Gtk.Window {
         int idEmp = 0;
         Tbl_Evento eve = new Tbl_Evento();
+        Tbl_Usuario selectedUser;
+
         Dt_tbl_evento dtEve = new Dt_tbl_evento();
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
         public frmEstablecerEventos() :
                 base(Gtk.WindowType.Toplevel) {
@@ -29,7 +33,13 @@ namespace ProyectoEyS {
             eve.IdEmp = idEmp;
         }
 
-
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
+        }
 
         protected void OnButtonCloseClicked(object sender, EventArgs e) {
             if (CuadroMensaje("¿Quieres salir? los cambios no se guardarán", MessageType.Question, ButtonsType.YesNo))

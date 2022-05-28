@@ -980,7 +980,6 @@
                   <node type="Menuitem" action="restaurarEmp" />
                   <node type="Menuitem" action="restaurarUser" />
                 </node>
-                <node type="Menuitem" action="OpcionesDeRolAction" />
               </node>
               <node type="Menu" action="AyudaAction1">
                 <node type="Menuitem" action="InstructivoAction1" />
@@ -1057,7 +1056,7 @@
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow4">
                     <property name="MemberName" />
-                    <property name="HeightRequest">25</property>
+                    <property name="HeightRequest">180</property>
                     <property name="ShadowType">In</property>
                     <child>
                       <widget class="Gtk.Viewport" id="GtkViewport3">
@@ -2048,7 +2047,7 @@ Generales</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="875 461">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="875 453">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmAddUsuario</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -3284,7 +3283,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAddCargo" design-size="455 298">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAddCargo" design-size="455 290">
     <property name="MemberName" />
     <property name="WidthRequest">455</property>
     <property name="Title" translatable="yes">frmAddCargo</property>
@@ -3626,7 +3625,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="640 656">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="640 624">
     <property name="MemberName" />
     <property name="WidthRequest">640</property>
     <property name="Title" translatable="yes">frmListarUsr</property>
@@ -6804,7 +6803,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCargo" design-size="531 315">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCargo" design-size="531 288">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarCargo</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -7353,7 +7352,6 @@ Masculino</property>
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="Label" translatable="yes">Personalizado</property>
-                        <property name="Active">True</property>
                         <property name="DrawIndicator">True</property>
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>

@@ -407,7 +407,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 531;
-			this.DefaultHeight = 315;
+			this.DefaultHeight = 288;
 			this.Show();
 			this.cbxEListarCar.Changed += new global::System.EventHandler(this.OnCbxEListarEmpChanged);
 			this.btnAntCar.Clicked += new global::System.EventHandler(this.OnBtnAntCarClicked);

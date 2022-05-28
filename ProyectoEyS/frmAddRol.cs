@@ -10,12 +10,14 @@ namespace ProyectoEyS {
 
         private Dt_tbl_rol dtRol = new Dt_tbl_rol();
         Ng_tbl_rol ngRol = new Ng_tbl_rol();
-
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+        Tbl_Usuario selectedUser;
         private Tbl_Vw_Rol rol = null;
         private int mode = 0;
 
         public frmAddRol() : base(Gtk.WindowType.Toplevel) {
             this.Build();
+            Title = "Agregar Rol";
             buttonEliminar.Visible = false;
             buttonPermisos.Visible = false;
             entryNombre.GrabFocus();
@@ -24,12 +26,21 @@ namespace ProyectoEyS {
 
         public void CambiarModo(Tbl_Vw_Rol rol) {
             mode = 1;
+            Title = "Administrar Rol";
             labelTitulo.Text = "Editar rol";
             this.rol = rol;
             entryID.Text = this.rol.Id.ToString();
             entryNombre.Text = this.rol.Nombre;
             buttonEliminar.Visible = true;
             buttonPermisos.Visible = true;
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
         }
 
         protected void OnButtonCloseClicked(object sender, EventArgs e) {

@@ -2,22 +2,34 @@
 using System.Collections.Generic;
 using Entidades;
 using Gtk;
+using Negocio;
 
-namespace ProyectoEyS
-{
-    public partial class frmEstablecerHorarios : Gtk.Window{
+namespace ProyectoEyS {
+    public partial class frmEstablecerHorarios : Gtk.Window {
 
         private List<Tbl_Horario> listHor = new List<Tbl_Horario>();
+
+        Tbl_Usuario selectedUser;
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
         private frmAddCargo callAddCargo;
         public frmAddCargo CallAddCargo { get => callAddCargo; set => callAddCargo = value; }
 
         public frmEstablecerHorarios() : base(Gtk.WindowType.Toplevel) {
             this.Build();
+            Title = "Restauración de Entidades";
             checkbutton1.Active = false;
             checkbutton3.Active = false;
             checkbutton2.Active = false;
             RecargarSpinB();
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
         }
 
         public void CambiarModo(List<Tbl_Horario> listHor) { // Para editar
@@ -58,8 +70,6 @@ namespace ProyectoEyS
                 }
             }
         }
-
-
 
         bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
             Gtk.MessageDialog msgEliminar;

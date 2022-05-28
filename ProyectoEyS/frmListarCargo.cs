@@ -3,6 +3,8 @@ using Vistas;
 using Datos;
 using System.Collections.Generic;
 using Gtk;
+using Entidades;
+using Negocio;
 
 namespace ProyectoEyS
 {
@@ -12,17 +14,30 @@ namespace ProyectoEyS
         List<Tbl_Vw_Cargo> listCargo = new List<Tbl_Vw_Cargo>();
         int id = 0;
 
+        Tbl_Usuario selectedUser;
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+
         public frmListarCargo() : base(Gtk.WindowType.Toplevel) {
-            try { 
+            try {
                 this.Build();
                 listCargo = dtr.ColocarVwCargos();
                 LlenarComboCrg();
                 MostrarDatos(id);
+                Title = "Listar Cargos";
             } catch (Exception ex) {
                     CuadroMensaje("No existen datos mostrar, por favor, agregue un cargo", MessageType.Error, ButtonsType.Ok);
                     this.Destroy();
             };
         }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
+        }
+
         bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
             Gtk.MessageDialog msgEliminar;
             msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
@@ -72,6 +87,7 @@ namespace ProyectoEyS
         protected void OnButtonAdminClicked(object sender, EventArgs e) {
             frmAddCargo editarCargo = new frmAddCargo();
             editarCargo.CambiarModo(listCargo[id]);
+            editarCargo.ComprobarPermiso(selectedUser);
         }
 
         protected void OnBtnCerrarClicked(object sender, EventArgs e) {

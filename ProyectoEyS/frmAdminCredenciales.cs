@@ -17,14 +17,16 @@ namespace ProyectoEyS {
         List<Tbl_Empleado> empleados = new List<Tbl_Empleado>();
         List<string> formatoEmpleado = new List<string>();
         Tbl_Vw_Usuario usuario = null;
+        Tbl_Usuario selectedUser;
 
         List<Tbl_Vw_Rol> roles = new List<Tbl_Vw_Rol>();
         Ng_tbl_usuario ngUsuario = new Ng_tbl_usuario();
         Ng_tbl_emp ngEmp = new Ng_tbl_emp();
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
         public frmAdminCredenciales() : base(Gtk.WindowType.Toplevel) {
             this.Build();
-
+            Title = "Agregar Usuario";
             entryID.Text = (ngUsuario.ContarUsuarios() + 1).ToString();
 
             roles = dtRol.ColocarVwRol();
@@ -49,6 +51,7 @@ namespace ProyectoEyS {
 
         public void CambiarModo(Tbl_Vw_Usuario usuario) {
             mode = 1;
+            Title = "Administrar Usuario";
             labelTitulo.Text = "Seguridad: Editar Usuario";
             this.usuario = usuario;
             buttonEliminar.Visible = true;
@@ -64,6 +67,14 @@ namespace ProyectoEyS {
 
             SeleccionarRol();
             SeleccionarEmp();
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
         }
 
         private void SeleccionarRol() { 

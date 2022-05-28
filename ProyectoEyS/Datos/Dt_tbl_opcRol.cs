@@ -49,7 +49,6 @@ namespace Datos {
                 idr.Close();
                 con.CerrarConexion();
             }
-
         }
 
         public List<Tbl_OpcRol> EncontrarOpcRol(int idRol) {

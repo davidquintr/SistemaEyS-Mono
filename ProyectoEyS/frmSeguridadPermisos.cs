@@ -40,23 +40,23 @@ namespace ProyectoEyS {
         }
 
         private void LLenarCampos() {
-            ckbAdmCrg.Active = listOR[0].Activo;
-            ckbAdmDep.Active = listOR[1].Activo;
-            ckbAdmEmp.Active = listOR[2].Activo;
-            ckbAdmRol.Active = listOR[3].Activo;
-            ckbAdmUsr.Active = listOR[4].Activo;
+            ckbAdmEmp.Active = listOR[0].Activo;
+            ckbAdmCrg.Active = listOR[1].Activo;
+            ckbAdmDep.Active = listOR[2].Activo;
+            ckbAdmUsr.Active = listOR[3].Activo;
+            ckbAdmRol.Active = listOR[4].Activo;
 
-            ckbLisCrg.Active = listOR[5].Activo;
-            ckbLisDep.Active = listOR[6].Activo;
-            ckbLisEmp.Active = listOR[7].Activo;
-            ckbLisRol.Active = listOR[8].Activo;
-            ckbLisUsr.Active = listOR[9].Activo;
+            ckbLisEmp.Active = listOR[5].Activo;
+            ckbLisCrg.Active = listOR[6].Activo;
+            ckbLisDep.Active = listOR[7].Activo;
+            ckbLisUsr.Active = listOR[8].Activo;
+            ckbLisRol.Active = listOR[9].Activo;
 
-            ckbAgrCrg.Active = listOR[10].Activo;
-            ckbAgrDep.Active = listOR[11].Activo;
-            ckbAgrEmp.Active = listOR[12].Activo;
-            ckbAgrRol.Active = listOR[13].Activo;
-            ckbAgrUsr.Active = listOR[14].Activo;
+            ckbAgrEmp.Active = listOR[10].Activo;
+            ckbAgrCrg.Active = listOR[11].Activo;
+            ckbAgrDep.Active = listOR[12].Activo;
+            ckbAgrUsr.Active = listOR[13].Activo;
+            ckbAgrRol.Active = listOR[14].Activo;
 
             ckbConHor.Active = listOR[15].Activo;
             ckbConEve.Active = listOR[16].Activo;
@@ -123,26 +123,26 @@ namespace ProyectoEyS {
         }
 
         private void OrganizarDatos() {
-            listOR[0].Activo = ckbAdmCrg.Active;
-            listOR[1].Activo = ckbAdmDep.Active;
-            listOR[2].Activo = ckbAdmEmp.Active;
-            listOR[3].Activo = ckbAdmRol.Active;
-            listOR[4].Activo = ckbAdmUsr.Active;
+            listOR[0].Activo = ckbAdmEmp.Active;
+            listOR[1].Activo = ckbAdmCrg.Active;
+            listOR[2].Activo = ckbAdmDep.Active;
+            listOR[3].Activo = ckbAdmUsr.Active;
+            listOR[4].Activo = ckbAdmRol.Active;
 
-            listOR[5].Activo = ckbLisCrg.Active;
-            listOR[6].Activo = ckbLisDep.Active;
-            listOR[7].Activo = ckbLisEmp.Active;
-            listOR[8].Activo = ckbLisRol.Active;
-            listOR[9].Activo = ckbLisUsr.Active;
+            listOR[5].Activo = ckbLisEmp.Active;
+            listOR[6].Activo = ckbLisCrg.Active;
+            listOR[7].Activo = ckbLisDep.Active;
+            listOR[8].Activo = ckbLisUsr.Active;
+            listOR[9].Activo = ckbLisRol.Active;
 
-            listOR[10].Activo = ckbAgrCrg.Active;
-            listOR[11].Activo = ckbAgrDep.Active;
-            listOR[12].Activo = ckbAgrEmp.Active;
-            listOR[13].Activo = ckbAgrRol.Active;
-            listOR[14].Activo = ckbAgrUsr.Active;
+            listOR[10].Activo = ckbAgrEmp.Active;
+            listOR[11].Activo = ckbAgrCrg.Active;
+            listOR[12].Activo = ckbAgrDep.Active;
+            listOR[13].Activo = ckbAgrUsr.Active;
+            listOR[14].Activo = ckbAgrRol.Active;
 
-            listOR[15].Activo = ckbConEve.Active;
-            listOR[16].Activo = ckbConHor.Active;
+            listOR[15].Activo = ckbConHor.Active;
+            listOR[16].Activo = ckbConEve.Active;
             listOR[17].Activo = ckbParGen.Active;
             listOR[18].Activo = ckbResEnt.Active;
         }

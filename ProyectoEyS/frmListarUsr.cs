@@ -3,6 +3,8 @@ using Datos;
 using Vistas;
 using System.Collections.Generic;
 using Gtk;
+using Entidades;
+using Negocio;
 
 namespace ProyectoEyS
 {
@@ -10,7 +12,8 @@ namespace ProyectoEyS
 
         Dt_tbl_emp dtEmp = new Dt_tbl_emp();
         List<Tbl_Vw_Empleado> listEmp = new List<Tbl_Vw_Empleado>();
-
+        Tbl_Usuario selectedUser;
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
         int id = 0;
 
         public frmListarUsr() :base(Gtk.WindowType.Toplevel){
@@ -19,11 +22,20 @@ namespace ProyectoEyS
                 listEmp = dtEmp.ColocarVwEmpleado();
                 LlenarcbxeEmp();
                 MostrarDatos(id);
+                Title = "Listar Empleados";
             }catch(Exception ex) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un empleado", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             };
                 
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
         }
 
         bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
@@ -100,11 +112,13 @@ namespace ProyectoEyS
         protected void OnButtonAdminClicked(object sender, EventArgs e) {
             frmAddUsuario editUser = new frmAddUsuario();
             editUser.CambiarModo(listEmp[id]);
+            editUser.ComprobarPermiso(selectedUser);
         }
 
         protected void OnButtonEventoClicked(object sender, EventArgs e) {
             frmEstablecerEventos crearEvento = new frmEstablecerEventos();
             crearEvento.CargarDatos(listEmp[id]);
+            crearEvento.ComprobarPermiso(selectedUser);
         }
     }
 }

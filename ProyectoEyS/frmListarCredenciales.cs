@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using Vistas;
 using Datos;
+using Negocio;
+using Entidades;
+using Gtk;
 
 namespace ProyectoEyS {
     public partial class frmListarCredenciales : Gtk.Window {
@@ -9,14 +12,32 @@ namespace ProyectoEyS {
         Dt_tbl_usuario dtUsr = new Dt_tbl_usuario();
         List<Tbl_Vw_Usuario> listUsuarios = new List<Tbl_Vw_Usuario>();
         int id = 0;
-
+        Tbl_Usuario selectedUser;
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
         public frmListarCredenciales() : base(Gtk.WindowType.Toplevel) {
             this.Build();
             listUsuarios = dtUsr.ColocarVwUsuarios();
             LlenarComboUser();
             MostrarDatos(id);
+            Title = "Listar Usuarios";
 
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
+        }
+
+        bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
+            Gtk.MessageDialog msgEliminar;
+            msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
+            ResponseType respuesta = ( ResponseType )msgEliminar.Run();
+            msgEliminar.Destroy();
+            return respuesta == ResponseType.Yes ? true : false;
         }
 
         private void LlenarComboUser() {
@@ -65,6 +86,7 @@ namespace ProyectoEyS {
         protected void OnBtnAdminClicked(object sender, EventArgs e) {
             frmAdminCredenciales adminUser = new frmAdminCredenciales();
             adminUser.CambiarModo(listUsuarios[id]);
+            adminUser.ComprobarPermiso(selectedUser);
         }
     }
 }

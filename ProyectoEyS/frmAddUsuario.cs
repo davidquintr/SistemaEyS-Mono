@@ -11,6 +11,8 @@ namespace ProyectoEyS
     public partial class frmAddUsuario : Gtk.Window {
 
         Ng_tbl_emp ngEmp = new Ng_tbl_emp();
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+        Tbl_Usuario selectedUser;
 
         Dt_tbl_emp dtEmp = new Dt_tbl_emp();
         Dt_tbl_cargo dtCargo = new Dt_tbl_cargo();
@@ -42,10 +44,13 @@ namespace ProyectoEyS
             LlenarCampos();
         }
 
-        public void ComprobarPermiso() {
-
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
         }
-
 
         public void LlenarCampos() {
             labelTitulo.Text = "Editar usuario: " + emp.Nombres.Split(' ')[0] + " " + emp.Apellidos.Split(' ')[0];

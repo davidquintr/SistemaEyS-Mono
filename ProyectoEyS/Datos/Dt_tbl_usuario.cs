@@ -206,6 +206,73 @@ namespace Datos
             }
             return guardado;
         }
+
+        public Tbl_Usuario EncontrarSesion(string username, string password) {
+            IDataReader idr = null;
+            sb.Clear();
+            string[] datos = new string[17];
+            Ng_creacionDatos creacionDatos = new Ng_creacionDatos();
+            Tbl_Usuario usuario = null;
+
+            sb.Append("SELECT * FROM BDSistemaEyS.tbl_Usuario ");
+            sb.Append("where username = '" + username + "' and password = '" + password + "';");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                datos = new string[idr.FieldCount];
+
+                while (idr.Read()) {
+                    for (int i = 0; i < idr.FieldCount; i++) {
+                        datos[i] = idr[i].ToString();
+                    }
+                    usuario = creacionDatos.CargarUsuario(datos);
+                }
+                return usuario;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }
+
+        public Tbl_Vw_Usuario EncontrarVwUsuario(string username) {
+            IDataReader idr = null;
+            sb.Clear();
+            string[] datos;
+            Ng_creacionDatos creacionDatos = new Ng_creacionDatos();
+            Tbl_Vw_Usuario usuario = null;
+
+            sb.Append("SELECT * FROM BDSistemaEyS.Vw_Usuario ");
+            sb.Append("where username = '" + username + "' and estado <> 3;");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                datos = new string[idr.FieldCount];
+
+                while (idr.Read()) {
+                    for (int i = 0; i < idr.FieldCount; i++) {
+                        datos[i] = idr[i].ToString();
+                    }
+                    usuario = creacionDatos.CargarVwUsuario(datos);
+                }
+                return usuario;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }
+
         #endregion
     }
 }

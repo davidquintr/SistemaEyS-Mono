@@ -12,8 +12,11 @@ namespace ProyectoEyS
         Dt_tbl_dep dtDep = new Dt_tbl_dep();
         Tbl_Departamento dep = new Tbl_Departamento();
         Tbl_Vw_Departamento depVw = new Tbl_Vw_Departamento();
+        Tbl_Usuario selectedUser;
 
         Ng_tbl_departamento ngDept = new Ng_tbl_departamento();
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+
 
         private int mode = 0;
         public frmAddDept() :
@@ -22,18 +25,28 @@ namespace ProyectoEyS
             this.buttonEliminar.Visible = false;
             entryID.Text = ngDept.ContarDepts().ToString();
             entryNombre.GrabFocus();
+            Title = "Agregar Departamento";
+
         }
 
 
         public void CambiarModo(Tbl_Vw_Departamento depVw) {
             mode = 1;
-            labelTitulo.Text = "Editar departamento: Departamento";
+            Title = "Administrar Departamento";
+            labelTitulo.Text = "Editar departamento";
             this.buttonEliminar.Visible = true;
 
             this.depVw = depVw;
             LlenarCampos();
         }
 
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
+        }
 
         public void LlenarCampos() {
 

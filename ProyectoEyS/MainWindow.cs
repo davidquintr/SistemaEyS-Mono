@@ -12,10 +12,13 @@ public partial class MainWindow : Gtk.Window {
     private vistaUsuario vistaUsuario = new vistaUsuario();
     private Tbl_Usuario selectedUser;
     private Tbl_Vw_Empleado selectedEmp;
+    private Tbl_Vw_Usuario selectedVwUser;
 
     Ng_tbl_usuario ngUsuario = new Ng_tbl_usuario();
     Ng_tbl_emp ngEmp = new Ng_tbl_emp();
     Ng_tbl_OpcRol ngOpRol = new Ng_tbl_OpcRol();
+
+    Dt_tbl_usuario dtUsuario = new Dt_tbl_usuario();
 
 
     public MainWindow() : base(Gtk.WindowType.Toplevel) {
@@ -25,7 +28,7 @@ public partial class MainWindow : Gtk.Window {
 
     private void Evaluar() {
         selectedUser = null;
-        selectedUser = ngUsuario.EncontrarSesion(entryID.Text, entryPin.Text);
+        selectedUser = dtUsuario.EncontrarSesion(entryID.Text, entryPin.Text);
 
         if (selectedUser == null) {
             CuadroMensaje("Credenciales incorrectas, verifique sus credenciales o consulte a un administrador.", MessageType.Error, ButtonsType.Ok);
@@ -44,10 +47,11 @@ public partial class MainWindow : Gtk.Window {
     }
     private void AccederAdmin() {
         if (CuadroMensaje("¿Quieres iniciar como administrador?", MessageType.Question, ButtonsType.YesNo)) {
+            selectedVwUser = dtUsuario.EncontrarVwUsuario(entryID.Text);
             vistaAdmin = new vistaAdmin();
             vistaAdmin.CallMainWindow = this;
+            vistaAdmin.ConfigurarInicio(selectedUser, selectedEmp, selectedVwUser);
             this.Hide();
-            vistaAdmin.IdRolAct = selectedUser.IdRol;
         } else {
             AccederUser();
         }

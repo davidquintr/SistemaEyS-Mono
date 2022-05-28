@@ -415,11 +415,10 @@ namespace ProyectoEyS
 					"=\'RestaurarAction\'><menuitem name=\'restaurarDept\' action=\'restaurarDept\'/><menui" +
 					"tem name=\'restaurarCargo\' action=\'restaurarCargo\'/><menuitem name=\'restaurarEmp\'" +
 					" action=\'restaurarEmp\'/><menuitem name=\'restaurarUser\' action=\'restaurarUser\'/><" +
-					"/menu><menuitem name=\'OpcionesDeRolAction\' action=\'OpcionesDeRolAction\'/></menu>" +
-					"<menu name=\'AyudaAction1\' action=\'AyudaAction1\'><menuitem name=\'InstructivoActio" +
-					"n1\' action=\'InstructivoAction1\'/><menuitem name=\'ReportarUnProblemaAction1\' acti" +
-					"on=\'ReportarUnProblemaAction1\'/><menuitem name=\'AcercaDeAction1\' action=\'AcercaD" +
-					"eAction1\'/></menu></menubar></ui>");
+					"/menu></menu><menu name=\'AyudaAction1\' action=\'AyudaAction1\'><menuitem name=\'Ins" +
+					"tructivoAction1\' action=\'InstructivoAction1\'/><menuitem name=\'ReportarUnProblema" +
+					"Action1\' action=\'ReportarUnProblemaAction1\'/><menuitem name=\'AcercaDeAction1\' ac" +
+					"tion=\'AcercaDeAction1\'/></menu></menubar></ui>");
 			this.menubar3 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar3")));
 			this.menubar3.Name = "menubar3";
 			this.vbox7.Add(this.menubar3);
@@ -474,7 +473,7 @@ namespace ProyectoEyS
 			w8.Fill = false;
 			// Container child vbox13.Gtk.Box+BoxChild
 			this.GtkScrolledWindow4 = new global::Gtk.ScrolledWindow();
-			this.GtkScrolledWindow4.HeightRequest = 25;
+			this.GtkScrolledWindow4.HeightRequest = 180;
 			this.GtkScrolledWindow4.Name = "GtkScrolledWindow4";
 			this.GtkScrolledWindow4.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow4.Gtk.Container+ContainerChild
@@ -624,8 +623,6 @@ namespace ProyectoEyS
 			this.DepartamentosAction.Activated += new global::System.EventHandler(this.OnDepartamentoAction1Activated);
 			this.CargosAction.Activated += new global::System.EventHandler(this.OnCargoListarActivated);
 			this.EmpleadosAction.Activated += new global::System.EventHandler(this.OnEmpleadoListarActivated);
-			this.CrearUsuarioAction.Activated += new global::System.EventHandler(this.OnCrearUsuarioActionActivated);
-			this.AdministrarUsuarioAction.Activated += new global::System.EventHandler(this.OnAdministrarUsuarioActionActivated);
 			this.RolAction.Activated += new global::System.EventHandler(this.OnRolActionActivated);
 			this.UsuarioAction.Activated += new global::System.EventHandler(this.OnUsuarioActionActivated);
 			this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);

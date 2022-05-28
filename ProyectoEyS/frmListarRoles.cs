@@ -2,6 +2,9 @@
 using Datos;
 using Vistas;
 using System.Collections.Generic;
+using Entidades;
+using Negocio;
+using Gtk;
 
 namespace ProyectoEyS 
 {
@@ -11,11 +14,15 @@ namespace ProyectoEyS
         List<Tbl_Vw_Rol> listRol = new List<Tbl_Vw_Rol>();
         int id = 0;
 
+        Tbl_Usuario selectedUser;
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+
         public frmListarRoles() :
                 base(Gtk.WindowType.Toplevel) {
             this.Build();
             listRol = dtRol.ColocarVwRol();
             LlenarComboRol();
+            Title = "Listar Roles";
             MostrarDatos(id);
         }
 
@@ -23,6 +30,22 @@ namespace ProyectoEyS
             for (int i = 0; i < listRol.Count; i++) {
                 cbxEListarRol.InsertText(i, listRol[i].Nombre);
             }
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
+        }
+
+        bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
+            Gtk.MessageDialog msgEliminar;
+            msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
+            ResponseType respuesta = ( ResponseType )msgEliminar.Run();
+            msgEliminar.Destroy();
+            return respuesta == ResponseType.Yes ? true : false;
         }
 
         protected void MostrarDatos(int id) {
@@ -63,6 +86,7 @@ namespace ProyectoEyS
         protected void OnBtnAdminClicked(object sender, EventArgs e) {
             frmAddRol editRol = new frmAddRol();
             editRol.CambiarModo(listRol[id]);
+            editRol.ComprobarPermiso(selectedUser);
         }
     }
 }

@@ -1,13 +1,31 @@
 ﻿<Properties StartupConfiguration="{01746CE3-E502-4D9F-A4C9-365EF5B29285}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmEstablecerEventos.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmFechador.cs">
     <Files>
-      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="11" Column="28" />
-      <File FileName="ProyectoEyS/Negocio/Ng_tbl_OpcRol.cs" Line="45" Column="37" />
-      <File FileName="ProyectoEyS/MainWindow.cs" Line="44" Column="6" />
-      <File FileName="ProyectoEyS/Negocio/Ng_tbl_cargo.cs" Line="17" Column="1" />
-      <File FileName="ProyectoEyS/Negocio/Ng_tbl_emp.cs" Line="77" Column="10" />
-      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.vistaAdmin.cs" Line="641" Column="1" />
+      <File FileName="ProyectoEyS/frmAddUsuario.cs" Line="47" Column="1" />
+      <File FileName="ProyectoEyS/frmAddCargo.cs" Line="178" Column="17" />
+      <File FileName="ProyectoEyS/Negocio/Ng_tbl_usuario.cs" Line="47" Column="1" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_usuario.cs" Line="259" Column="27" />
+      <File FileName="ProyectoEyS/frmAddDept.cs" Line="29" Column="13" />
+      <File FileName="ProyectoEyS/frmAddEntidad.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/frmAddRol.cs" Line="20" Column="33" />
+      <File FileName="ProyectoEyS/frmAdminCredenciales.cs" Line="20" Column="34" />
+      <File FileName="ProyectoEyS/frmAlmuerzo.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/frmListarRoles.cs" Line="89" Column="50" />
+      <File FileName="ProyectoEyS/Program.cs" Line="14" Column="1" />
+      <File FileName="ProyectoEyS/frmSeguridadPermisos.cs" Line="94" Column="14" />
+      <File FileName="ProyectoEyS/frmListarCargo.cs" Line="90" Column="56" />
+      <File FileName="ProyectoEyS/frmListarCredenciales.cs" Line="89" Column="39" />
+      <File FileName="ProyectoEyS/frmListarDept.cs" Line="70" Column="1" />
+      <File FileName="ProyectoEyS/frmListarUsr.cs" Line="35" Column="41" />
+      <File FileName="ProyectoEyS/frmVistaUser.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="155" Column="6" />
+      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.vistaAdmin.cs" Line="627" Column="4" />
+      <File FileName="ProyectoEyS/frmRestauracionEntidades.cs" Line="32" Column="26" />
+      <File FileName="ProyectoEyS/frmParametrosGen.cs" Line="25" Column="9" />
+      <File FileName="ProyectoEyS/MainWindow.cs" Line="56" Column="24" />
+      <File FileName="ProyectoEyS/frmEstablecerHorarios.cs" Line="13" Column="1" />
       <File FileName="ProyectoEyS/frmEstablecerEventos.cs" Line="47" Column="10" />
+      <File FileName="ProyectoEyS/frmFechador.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,9 +33,8 @@
           <Node name="ProyectoEyS" expanded="True">
             <Node name="ProyectoEyS" expanded="True">
               <Node name="Datos" expanded="True" />
-              <Node name="Entidades" expanded="True" />
               <Node name="Negocio" expanded="True" />
-              <Node name="frmEstablecerEventos.cs" selected="True" />
+              <Node name="frmFechador.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -31,9 +48,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/frmAddCargo.cs" relfile="ProyectoEyS/frmAddCargo.cs" line="166" column="9" />
-      <Breakpoint file="/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="152" column="37" />
-      <Breakpoint file="/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="290" column="1" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmAddCargo.cs" relfile="ProyectoEyS/frmAddCargo.cs" line="181" column="9" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="166" column="37" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="290" column="1" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmListarRoles.cs" relfile="ProyectoEyS/frmListarRoles.cs" line="26" column="1" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="77" column="28" />
+      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="83" column="27" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

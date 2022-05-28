@@ -651,7 +651,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 875;
-			this.DefaultHeight = 461;
+			this.DefaultHeight = 453;
 			this.Show();
 			this.cbxEDep.Changed += new global::System.EventHandler(this.OnCbxEDepChanged);
 			this.cbxEDep.ButtonPressEvent += new global::Gtk.ButtonPressEventHandler(this.OnCbxEDepButtonPressEvent);

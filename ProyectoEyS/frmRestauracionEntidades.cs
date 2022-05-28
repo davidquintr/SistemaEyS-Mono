@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Datos;
+using Entidades;
 using Gtk;
+using Negocio;
 using Vistas;
 
 namespace ProyectoEyS {
@@ -20,11 +22,15 @@ namespace ProyectoEyS {
         Dt_tbl_usuario dtUsr = new Dt_tbl_usuario();
         List<Tbl_Vw_Usuario> listUsuarios = new List<Tbl_Vw_Usuario>();
 
+        Tbl_Usuario selectedUser;
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+
         int idIndex;
         int limSup;
 
         public frmRestauracionEntidades() : base(Gtk.WindowType.Toplevel) {
             this.Build();
+            Title = "Restauración de Entidades";
         }
 
         public void CambiarModo(int mode) {
@@ -64,6 +70,14 @@ namespace ProyectoEyS {
                 }
                 MostrarDatos();
             }catch(Exception ex) { };
+        }
+
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
         }
 
         protected void LlenarDepartamentoCbx() {

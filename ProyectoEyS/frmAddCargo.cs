@@ -11,6 +11,7 @@ namespace ProyectoEyS {
 
         private int mode = 0;
         Ng_tbl_cargo ngCargo = new Ng_tbl_cargo();
+        Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
         Dt_tbl_cargo dtCrg = new Dt_tbl_cargo();
         Dt_tbl_dep dtDept = new Dt_tbl_dep();
@@ -18,6 +19,7 @@ namespace ProyectoEyS {
 
         Tbl_Cargo crg = new Tbl_Cargo();
         Tbl_Vw_Cargo crgVw = new Tbl_Vw_Cargo();
+        Tbl_Usuario selectedUser;
 
         List<Tbl_Vw_Departamento> depList = new List<Tbl_Vw_Departamento>();
         List<Tbl_Horario> horaList;
@@ -31,17 +33,26 @@ namespace ProyectoEyS {
             entryID.Text = (ngCargo.ContarCargos() + 1).ToString();
             entryNombre.GrabFocus();
             LlenarComboDept();
+            this.Title = "Agregar Cargo";
         }
 
         public void CambiarModo(Tbl_Vw_Cargo crgVw) {
             mode = 1;
-            labelTitulo.Text = "Editar cargo: Cargo";
+            Title = "Administrar Cargo";
+            labelTitulo.Text = "Editar cargo";
             this.buttonEliminar.Visible = true;
             this.horaList = dtHorario.colocarHorarios(crgVw.Id);
             this.crgVw = crgVw;
             LlenarCampos();
         }
 
+        public void ComprobarPermiso(Tbl_Usuario selectedUser) {
+            if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
+                CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
+                this.Destroy();
+            } else
+                this.selectedUser = selectedUser;
+        }
 
         public void LlenarCampos() {
             entryID.Text = crgVw.Id.ToString();
@@ -158,9 +169,13 @@ namespace ProyectoEyS {
                 frmEstablecerHorarios establecerHorarios = new frmEstablecerHorarios();
                 establecerHorarios.CallAddCargo = this;
                 establecerHorarios.CambiarModo(horaList);
+                establecerHorarios.ComprobarPermiso(selectedUser);
+
             } else {
                 frmEstablecerHorarios establecerHorarios = new frmEstablecerHorarios();
                 establecerHorarios.CallAddCargo = this;
+                establecerHorarios.ComprobarPermiso(selectedUser);
+
             }
         }
 
