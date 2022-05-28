@@ -22,13 +22,13 @@ namespace ProyectoEyS
 
 		private global::Gtk.Label label8;
 
-		private global::Gtk.SpinButton spinbutton11;
+		private global::Gtk.SpinButton sbtHoraIn;
 
-		private global::Gtk.SpinButton spinbutton2;
+		private global::Gtk.SpinButton sbtHoraOut;
 
-		private global::Gtk.SpinButton spinbutton5;
+		private global::Gtk.SpinButton sbtMinutoIn;
 
-		private global::Gtk.SpinButton spinbutton8;
+		private global::Gtk.SpinButton sbtMinutoOut;
 
 		private global::Gtk.VSeparator vseparator4;
 
@@ -123,60 +123,60 @@ namespace ProyectoEyS
 			w6.XOptions = ((global::Gtk.AttachOptions)(4));
 			w6.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table4.Gtk.Table+TableChild
-			this.spinbutton11 = new global::Gtk.SpinButton(0D, 59D, 1D);
-			this.spinbutton11.WidthRequest = 50;
-			this.spinbutton11.CanFocus = true;
-			this.spinbutton11.Name = "spinbutton11";
-			this.spinbutton11.Adjustment.PageIncrement = 10D;
-			this.spinbutton11.ClimbRate = 1D;
-			this.spinbutton11.Numeric = true;
-			this.table4.Add(this.spinbutton11);
-			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table4[this.spinbutton11]));
-			w7.LeftAttach = ((uint)(7));
-			w7.RightAttach = ((uint)(8));
+			this.sbtHoraIn = new global::Gtk.SpinButton(0D, 23D, 1D);
+			this.sbtHoraIn.WidthRequest = 50;
+			this.sbtHoraIn.CanFocus = true;
+			this.sbtHoraIn.Name = "sbtHoraIn";
+			this.sbtHoraIn.Adjustment.PageIncrement = 10D;
+			this.sbtHoraIn.ClimbRate = 1D;
+			this.sbtHoraIn.Numeric = true;
+			this.sbtHoraIn.Value = 23D;
+			this.table4.Add(this.sbtHoraIn);
+			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table4[this.sbtHoraIn]));
+			w7.LeftAttach = ((uint)(1));
+			w7.RightAttach = ((uint)(2));
 			w7.XOptions = ((global::Gtk.AttachOptions)(4));
 			w7.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table4.Gtk.Table+TableChild
-			this.spinbutton2 = new global::Gtk.SpinButton(0D, 23D, 1D);
-			this.spinbutton2.WidthRequest = 50;
-			this.spinbutton2.CanFocus = true;
-			this.spinbutton2.Name = "spinbutton2";
-			this.spinbutton2.Adjustment.PageIncrement = 10D;
-			this.spinbutton2.ClimbRate = 1D;
-			this.spinbutton2.Numeric = true;
-			this.spinbutton2.Value = 23D;
-			this.table4.Add(this.spinbutton2);
-			global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table4[this.spinbutton2]));
-			w8.LeftAttach = ((uint)(1));
-			w8.RightAttach = ((uint)(2));
+			this.sbtHoraOut = new global::Gtk.SpinButton(0D, 23D, 1D);
+			this.sbtHoraOut.WidthRequest = 50;
+			this.sbtHoraOut.CanFocus = true;
+			this.sbtHoraOut.Name = "sbtHoraOut";
+			this.sbtHoraOut.Adjustment.PageIncrement = 10D;
+			this.sbtHoraOut.ClimbRate = 1D;
+			this.sbtHoraOut.Numeric = true;
+			this.table4.Add(this.sbtHoraOut);
+			global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table4[this.sbtHoraOut]));
+			w8.LeftAttach = ((uint)(5));
+			w8.RightAttach = ((uint)(6));
 			w8.XOptions = ((global::Gtk.AttachOptions)(4));
 			w8.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table4.Gtk.Table+TableChild
-			this.spinbutton5 = new global::Gtk.SpinButton(0D, 23D, 1D);
-			this.spinbutton5.WidthRequest = 50;
-			this.spinbutton5.CanFocus = true;
-			this.spinbutton5.Name = "spinbutton5";
-			this.spinbutton5.Adjustment.PageIncrement = 10D;
-			this.spinbutton5.ClimbRate = 1D;
-			this.spinbutton5.Numeric = true;
-			this.table4.Add(this.spinbutton5);
-			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table4[this.spinbutton5]));
-			w9.LeftAttach = ((uint)(5));
-			w9.RightAttach = ((uint)(6));
+			this.sbtMinutoIn = new global::Gtk.SpinButton(0D, 59D, 1D);
+			this.sbtMinutoIn.WidthRequest = 50;
+			this.sbtMinutoIn.CanFocus = true;
+			this.sbtMinutoIn.Name = "sbtMinutoIn";
+			this.sbtMinutoIn.Adjustment.PageIncrement = 10D;
+			this.sbtMinutoIn.ClimbRate = 1D;
+			this.sbtMinutoIn.Numeric = true;
+			this.table4.Add(this.sbtMinutoIn);
+			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table4[this.sbtMinutoIn]));
+			w9.LeftAttach = ((uint)(3));
+			w9.RightAttach = ((uint)(4));
 			w9.XOptions = ((global::Gtk.AttachOptions)(4));
 			w9.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table4.Gtk.Table+TableChild
-			this.spinbutton8 = new global::Gtk.SpinButton(0D, 59D, 1D);
-			this.spinbutton8.WidthRequest = 50;
-			this.spinbutton8.CanFocus = true;
-			this.spinbutton8.Name = "spinbutton8";
-			this.spinbutton8.Adjustment.PageIncrement = 10D;
-			this.spinbutton8.ClimbRate = 1D;
-			this.spinbutton8.Numeric = true;
-			this.table4.Add(this.spinbutton8);
-			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table4[this.spinbutton8]));
-			w10.LeftAttach = ((uint)(3));
-			w10.RightAttach = ((uint)(4));
+			this.sbtMinutoOut = new global::Gtk.SpinButton(0D, 59D, 1D);
+			this.sbtMinutoOut.WidthRequest = 50;
+			this.sbtMinutoOut.CanFocus = true;
+			this.sbtMinutoOut.Name = "sbtMinutoOut";
+			this.sbtMinutoOut.Adjustment.PageIncrement = 10D;
+			this.sbtMinutoOut.ClimbRate = 1D;
+			this.sbtMinutoOut.Numeric = true;
+			this.table4.Add(this.sbtMinutoOut);
+			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table4[this.sbtMinutoOut]));
+			w10.LeftAttach = ((uint)(7));
+			w10.RightAttach = ((uint)(8));
 			w10.XOptions = ((global::Gtk.AttachOptions)(4));
 			w10.YOptions = ((global::Gtk.AttachOptions)(4));
 			this.hbox9.Add(this.table4);
@@ -239,8 +239,10 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 390;
-			this.DefaultHeight = 122;
+			this.DefaultHeight = 130;
 			this.Show();
+			this.buttonAdmin.Clicked += new global::System.EventHandler(this.OnButtonAdminClicked);
+			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}
 	}
 }

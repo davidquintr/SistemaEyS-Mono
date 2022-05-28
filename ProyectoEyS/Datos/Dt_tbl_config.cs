@@ -6,9 +6,8 @@ using System.Collections.Generic;
 using Entidades;
 using Negocio;
 
-namespace Datos 
-{
-    public class Dt_tbl_evento {
+namespace Datos {
+    public class Dt_tbl_config {
 
         //Atributos
         Conexion con = new Conexion();
@@ -17,14 +16,13 @@ namespace Datos
 
         #region metodos
 
-        public List<Tbl_Evento> colocarEventos() {
+        public Tbl_Config colocarConfig() {
 
             Ng_creacionDatos creacionDatos = new Ng_creacionDatos();
-            List<Tbl_Evento> listarEventos = new List<Tbl_Evento>();
-            Tbl_Evento evento;
+            Tbl_Config cfg = new Tbl_Config();
             IDataReader idr = null;
             sb.Clear();
-            sb.Append("SELECT * FROM BDSistemaEyS.tbl_Evento;");
+            sb.Append("SELECT * FROM BDSistemaEyS.tbl_Config;");
 
             try {
                 con.AbrirConexion();
@@ -35,18 +33,17 @@ namespace Datos
                     for (int i = 0; i < idr.FieldCount; i++) {
                         datos[i] = idr[i].ToString();
                     }
-                    evento = creacionDatos.CargarEvento(datos);
-                    listarEventos.Add(evento);
+                    cfg = creacionDatos.CargarConfig(datos);
                 }//fin de while
-                return listarEventos;
-            } 
+                return cfg;
+            }
             catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            } 
+            }
             finally {
                 idr.Close();
                 con.CerrarConexion();
@@ -54,16 +51,14 @@ namespace Datos
 
         }
 
-
-        public bool GuardarEvento(Tbl_Evento eve) {
+        public bool EditarConfig(Tbl_Config cfg) {
             bool guardado = false;
             int x = 0;
 
             sb.Clear();
 
-            sb.Append("INSERT INTO BDSistemaEyS.tbl_Evento ");
-            sb.Append("(fechaInicio, fechaFin, razon, descripcion, estado, idEmpleado) ");
-            sb.Append("VALUES ('" + eve.FechaInicio.ToString("yy-MM-dd") + "','" + eve.FechaFin.ToString("yy-MM-dd") + "','" + eve.Razon + "','" + eve.Descripcion + "','" + eve.Estado + "','" + eve.IdEmp + "')");
+            sb.Append("UPDATE BDSistemaEyS.tbl_Config ");
+            sb.Append("SET nombreEmpresa = '" + cfg.NombreEmpresa + "', hAlmuerzoIn = '" + cfg.HAlmuerzoIn.ToString("yyyy-MM-dd H:mm:ss") + "', hAlmuerzoOut = '" + cfg.HAlmuerzoOut.ToString("yyyy-MM-dd H:mm:ss") + "', tiempoGracia = '" + cfg.TiempoGracia + "', emailEmpresa = '" + cfg.EmailEmpresa + "' ");
 
             try {
                 con.AbrirConexion();

@@ -1,23 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
 using Datos;
+using Entidades;
 using Gtk;
 using Vistas;
 
 namespace ProyectoEyS {
     public partial class frmSeguridadPermisos : Gtk.Window {
 
-        Dt_tbl_rol dtRol = new Dt_tbl_rol();
-        List<Tbl_Vw_Rol> listRol = new List<Tbl_Vw_Rol>();
-
-        int id;
+        Dt_tbl_opcRol dtOR = new Dt_tbl_opcRol();
+        Tbl_Vw_Rol vwRol;
+        List<Tbl_OpcRol> listOR;
 
         public frmSeguridadPermisos() : base(Gtk.WindowType.Toplevel) {
             this.Build();
-            listRol = dtRol.ColocarVwRol();
-            id = 0;
         }
 
+        public void CargarDatos(Tbl_Vw_Rol vwRol) {
+            this.vwRol = vwRol;
+            Tbl_OpcRol opcRol;
+
+            labelMainOpc.Text = "Seguridad: Permisos para: " + vwRol.Nombre;
+            listOR = dtOR.EncontrarOpcRol(vwRol.Id);
+
+            if(listOR.Count > 0) {
+                LLenarCampos();
+
+            
+            } else { 
+                for(int i = 0; i < 19; i++) {
+                    opcRol = new Tbl_OpcRol();
+                    opcRol.IdOpcion = i + 1;
+                    opcRol.IdRol = vwRol.Id;
+                    opcRol.Activo = false;
+                    listOR.Add(opcRol);
+                }
+                dtOR.GuardarOpcRol(listOR);
+            }
+        }
+
+        private void LLenarCampos() {
+            ckbAdmCrg.Active = listOR[0].Activo;
+            ckbAdmDep.Active = listOR[1].Activo;
+            ckbAdmEmp.Active = listOR[2].Activo;
+            ckbAdmRol.Active = listOR[3].Activo;
+            ckbAdmUsr.Active = listOR[4].Activo;
+
+            ckbLisCrg.Active = listOR[5].Activo;
+            ckbLisDep.Active = listOR[6].Activo;
+            ckbLisEmp.Active = listOR[7].Activo;
+            ckbLisRol.Active = listOR[8].Activo;
+            ckbLisUsr.Active = listOR[9].Activo;
+
+            ckbAgrCrg.Active = listOR[10].Activo;
+            ckbAgrDep.Active = listOR[11].Activo;
+            ckbAgrEmp.Active = listOR[12].Activo;
+            ckbAgrRol.Active = listOR[13].Activo;
+            ckbAgrUsr.Active = listOR[14].Activo;
+
+            ckbConHor.Active = listOR[15].Activo;
+            ckbConEve.Active = listOR[16].Activo;
+            ckbParGen.Active = listOR[17].Activo;
+            ckbResEnt.Active = listOR[18].Activo;
+        }
 
         private bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
             Gtk.MessageDialog msgEliminar;
@@ -27,61 +72,80 @@ namespace ProyectoEyS {
             return respuesta == ResponseType.Yes ? true : false;
         }
 
-        private bool CambiarEstado(bool activo) {
-            if (activo)
-                return false;
-            return true;
-        }
-
-        private bool ComprobarConTotal() {
-            if (ckbAdmEmp.Active && ckbAdmCrg.Active && ckbAdmDep.Active &&
-                ckbAdmUsr.Active && ckbAdmRol.Active && ckbAgrCrg.Active &&
-                ckbAgrDep.Active && ckbAgrEmp.Active && ckbAgrRol.Active &&
-                ckbAgrUsr.Active && ckbLisCrg.Active && ckbLisDep.Active &&
-                ckbLisEmp.Active && ckbLisRol.Active && ckbLisUsr.Active &&
-                ckbParGen.Active && ckbResEnt.Active && ckbConEve.Active &&
-                ckbConHor.Active)
-                return false;
-            return true;
-        }
-
-        protected void OnRbControlToggled(object sender, EventArgs e) {
-            rbControl.Active = true;
-
-            ckbAdmEmp.Active = true;
-            ckbAdmCrg.Active = true;
-            ckbAdmDep.Active = true;
-            ckbAdmUsr.Active = true;
-            ckbAdmRol.Active = true;
-
-            ckbAgrCrg.Active = true;
-            ckbAgrDep.Active = true;
-            ckbAgrEmp.Active = true;
-            ckbAgrRol.Active = true;
-            ckbAgrUsr.Active = true;
-
-            ckbLisCrg.Active = true;
-            ckbLisDep.Active = true;
-            ckbLisEmp.Active = true;
-            ckbLisRol.Active = true;
-            ckbLisUsr.Active = true;
-
-            ckbParGen.Active = true;
-            ckbResEnt.Active = true;
-            ckbConEve.Active = true;
-            ckbConHor.Active = true;
-        }
-
-        protected void OnCkbAdmEmpClicked(object sender, EventArgs e) {
-            try {
-                ckbAdmEmp.Active = CambiarEstado(ckbAdmEmp.Active);
+        protected void OnRbPersClicked(object sender, EventArgs e) {
+            if (rbPers.Active) {
+                selecCh(false);
             }
-            catch (Exception o) {
-                CuadroMensaje(o.Message, MessageType.Error, ButtonsType.Ok);
-            }
-
-
-
         }
+
+        protected void OnRbControlClicked(object sender, EventArgs e) {
+            if (rbControl.Active) {
+                selecCh(true);
+            }
+        }
+
+        private void selecCh(bool alter) {
+            ckbAdmCrg.Active = alter;
+            ckbAdmDep.Active = alter;
+            ckbAdmEmp.Active = alter;
+            ckbAdmRol.Active = alter;
+            ckbAdmUsr.Active = alter;
+
+            ckbLisCrg.Active = alter;
+            ckbLisDep.Active = alter;
+            ckbLisEmp.Active = alter;
+            ckbLisRol.Active = alter;
+            ckbLisUsr.Active = alter;
+
+            ckbAgrCrg.Active = alter;
+            ckbAgrDep.Active = alter;
+            ckbAgrEmp.Active = alter;
+            ckbAgrRol.Active = alter;
+            ckbAgrUsr.Active = alter;
+
+            ckbConEve.Active = alter;
+            ckbConHor.Active = alter;
+            ckbParGen.Active = alter;
+            ckbResEnt.Active = alter;
+        }
+
+        protected void OnButtonGuardarClicked(object sender, EventArgs e) {
+            if (!CuadroMensaje("¿Deseas guardar los cambios?", MessageType.Question, ButtonsType.YesNo)) {
+                return;
+            }
+            OrganizarDatos();
+            if (!dtOR.EditarOpcRol(listOR)) {
+                CuadroMensaje("No se guardaron los cambios", MessageType.Error, ButtonsType.Ok);
+                this.Destroy();
+            }
+            CuadroMensaje("Se guardaron los cambios exitosamente", MessageType.Error, ButtonsType.Ok);
+            this.Destroy();
+        }
+
+        private void OrganizarDatos() {
+            listOR[0].Activo = ckbAdmCrg.Active;
+            listOR[1].Activo = ckbAdmDep.Active;
+            listOR[2].Activo = ckbAdmEmp.Active;
+            listOR[3].Activo = ckbAdmRol.Active;
+            listOR[4].Activo = ckbAdmUsr.Active;
+
+            listOR[5].Activo = ckbLisCrg.Active;
+            listOR[6].Activo = ckbLisDep.Active;
+            listOR[7].Activo = ckbLisEmp.Active;
+            listOR[8].Activo = ckbLisRol.Active;
+            listOR[9].Activo = ckbLisUsr.Active;
+
+            listOR[10].Activo = ckbAgrCrg.Active;
+            listOR[11].Activo = ckbAgrDep.Active;
+            listOR[12].Activo = ckbAgrEmp.Active;
+            listOR[13].Activo = ckbAgrRol.Active;
+            listOR[14].Activo = ckbAgrUsr.Active;
+
+            listOR[15].Activo = ckbConEve.Active;
+            listOR[16].Activo = ckbConHor.Active;
+            listOR[17].Activo = ckbParGen.Active;
+            listOR[18].Activo = ckbResEnt.Active;
+        }
+
     }
 }

@@ -114,9 +114,9 @@ namespace ProyectoEyS
 
 		private global::Gtk.HButtonBox hbuttonbox6;
 
-		private global::Gtk.Button buttonAdmin;
+		private global::Gtk.Button buttonEvento;
 
-		private global::Gtk.Button buttonAdmin1;
+		private global::Gtk.Button buttonAdmin;
 
 		private global::Gtk.Button buttonClose;
 
@@ -775,25 +775,25 @@ namespace ProyectoEyS
 			this.hbuttonbox6.BorderWidth = ((uint)(10));
 			this.hbuttonbox6.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
-			this.buttonAdmin = new global::Gtk.Button();
-			this.buttonAdmin.WidthRequest = 100;
-			this.buttonAdmin.HeightRequest = 30;
-			this.buttonAdmin.CanFocus = true;
-			this.buttonAdmin.Name = "buttonAdmin";
-			this.buttonAdmin.UseUnderline = true;
-			this.buttonAdmin.Label = global::Mono.Unix.Catalog.GetString("Eventos");
-			this.hbuttonbox6.Add(this.buttonAdmin);
-			global::Gtk.ButtonBox.ButtonBoxChild w58 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
+			this.buttonEvento = new global::Gtk.Button();
+			this.buttonEvento.WidthRequest = 100;
+			this.buttonEvento.HeightRequest = 30;
+			this.buttonEvento.CanFocus = true;
+			this.buttonEvento.Name = "buttonEvento";
+			this.buttonEvento.UseUnderline = true;
+			this.buttonEvento.Label = global::Mono.Unix.Catalog.GetString("Evento");
+			this.hbuttonbox6.Add(this.buttonEvento);
+			global::Gtk.ButtonBox.ButtonBoxChild w58 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonEvento]));
 			w58.Expand = false;
 			w58.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
-			this.buttonAdmin1 = new global::Gtk.Button();
-			this.buttonAdmin1.CanFocus = true;
-			this.buttonAdmin1.Name = "buttonAdmin1";
-			this.buttonAdmin1.UseUnderline = true;
-			this.buttonAdmin1.Label = global::Mono.Unix.Catalog.GetString("Administrar");
-			this.hbuttonbox6.Add(this.buttonAdmin1);
-			global::Gtk.ButtonBox.ButtonBoxChild w59 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin1]));
+			this.buttonAdmin = new global::Gtk.Button();
+			this.buttonAdmin.CanFocus = true;
+			this.buttonAdmin.Name = "buttonAdmin";
+			this.buttonAdmin.UseUnderline = true;
+			this.buttonAdmin.Label = global::Mono.Unix.Catalog.GetString("Administrar");
+			this.hbuttonbox6.Add(this.buttonAdmin);
+			global::Gtk.ButtonBox.ButtonBoxChild w59 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
 			w59.Position = 1;
 			w59.Expand = false;
 			w59.Fill = false;
@@ -819,12 +819,13 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 640;
-			this.DefaultHeight = 624;
+			this.DefaultHeight = 656;
 			this.Show();
 			this.cbxEListarUsr.Changed += new global::System.EventHandler(this.OnCbxEListarUsrChanged);
 			this.btnAntUsr.Clicked += new global::System.EventHandler(this.OnBtnAntUsrClicked);
 			this.btnSigUsr.Clicked += new global::System.EventHandler(this.OnBtnSigUsrClicked);
-			this.buttonAdmin1.Clicked += new global::System.EventHandler(this.OnButtonAdminClicked);
+			this.buttonEvento.Clicked += new global::System.EventHandler(this.OnButtonEventoClicked);
+			this.buttonAdmin.Clicked += new global::System.EventHandler(this.OnButtonAdminClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}
 	}

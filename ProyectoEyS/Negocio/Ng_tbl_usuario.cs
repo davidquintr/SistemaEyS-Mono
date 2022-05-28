@@ -29,7 +29,6 @@ namespace Negocio {
                 while (idr.Read()) {
                     i++;
                 }
-
                 if (i > 0)
                     return true;
 

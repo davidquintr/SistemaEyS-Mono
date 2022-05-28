@@ -36,7 +36,7 @@ namespace ProyectoEyS
 
         protected void LlenarcbxeEmp() {
             for (int i = 0; i < listEmp.Count; i++) {
-                this.cbxEListarUsr.InsertText(i, listEmp[id].Nombres);
+                this.cbxEListarUsr.InsertText(i, listEmp[i].Nombres);
             }
         }
 
@@ -69,11 +69,6 @@ namespace ProyectoEyS
         protected void OnBtnCerrarClicked(object sender, EventArgs e) {
             this.Destroy();
         }
-       
-        protected void OnBtnEventExtClicked(object sender, EventArgs e) {
-            frmEstablecerEventos eventosExtra = new frmEstablecerEventos();
-            eventosExtra.alterMode();
-        }
 
         protected void OnBtnAntUsrClicked(object sender, EventArgs e) {
             if (id > 0){
@@ -105,6 +100,11 @@ namespace ProyectoEyS
         protected void OnButtonAdminClicked(object sender, EventArgs e) {
             frmAddUsuario editUser = new frmAddUsuario();
             editUser.CambiarModo(listEmp[id]);
+        }
+
+        protected void OnButtonEventoClicked(object sender, EventArgs e) {
+            frmEstablecerEventos crearEvento = new frmEstablecerEventos();
+            crearEvento.CargarDatos(listEmp[id]);
         }
     }
 }

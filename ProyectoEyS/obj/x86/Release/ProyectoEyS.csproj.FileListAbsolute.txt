@@ -650,3 +650,90 @@
 /home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
 /home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
 /home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/eros/Downloads/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
+/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe

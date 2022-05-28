@@ -149,6 +149,17 @@ namespace Negocio {
             return opcCar;
         }
 
+        public Tbl_Vw_OpcRol CargarVwOpcRol(string[] datos) {
+            Tbl_Vw_OpcRol opcRol = new Tbl_Vw_OpcRol();
+
+            opcRol.IdOpcRol = int.Parse(datos[0]);
+            opcRol.Activo = ConfirmarBool(datos[1]);
+            opcRol.Nombre = datos[2];
+            opcRol.IdRol = int.Parse(datos[3]);
+
+            return opcRol;
+        }
+
         public Tbl_Rol CargarRol(string[] datos) {
             Tbl_Rol rol = new Tbl_Rol();
 
@@ -214,6 +225,19 @@ namespace Negocio {
             empleado.Estado = int.Parse(datos[16]);
 
             return empleado;
+        }
+
+
+        public Tbl_Config CargarConfig(string[] datos) {
+            Tbl_Config config = new Tbl_Config();
+
+            config.NombreEmpresa = datos[1];
+            config.HAlmuerzoIn = ConfirmarFecha(datos[2]);
+            config.HAlmuerzoOut = ConfirmarFecha(datos[3]);
+            config.TiempoGracia = int.Parse(datos[4]);
+            config.EmailEmpresa = datos[5];
+
+            return config;
         }
 
 

@@ -200,7 +200,6 @@ namespace ProyectoEyS
 			// Container child vbox23.Gtk.Box+BoxChild
 			this.buttonSalida = new global::Gtk.Button();
 			this.buttonSalida.HeightRequest = 40;
-			this.buttonSalida.Sensitive = false;
 			this.buttonSalida.CanFocus = true;
 			this.buttonSalida.Name = "buttonSalida";
 			this.buttonSalida.UseUnderline = true;
@@ -213,7 +212,6 @@ namespace ProyectoEyS
 			// Container child vbox23.Gtk.Box+BoxChild
 			this.buttonAlmuerzo = new global::Gtk.Button();
 			this.buttonAlmuerzo.HeightRequest = 40;
-			this.buttonAlmuerzo.Sensitive = false;
 			this.buttonAlmuerzo.CanFocus = true;
 			this.buttonAlmuerzo.Name = "buttonAlmuerzo";
 			this.buttonAlmuerzo.UseUnderline = true;

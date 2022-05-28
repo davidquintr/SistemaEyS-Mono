@@ -14,7 +14,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.Table table4;
 
-		private global::Gtk.ComboBoxEntry cboxDept;
+		private global::Gtk.Entry entryRazon;
 
 		private global::Gtk.Label label2;
 
@@ -30,11 +30,11 @@ namespace ProyectoEyS
 
 		private global::Gtk.Label label15;
 
-		private global::Gtk.Calendar calendar1;
+		private global::Gtk.Calendar cldFechaInicio;
 
 		private global::Gtk.Label label8;
 
-		private global::Gtk.Calendar calendar2;
+		private global::Gtk.Calendar cldFechaFin;
 
 		private global::Gtk.VSeparator vseparator11;
 
@@ -52,7 +52,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
-		private global::Gtk.TextView textvObservaciones;
+		private global::Gtk.TextView textvDescripcion;
 
 		private global::Gtk.VSeparator vseparator8;
 
@@ -106,21 +106,21 @@ namespace ProyectoEyS
 			this.table4.RowSpacing = ((uint)(6));
 			this.table4.ColumnSpacing = ((uint)(6));
 			// Container child table4.Gtk.Table+TableChild
-			this.cboxDept = global::Gtk.ComboBoxEntry.NewText();
-			this.cboxDept.AppendText(global::Mono.Unix.Catalog.GetString("Vacaciones"));
-			this.cboxDept.AppendText(global::Mono.Unix.Catalog.GetString("Días feriados"));
-			this.cboxDept.WidthRequest = 226;
-			this.cboxDept.HeightRequest = 30;
-			this.cboxDept.Name = "cboxDept";
-			this.table4.Add(this.cboxDept);
-			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table4[this.cboxDept]));
+			this.entryRazon = new global::Gtk.Entry();
+			this.entryRazon.CanFocus = true;
+			this.entryRazon.Name = "entryRazon";
+			this.entryRazon.IsEditable = true;
+			this.entryRazon.InvisibleChar = '•';
+			this.table4.Add(this.entryRazon);
+			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table4[this.entryRazon]));
 			w3.LeftAttach = ((uint)(1));
 			w3.RightAttach = ((uint)(2));
-			w3.XOptions = ((global::Gtk.AttachOptions)(4));
 			w3.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table4.Gtk.Table+TableChild
 			this.label2 = new global::Gtk.Label();
+			this.label2.WidthRequest = 257;
 			this.label2.Name = "label2";
+			this.label2.Xalign = 0F;
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString(":");
 			this.table4.Add(this.label2);
 			global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table4[this.label2]));
@@ -142,8 +142,6 @@ namespace ProyectoEyS
 			this.hbox9.Add(this.table4);
 			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.table4]));
 			w6.Position = 1;
-			w6.Expand = false;
-			w6.Fill = false;
 			// Container child hbox9.Gtk.Box+BoxChild
 			this.vseparator12 = new global::Gtk.VSeparator();
 			this.vseparator12.WidthRequest = 18;
@@ -190,13 +188,13 @@ namespace ProyectoEyS
 			w10.Expand = false;
 			w10.Fill = false;
 			// Container child hbox2.Gtk.Box+BoxChild
-			this.calendar1 = new global::Gtk.Calendar();
-			this.calendar1.WidthRequest = 220;
-			this.calendar1.CanFocus = true;
-			this.calendar1.Name = "calendar1";
-			this.calendar1.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-			this.hbox2.Add(this.calendar1);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.calendar1]));
+			this.cldFechaInicio = new global::Gtk.Calendar();
+			this.cldFechaInicio.WidthRequest = 220;
+			this.cldFechaInicio.CanFocus = true;
+			this.cldFechaInicio.Name = "cldFechaInicio";
+			this.cldFechaInicio.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+			this.hbox2.Add(this.cldFechaInicio);
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.cldFechaInicio]));
 			w11.Position = 1;
 			w11.Expand = false;
 			w11.Fill = false;
@@ -211,13 +209,13 @@ namespace ProyectoEyS
 			w12.Expand = false;
 			w12.Fill = false;
 			// Container child hbox2.Gtk.Box+BoxChild
-			this.calendar2 = new global::Gtk.Calendar();
-			this.calendar2.WidthRequest = 220;
-			this.calendar2.CanFocus = true;
-			this.calendar2.Name = "calendar2";
-			this.calendar2.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-			this.hbox2.Add(this.calendar2);
-			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.calendar2]));
+			this.cldFechaFin = new global::Gtk.Calendar();
+			this.cldFechaFin.WidthRequest = 220;
+			this.cldFechaFin.CanFocus = true;
+			this.cldFechaFin.Name = "cldFechaFin";
+			this.cldFechaFin.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+			this.hbox2.Add(this.cldFechaFin);
+			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.cldFechaFin]));
 			w13.Position = 3;
 			w13.Expand = false;
 			w13.Fill = false;
@@ -297,11 +295,11 @@ namespace ProyectoEyS
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-			this.textvObservaciones = new global::Gtk.TextView();
-			this.textvObservaciones.HeightRequest = 50;
-			this.textvObservaciones.CanFocus = true;
-			this.textvObservaciones.Name = "textvObservaciones";
-			this.GtkScrolledWindow.Add(this.textvObservaciones);
+			this.textvDescripcion = new global::Gtk.TextView();
+			this.textvDescripcion.HeightRequest = 50;
+			this.textvDescripcion.CanFocus = true;
+			this.textvDescripcion.Name = "textvDescripcion";
+			this.GtkScrolledWindow.Add(this.textvDescripcion);
 			this.hbox5.Add(this.GtkScrolledWindow);
 			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.GtkScrolledWindow]));
 			w23.Position = 1;
@@ -358,7 +356,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 675;
-			this.DefaultHeight = 409;
+			this.DefaultHeight = 412;
 			this.Show();
 			this.buttonAdmin.Clicked += new global::System.EventHandler(this.OnButtonSaveClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);

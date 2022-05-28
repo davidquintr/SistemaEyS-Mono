@@ -14,7 +14,6 @@ namespace Negocio {
 
         public Ng_tbl_cargo() {
         }
-
         public int ContarCargos() {
             IDataReader idr = null;
             sb.Clear();

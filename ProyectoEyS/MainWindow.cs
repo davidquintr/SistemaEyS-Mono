@@ -15,16 +15,12 @@ public partial class MainWindow : Gtk.Window {
 
     Ng_tbl_usuario ngUsuario = new Ng_tbl_usuario();
     Ng_tbl_emp ngEmp = new Ng_tbl_emp();
+    Ng_tbl_OpcRol ngOpRol = new Ng_tbl_OpcRol();
 
 
     public MainWindow() : base(Gtk.WindowType.Toplevel) {
         vistaUsuario.Hide();
         Build();
-    }
-
-    protected void buttonInicio(object sender, EventArgs e) {
-
-        Evaluar();
     }
 
     private void Evaluar() {
@@ -35,31 +31,44 @@ public partial class MainWindow : Gtk.Window {
             CuadroMensaje("Credenciales incorrectas, verifique sus credenciales o consulte a un administrador.", MessageType.Error, ButtonsType.Ok);
             return;
         }
+
         selectedEmp = ngEmp.VistaEmpleado(selectedUser.Username);
 
-        if (CuadroMensaje("¿Quieres iniciar como administrador?", MessageType.Question, ButtonsType.YesNo)) {
-            vistaAdmin = new vistaAdmin();
-            vistaAdmin.CallMainWindow = this;
-            //vistaAdmin.AsignarUsuario(sel);
-            this.Hide();
-        } else {
-
-            if (selectedEmp == null) {
-                CuadroMensaje("No hay empleado asociado a su usuario, contacte con el soporte técnico.", MessageType.Error, ButtonsType.Ok);
-                return;
-            }
-            vistaUsuario = new vistaUsuario();
-            vistaUsuario.ConfigurarInicio(selectedEmp);
-            vistaUsuario.CallMainWindow = this;
+        if (!ngOpRol.AccesoViewAdmin(selectedUser.IdRol)) {
+            AccederUser();
+            return;
+        }else {
+            AccederAdmin();
         }
 
     }
+    private void AccederAdmin() {
+        if (CuadroMensaje("¿Quieres iniciar como administrador?", MessageType.Question, ButtonsType.YesNo)) {
+            vistaAdmin = new vistaAdmin();
+            vistaAdmin.CallMainWindow = this;
+            this.Hide();
+            vistaAdmin.IdRolAct = selectedUser.IdRol;
+        } else {
+            AccederUser();
+        }
+    }
+
+    private void AccederUser() {
+        if (selectedEmp == null) {
+            CuadroMensaje("No hay empleado asociado a su usuario, contacte con el soporte técnico.", MessageType.Error, ButtonsType.Ok);
+            return;
+        }
+        vistaUsuario = new vistaUsuario();
+        vistaUsuario.ConfigurarInicio(selectedEmp);
+        vistaUsuario.CallMainWindow = this;
+    }
+
     protected void OnButtonCerrarClicked(object sender, EventArgs e) {
         Application.Quit();
     }
 
     protected void OnEntryPinActivated(object sender, EventArgs e) {
-
+        Evaluar();
     }
 
 

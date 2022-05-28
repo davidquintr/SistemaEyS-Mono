@@ -17,6 +17,7 @@ namespace ProyectoEyS {
         public frmAddRol() : base(Gtk.WindowType.Toplevel) {
             this.Build();
             buttonEliminar.Visible = false;
+            buttonPermisos.Visible = false;
             entryNombre.GrabFocus();
             entryID.Text = (ngRol.ContarRoles() + 1).ToString();
         }
@@ -28,6 +29,7 @@ namespace ProyectoEyS {
             entryID.Text = this.rol.Id.ToString();
             entryNombre.Text = this.rol.Nombre;
             buttonEliminar.Visible = true;
+            buttonPermisos.Visible = true;
         }
 
         protected void OnButtonCloseClicked(object sender, EventArgs e) {
@@ -85,5 +87,9 @@ namespace ProyectoEyS {
                 CuadroMensaje("No se pudo guardar", MessageType.Error, ButtonsType.Ok);
         }
 
+        protected void OnButtonPermisosClicked(object sender, EventArgs e) {
+            frmSeguridadPermisos seguridadPermisos = new frmSeguridadPermisos();
+            seguridadPermisos.CargarDatos(rol);
+        }
     }
 }

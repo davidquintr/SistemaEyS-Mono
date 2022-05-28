@@ -8,9 +8,11 @@ namespace ProyectoEyS {
     public partial class vistaAdmin : Gtk.Window {
 
         Dt_tbl_emp dtus = new Dt_tbl_emp();
+        private int idRolAct;
 
         private Gtk.Window callMainWindow;
         public Window CallMainWindow { get => callMainWindow; set => callMainWindow = value; }
+        public int IdRolAct { get => idRolAct; set => idRolAct = value; }
 
         WatchClock clock;
 

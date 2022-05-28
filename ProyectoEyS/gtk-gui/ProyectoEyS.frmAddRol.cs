@@ -26,6 +26,8 @@ namespace ProyectoEyS
 
 		private global::Gtk.HButtonBox hbuttonbox6;
 
+		private global::Gtk.Button buttonPermisos;
+
 		private global::Gtk.Button buttonEliminar;
 
 		private global::Gtk.Button buttonGuardar;
@@ -148,15 +150,26 @@ namespace ProyectoEyS
 			this.hbuttonbox6.BorderWidth = ((uint)(10));
 			this.hbuttonbox6.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
+			this.buttonPermisos = new global::Gtk.Button();
+			this.buttonPermisos.CanFocus = true;
+			this.buttonPermisos.Name = "buttonPermisos";
+			this.buttonPermisos.UseUnderline = true;
+			this.buttonPermisos.Label = global::Mono.Unix.Catalog.GetString("Permisos");
+			this.hbuttonbox6.Add(this.buttonPermisos);
+			global::Gtk.ButtonBox.ButtonBoxChild w10 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonPermisos]));
+			w10.Expand = false;
+			w10.Fill = false;
+			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonEliminar = new global::Gtk.Button();
 			this.buttonEliminar.CanFocus = true;
 			this.buttonEliminar.Name = "buttonEliminar";
 			this.buttonEliminar.UseUnderline = true;
 			this.buttonEliminar.Label = global::Mono.Unix.Catalog.GetString("Eliminar");
 			this.hbuttonbox6.Add(this.buttonEliminar);
-			global::Gtk.ButtonBox.ButtonBoxChild w10 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonEliminar]));
-			w10.Expand = false;
-			w10.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w11 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonEliminar]));
+			w11.Position = 1;
+			w11.Expand = false;
+			w11.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonGuardar = new global::Gtk.Button();
 			this.buttonGuardar.WidthRequest = 90;
@@ -166,10 +179,10 @@ namespace ProyectoEyS
 			this.buttonGuardar.UseUnderline = true;
 			this.buttonGuardar.Label = global::Mono.Unix.Catalog.GetString("Guardar");
 			this.hbuttonbox6.Add(this.buttonGuardar);
-			global::Gtk.ButtonBox.ButtonBoxChild w11 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonGuardar]));
-			w11.Position = 1;
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w12 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonGuardar]));
+			w12.Position = 2;
+			w12.Expand = false;
+			w12.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonClose = new global::Gtk.Button();
 			this.buttonClose.CanFocus = true;
@@ -177,23 +190,24 @@ namespace ProyectoEyS
 			this.buttonClose.UseUnderline = true;
 			this.buttonClose.Label = global::Mono.Unix.Catalog.GetString("Cerrar");
 			this.hbuttonbox6.Add(this.buttonClose);
-			global::Gtk.ButtonBox.ButtonBoxChild w12 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonClose]));
-			w12.Position = 2;
-			w12.Expand = false;
-			w12.Fill = false;
-			this.vbox2.Add(this.hbuttonbox6);
-			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbuttonbox6]));
-			w13.Position = 2;
+			global::Gtk.ButtonBox.ButtonBoxChild w13 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonClose]));
+			w13.Position = 3;
 			w13.Expand = false;
 			w13.Fill = false;
+			this.vbox2.Add(this.hbuttonbox6);
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbuttonbox6]));
+			w14.Position = 2;
+			w14.Expand = false;
+			w14.Fill = false;
 			this.Add(this.vbox2);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 401;
+			this.DefaultWidth = 424;
 			this.DefaultHeight = 163;
 			this.Show();
+			this.buttonPermisos.Clicked += new global::System.EventHandler(this.OnButtonPermisosClicked);
 			this.buttonGuardar.Clicked += new global::System.EventHandler(this.OnButtonGuardarClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}

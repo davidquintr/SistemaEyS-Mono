@@ -38,13 +38,13 @@ namespace ProyectoEyS
 
 		private global::Gtk.VButtonBox vbuttonbox1;
 
-		private global::Gtk.Button button730;
+		private global::Gtk.Button btnNomEpr;
 
-		private global::Gtk.Button button733;
+		private global::Gtk.Button btnHorAlm;
 
-		private global::Gtk.Button button734;
+		private global::Gtk.Button btnTemGra;
 
-		private global::Gtk.Button button735;
+		private global::Gtk.Button btnDomEpr;
 
 		private global::Gtk.HButtonBox hbuttonbox6;
 
@@ -203,47 +203,47 @@ namespace ProyectoEyS
 			this.vbuttonbox1.BorderWidth = ((uint)(10));
 			this.vbuttonbox1.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(3));
 			// Container child vbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
-			this.button730 = new global::Gtk.Button();
-			this.button730.WidthRequest = 400;
-			this.button730.HeightRequest = 50;
-			this.button730.CanFocus = true;
-			this.button730.Name = "button730";
-			this.button730.UseUnderline = true;
-			this.button730.Label = global::Mono.Unix.Catalog.GetString("Nombre de la Empresa");
-			this.vbuttonbox1.Add(this.button730);
-			global::Gtk.ButtonBox.ButtonBoxChild w14 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.button730]));
+			this.btnNomEpr = new global::Gtk.Button();
+			this.btnNomEpr.WidthRequest = 400;
+			this.btnNomEpr.HeightRequest = 50;
+			this.btnNomEpr.CanFocus = true;
+			this.btnNomEpr.Name = "btnNomEpr";
+			this.btnNomEpr.UseUnderline = true;
+			this.btnNomEpr.Label = global::Mono.Unix.Catalog.GetString("Nombre de la Empresa");
+			this.vbuttonbox1.Add(this.btnNomEpr);
+			global::Gtk.ButtonBox.ButtonBoxChild w14 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.btnNomEpr]));
 			w14.Expand = false;
 			w14.Fill = false;
 			// Container child vbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
-			this.button733 = new global::Gtk.Button();
-			this.button733.CanFocus = true;
-			this.button733.Name = "button733";
-			this.button733.UseUnderline = true;
-			this.button733.Label = global::Mono.Unix.Catalog.GetString("Horario de almuerzo");
-			this.vbuttonbox1.Add(this.button733);
-			global::Gtk.ButtonBox.ButtonBoxChild w15 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.button733]));
+			this.btnHorAlm = new global::Gtk.Button();
+			this.btnHorAlm.CanFocus = true;
+			this.btnHorAlm.Name = "btnHorAlm";
+			this.btnHorAlm.UseUnderline = true;
+			this.btnHorAlm.Label = global::Mono.Unix.Catalog.GetString("Horario de almuerzo");
+			this.vbuttonbox1.Add(this.btnHorAlm);
+			global::Gtk.ButtonBox.ButtonBoxChild w15 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.btnHorAlm]));
 			w15.Position = 1;
 			w15.Expand = false;
 			w15.Fill = false;
 			// Container child vbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
-			this.button734 = new global::Gtk.Button();
-			this.button734.CanFocus = true;
-			this.button734.Name = "button734";
-			this.button734.UseUnderline = true;
-			this.button734.Label = global::Mono.Unix.Catalog.GetString("Tiempo de gracia");
-			this.vbuttonbox1.Add(this.button734);
-			global::Gtk.ButtonBox.ButtonBoxChild w16 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.button734]));
+			this.btnTemGra = new global::Gtk.Button();
+			this.btnTemGra.CanFocus = true;
+			this.btnTemGra.Name = "btnTemGra";
+			this.btnTemGra.UseUnderline = true;
+			this.btnTemGra.Label = global::Mono.Unix.Catalog.GetString("Tiempo de gracia");
+			this.vbuttonbox1.Add(this.btnTemGra);
+			global::Gtk.ButtonBox.ButtonBoxChild w16 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.btnTemGra]));
 			w16.Position = 2;
 			w16.Expand = false;
 			w16.Fill = false;
 			// Container child vbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
-			this.button735 = new global::Gtk.Button();
-			this.button735.CanFocus = true;
-			this.button735.Name = "button735";
-			this.button735.UseUnderline = true;
-			this.button735.Label = global::Mono.Unix.Catalog.GetString("Dominio de la empresa (@)");
-			this.vbuttonbox1.Add(this.button735);
-			global::Gtk.ButtonBox.ButtonBoxChild w17 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.button735]));
+			this.btnDomEpr = new global::Gtk.Button();
+			this.btnDomEpr.CanFocus = true;
+			this.btnDomEpr.Name = "btnDomEpr";
+			this.btnDomEpr.UseUnderline = true;
+			this.btnDomEpr.Label = global::Mono.Unix.Catalog.GetString("Dominio de la empresa (@)");
+			this.vbuttonbox1.Add(this.btnDomEpr);
+			global::Gtk.ButtonBox.ButtonBoxChild w17 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.vbuttonbox1[this.btnDomEpr]));
 			w17.Position = 3;
 			w17.Expand = false;
 			w17.Fill = false;
@@ -291,6 +291,10 @@ namespace ProyectoEyS
 			this.DefaultWidth = 917;
 			this.DefaultHeight = 640;
 			this.Show();
+			this.btnNomEpr.Clicked += new global::System.EventHandler(this.OnBtnNomEprClicked);
+			this.btnHorAlm.Clicked += new global::System.EventHandler(this.OnBtnHorAlmClicked);
+			this.btnTemGra.Clicked += new global::System.EventHandler(this.OnBtnTemGraClicked);
+			this.btnDomEpr.Clicked += new global::System.EventHandler(this.OnBtnDomEprClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}
 	}

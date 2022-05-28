@@ -122,7 +122,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.HButtonBox hbuttonbox6;
 
-		private global::Gtk.Button buttonAdmin;
+		private global::Gtk.Button buttonGuardar;
 
 		private global::Gtk.Button buttonClose;
 
@@ -175,7 +175,6 @@ namespace ProyectoEyS
 			this.rbPers = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Personalizado"));
 			this.rbPers.CanFocus = true;
 			this.rbPers.Name = "rbPers";
-			this.rbPers.Active = true;
 			this.rbPers.DrawIndicator = true;
 			this.rbPers.UseUnderline = true;
 			this.rbPers.Group = new global::GLib.SList(global::System.IntPtr.Zero);
@@ -659,15 +658,15 @@ namespace ProyectoEyS
 			this.hbuttonbox6.BorderWidth = ((uint)(10));
 			this.hbuttonbox6.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
-			this.buttonAdmin = new global::Gtk.Button();
-			this.buttonAdmin.WidthRequest = 90;
-			this.buttonAdmin.HeightRequest = 30;
-			this.buttonAdmin.CanFocus = true;
-			this.buttonAdmin.Name = "buttonAdmin";
-			this.buttonAdmin.UseUnderline = true;
-			this.buttonAdmin.Label = global::Mono.Unix.Catalog.GetString("Guardar");
-			this.hbuttonbox6.Add(this.buttonAdmin);
-			global::Gtk.ButtonBox.ButtonBoxChild w53 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
+			this.buttonGuardar = new global::Gtk.Button();
+			this.buttonGuardar.WidthRequest = 90;
+			this.buttonGuardar.HeightRequest = 30;
+			this.buttonGuardar.CanFocus = true;
+			this.buttonGuardar.Name = "buttonGuardar";
+			this.buttonGuardar.UseUnderline = true;
+			this.buttonGuardar.Label = global::Mono.Unix.Catalog.GetString("Guardar");
+			this.hbuttonbox6.Add(this.buttonGuardar);
+			global::Gtk.ButtonBox.ButtonBoxChild w53 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonGuardar]));
 			w53.Expand = false;
 			w53.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
@@ -694,8 +693,9 @@ namespace ProyectoEyS
 			this.DefaultWidth = 650;
 			this.DefaultHeight = 473;
 			this.Show();
-			this.rbControl.Toggled += new global::System.EventHandler(this.OnRbControlToggled);
-			this.ckbAdmEmp.Clicked += new global::System.EventHandler(this.OnCkbAdmEmpClicked);
+			this.rbPers.Clicked += new global::System.EventHandler(this.OnRbPersClicked);
+			this.rbControl.Clicked += new global::System.EventHandler(this.OnRbControlClicked);
+			this.buttonGuardar.Clicked += new global::System.EventHandler(this.OnButtonGuardarClicked);
 		}
 	}
 }

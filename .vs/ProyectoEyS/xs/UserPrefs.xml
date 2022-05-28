@@ -1,9 +1,13 @@
 ﻿<Properties StartupConfiguration="{01746CE3-E502-4D9F-A4C9-365EF5B29285}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmListarUsr.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmEstablecerEventos.cs">
     <Files>
-      <File FileName="ProyectoEyS/frmListarUsr.cs" Line="71" Column="9" />
-      <File FileName="ProyectoEyS/frmAddUsuario.cs" Line="112" Column="28" />
-      <File FileName="ProyectoEyS/Datos/Dt_tbl_emp.cs" Line="258" Column="39" />
+      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="11" Column="28" />
+      <File FileName="ProyectoEyS/Negocio/Ng_tbl_OpcRol.cs" Line="45" Column="37" />
+      <File FileName="ProyectoEyS/MainWindow.cs" Line="44" Column="6" />
+      <File FileName="ProyectoEyS/Negocio/Ng_tbl_cargo.cs" Line="17" Column="1" />
+      <File FileName="ProyectoEyS/Negocio/Ng_tbl_emp.cs" Line="77" Column="10" />
+      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.vistaAdmin.cs" Line="641" Column="1" />
+      <File FileName="ProyectoEyS/frmEstablecerEventos.cs" Line="47" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,11 +15,9 @@
           <Node name="ProyectoEyS" expanded="True">
             <Node name="ProyectoEyS" expanded="True">
               <Node name="Datos" expanded="True" />
-              <Node name="Entidades" expanded="True">
-                <Node name="Vistas" expanded="True" />
-              </Node>
+              <Node name="Entidades" expanded="True" />
               <Node name="Negocio" expanded="True" />
-              <Node name="frmListarUsr.cs" selected="True" />
+              <Node name="frmEstablecerEventos.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,13 +31,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmAddCargo.cs" relfile="ProyectoEyS/frmAddCargo.cs" line="166" column="9" />
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="290" column="18" />
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="291" column="19" />
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="292" column="19" />
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="293" column="18" />
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="295" column="27" />
-      <Breakpoint file="/home/davidquint/Documentos/24 - 5/ProyectoEyS/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="152" column="37" />
+      <Breakpoint file="/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/frmAddCargo.cs" relfile="ProyectoEyS/frmAddCargo.cs" line="166" column="9" />
+      <Breakpoint file="/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="152" column="37" />
+      <Breakpoint file="/home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="290" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

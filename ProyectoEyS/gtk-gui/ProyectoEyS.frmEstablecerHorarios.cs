@@ -607,7 +607,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 440;
-			this.DefaultHeight = 219;
+			this.DefaultHeight = 231;
 			this.Show();
 			this.checkbutton3.Toggled += new global::System.EventHandler(this.OnCheckbutton3Toggled);
 			this.checkbutton2.Toggled += new global::System.EventHandler(this.OnCheckbutton2Toggled);

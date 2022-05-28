@@ -202,6 +202,9 @@
     <Compile Include="Negocio\Ng_tbl_departamento.cs" />
     <Compile Include="Negocio\Ng_tbl_cargo.cs" />
     <Compile Include="Entidades\Vistas\Tbl_Vw_Registro.cs" />
+    <Compile Include="Datos\Dt_tbl_config.cs" />
+    <Compile Include="Entidades\Vistas\Tbl_Vw_OpcRol.cs" />
+    <Compile Include="Negocio\Ng_tbl_OpcRol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

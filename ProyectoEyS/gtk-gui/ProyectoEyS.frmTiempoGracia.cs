@@ -16,7 +16,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.Label label4;
 
-		private global::Gtk.SpinButton spinbutton5;
+		private global::Gtk.SpinButton sbtTemGra;
 
 		private global::Gtk.VSeparator vseparator3;
 
@@ -74,15 +74,15 @@ namespace ProyectoEyS
 			w2.Expand = false;
 			w2.Fill = false;
 			// Container child hbox10.Gtk.Box+BoxChild
-			this.spinbutton5 = new global::Gtk.SpinButton(0D, 60D, 1D);
-			this.spinbutton5.WidthRequest = 223;
-			this.spinbutton5.CanFocus = true;
-			this.spinbutton5.Name = "spinbutton5";
-			this.spinbutton5.Adjustment.PageIncrement = 10D;
-			this.spinbutton5.ClimbRate = 1D;
-			this.spinbutton5.Numeric = true;
-			this.hbox10.Add(this.spinbutton5);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.spinbutton5]));
+			this.sbtTemGra = new global::Gtk.SpinButton(0D, 60D, 1D);
+			this.sbtTemGra.WidthRequest = 223;
+			this.sbtTemGra.CanFocus = true;
+			this.sbtTemGra.Name = "sbtTemGra";
+			this.sbtTemGra.Adjustment.PageIncrement = 10D;
+			this.sbtTemGra.ClimbRate = 1D;
+			this.sbtTemGra.Numeric = true;
+			this.hbox10.Add(this.sbtTemGra);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.sbtTemGra]));
 			w3.Position = 2;
 			w3.Expand = false;
 			w3.Fill = false;

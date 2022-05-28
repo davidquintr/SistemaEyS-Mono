@@ -25,21 +25,25 @@ namespace ProyectoEyS
 
         public frmAddUsuario() : base(Gtk.WindowType.Toplevel) {
             this.Build();
-
+            this.Title = "Agregar Empleado";
             listCargo = dtCargo.ColocarCargos();
             listDept = dtDept.ColocarDepart();
             LlenarComboDept();
             this.buttonBaja.Visible = false;
             entryID.Text = (ngEmp.ContarEmpleados() + 1).ToString();
             entryNombre.GrabFocus();
-
         }
 
         public void CambiarModo(Tbl_Vw_Empleado emp) {
+            this.Title = "Administrar Empleado";
             mode = 1;
             this.emp = emp;
             this.buttonBaja.Visible = true;
             LlenarCampos();
+        }
+
+        public void ComprobarPermiso() {
+
         }
 
 

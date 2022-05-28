@@ -43,28 +43,25 @@ namespace ProyectoEyS {
                 }
             }
 
-            if (regAct.HoraEntrada != default(DateTime) && !inh) {
+            if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida == default(DateTime)) {
                 labelEnt.Text = "Hora de entrada: " + regAct.HoraEntrada.ToString("T");
                 buttonEntrada.Sensitive = false;
-            } else {
+            } else if(regAct.HoraEntrada == default(DateTime)) {
                 labelEnt.Text = "No se ha iniciado la jornada laboral";
                 labelTiempo.Text = "";
             }
 
-            if (regAct.HoraSalida != default(DateTime) && !inh) {
+            if (regAct.HoraSalida != default(DateTime)) {
                 buttonSalida.Sensitive = false;
                 buttonAlmuerzo.Sensitive = false;
-            }
-            if (regAct.HoraAlmuerzoIn != default(DateTime) && !inh) {
-                buttonAlmuerzo.Sensitive = false;
-            }
-
-            if (regAct.HoraSalida != default(DateTime) && !inh) {
+                buttonEntrada.Sensitive = false;
                 labelEnt.Text = "Ronda de trabajo finalizada";
                 labelHora.Text = "";
             }
-            if (regAct.HoraAlmuerzoOut != default(DateTime) && regAct.HoraAlmuerzoIn == default(DateTime))
-                buttonSalida.Sensitive = false;
+            if (regAct.HoraAlmuerzoIn != default(DateTime)) {
+                buttonAlmuerzo.Sensitive = false;
+            }
+
         }
 
         //Creamos un timer

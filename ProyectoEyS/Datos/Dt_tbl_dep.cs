@@ -197,7 +197,7 @@ namespace Datos
 
             if (dep.Estado == 3) {
                 sb.Append("UPDATE BDSistemaEyS.tbl_Cargo ");
-                sb.Append("SET idDepartamento = '0'");
+                sb.Append("SET estado = '3'");
                 sb.Append("WHERE idDepartamento = '" + id + "';");
             }
             try {

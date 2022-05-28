@@ -1,74 +1,67 @@
 ﻿using System;
+using Entidades;
+using Datos;
+using Gtk;
+
 namespace ProyectoEyS
 {
     public partial class frmAddEntidad : Gtk.Window {
 
-        private int config;
+        Tbl_Config cfg = new Tbl_Config();
+        Dt_tbl_config dtCfg = new Dt_tbl_config();
+        int mode = 0;
 
         public frmAddEntidad() :
                 base(Gtk.WindowType.Toplevel) {
             this.Build();
+            cfg = dtCfg.colocarConfig();
+
         }
 
-        public void ModifAccesibilidad(int config){
-            this.config = config;
-
-            if(config == 1) {
-                labelTitulo.Text = "Añadir entidad";
-                labelSubTitulo.Text = "Seleccione la entidad a agregar";
-            } else if(config == 0){
-                labelTitulo.Text = "Listar entidad";
-                labelSubTitulo.Text = "Seleccione la entidad a listar";
+        public void CargarDatos(int mode) {
+            this.mode = mode;
+            if(mode == 0) {
+                labelSubTitulo.Text = "Introduzca el nombre de la empresa: ";
+                entryParam.Text = cfg.NombreEmpresa;
             }
-            Console.WriteLine("config: " + config);
-        }
-
-        private void Acceder() {
-            if (config == 1) {
-                switch (cboxEntidad.ActiveText) {
-                    case "Empleado":
-                        frmAddUsuario addUsuario = new frmAddUsuario();
-                        break;
-
-                    case "Cargo":
-                        frmAddCargo addCargo = new frmAddCargo();
-                        break;
-
-                    case "Departamento":
-                        frmAddDept addDept = new frmAddDept();
-                        break;
-
-                    default:
-                        break;
-                }
-
-            } else {
-                switch (cboxEntidad.ActiveText) {
-                    case "Empleado":
-                        frmListarUsr listarUsr = new frmListarUsr();
-                        break;
-
-                    case "Cargo":
-                        frmListarCargo listarCargo = new frmListarCargo();
-                        break;
-
-                    case "Departamento":
-                        frmListarDept listarDept = new frmListarDept();
-                        break;
-
-                    default:
-                        break;
-                }
+            else {
+                labelSubTitulo.Text = "Introduzca el dominio de la empresa: ";
+                if (cfg.EmailEmpresa == "")
+                    entryParam.Text = "@" + cfg.NombreEmpresa + ".com";
+                else
+                    entryParam.Text = cfg.EmailEmpresa;
             }
-            this.Visible = false;
         }
+
+        private void OrganizarDatos() {
+            if (mode == 0)
+                cfg.NombreEmpresa = entryParam.Text;
+            else
+                cfg.EmailEmpresa = entryParam.Text;
+        }
+
 
         protected void OnAceptarClicked(object sender, EventArgs e) {
-            Acceder();
+            if (CuadroMensaje("¿Deseas guardar?", MessageType.Question, ButtonsType.YesNo)) {
+                OrganizarDatos();
+                if (dtCfg.EditarConfig(cfg)) {
+                    CuadroMensaje("Se han guardado los cambios", MessageType.Info, ButtonsType.Ok);
+                    this.Destroy();
+                }
+            }
         }
 
         protected void OnCerrarClicked(object sender, EventArgs e) {
             this.Destroy();
+        }
+
+
+        bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
+            Gtk.MessageDialog msgEliminar;
+            msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
+            ResponseType respuesta = (ResponseType)msgEliminar.Run();
+            msgEliminar.Destroy();
+            return respuesta == ResponseType.Yes ? true : false;
         }
     }
 }

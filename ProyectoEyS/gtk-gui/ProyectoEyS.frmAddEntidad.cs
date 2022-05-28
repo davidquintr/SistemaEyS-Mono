@@ -16,7 +16,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.HBox hbox9;
 
-		private global::Gtk.ComboBoxEntry cboxEntidad;
+		private global::Gtk.Entry entryParam;
 
 		private global::Gtk.VSeparator vseparator1;
 
@@ -47,7 +47,7 @@ namespace ProyectoEyS
 			this.labelTitulo.Name = "labelTitulo";
 			this.labelTitulo.Xalign = 0.03F;
 			this.labelTitulo.Yalign = 0.77F;
-			this.labelTitulo.LabelProp = global::Mono.Unix.Catalog.GetString("Añadir/Listar entidad");
+			this.labelTitulo.LabelProp = global::Mono.Unix.Catalog.GetString("Parametros Generales");
 			this.vbox1.Add(this.labelTitulo);
 			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.labelTitulo]));
 			w1.Position = 0;
@@ -58,7 +58,7 @@ namespace ProyectoEyS
 			this.labelSubTitulo.HeightRequest = 32;
 			this.labelSubTitulo.Name = "labelSubTitulo";
 			this.labelSubTitulo.Xalign = 0.1F;
-			this.labelSubTitulo.LabelProp = global::Mono.Unix.Catalog.GetString("Seleccione la entidad a agregar:");
+			this.labelSubTitulo.LabelProp = global::Mono.Unix.Catalog.GetString("A CAMBIAR:");
 			this.vbox1.Add(this.labelSubTitulo);
 			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.labelSubTitulo]));
 			w2.Position = 1;
@@ -82,23 +82,17 @@ namespace ProyectoEyS
 			this.hbox9.Name = "hbox9";
 			this.hbox9.Spacing = 6;
 			// Container child hbox9.Gtk.Box+BoxChild
-			this.cboxEntidad = global::Gtk.ComboBoxEntry.NewText();
-			this.cboxEntidad.AppendText(global::Mono.Unix.Catalog.GetString("Empleado"));
-			this.cboxEntidad.AppendText(global::Mono.Unix.Catalog.GetString("Departamento"));
-			this.cboxEntidad.AppendText(global::Mono.Unix.Catalog.GetString("Cargo"));
-			this.cboxEntidad.WidthRequest = 257;
-			this.cboxEntidad.Name = "cboxEntidad";
-			this.cboxEntidad.Active = 0;
-			this.hbox9.Add(this.cboxEntidad);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.cboxEntidad]));
+			this.entryParam = new global::Gtk.Entry();
+			this.entryParam.CanFocus = true;
+			this.entryParam.Name = "entryParam";
+			this.entryParam.IsEditable = true;
+			this.entryParam.InvisibleChar = '•';
+			this.hbox9.Add(this.entryParam);
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entryParam]));
 			w4.Position = 0;
-			w4.Expand = false;
-			w4.Fill = false;
 			this.hbox8.Add(this.hbox9);
 			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.hbox9]));
 			w5.Position = 1;
-			w5.Expand = false;
-			w5.Fill = false;
 			// Container child hbox8.Gtk.Box+BoxChild
 			this.vseparator1 = new global::Gtk.VSeparator();
 			this.vseparator1.WidthRequest = 18;
@@ -124,14 +118,15 @@ namespace ProyectoEyS
 			w8.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.hbuttonbox6 = new global::Gtk.HButtonBox();
-			this.hbuttonbox6.HeightRequest = 75;
+			this.hbuttonbox6.HeightRequest = 50;
 			this.hbuttonbox6.Name = "hbuttonbox6";
 			this.hbuttonbox6.Spacing = 4;
 			this.hbuttonbox6.BorderWidth = ((uint)(10));
 			this.hbuttonbox6.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.aceptar = new global::Gtk.Button();
-			this.aceptar.HeightRequest = 60;
+			this.aceptar.WidthRequest = 90;
+			this.aceptar.HeightRequest = 30;
 			this.aceptar.CanFocus = true;
 			this.aceptar.Name = "aceptar";
 			this.aceptar.UseUnderline = true;
@@ -162,7 +157,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 380;
-			this.DefaultHeight = 225;
+			this.DefaultHeight = 199;
 			this.Show();
 			this.aceptar.Clicked += new global::System.EventHandler(this.OnAceptarClicked);
 			this.cerrar.Clicked += new global::System.EventHandler(this.OnCerrarClicked);
