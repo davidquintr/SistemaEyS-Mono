@@ -52,7 +52,61 @@ namespace ProyectoEyS
                 this.selectedUser = selectedUser;
         }
 
-        public void LlenarCampos() {
+        private bool Comprobaciones() {
+
+            if (entryNombre.Text == string.Empty) {
+                CuadroMensaje("Debe ingresar al menos un nombre", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (entryApell.Text == string.Empty) {
+                CuadroMensaje("Debe ingresar al menos un apellido", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (entryCedu.Text == string.Empty) {
+                CuadroMensaje("Debe ingresar la cédula", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (entryCedu.Text.Length < 14) {
+                CuadroMensaje("Ingrese una cédula válida", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (ngEmp.ExisteCedula(entryCedu.Text)) {
+                CuadroMensaje("Esta cédula ya existe, confirme sus datos", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+
+            if (cbxCargo.ActiveText == "") {
+                CuadroMensaje("Ingrese el cargo", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (ngEmp.ExisteCorreo(entryEmailcorp.Text)) {
+                CuadroMensaje("Este correo corporativo ya está registrado, cree una variación del mismo", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            int n;
+            bool result = Int32.TryParse(entryTelef.Text, out n);
+
+            if (!result) {
+                CuadroMensaje("Ingrese un número telefónico válido", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if(entryFechaNac.Text == string.Empty || entryFechaIngr.Text == string.Empty || DateTime.Parse(entryFechaNac.Text).ToString("yyyy-MM-dd") == DateTime.Now.ToString("yyyy-MM-dd")) {
+                CuadroMensaje("Cambie las fechas ", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void LlenarCampos() {
             labelTitulo.Text = "Editar usuario: " + emp.Nombres.Split(' ')[0] + " " + emp.Apellidos.Split(' ')[0];
 
             entryID.Text = emp.Id.ToString();
@@ -151,6 +205,10 @@ namespace ProyectoEyS
         }
 
         protected void OnButtonAceptarClicked(object sender, EventArgs e) {
+            if (!Comprobaciones()) {
+                return;
+            }
+
             if (mode == 0) {
                 if (dtEmp.GuardarEmpleado(OrganizarDatos())) 
                     CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
@@ -186,8 +244,8 @@ namespace ProyectoEyS
             string[] corte = nombres.Split(' ');
 
             empleado.PrimerNombre = corte[0];
-            for(int i = 1; i < corte.Length; i++) {
-                if(i != corte.Length-1)
+            for(int i = 0; i < corte.Length; i++) {
+                if(i + 1 != corte.Length-1)
                     empleado.SegundoNombre += corte[i] + " ";
                  else
                     empleado.SegundoNombre += corte[i];

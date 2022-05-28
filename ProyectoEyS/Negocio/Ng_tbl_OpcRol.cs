@@ -71,37 +71,5 @@ namespace Negocio {
                 con.CerrarConexion();
             }
         }
-
-        public string ObtenerTextoRoles(int idRol) {
-            IDataReader idr = null;
-            sb.Clear();
-            string[] datos;
-            string permisos = "";
-            Ng_creacionDatos creacionDatos = new Ng_creacionDatos();
-            sb.Append("SELECT Nombre FROM BDSistemaEyS.Vw_OpcRol where idrol = '" + idRol + "' and activo = '1'");
-            try {
-                con.AbrirConexion();
-                idr = con.Leer(CommandType.Text, sb.ToString());
-                datos = new string[idr.FieldCount];
-                while (idr.Read()) {
-                    for (int i = 0; i < idr.FieldCount; i++) {
-                        datos[i] = idr[i].ToString();
-                    }
-                    permisos += datos[0] + "\n";
-                }
-                return permisos;
-
-            } catch (Exception e) {
-                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
-                    ButtonsType.Ok, e.Message);
-                ms.Run();
-                ms.Destroy();
-                throw;
-            } finally {
-                idr.Close();
-                con.CerrarConexion();
-            }
-        }
-
     }
 }

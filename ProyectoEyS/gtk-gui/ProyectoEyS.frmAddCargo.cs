@@ -88,9 +88,11 @@ namespace ProyectoEyS
 			this.table3.ColumnSpacing = ((uint)(6));
 			// Container child table3.Gtk.Table+TableChild
 			this.cbxEDep = global::Gtk.ComboBoxEntry.NewText();
+			this.cbxEDep.AppendText(global::Mono.Unix.Catalog.GetString("Sin departamento seleccionado"));
 			this.cbxEDep.WidthRequest = 226;
 			this.cbxEDep.HeightRequest = 30;
 			this.cbxEDep.Name = "cbxEDep";
+			this.cbxEDep.Active = 0;
 			this.table3.Add(this.cbxEDep);
 			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table3[this.cbxEDep]));
 			w3.TopAttach = ((uint)(2));

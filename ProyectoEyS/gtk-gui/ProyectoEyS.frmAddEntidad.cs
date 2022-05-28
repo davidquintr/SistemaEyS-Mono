@@ -157,7 +157,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 380;
-			this.DefaultHeight = 199;
+			this.DefaultHeight = 200;
 			this.Show();
 			this.aceptar.Clicked += new global::System.EventHandler(this.OnAceptarClicked);
 			this.cerrar.Clicked += new global::System.EventHandler(this.OnCerrarClicked);

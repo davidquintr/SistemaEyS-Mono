@@ -16,6 +16,7 @@ namespace ProyectoEyS
 
         Tbl_Usuario selectedUser;
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
+        Dt_tbl_opcRol dtOpcRol = new Dt_tbl_opcRol();
 
         public frmListarRoles() :
                 base(Gtk.WindowType.Toplevel) {
@@ -55,7 +56,7 @@ namespace ProyectoEyS
             lbNombre.Text = listRol[id].Nombre;
             cbxEListarRol.Active = id;
             lbCountRol.Text = "" + (id + 1) + "/" + listRol.Count;
-            string texto = ngOpcRol.ObtenerTextoRoles(listRol[id].Id);
+            string texto = dtOpcRol.ObtenerTextoRoles(listRol[id].Id);
             if (texto == "") twPermisos.Buffer.Text = "Sin permisos"; else twPermisos.Buffer.Text = texto;
         }
 

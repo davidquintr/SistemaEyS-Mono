@@ -1909,7 +1909,7 @@ Generales</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAddEntidad" design-size="380 199">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAddEntidad" design-size="380 200">
     <property name="MemberName" />
     <property name="WidthRequest">380</property>
     <property name="Title" translatable="yes">frmAddEntidad</property>
@@ -2192,6 +2192,7 @@ Generales</property>
                     <property name="HeightRequest">30</property>
                     <property name="CanFocus">True</property>
                     <property name="IsEditable">True</property>
+                    <property name="MaxLength">14</property>
                     <property name="InvisibleChar">•</property>
                   </widget>
                   <packing>
@@ -3358,7 +3359,8 @@ Masculino</property>
                     <property name="WidthRequest">226</property>
                     <property name="HeightRequest">30</property>
                     <property name="IsTextCombo">True</property>
-                    <property name="Items" translatable="yes" />
+                    <property name="Items" translatable="yes">Sin departamento seleccionado</property>
+                    <property name="Active">0</property>
                   </widget>
                   <packing>
                     <property name="TopAttach">2</property>
@@ -7448,6 +7450,7 @@ Masculino</property>
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="Label" translatable="yes">Personalizado</property>
+                        <property name="Active">True</property>
                         <property name="DrawIndicator">True</property>
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>

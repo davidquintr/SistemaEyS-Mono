@@ -7,7 +7,6 @@ using Gtk;
 namespace Negocio {
     public class Ng_tbl_cargo {
 
-
         Conexion con = new Conexion();
         MessageDialog ms = null;
         StringBuilder sb = new StringBuilder();

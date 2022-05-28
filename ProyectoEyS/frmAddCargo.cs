@@ -54,6 +54,25 @@ namespace ProyectoEyS {
                 this.selectedUser = selectedUser;
         }
 
+        public bool Comprobaciones() {
+
+            if(entryNombre.Text == string.Empty) {
+                CuadroMensaje("Debe ingresar el nombre del cargo", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if(cbxEDep.Active == 0) {
+                CuadroMensaje("Debe seleccionar el departamento al que pertenece", MessageType.Error, ButtonsType.Ok);
+                return false;
+            }
+
+            if (horaList == null) {
+                CuadroMensaje("Debes establecer los horarios antes de guardar", MessageType.Error, ButtonsType.Ok);
+                return false;
+            }
+            return true;
+        }
+
         public void LlenarCampos() {
             entryID.Text = crgVw.Id.ToString();
             entryNombre.Text = crgVw.Nombre;
@@ -72,7 +91,7 @@ namespace ProyectoEyS {
 
         protected void LlenarComboDept() {
             for (int i = 0; i < depList.Count; i++) {
-                this.cbxEDep.InsertText(i, depList[i].Nombre);
+                this.cbxEDep.InsertText(i + 1, depList[i].Nombre);
             }
         }
 
@@ -111,13 +130,13 @@ namespace ProyectoEyS {
         protected void OnButtonAdminClicked(object sender, EventArgs e) {
             int conteoError = 0;
 
+            if (!Comprobaciones()) {
+                return;
+            }
+
             if (!CuadroMensaje("¿Deseas guardar?", MessageType.Question, ButtonsType.YesNo)) {
                 return;
             }
-            if (horaList == null) {
-                    CuadroMensaje("Debes establecer los horarios antes de guardar", MessageType.Error, ButtonsType.Ok);
-                    return;
-                }
 
             for (int i = 0; i < horaList.Count; i++) {
                 horaList[i].IdCargo = Convert.ToInt16(entryID.Text);

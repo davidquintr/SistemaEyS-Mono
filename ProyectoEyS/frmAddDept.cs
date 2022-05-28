@@ -29,6 +29,26 @@ namespace ProyectoEyS
 
         }
 
+        public bool Comprobaciones() {
+
+            if(entryNombre.Text == string.Empty) {
+                CuadroMensaje("Debe ingresar el nombre del departamento", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if(entryEmail.Text == string.Empty) {
+                CuadroMensaje("Debe ingresar el email del departamento", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (ngDept.ExisteCorreo(entryEmail.Text)) {
+                CuadroMensaje("El correo del departamento ya existe, varíe un poco el correo", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            return true;
+        }
+
 
         public void CambiarModo(Tbl_Vw_Departamento depVw) {
             mode = 1;
@@ -84,24 +104,29 @@ namespace ProyectoEyS
 
 
         protected void OnButtonSaveClicked(object sender, EventArgs e) {
-            if (CuadroMensaje("¿Deseas guardar?", MessageType.Question, ButtonsType.YesNo)) { 
-                if (mode == 0) {
-                    if (dtDep.GuardarDepartamento(OrganizarDatos()))
-                        CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
-                    else
-                        CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
-                }
-                else {
-                    dep.Estado = 2;
-                    if(dtDep.EditarDepartamento(OrganizarDatos(), depVw.Id))
-                        CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
-                    else
-                        CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
-                }
-                this.Destroy();
+            if (!Comprobaciones()) {
+                return;
             }
-        }
 
+            if (!CuadroMensaje("¿Deseas guardar?", MessageType.Question, ButtonsType.YesNo)) {
+                return;
+            }
+
+            if (mode == 0) {
+                if (dtDep.GuardarDepartamento(OrganizarDatos()))
+                    CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
+                else
+                    CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
+            }
+            else {
+                dep.Estado = 2;
+                if(dtDep.EditarDepartamento(OrganizarDatos(), depVw.Id))
+                    CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
+                else
+                    CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
+            }
+            this.Destroy();
+        }
 
         protected void OnButtonEliminarClicked(object sender, EventArgs e) {
             if (CuadroMensaje("¿Deseas dar de baja a este empleado?", MessageType.Question, ButtonsType.YesNo)) {

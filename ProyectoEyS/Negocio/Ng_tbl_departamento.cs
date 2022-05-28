@@ -42,5 +42,34 @@ namespace Negocio {
                 con.CerrarConexion();
             }
         }
+
+        public bool ExisteCorreo(string correo) {
+            IDataReader idr = null;
+            sb.Clear();
+
+            sb.Append("Select * from BDSistemaEyS.tbl_Departamento ");
+            sb.Append("where email = '" + correo + "'");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                int i = 0;
+                while (idr.Read()) {
+                    i++;
+                }
+                if (i > 0)
+                    return true;
+
+                return false;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }
     }
 }

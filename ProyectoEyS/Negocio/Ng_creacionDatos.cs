@@ -240,7 +240,6 @@ namespace Negocio {
             return config;
         }
 
-
         private DateTime ConfirmarFecha(string dato) {
             return dato.Length > 0 ? DateTime.Parse(dato) : default(DateTime);
         }

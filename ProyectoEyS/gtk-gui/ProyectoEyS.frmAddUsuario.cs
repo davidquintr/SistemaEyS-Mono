@@ -183,6 +183,7 @@ namespace ProyectoEyS
 			this.entryCedu.CanFocus = true;
 			this.entryCedu.Name = "entryCedu";
 			this.entryCedu.IsEditable = true;
+			this.entryCedu.MaxLength = 14;
 			this.entryCedu.InvisibleChar = '•';
 			this.table3.Add(this.entryCedu);
 			global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table3[this.entryCedu]));
