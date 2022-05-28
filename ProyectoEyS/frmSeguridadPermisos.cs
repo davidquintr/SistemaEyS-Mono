@@ -147,5 +147,9 @@ namespace ProyectoEyS {
             listOR[18].Activo = ckbResEnt.Active;
         }
 
+        protected void OnButtonCloseClicked(object sender, EventArgs e) {
+            if (CuadroMensaje("¿Quieres salir? los cambios no se guardarán", MessageType.Question, ButtonsType.YesNo))
+                this.Destroy();
+        }
     }
 }

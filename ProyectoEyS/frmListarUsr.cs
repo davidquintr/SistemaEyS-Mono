@@ -23,6 +23,7 @@ namespace ProyectoEyS
                 LlenarcbxeEmp();
                 MostrarDatos(id);
                 Title = "Listar Empleados";
+                scrolled.Visible = false;
             }catch(Exception ex) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un empleado", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
@@ -60,8 +61,8 @@ namespace ProyectoEyS
             lbNombre.Text = listEmp[id].Nombres;
             lbApellido.Text = listEmp[id].Apellidos;
             lbSexo.Text = listEmp[id].Sexo;
-            lbDirec.Text = listEmp[id].Direccion;
-            lbObs.Text = listEmp[id].Observacion;
+            lbDirec.Buffer.Text = listEmp[id].Direccion;
+            lbObs.Buffer.Text = listEmp[id].Observacion;
             lbTel.Text = listEmp[id].Telefono;
             lbEmailCorp.Text = listEmp[id].EmailCorporativo;
             lbEmailPer.Text = listEmp[id].EmailPersonal;
@@ -119,6 +120,13 @@ namespace ProyectoEyS
             frmEstablecerEventos crearEvento = new frmEstablecerEventos();
             crearEvento.CargarDatos(listEmp[id]);
             crearEvento.ComprobarPermiso(selectedUser);
+        }
+
+        protected void OnButtonFiltrarClicked(object sender, EventArgs e) {
+            if (scrolled.Visible) 
+                scrolled.Visible = false;
+             else
+                scrolled.Visible = true;
         }
     }
 }

@@ -27,7 +27,7 @@ namespace ProyectoEyS {
                 this.Build();
                 //Creamos un objeto de la clase WatchClock
                 clock = new WatchClock();
-                clock.ObtenerDimensiones(123, 100);
+                clock.ObtenerDimensiones(137, 137);
                 ClockStart();
             } catch (Exception ex) { }
         }

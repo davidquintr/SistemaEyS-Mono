@@ -526,7 +526,7 @@
         <child>
           <widget class="Gtk.Label" id="labelFecha">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">label1</property>
+            <property name="LabelProp" translatable="yes">DD:MM:YY</property>
           </widget>
           <packing>
             <property name="Position">1</property>
@@ -570,7 +570,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.vistaAdmin" design-size="1062 673">
+  <widget class="Gtk.Window" id="ProyectoEyS.vistaAdmin" design-size="1024 752">
     <action-group name="Default">
       <action id="MenAction">
         <property name="Type">Action</property>
@@ -1002,22 +1002,23 @@
             <child>
               <widget class="Gtk.VBox" id="vbox13">
                 <property name="MemberName" />
-                <property name="WidthRequest">425</property>
+                <property name="WidthRequest">275</property>
                 <property name="Spacing">6</property>
                 <child>
                   <widget class="Gtk.DrawingArea" id="drawingarea1">
                     <property name="MemberName" />
-                    <property name="HeightRequest">200</property>
+                    <property name="HeightRequest">275</property>
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow6">
                     <property name="MemberName" />
-                    <property name="HeightRequest">25</property>
+                    <property name="HeightRequest">32</property>
                     <property name="ShadowType">In</property>
                     <child>
                       <widget class="Gtk.Viewport" id="GtkViewport5">
@@ -1037,20 +1038,35 @@
                   </widget>
                   <packing>
                     <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Calendar" id="calendar10">
+                  <widget class="Gtk.ScrolledWindow" id="scrolledwindow2">
                     <property name="MemberName" />
+                    <property name="WidthRequest">268</property>
+                    <property name="HeightRequest">201</property>
                     <property name="CanFocus">True</property>
-                    <property name="DisplayOptions">35</property>
+                    <property name="ShadowType">In</property>
+                    <child>
+                      <widget class="Gtk.Viewport" id="GtkViewport2">
+                        <property name="MemberName" />
+                        <property name="ShadowType">None</property>
+                        <child>
+                          <widget class="Gtk.Calendar" id="calendar3">
+                            <property name="MemberName" />
+                            <property name="CanFocus">True</property>
+                            <property name="DisplayOptions">35</property>
+                          </widget>
+                        </child>
+                      </widget>
+                    </child>
                   </widget>
                   <packing>
                     <property name="Position">2</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
                     <property name="Expand">False</property>
-                    <property name="Fill">False</property>
                   </packing>
                 </child>
                 <child>
@@ -1081,20 +1097,24 @@
               </widget>
               <packing>
                 <property name="Position">0</property>
-                <property name="AutoSize">True</property>
+                <property name="AutoSize">False</property>
                 <property name="Expand">False</property>
-                <property name="Fill">False</property>
               </packing>
             </child>
             <child>
               <widget class="Gtk.VBox" id="vbox12">
                 <property name="MemberName" />
+                <property name="WidthRequest">766</property>
                 <property name="Spacing">6</property>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow5">
                     <property name="MemberName" />
-                    <property name="HeightRequest">16</property>
+                    <property name="WidthRequest">0</property>
+                    <property name="HeightRequest">48</property>
+                    <property name="VscrollbarPolicy">Never</property>
+                    <property name="HscrollbarPolicy">Never</property>
                     <property name="ShadowType">In</property>
+                    <property name="BorderWidth">5</property>
                     <child>
                       <widget class="Gtk.Viewport" id="GtkViewport4">
                         <property name="MemberName" />
@@ -1102,7 +1122,7 @@
                         <child>
                           <widget class="Gtk.Label" id="label18">
                             <property name="MemberName" />
-                            <property name="HeightRequest">16</property>
+                            <property name="HeightRequest">1</property>
                             <property name="ShowScrollbars">True</property>
                             <property name="LabelProp" translatable="yes">Entradas:</property>
                           </widget>
@@ -1112,17 +1132,18 @@
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
                     <property name="MemberName" />
-                    <property name="HeightRequest">384</property>
                     <property name="ShadowType">In</property>
                     <child>
                       <widget class="Gtk.TreeView" id="trvwEmpleado">
                         <property name="MemberName" />
+                        <property name="WidthRequest">1000</property>
                         <property name="CanFocus">True</property>
                         <property name="ShowScrollbars">True</property>
                       </widget>
@@ -1194,7 +1215,7 @@
                               <packing>
                                 <property name="PackType">End</property>
                                 <property name="Position">1</property>
-                                <property name="AutoSize">False</property>
+                                <property name="AutoSize">True</property>
                               </packing>
                             </child>
                           </widget>
@@ -1226,7 +1247,7 @@
                   </widget>
                   <packing>
                     <property name="Position">2</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
                     <property name="Expand">False</property>
                     <property name="Fill">False</property>
                   </packing>
@@ -2047,7 +2068,7 @@ Generales</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="875 453">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="886 457">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmAddUsuario</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -2290,10 +2311,11 @@ Generales</property>
                     <child>
                       <widget class="Gtk.TextView" id="textvDirec">
                         <property name="MemberName" />
-                        <property name="HeightRequest">53</property>
+                        <property name="HeightRequest">0</property>
                         <property name="CanFocus">True</property>
                         <property name="ShowScrollbars">True</property>
                         <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -2361,7 +2383,7 @@ Generales</property>
                   <widget class="Gtk.Label" id="label16">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">36</property>
+                    <property name="HeightRequest">0</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.1</property>
                     <property name="LabelProp" translatable="yes">Dirección:</property>
@@ -2592,10 +2614,10 @@ Masculino</property>
                     <child>
                       <widget class="Gtk.TextView" id="textvObservaciones">
                         <property name="MemberName" />
-                        <property name="HeightRequest">53</property>
                         <property name="CanFocus">True</property>
                         <property name="ShowScrollbars">True</property>
                         <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -2784,7 +2806,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="label15">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">36</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.1</property>
                     <property name="LabelProp" translatable="yes">Observaciones:</property>
@@ -3065,6 +3086,7 @@ Masculino</property>
                         <property name="CanFocus">True</property>
                         <property name="ShowScrollbars">True</property>
                         <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -3498,6 +3520,7 @@ Masculino</property>
                         <property name="CanFocus">True</property>
                         <property name="ShowScrollbars">True</property>
                         <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -3625,7 +3648,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="640 624">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="640 827">
     <property name="MemberName" />
     <property name="WidthRequest">640</property>
     <property name="Title" translatable="yes">frmListarUsr</property>
@@ -3675,22 +3698,15 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
                     <property name="MemberName" />
-                    <property name="WidthRequest">410</property>
                     <property name="ShadowType">In</property>
                     <child>
-                      <widget class="Gtk.Viewport" id="GtkViewport">
+                      <widget class="Gtk.TextView" id="lbObs">
                         <property name="MemberName" />
-                        <property name="ShadowType">None</property>
-                        <child>
-                          <widget class="Gtk.Label" id="lbObs">
-                            <property name="MemberName" />
-                            <property name="WidthRequest">400</property>
-                            <property name="HeightRequest">47</property>
-                            <property name="ShowScrollbars">True</property>
-                            <property name="Xalign">0</property>
-                            <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
-                          </widget>
-                        </child>
+                        <property name="Sensitive">False</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                        <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -3713,22 +3729,15 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
                     <property name="MemberName" />
-                    <property name="WidthRequest">410</property>
                     <property name="ShadowType">In</property>
                     <child>
-                      <widget class="Gtk.Viewport" id="GtkViewport1">
+                      <widget class="Gtk.TextView" id="lbDirec">
                         <property name="MemberName" />
-                        <property name="ShadowType">None</property>
-                        <child>
-                          <widget class="Gtk.Label" id="lbDirec">
-                            <property name="MemberName" />
-                            <property name="WidthRequest">400</property>
-                            <property name="HeightRequest">47</property>
-                            <property name="ShowScrollbars">True</property>
-                            <property name="Xalign">0</property>
-                            <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
-                          </widget>
-                        </child>
+                        <property name="Sensitive">False</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                        <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -4461,6 +4470,24 @@ Masculino</property>
           </packing>
         </child>
         <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolled">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview1">
+                <property name="MemberName" />
+                <property name="HeightRequest">150</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
           <widget class="Gtk.HBox" id="hbox2">
             <property name="MemberName" />
             <property name="Spacing">6</property>
@@ -4625,7 +4652,7 @@ Masculino</property>
             </child>
           </widget>
           <packing>
-            <property name="Position">3</property>
+            <property name="Position">4</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -4637,8 +4664,22 @@ Masculino</property>
             <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
-            <property name="Size">3</property>
+            <property name="Size">4</property>
             <property name="LayoutStyle">End</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonFiltrar">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Filtrar</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonFiltrarClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
             <child>
               <widget class="Gtk.Button" id="buttonEvento">
                 <property name="MemberName" />
@@ -4651,6 +4692,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonEventoClicked" />
               </widget>
               <packing>
+                <property name="Position">1</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -4665,7 +4707,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonAdminClicked" />
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">2</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -4680,14 +4722,14 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonCloseClicked" />
               </widget>
               <packing>
-                <property name="Position">2</property>
+                <property name="Position">3</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
             </child>
           </widget>
           <packing>
-            <property name="Position">4</property>
+            <property name="Position">5</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -4696,7 +4738,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmEstablecerHorarios" design-size="440 231">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmEstablecerHorarios" design-size="440 234">
     <property name="MemberName" />
     <property name="WidthRequest">440</property>
     <property name="Title" translatable="yes">frmEstablecerHorarios</property>
@@ -5554,7 +5596,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmHorarioAlmuerzo" design-size="390 130">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmHorarioAlmuerzo" design-size="390 131">
     <property name="MemberName" />
     <property name="WidthRequest">390</property>
     <property name="Title" translatable="yes">frmHorarioAlmuerzo</property>
@@ -5857,7 +5899,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmEstablecerEventos" design-size="675 412">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmEstablecerEventos" design-size="675 413">
     <property name="MemberName" />
     <property name="WidthRequest">675</property>
     <property name="Title" translatable="yes">frmEstablecerEventos</property>
@@ -6175,6 +6217,7 @@ Masculino</property>
                     <property name="CanFocus">True</property>
                     <property name="ShowScrollbars">True</property>
                     <property name="Text" translatable="yes" />
+                    <property name="WrapMode">WordChar</property>
                   </widget>
                 </child>
               </widget>
@@ -6251,7 +6294,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarDept" design-size="565 329">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarDept" design-size="565 500">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarDept</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -6298,24 +6341,18 @@ Masculino</property>
                 <property name="RowSpacing">6</property>
                 <property name="ColumnSpacing">6</property>
                 <child>
-                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
                     <property name="MemberName" />
-                    <property name="WidthRequest">336</property>
+                    <property name="WidthRequest">330</property>
                     <property name="ShadowType">In</property>
                     <child>
-                      <widget class="Gtk.Viewport" id="GtkViewport1">
+                      <widget class="Gtk.TextView" id="lbDescrip">
                         <property name="MemberName" />
-                        <property name="ShadowType">None</property>
-                        <child>
-                          <widget class="Gtk.Label" id="lbDescrip">
-                            <property name="MemberName" />
-                            <property name="WidthRequest">400</property>
-                            <property name="HeightRequest">47</property>
-                            <property name="ShowScrollbars">True</property>
-                            <property name="Xalign">0</property>
-                            <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
-                          </widget>
-                        </child>
+                        <property name="Sensitive">False</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                        <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -6339,7 +6376,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbDescripDep">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.2</property>
                     <property name="LabelProp" translatable="yes">Descripción:</property>
@@ -6572,6 +6608,24 @@ Masculino</property>
           </packing>
         </child>
         <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolled">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview1">
+                <property name="MemberName" />
+                <property name="HeightRequest">150</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
           <widget class="Gtk.HBox" id="hbox2">
             <property name="MemberName" />
             <property name="Spacing">6</property>
@@ -6747,7 +6801,7 @@ Masculino</property>
             </child>
           </widget>
           <packing>
-            <property name="Position">3</property>
+            <property name="Position">4</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -6759,8 +6813,22 @@ Masculino</property>
             <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
-            <property name="Size">2</property>
+            <property name="Size">3</property>
             <property name="LayoutStyle">End</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonFiltrar">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Filtrar</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonFiltrarClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
             <child>
               <widget class="Gtk.Button" id="btnAdmin">
                 <property name="MemberName" />
@@ -6773,6 +6841,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnBtnAdminDepClicked" />
               </widget>
               <packing>
+                <property name="Position">1</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -6787,14 +6856,14 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonCloseClicked" />
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">2</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
             </child>
           </widget>
           <packing>
-            <property name="Position">4</property>
+            <property name="Position">5</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -6803,7 +6872,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCargo" design-size="531 288">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCargo" design-size="531 475">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarCargo</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -6850,24 +6919,18 @@ Masculino</property>
                 <property name="RowSpacing">6</property>
                 <property name="ColumnSpacing">6</property>
                 <child>
-                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
                     <property name="MemberName" />
                     <property name="WidthRequest">300</property>
                     <property name="ShadowType">In</property>
                     <child>
-                      <widget class="Gtk.Viewport" id="GtkViewport1">
+                      <widget class="Gtk.TextView" id="lbDesc">
                         <property name="MemberName" />
-                        <property name="ShadowType">None</property>
-                        <child>
-                          <widget class="Gtk.Label" id="lbDes">
-                            <property name="MemberName" />
-                            <property name="WidthRequest">400</property>
-                            <property name="HeightRequest">47</property>
-                            <property name="ShowScrollbars">True</property>
-                            <property name="Xalign">0</property>
-                            <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
-                          </widget>
-                        </child>
+                        <property name="Sensitive">False</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                        <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>
@@ -7079,6 +7142,24 @@ Masculino</property>
           </packing>
         </child>
         <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolled">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview1">
+                <property name="MemberName" />
+                <property name="HeightRequest">150</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
           <widget class="Gtk.HBox" id="hbox2">
             <property name="MemberName" />
             <property name="HeightRequest">35</property>
@@ -7233,7 +7314,7 @@ Masculino</property>
             </child>
           </widget>
           <packing>
-            <property name="Position">3</property>
+            <property name="Position">4</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -7245,8 +7326,22 @@ Masculino</property>
             <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
-            <property name="Size">2</property>
+            <property name="Size">3</property>
             <property name="LayoutStyle">End</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonFiltrar">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Filtrar</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonFiltrarClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
             <child>
               <widget class="Gtk.Button" id="buttonAdmin">
                 <property name="MemberName" />
@@ -7259,6 +7354,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonAdminClicked" />
               </widget>
               <packing>
+                <property name="Position">1</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -7273,14 +7369,14 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonCloseClicked" />
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">2</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
             </child>
           </widget>
           <packing>
-            <property name="Position">4</property>
+            <property name="Position">5</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -8164,6 +8260,7 @@ Masculino</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">Cerrar</property>
                 <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonCloseClicked" />
               </widget>
               <packing>
                 <property name="Position">1</property>
@@ -9087,10 +9184,11 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCredenciales" design-size="490 287">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCredenciales" design-size="490 458">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarCredenciales</property>
     <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
     <child>
       <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
@@ -9390,6 +9488,24 @@ Masculino</property>
           </packing>
         </child>
         <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolled">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview1">
+                <property name="MemberName" />
+                <property name="HeightRequest">150</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
           <widget class="Gtk.HBox" id="hbox2">
             <property name="MemberName" />
             <property name="HeightRequest">35</property>
@@ -9543,7 +9659,7 @@ Masculino</property>
             </child>
           </widget>
           <packing>
-            <property name="Position">3</property>
+            <property name="Position">4</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -9555,8 +9671,22 @@ Masculino</property>
             <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
-            <property name="Size">3</property>
+            <property name="Size">4</property>
             <property name="LayoutStyle">End</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonFiltrar">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Filtrar</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonFiltrarClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
             <child>
               <widget class="Gtk.Button" id="btnEliminar">
                 <property name="MemberName" />
@@ -9566,6 +9696,7 @@ Masculino</property>
                 <property name="UseUnderline">True</property>
               </widget>
               <packing>
+                <property name="Position">1</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -9582,7 +9713,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnBtnAdminClicked" />
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">2</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -9597,14 +9728,14 @@ Masculino</property>
                 <signal name="Clicked" handler="OnBtnCerrarClicked" />
               </widget>
               <packing>
-                <property name="Position">2</property>
+                <property name="Position">3</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
             </child>
           </widget>
           <packing>
-            <property name="Position">4</property>
+            <property name="Position">5</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -9613,10 +9744,11 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarRoles" design-size="490 208">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarRoles" design-size="490 448">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarRoles</property>
     <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
     <child>
       <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
@@ -9654,10 +9786,40 @@ Masculino</property>
             <child>
               <widget class="Gtk.Table" id="table1">
                 <property name="MemberName" />
-                <property name="NRows">2</property>
+                <property name="NRows">3</property>
                 <property name="NColumns">2</property>
                 <property name="RowSpacing">6</property>
                 <property name="ColumnSpacing">6</property>
+                <child>
+                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                    <property name="MemberName" />
+                    <property name="ShadowType">In</property>
+                    <child>
+                      <widget class="Gtk.TextView" id="twPermisos">
+                        <property name="MemberName" />
+                        <property name="Sensitive">False</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                        <property name="Text" translatable="yes" />
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">2</property>
+                    <property name="BottomAttach">3</property>
+                    <property name="LeftAttach">1</property>
+                    <property name="RightAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
                 <child>
                   <widget class="Gtk.Label" id="lbID">
                     <property name="MemberName" />
@@ -9744,6 +9906,28 @@ Masculino</property>
                     <property name="YShrink">False</property>
                   </packing>
                 </child>
+                <child>
+                  <widget class="Gtk.Label" id="lbPermisos">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">175</property>
+                    <property name="HeightRequest">20</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">Permisos:</property>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">2</property>
+                    <property name="BottomAttach">3</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
               </widget>
               <packing>
                 <property name="Position">1</property>
@@ -9782,6 +9966,24 @@ Masculino</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolled">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview1">
+                <property name="MemberName" />
+                <property name="HeightRequest">150</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
           </packing>
         </child>
         <child>
@@ -9959,7 +10161,7 @@ Masculino</property>
             </child>
           </widget>
           <packing>
-            <property name="Position">3</property>
+            <property name="Position">4</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -9971,8 +10173,22 @@ Masculino</property>
             <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
-            <property name="Size">2</property>
+            <property name="Size">3</property>
             <property name="LayoutStyle">End</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonFiltrar">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Filtrar</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonFiltrarClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
             <child>
               <widget class="Gtk.Button" id="btnAdmin">
                 <property name="MemberName" />
@@ -9985,6 +10201,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnBtnAdminClicked" />
               </widget>
               <packing>
+                <property name="Position">1</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -9999,14 +10216,14 @@ Masculino</property>
                 <signal name="Clicked" handler="OnButtonCloseClicked" />
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">2</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
             </child>
           </widget>
           <packing>
-            <property name="Position">4</property>
+            <property name="Position">5</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>

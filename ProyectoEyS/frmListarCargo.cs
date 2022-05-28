@@ -20,6 +20,7 @@ namespace ProyectoEyS
         public frmListarCargo() : base(Gtk.WindowType.Toplevel) {
             try {
                 this.Build();
+                scrolled.Visible = false;
                 listCargo = dtr.ColocarVwCargos();
                 LlenarComboCrg();
                 MostrarDatos(id);
@@ -56,7 +57,7 @@ namespace ProyectoEyS
             lbID.Text = listCargo[id].Id.ToString();
             lbNombre.Text = listCargo[id].Nombre;
             lbDept.Text = listCargo[id].Departamento;
-            lbDes.Text = listCargo[id].Descripcion;
+            lbDesc.Buffer.Text = listCargo[id].Descripcion;
             cbxEListarCar.Active = id;
             lbCountCar.Text = "" + (id + 1) + "/" + listCargo.Count;
         }
@@ -101,5 +102,13 @@ namespace ProyectoEyS
         protected void OnButtonCambiarHorClicked(object sender, EventArgs e) {
             frmEstablecerHorarios establecerHorarios = new frmEstablecerHorarios();
         }
+
+        protected void OnButtonFiltrarClicked(object sender, EventArgs e) {
+            if (scrolled.Visible)
+                scrolled.Visible = false;
+            else
+                scrolled.Visible = true;
+        }
     }
-}
+    }
+

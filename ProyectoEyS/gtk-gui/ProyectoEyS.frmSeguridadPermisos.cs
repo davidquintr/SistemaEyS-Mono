@@ -244,7 +244,6 @@ namespace ProyectoEyS
 			w10.Fill = false;
 			// Container child hbox5.Gtk.Box+BoxChild
 			this.table1 = new global::Gtk.Table(((uint)(1)), ((uint)(5)), false);
-			this.table1.Name = "table1";
 			this.table1.RowSpacing = ((uint)(6));
 			this.table1.ColumnSpacing = ((uint)(6));
 			// Container child table1.Gtk.Table+TableChild
@@ -696,6 +695,7 @@ namespace ProyectoEyS
 			this.rbPers.Clicked += new global::System.EventHandler(this.OnRbPersClicked);
 			this.rbControl.Clicked += new global::System.EventHandler(this.OnRbControlClicked);
 			this.buttonGuardar.Clicked += new global::System.EventHandler(this.OnButtonGuardarClicked);
+			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}
 	}
 }

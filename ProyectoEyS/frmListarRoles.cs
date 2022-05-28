@@ -20,6 +20,7 @@ namespace ProyectoEyS
         public frmListarRoles() :
                 base(Gtk.WindowType.Toplevel) {
             this.Build();
+            scrolled.Visible = false;
             listRol = dtRol.ColocarVwRol();
             LlenarComboRol();
             Title = "Listar Roles";
@@ -54,6 +55,8 @@ namespace ProyectoEyS
             lbNombre.Text = listRol[id].Nombre;
             cbxEListarRol.Active = id;
             lbCountRol.Text = "" + (id + 1) + "/" + listRol.Count;
+            string texto = ngOpcRol.ObtenerTextoRoles(listRol[id].Id);
+            if (texto == "") twPermisos.Buffer.Text = "Sin permisos"; else twPermisos.Buffer.Text = texto;
         }
 
         protected void OnCbxEListarRolChanged(object sender, EventArgs e) {
@@ -88,5 +91,13 @@ namespace ProyectoEyS
             editRol.CambiarModo(listRol[id]);
             editRol.ComprobarPermiso(selectedUser);
         }
+
+        protected void OnButtonFiltrarClicked(object sender, EventArgs e) {
+            if (scrolled.Visible)
+                scrolled.Visible = false;
+            else
+                scrolled.Visible = true;
+        }
     }
-}
+    }
+

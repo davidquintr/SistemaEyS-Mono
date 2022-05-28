@@ -256,9 +256,10 @@ namespace ProyectoEyS
 			this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
 			this.textvDirec = new global::Gtk.TextView();
-			this.textvDirec.HeightRequest = 53;
+			this.textvDirec.HeightRequest = 0;
 			this.textvDirec.CanFocus = true;
 			this.textvDirec.Name = "textvDirec";
+			this.textvDirec.WrapMode = ((global::Gtk.WrapMode)(3));
 			this.GtkScrolledWindow1.Add(this.textvDirec);
 			this.table3.Add(this.GtkScrolledWindow1);
 			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table3[this.GtkScrolledWindow1]));
@@ -297,7 +298,7 @@ namespace ProyectoEyS
 			// Container child table3.Gtk.Table+TableChild
 			this.label16 = new global::Gtk.Label();
 			this.label16.WidthRequest = 175;
-			this.label16.HeightRequest = 36;
+			this.label16.HeightRequest = 0;
 			this.label16.Name = "label16";
 			this.label16.Xalign = 0F;
 			this.label16.Yalign = 0.1F;
@@ -438,9 +439,9 @@ namespace ProyectoEyS
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
 			this.textvObservaciones = new global::Gtk.TextView();
-			this.textvObservaciones.HeightRequest = 53;
 			this.textvObservaciones.CanFocus = true;
 			this.textvObservaciones.Name = "textvObservaciones";
+			this.textvObservaciones.WrapMode = ((global::Gtk.WrapMode)(3));
 			this.GtkScrolledWindow.Add(this.textvObservaciones);
 			this.table4.Add(this.GtkScrolledWindow);
 			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table4[this.GtkScrolledWindow]));
@@ -557,7 +558,6 @@ namespace ProyectoEyS
 			// Container child table4.Gtk.Table+TableChild
 			this.label15 = new global::Gtk.Label();
 			this.label15.WidthRequest = 175;
-			this.label15.HeightRequest = 36;
 			this.label15.Name = "label15";
 			this.label15.Xalign = 0F;
 			this.label15.Yalign = 0.1F;
@@ -650,8 +650,8 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 875;
-			this.DefaultHeight = 453;
+			this.DefaultWidth = 886;
+			this.DefaultHeight = 457;
 			this.Show();
 			this.cbxEDep.Changed += new global::System.EventHandler(this.OnCbxEDepChanged);
 			this.cbxEDep.ButtonPressEvent += new global::Gtk.ButtonPressEventHandler(this.OnCbxEDepButtonPressEvent);

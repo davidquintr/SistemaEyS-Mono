@@ -299,6 +299,7 @@ namespace ProyectoEyS
 			this.textvDescripcion.HeightRequest = 50;
 			this.textvDescripcion.CanFocus = true;
 			this.textvDescripcion.Name = "textvDescripcion";
+			this.textvDescripcion.WrapMode = ((global::Gtk.WrapMode)(3));
 			this.GtkScrolledWindow.Add(this.textvDescripcion);
 			this.hbox5.Add(this.GtkScrolledWindow);
 			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.GtkScrolledWindow]));
@@ -356,7 +357,7 @@ namespace ProyectoEyS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 675;
-			this.DefaultHeight = 412;
+			this.DefaultHeight = 413;
 			this.Show();
 			this.buttonAdmin.Clicked += new global::System.EventHandler(this.OnButtonSaveClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);

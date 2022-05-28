@@ -150,7 +150,9 @@ namespace ProyectoEyS
 
 		private global::Gtk.Label labelHora;
 
-		private global::Gtk.Calendar calendar10;
+		private global::Gtk.ScrolledWindow scrolledwindow2;
+
+		private global::Gtk.Calendar calendar3;
 
 		private global::Gtk.ScrolledWindow GtkScrolledWindow4;
 
@@ -432,19 +434,20 @@ namespace ProyectoEyS
 			this.hbox2.Spacing = 6;
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.vbox13 = new global::Gtk.VBox();
-			this.vbox13.WidthRequest = 425;
+			this.vbox13.WidthRequest = 275;
 			this.vbox13.Name = "vbox13";
 			this.vbox13.Spacing = 6;
 			// Container child vbox13.Gtk.Box+BoxChild
 			this.drawingarea1 = new global::Gtk.DrawingArea();
-			this.drawingarea1.HeightRequest = 200;
+			this.drawingarea1.HeightRequest = 275;
 			this.drawingarea1.Name = "drawingarea1";
 			this.vbox13.Add(this.drawingarea1);
 			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox13[this.drawingarea1]));
 			w3.Position = 0;
+			w3.Expand = false;
 			// Container child vbox13.Gtk.Box+BoxChild
 			this.GtkScrolledWindow6 = new global::Gtk.ScrolledWindow();
-			this.GtkScrolledWindow6.HeightRequest = 25;
+			this.GtkScrolledWindow6.HeightRequest = 32;
 			this.GtkScrolledWindow6.Name = "GtkScrolledWindow6";
 			this.GtkScrolledWindow6.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow6.Gtk.Container+ContainerChild
@@ -461,74 +464,91 @@ namespace ProyectoEyS
 			this.vbox13.Add(this.GtkScrolledWindow6);
 			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox13[this.GtkScrolledWindow6]));
 			w7.Position = 1;
+			w7.Expand = false;
 			// Container child vbox13.Gtk.Box+BoxChild
-			this.calendar10 = new global::Gtk.Calendar();
-			this.calendar10.CanFocus = true;
-			this.calendar10.Name = "calendar10";
-			this.calendar10.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-			this.vbox13.Add(this.calendar10);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox13[this.calendar10]));
-			w8.Position = 2;
-			w8.Expand = false;
-			w8.Fill = false;
+			this.scrolledwindow2 = new global::Gtk.ScrolledWindow();
+			this.scrolledwindow2.WidthRequest = 268;
+			this.scrolledwindow2.HeightRequest = 201;
+			this.scrolledwindow2.CanFocus = true;
+			this.scrolledwindow2.Name = "scrolledwindow2";
+			this.scrolledwindow2.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child scrolledwindow2.Gtk.Container+ContainerChild
+			global::Gtk.Viewport w8 = new global::Gtk.Viewport();
+			w8.ShadowType = ((global::Gtk.ShadowType)(0));
+			// Container child GtkViewport2.Gtk.Container+ContainerChild
+			this.calendar3 = new global::Gtk.Calendar();
+			this.calendar3.CanFocus = true;
+			this.calendar3.Name = "calendar3";
+			this.calendar3.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+			w8.Add(this.calendar3);
+			this.scrolledwindow2.Add(w8);
+			this.vbox13.Add(this.scrolledwindow2);
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox13[this.scrolledwindow2]));
+			w11.Position = 2;
+			w11.Expand = false;
 			// Container child vbox13.Gtk.Box+BoxChild
 			this.GtkScrolledWindow4 = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow4.HeightRequest = 180;
 			this.GtkScrolledWindow4.Name = "GtkScrolledWindow4";
 			this.GtkScrolledWindow4.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow4.Gtk.Container+ContainerChild
-			global::Gtk.Viewport w9 = new global::Gtk.Viewport();
-			w9.ShadowType = ((global::Gtk.ShadowType)(0));
+			global::Gtk.Viewport w12 = new global::Gtk.Viewport();
+			w12.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child GtkViewport3.Gtk.Container+ContainerChild
 			this.label17 = new global::Gtk.Label();
 			this.label17.Name = "label17";
 			this.label17.LabelProp = global::Mono.Unix.Catalog.GetString("Aquí irán listado los eventos por mes.");
 			this.label17.UseUnderline = true;
-			w9.Add(this.label17);
-			this.GtkScrolledWindow4.Add(w9);
+			w12.Add(this.label17);
+			this.GtkScrolledWindow4.Add(w12);
 			this.vbox13.Add(this.GtkScrolledWindow4);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox13[this.GtkScrolledWindow4]));
-			w12.Position = 3;
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox13[this.GtkScrolledWindow4]));
+			w15.Position = 3;
 			this.hbox2.Add(this.vbox13);
-			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.vbox13]));
-			w13.Position = 0;
-			w13.Expand = false;
-			w13.Fill = false;
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.vbox13]));
+			w16.Position = 0;
+			w16.Expand = false;
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.vbox12 = new global::Gtk.VBox();
+			this.vbox12.WidthRequest = 766;
 			this.vbox12.Name = "vbox12";
 			this.vbox12.Spacing = 6;
 			// Container child vbox12.Gtk.Box+BoxChild
 			this.GtkScrolledWindow5 = new global::Gtk.ScrolledWindow();
-			this.GtkScrolledWindow5.HeightRequest = 16;
+			this.GtkScrolledWindow5.WidthRequest = 0;
+			this.GtkScrolledWindow5.HeightRequest = 48;
 			this.GtkScrolledWindow5.Name = "GtkScrolledWindow5";
+			this.GtkScrolledWindow5.VscrollbarPolicy = ((global::Gtk.PolicyType)(2));
+			this.GtkScrolledWindow5.HscrollbarPolicy = ((global::Gtk.PolicyType)(2));
 			this.GtkScrolledWindow5.ShadowType = ((global::Gtk.ShadowType)(1));
+			this.GtkScrolledWindow5.BorderWidth = ((uint)(5));
 			// Container child GtkScrolledWindow5.Gtk.Container+ContainerChild
-			global::Gtk.Viewport w14 = new global::Gtk.Viewport();
-			w14.ShadowType = ((global::Gtk.ShadowType)(0));
+			global::Gtk.Viewport w17 = new global::Gtk.Viewport();
+			w17.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child GtkViewport4.Gtk.Container+ContainerChild
 			this.label18 = new global::Gtk.Label();
-			this.label18.HeightRequest = 16;
+			this.label18.HeightRequest = 1;
 			this.label18.Name = "label18";
 			this.label18.LabelProp = global::Mono.Unix.Catalog.GetString("Entradas:");
-			w14.Add(this.label18);
-			this.GtkScrolledWindow5.Add(w14);
+			w17.Add(this.label18);
+			this.GtkScrolledWindow5.Add(w17);
 			this.vbox12.Add(this.GtkScrolledWindow5);
-			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox12[this.GtkScrolledWindow5]));
-			w17.Position = 0;
+			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.vbox12[this.GtkScrolledWindow5]));
+			w20.Position = 0;
+			w20.Expand = false;
 			// Container child vbox12.Gtk.Box+BoxChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
-			this.GtkScrolledWindow.HeightRequest = 384;
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
 			this.trvwEmpleado = new global::Gtk.TreeView();
+			this.trvwEmpleado.WidthRequest = 1000;
 			this.trvwEmpleado.CanFocus = true;
 			this.trvwEmpleado.Name = "trvwEmpleado";
 			this.GtkScrolledWindow.Add(this.trvwEmpleado);
 			this.vbox12.Add(this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox12[this.GtkScrolledWindow]));
-			w19.Position = 1;
+			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox12[this.GtkScrolledWindow]));
+			w22.Position = 1;
 			// Container child vbox12.Gtk.Box+BoxChild
 			this.vbox14 = new global::Gtk.VBox();
 			this.vbox14.Name = "vbox14";
@@ -546,26 +566,26 @@ namespace ProyectoEyS
 			this.GtkScrolledWindow2.Name = "GtkScrolledWindow2";
 			this.GtkScrolledWindow2.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow2.Gtk.Container+ContainerChild
-			global::Gtk.Viewport w20 = new global::Gtk.Viewport();
-			w20.ShadowType = ((global::Gtk.ShadowType)(0));
+			global::Gtk.Viewport w23 = new global::Gtk.Viewport();
+			w23.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child GtkViewport1.Gtk.Container+ContainerChild
 			this.labelCargo = new global::Gtk.Label();
 			this.labelCargo.Name = "labelCargo";
 			this.labelCargo.Xalign = 1F;
 			this.labelCargo.LabelProp = global::Mono.Unix.Catalog.GetString("CARGO");
 			this.labelCargo.UseUnderline = true;
-			w20.Add(this.labelCargo);
-			this.GtkScrolledWindow2.Add(w20);
+			w23.Add(this.labelCargo);
+			this.GtkScrolledWindow2.Add(w23);
 			this.vbox16.Add(this.GtkScrolledWindow2);
-			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.vbox16[this.GtkScrolledWindow2]));
-			w23.Position = 0;
+			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.vbox16[this.GtkScrolledWindow2]));
+			w26.Position = 0;
 			// Container child vbox16.Gtk.Box+BoxChild
 			this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow1.Name = "GtkScrolledWindow1";
 			this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
-			global::Gtk.Viewport w24 = new global::Gtk.Viewport();
-			w24.ShadowType = ((global::Gtk.ShadowType)(0));
+			global::Gtk.Viewport w27 = new global::Gtk.Viewport();
+			w27.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child GtkViewport.Gtk.Container+ContainerChild
 			this.labelEmp = new global::Gtk.Label();
 			this.labelEmp.Name = "labelEmp";
@@ -573,48 +593,49 @@ namespace ProyectoEyS
 			this.labelEmp.LabelProp = global::Mono.Unix.Catalog.GetString("Nombre");
 			this.labelEmp.UseUnderline = true;
 			this.labelEmp.Justify = ((global::Gtk.Justification)(2));
-			w24.Add(this.labelEmp);
-			this.GtkScrolledWindow1.Add(w24);
+			w27.Add(this.labelEmp);
+			this.GtkScrolledWindow1.Add(w27);
 			this.vbox16.Add(this.GtkScrolledWindow1);
-			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.vbox16[this.GtkScrolledWindow1]));
-			w27.PackType = ((global::Gtk.PackType)(1));
-			w27.Position = 1;
+			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.vbox16[this.GtkScrolledWindow1]));
+			w30.PackType = ((global::Gtk.PackType)(1));
+			w30.Position = 1;
 			this.hbox3.Add(this.vbox16);
-			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.vbox16]));
-			w28.Position = 0;
+			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.vbox16]));
+			w31.Position = 0;
 			// Container child hbox3.Gtk.Box+BoxChild
 			this.image1 = new global::Gtk.Image();
 			this.image1.Name = "image1";
 			this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("ProyectoEyS.Texturas.userActive.png");
 			this.hbox3.Add(this.image1);
-			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.image1]));
-			w29.Position = 1;
-			w29.Expand = false;
-			w29.Fill = false;
-			this.vbox14.Add(this.hbox3);
-			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.vbox14[this.hbox3]));
-			w30.Position = 0;
-			w30.Expand = false;
-			w30.Fill = false;
-			this.vbox12.Add(this.vbox14);
-			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.vbox12[this.vbox14]));
-			w31.Position = 2;
-			w31.Expand = false;
-			w31.Fill = false;
-			this.hbox2.Add(this.vbox12);
-			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.vbox12]));
+			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.image1]));
 			w32.Position = 1;
+			w32.Expand = false;
+			w32.Fill = false;
+			this.vbox14.Add(this.hbox3);
+			global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.vbox14[this.hbox3]));
+			w33.Position = 0;
+			w33.Expand = false;
+			w33.Fill = false;
+			this.vbox12.Add(this.vbox14);
+			global::Gtk.Box.BoxChild w34 = ((global::Gtk.Box.BoxChild)(this.vbox12[this.vbox14]));
+			w34.Position = 2;
+			w34.Expand = false;
+			w34.Fill = false;
+			this.hbox2.Add(this.vbox12);
+			global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.vbox12]));
+			w35.Position = 1;
 			this.vbox7.Add(this.hbox2);
-			global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.hbox2]));
-			w33.Position = 1;
+			global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.hbox2]));
+			w36.Position = 1;
 			this.Add(this.vbox7);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 1062;
-			this.DefaultHeight = 673;
+			this.DefaultWidth = 1024;
+			this.DefaultHeight = 752;
 			this.Show();
+			
 			this.ParamGenButt.Activated += new global::System.EventHandler(this.OnParamGenButtActivated);
 			this.CerrarSesinAction2.Activated += new global::System.EventHandler(this.OnCerrarSesinAction2Activated);
 			this.DepartamentoAdd.Activated += new global::System.EventHandler(this.OnDepartamentoAddActivated);

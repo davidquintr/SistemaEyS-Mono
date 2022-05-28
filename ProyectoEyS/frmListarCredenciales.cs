@@ -17,6 +17,7 @@ namespace ProyectoEyS {
 
         public frmListarCredenciales() : base(Gtk.WindowType.Toplevel) {
             this.Build();
+            scrolled.Visible = false;
             listUsuarios = dtUsr.ColocarVwUsuarios();
             LlenarComboUser();
             MostrarDatos(id);
@@ -88,5 +89,12 @@ namespace ProyectoEyS {
             adminUser.CambiarModo(listUsuarios[id]);
             adminUser.ComprobarPermiso(selectedUser);
         }
+
+        protected void OnButtonFiltrarClicked(object sender, EventArgs e) {
+            if (scrolled.Visible)
+                scrolled.Visible = false;
+            else
+                scrolled.Visible = true;
+        }
     }
-}
+    }

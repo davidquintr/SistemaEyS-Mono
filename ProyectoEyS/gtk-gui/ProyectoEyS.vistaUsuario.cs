@@ -253,7 +253,7 @@ namespace ProyectoEyS
 			// Container child vbox17.Gtk.Box+BoxChild
 			this.labelFecha = new global::Gtk.Label();
 			this.labelFecha.Name = "labelFecha";
-			this.labelFecha.LabelProp = global::Mono.Unix.Catalog.GetString("label1");
+			this.labelFecha.LabelProp = global::Mono.Unix.Catalog.GetString("DD:MM:YY");
 			this.vbox17.Add(this.labelFecha);
 			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.vbox17[this.labelFecha]));
 			w20.Position = 1;

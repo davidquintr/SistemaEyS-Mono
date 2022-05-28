@@ -187,6 +187,7 @@ namespace ProyectoEyS
 			this.textvDesc.HeightRequest = 70;
 			this.textvDesc.CanFocus = true;
 			this.textvDesc.Name = "textvDesc";
+			this.textvDesc.WrapMode = ((global::Gtk.WrapMode)(3));
 			this.scroller.Add(this.textvDesc);
 			this.table3.Add(this.scroller);
 			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table3[this.scroller]));

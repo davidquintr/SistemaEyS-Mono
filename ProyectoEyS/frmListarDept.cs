@@ -19,6 +19,7 @@ namespace ProyectoEyS
         public frmListarDept() : base(Gtk.WindowType.Toplevel) {
             this.Build();
             try {
+                scrolled.Visible = false;
                 listDep = dtDep.ColocarVwDepart();
                 LlenarcbxeDepartamento();
                 MostrarDatos(id);
@@ -57,7 +58,7 @@ namespace ProyectoEyS
             lbNombre.Text = listDep[id].Nombre;
             lbEmail.Text = listDep[id].Email;
             lbExt.Text = listDep[id].Ext;
-            lbDescrip.Text = listDep[id].Descripcion;
+            lbDescrip.Buffer.Text = listDep[id].Descripcion;
 
             cbxEListarDep.Active = id;
             lbCountDep.Text = "" + (id + 1) + "/" + listDep.Count;
@@ -99,5 +100,12 @@ namespace ProyectoEyS
         protected void OnButtonCloseClicked(object sender, EventArgs e) {
             this.Destroy();
         }
+
+        protected void OnButtonFiltrarClicked(object sender, EventArgs e) {
+            if (scrolled.Visible)
+                scrolled.Visible = false;
+            else
+                scrolled.Visible = true;
+        }
     }
-}
+    }
