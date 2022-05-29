@@ -56,12 +56,12 @@ namespace ProyectoEyS {
 
         public bool Comprobaciones() {
 
-            if(entryNombre.Text == string.Empty) {
+            if (entryNombre.Text == string.Empty) {
                 CuadroMensaje("Debe ingresar el nombre del cargo", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }
 
-            if(cbxEDep.Active == 0) {
+            if (cbxEDep.Active == 0) {
                 CuadroMensaje("Debe seleccionar el departamento al que pertenece", MessageType.Error, ButtonsType.Ok);
                 return false;
             }
@@ -90,9 +90,23 @@ namespace ProyectoEyS {
 
 
         protected void LlenarComboDept() {
-            for (int i = 0; i < depList.Count; i++) {
-                this.cbxEDep.InsertText(i + 1, depList[i].Nombre);
+            int count = 0;
+            cbxEDep.Clear();
+            CellRendererText cell = new CellRendererText();
+            cbxEDep.PackStart(cell, false);
+            ListStore store = new ListStore(typeof(string));
+            cbxEDep.AddAttribute(cell, "text", count);
+
+            foreach (Tbl_Vw_Departamento dept in depList) {
+                store.AppendValues(dept.Nombre);
+                count++;
             }
+
+            cbxEDep.Model = store;
+            cbxEDep.Entry.Completion = new EntryCompletion();
+            cbxEDep.Entry.Completion.Model = store;
+            cbxEDep.Entry.Completion.TextColumn = 0;
+            cbxEDep.Active = 0;
         }
 
 
@@ -149,7 +163,7 @@ namespace ProyectoEyS {
                     CuadroMensaje("La operación ha fallado", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
 
-                for(int i = 0; i < horaList.Count; i++) {
+                for (int i = 0; i < horaList.Count; i++) {
                     if (dtHorario.GuardarHorario(horaList[i]))
                         conteoError++;
                 }
@@ -160,7 +174,7 @@ namespace ProyectoEyS {
                     CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
                 else
                     CuadroMensaje("La operación ha fallado", MessageType.Error, ButtonsType.Ok);
-                    this.Destroy();
+                this.Destroy();
 
                 for (int i = 0; i < horaList.Count; i++) {
                     if (!dtHorario.EditarHorario(horaList[i]))

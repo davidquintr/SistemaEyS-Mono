@@ -17,6 +17,7 @@ public partial class MainWindow : Gtk.Window {
     Ng_tbl_usuario ngUsuario = new Ng_tbl_usuario();
     Ng_tbl_emp ngEmp = new Ng_tbl_emp();
     Ng_tbl_OpcRol ngOpRol = new Ng_tbl_OpcRol();
+    Ng_tbl_evento ngEvento = new Ng_tbl_evento();
 
     Dt_tbl_usuario dtUsuario = new Dt_tbl_usuario();
 
@@ -62,6 +63,13 @@ public partial class MainWindow : Gtk.Window {
             CuadroMensaje("No hay empleado asociado a su usuario, contacte con el soporte técnico.", MessageType.Error, ButtonsType.Ok);
             return;
         }
+
+        if (ngEvento.ExisteEvento(selectedEmp.Id)) {
+            CuadroMensaje("Este usuario se fue de sabático, cariño.", MessageType.Warning, ButtonsType.Ok);
+            return;
+
+        }
+
         vistaUsuario = new vistaUsuario();
         vistaUsuario.ConfigurarInicio(selectedEmp);
         vistaUsuario.CallMainWindow = this;

@@ -1070,22 +1070,18 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow4">
+                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow3">
                     <property name="MemberName" />
-                    <property name="HeightRequest">180</property>
                     <property name="ShadowType">In</property>
+                    <property name="BorderWidth">10</property>
                     <child>
-                      <widget class="Gtk.Viewport" id="GtkViewport3">
+                      <widget class="Gtk.TextView" id="tvEvento">
                         <property name="MemberName" />
-                        <property name="ShadowType">None</property>
-                        <child>
-                          <widget class="Gtk.Label" id="label17">
-                            <property name="MemberName" />
-                            <property name="ShowScrollbars">True</property>
-                            <property name="LabelProp" translatable="yes">Aquí irán listado los eventos por mes.</property>
-                            <property name="UseUnderline">True</property>
-                          </widget>
-                        </child>
+                        <property name="Sensitive">False</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                        <property name="Text" translatable="yes" />
+                        <property name="WrapMode">WordChar</property>
                       </widget>
                     </child>
                   </widget>

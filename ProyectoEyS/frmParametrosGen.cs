@@ -13,6 +13,7 @@ namespace ProyectoEyS
 
         public frmParametrosGen() : base(Gtk.WindowType.Toplevel) {
             this.Build();
+            Title = "Parámetros Generales";
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {

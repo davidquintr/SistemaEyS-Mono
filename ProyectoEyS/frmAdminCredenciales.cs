@@ -8,7 +8,7 @@ using Vistas;
 
 namespace ProyectoEyS {
     public partial class frmAdminCredenciales : Gtk.Window {
-    
+
         private int mode;
         Dt_tbl_rol dtRol = new Dt_tbl_rol();
         Dt_tbl_emp dtEmp = new Dt_tbl_emp();
@@ -31,22 +31,51 @@ namespace ProyectoEyS {
 
             roles = dtRol.ColocarVwRol();
             empleados = dtEmp.ColocarCboxVwEmp();
-            LlenarCombos();
+            LlenarComboRol();
+            LlenarComboEmp();
             entryNombre.GrabFocus();
             buttonEliminar.Visible = false;
         }
 
-        private void LlenarCombos() {
-            for (int i = 0; i < roles.Count; i++) {
-                this.cbeRol.InsertText(i + 1, roles[i].Nombre);
+        private void LlenarComboRol() {
+            int count = 0;
+            cbeRol.Clear();
+            CellRendererText cell = new CellRendererText();
+            cbeRol.PackStart(cell, false);
+            ListStore store = new ListStore(typeof(string));
+            cbeRol.AddAttribute(cell, "text", count);
+
+            store.AppendValues("Sin rol asignado");
+            foreach (Tbl_Vw_Rol rol in roles) {
+                store.AppendValues(rol.Nombre);
+                count++;
             }
 
-            for (int i = 0; i < empleados.Count; i++) {
-                formatoEmpleado.Add(empleados[i].PrimerNombre + " " + empleados[i].PrimerApellido + " - " + empleados[i].Cedula);
-                this.cbeEmpleado.InsertText(i + 1, formatoEmpleado[i]);
+            cbeRol.Model = store;
+            cbeRol.Entry.Completion = new EntryCompletion();
+            cbeRol.Entry.Completion.Model = store;
+            cbeRol.Entry.Completion.TextColumn = 0;
+            cbeRol.Active = 0;
+        }
+
+        private void LlenarComboEmp() {
+            int count = 0;
+            cbeEmpleado.Clear();
+            CellRendererText cell = new CellRendererText();
+            cbeEmpleado.PackStart(cell, false);
+            ListStore store = new ListStore(typeof(string));
+            cbeEmpleado.AddAttribute(cell, "text", count);
+
+            store.AppendValues("Sin empleado Asignado");
+            foreach (Tbl_Empleado emp in empleados) {
+                store.AppendValues(emp.PrimerNombre + " " + emp.PrimerApellido + " - " + emp.Cedula);
             }
- 
-            empleados = null;
+
+            cbeEmpleado.Model = store;
+            cbeEmpleado.Entry.Completion = new EntryCompletion();
+            cbeEmpleado.Entry.Completion.Model = store;
+            cbeEmpleado.Entry.Completion.TextColumn = 0;
+            cbeEmpleado.Active = 0;
         }
 
         public void CambiarModo(Tbl_Vw_Usuario usuario) {
@@ -77,8 +106,8 @@ namespace ProyectoEyS {
                 this.selectedUser = selectedUser;
         }
 
-        private void SeleccionarRol() { 
-            for(int i = 0; i < roles.Count; i++) {
+        private void SeleccionarRol() {
+            for (int i = 0; i < roles.Count; i++) {
                 if (usuario.Rol == roles[i].Nombre) {
                     cbeRol.Active = i + 1;
                     return;
@@ -88,8 +117,8 @@ namespace ProyectoEyS {
         }
 
         private void SeleccionarEmp() {
-            for(int i = 0; i < formatoEmpleado.Count; i++) { 
-                if(usuario.Empleado == formatoEmpleado[i]) {
+            for (int i = 0; i < formatoEmpleado.Count; i++) {
+                if (usuario.Empleado == formatoEmpleado[i]) {
                     cbeEmpleado.Active = i + 1;
                     return;
                 }
@@ -121,6 +150,7 @@ namespace ProyectoEyS {
 
         private void GuardarUsuario() {
             try {
+
                 if (ngUsuario.ExisteUsername(entryNombre.Text)) {
                     CuadroMensaje("Ya existe un usuario", MessageType.Error, ButtonsType.Ok);
                     return;
@@ -131,7 +161,7 @@ namespace ProyectoEyS {
                     return;
                 }
 
-                if(cbeRol.ActiveText == "Sin rol asignado") {
+                if (cbeRol.ActiveText == "Sin rol asignado") {
                     CuadroMensaje("Debe asignar un rol", MessageType.Error, ButtonsType.Ok);
                     return;
                 }
@@ -145,17 +175,14 @@ namespace ProyectoEyS {
                 if (cbeEmpleado.ActiveText != "Sin empleado Asignado" && cbeEmpleado.ActiveText != this.usuario.Empleado) {
                     int idEmp = ngEmp.EncontrarEmpleado(datos[3]);
                     int idUsr = ngUsuario.EncontrarUsuario(usuario.Username);
-                    dtEmp.AsignarUsuario(idUsr,idEmp);
+                    dtEmp.AsignarUsuario(idUsr, idEmp);
 
-                    CuadroMensaje("Se ha agregado y asignado correctamente",MessageType.Info,ButtonsType.Ok);
+                    CuadroMensaje("Se ha agregado y asignado correctamente", MessageType.Info, ButtonsType.Ok);
                 } else
                     CuadroMensaje("Se ha agregado correctamente", MessageType.Info, ButtonsType.Ok);
 
                 this.Destroy();
-
-            } catch (Exception ex) {
-                CuadroMensaje(ex.Message, MessageType.Error, ButtonsType.Ok);
-            }
+            } catch (Exception ex) { }
         }
 
         private void GuardarCambios() {

@@ -175,6 +175,7 @@ namespace ProyectoEyS
 			this.rbPers = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Personalizado"));
 			this.rbPers.CanFocus = true;
 			this.rbPers.Name = "rbPers";
+			this.rbPers.Active = true;
 			this.rbPers.DrawIndicator = true;
 			this.rbPers.UseUnderline = true;
 			this.rbPers.Group = new global::GLib.SList(global::System.IntPtr.Zero);
@@ -244,6 +245,7 @@ namespace ProyectoEyS
 			w10.Fill = false;
 			// Container child hbox5.Gtk.Box+BoxChild
 			this.table1 = new global::Gtk.Table(((uint)(1)), ((uint)(5)), false);
+			this.table1.Name = "table1";
 			this.table1.RowSpacing = ((uint)(6));
 			this.table1.ColumnSpacing = ((uint)(6));
 			// Container child table1.Gtk.Table+TableChild

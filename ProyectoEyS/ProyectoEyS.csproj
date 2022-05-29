@@ -205,6 +205,8 @@
     <Compile Include="Datos\Dt_tbl_config.cs" />
     <Compile Include="Entidades\Vistas\Tbl_Vw_OpcRol.cs" />
     <Compile Include="Negocio\Ng_tbl_OpcRol.cs" />
+    <Compile Include="Negocio\Ng_tbl_evento.cs" />
+    <Compile Include="Entidades\Vistas\Tbl_Vw_Evento.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

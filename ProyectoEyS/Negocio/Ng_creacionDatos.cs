@@ -102,6 +102,20 @@ namespace Negocio {
             return evento;
         }
 
+        public Tbl_Vw_Evento CargarVwEvento(string[] datos) {
+
+            Tbl_Vw_Evento evento = new Tbl_Vw_Evento();
+
+            evento.IdEvento = int.Parse(datos[0]);
+            evento.FechaInicio = ConfirmarFecha(datos[1]);
+            evento.FechaFin = ConfirmarFecha(datos[2]);
+            evento.Razon = datos[3];
+            evento.Descripcion = datos[4];
+            evento.EmpleadoSel = datos[5];
+
+            return evento;
+        }
+
         public Tbl_Horario CargarHorario(string[] datos) {
             Tbl_Horario horario = new Tbl_Horario();
 

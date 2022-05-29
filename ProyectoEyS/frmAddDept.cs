@@ -5,8 +5,7 @@ using Datos;
 using Vistas;
 using Negocio;
 
-namespace ProyectoEyS
-{
+namespace ProyectoEyS {
     public partial class frmAddDept : Gtk.Window {
 
         Dt_tbl_dep dtDep = new Dt_tbl_dep();
@@ -31,12 +30,12 @@ namespace ProyectoEyS
 
         public bool Comprobaciones() {
 
-            if(entryNombre.Text == string.Empty) {
+            if (entryNombre.Text == string.Empty) {
                 CuadroMensaje("Debe ingresar el nombre del departamento", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }
 
-            if(entryEmail.Text == string.Empty) {
+            if (entryEmail.Text == string.Empty) {
                 CuadroMensaje("Debe ingresar el email del departamento", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }
@@ -91,7 +90,7 @@ namespace ProyectoEyS
         bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
             Gtk.MessageDialog msgEliminar;
             msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
-            ResponseType respuesta = (ResponseType)msgEliminar.Run();
+            ResponseType respuesta = ( ResponseType )msgEliminar.Run();
             msgEliminar.Destroy();
             return respuesta == ResponseType.Yes ? true : false;
         }
@@ -117,10 +116,9 @@ namespace ProyectoEyS
                     CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
                 else
                     CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
-            }
-            else {
+            } else {
                 dep.Estado = 2;
-                if(dtDep.EditarDepartamento(OrganizarDatos(), depVw.Id))
+                if (dtDep.EditarDepartamento(OrganizarDatos(), depVw.Id))
                     CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
                 else
                     CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
@@ -131,7 +129,7 @@ namespace ProyectoEyS
         protected void OnButtonEliminarClicked(object sender, EventArgs e) {
             if (CuadroMensaje("¿Deseas dar de baja a este empleado?", MessageType.Question, ButtonsType.YesNo)) {
                 dep.Estado = 3;
-                if(dtDep.EditarDepartamento(OrganizarDatos(), depVw.Id))
+                if (dtDep.EditarDepartamento(OrganizarDatos(), depVw.Id))
                     CuadroMensaje("Se ha dado de baja al empleado", MessageType.Info, ButtonsType.Ok);
                 else
                     CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);

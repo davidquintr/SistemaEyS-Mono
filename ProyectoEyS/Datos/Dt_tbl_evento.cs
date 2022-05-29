@@ -5,6 +5,7 @@ using System.Text;
 using System.Collections.Generic;
 using Entidades;
 using Negocio;
+using Vistas;
 
 namespace Datos 
 {
@@ -16,6 +17,44 @@ namespace Datos
         StringBuilder sb = new StringBuilder();
 
         #region metodos
+
+        public List<Tbl_Vw_Evento> colocarVwEventos() {
+
+            Ng_creacionDatos creacionDatos = new Ng_creacionDatos();
+            List<Tbl_Vw_Evento> listarEventos = new List<Tbl_Vw_Evento>();
+            Tbl_Vw_Evento evento;
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("SELECT * FROM BDSistemaEyS.Vw_Evento;");
+
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                string[] datos = new string[idr.FieldCount];
+
+                while (idr.Read()) {
+                    for (int i = 0; i < idr.FieldCount; i++) {
+                        datos[i] = idr[i].ToString();
+                    }
+                    evento = creacionDatos.CargarVwEvento(datos);
+                    listarEventos.Add(evento);
+
+                }//fin de while
+                return listarEventos;
+            } 
+            catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } 
+            finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+
+        }
 
         public List<Tbl_Evento> colocarEventos() {
 
@@ -39,15 +78,13 @@ namespace Datos
                     listarEventos.Add(evento);
                 }//fin de while
                 return listarEventos;
-            } 
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            } 
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }

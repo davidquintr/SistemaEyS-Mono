@@ -737,3 +737,32 @@
 /home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
 /home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete
 /home/davidquint/Documentos/5 - 25 v4 ProyectoEyS y apenas son las 5 y 22 am/5 - 25 v3 ProyectoEyS (ESTE SI FUNCIONA)/ProyectoEyS/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Release/ProyectoEyS.csprojAssemblyReference.cache
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe.config
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CoreCompileInputs.cache
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Release/ProyectoEyS.exe
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/ProyectoEyS.exe.config
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/ProyectoEyS.exe
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/BouncyCastle.Crypto.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/Google.Protobuf.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/K4os.Compression.LZ4.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/K4os.Hash.xxHash.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/MySql.Data.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Buffers.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Memory.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Numerics.Vectors.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/Ubiety.Dns.Core.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/ZstdNet.dll
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Buffers.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Numerics.Vectors.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Runtime.CompilerServices.Unsafe.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/System.Memory.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/Google.Protobuf.pdb
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/Google.Protobuf.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/K4os.Compression.LZ4.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/K4os.Hash.xxHash.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/K4os.Compression.LZ4.Streams.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Release/MySql.Data.xml
+/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Release/ProyectoEyS.csproj.CopyComplete

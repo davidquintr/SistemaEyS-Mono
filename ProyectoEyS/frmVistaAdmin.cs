@@ -4,12 +4,15 @@ using Gtk;
 using Datos;
 using Negocio;
 using Vistas;
+using System.Collections.Generic;
 
 namespace ProyectoEyS {
 
     public partial class vistaAdmin : Gtk.Window {
 
         Dt_tbl_emp dtus = new Dt_tbl_emp();
+        Dt_tbl_evento dtEvento = new Dt_tbl_evento();
+
         Tbl_Usuario selectedUser;
         Tbl_Vw_Empleado selectedEmp;
         Tbl_Vw_Usuario selectedVwUser;
@@ -29,7 +32,23 @@ namespace ProyectoEyS {
                 clock = new WatchClock();
                 clock.ObtenerDimensiones(137, 137);
                 ClockStart();
+                TextoEvento();
             } catch (Exception ex) { }
+        }
+
+        private void TextoEvento() {
+            List<Tbl_Vw_Evento> eventos = new List<Tbl_Vw_Evento>();
+            eventos = dtEvento.colocarVwEventos();
+            tvEvento.Buffer.Text = "";
+
+            for(int i = 0; i < eventos.Count; i++) {
+                tvEvento.Buffer.Text += "Evento # " + (i + 1) + "\n" +
+                                     "Empleado: " + eventos[i].EmpleadoSel + "\n" +
+                                     "Fecha de Inicio: " + eventos[i].FechaInicio.ToString("d") + "\n" +
+                                     "Fecha de Fin: " + eventos[i].FechaFin.ToString("d") + "\n" + 
+                                     "Razon: " + eventos[i].Razon + "\n" + 
+                                     "Descripcion: " + eventos[i].Descripcion + "\n\n";
+            }
         }
 
         public void ConfigurarInicio(Tbl_Usuario selectedUser, Tbl_Vw_Empleado selectedEmp, Tbl_Vw_Usuario SelectedVwUser) {

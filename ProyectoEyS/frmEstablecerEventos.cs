@@ -17,6 +17,7 @@ namespace ProyectoEyS {
         public frmEstablecerEventos() :
                 base(Gtk.WindowType.Toplevel) {
             this.Build();
+            Title = "Configurar Eventos";
         }
 
         public void CargarDatos(Tbl_Vw_Empleado empVw) {

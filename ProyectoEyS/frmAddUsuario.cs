@@ -6,8 +6,7 @@ using System.Collections.Generic;
 using Negocio;
 using Vistas;
 
-namespace ProyectoEyS
-{
+namespace ProyectoEyS {
     public partial class frmAddUsuario : Gtk.Window {
 
         Ng_tbl_emp ngEmp = new Ng_tbl_emp();
@@ -34,6 +33,9 @@ namespace ProyectoEyS
             this.buttonBaja.Visible = false;
             entryID.Text = (ngEmp.ContarEmpleados() + 1).ToString();
             entryNombre.GrabFocus();
+
+            cbxEDep.HasFrame = true;
+            cbxEDep.FocusOnClick = true;
         }
 
         public void CambiarModo(Tbl_Vw_Empleado emp) {
@@ -98,7 +100,7 @@ namespace ProyectoEyS
                 return false;
             }
 
-            if(entryFechaNac.Text == string.Empty || entryFechaIngr.Text == string.Empty || DateTime.Parse(entryFechaNac.Text).ToString("yyyy-MM-dd") == DateTime.Now.ToString("yyyy-MM-dd")) {
+            if (entryFechaNac.Text == string.Empty || entryFechaIngr.Text == string.Empty || DateTime.Parse(entryFechaNac.Text).ToString("yyyy-MM-dd") == DateTime.Now.ToString("yyyy-MM-dd")) {
                 CuadroMensaje("Cambie las fechas ", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }
@@ -132,21 +134,36 @@ namespace ProyectoEyS
             ListStore store = new ListStore(typeof(string));
             cbxCargo.AddAttribute(cell, "text", count);
 
-            foreach (Tbl_Cargo crg in listCargo) {
-                if(cbxEDep.Active == crg.IdDept){
-                    store.AppendValues(crg.Nombre);
-                    count++;
-                }
+            for (int i = 0; i < listCargo.Count; i++) {
+                if (listCargo[i].IdDept == ComprobarDept())
+                    store.AppendValues(listCargo[i].Nombre);
             }
+
             cbxCargo.Model = store;
+            cbxCargo.Entry.Completion = new EntryCompletion();
+            cbxCargo.Entry.Completion.Model = store;
+            cbxCargo.Entry.Completion.TextColumn = 0;
             cbxCargo.Active = 0;
         }
 
 
         protected void LlenarComboDept() {
-            foreach (Tbl_Departamento dep in listDept) {
-                this.cbxEDep.InsertText(listDept.IndexOf(dep) + 1, dep.Nombre);
+            int count = 0;
+            cbxEDep.Clear();
+            CellRendererText cell = new CellRendererText();
+            cbxEDep.PackStart(cell, false);
+            ListStore store = new ListStore(typeof(string));
+            cbxEDep.AddAttribute(cell, "text", count);
+
+            foreach (Tbl_Departamento dept in listDept) {
+                store.AppendValues(dept.Nombre);
+                count++;
             }
+
+            cbxEDep.Model = store;
+            cbxEDep.Entry.Completion = new EntryCompletion();
+            cbxEDep.Entry.Completion.Model = store;
+            cbxEDep.Entry.Completion.TextColumn = 0;
         }
 
         #region acciones
@@ -154,7 +171,7 @@ namespace ProyectoEyS
         bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
             Gtk.MessageDialog msgEliminar;
             msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
-            ResponseType respuesta = (ResponseType)msgEliminar.Run();
+            ResponseType respuesta = ( ResponseType )msgEliminar.Run();
             msgEliminar.Destroy();
             return respuesta == ResponseType.Yes ? true : false;
         }
@@ -168,14 +185,14 @@ namespace ProyectoEyS
             if (!CuadroMensaje("¿Deseas dar de baja a este empleado?", MessageType.Question, ButtonsType.YesNo)) {
                 return;
             }
-            if(dtEmp.EliminarEmp(emp.Id))
+            if (dtEmp.EliminarEmp(emp.Id))
                 CuadroMensaje("Se ha dado de baja al empleado", MessageType.Info, ButtonsType.Ok);
             else
                 CuadroMensaje("Ha ocurrido un error...", MessageType.Info, ButtonsType.Ok);
             this.Destroy();
         }
 
-        protected void OnCbxEDepChanged(object sender, EventArgs e){
+        protected void OnCbxEDepChanged(object sender, EventArgs e) {
             LlenarComboCrg();
         }
 
@@ -210,9 +227,9 @@ namespace ProyectoEyS
             }
 
             if (mode == 0) {
-                if (dtEmp.GuardarEmpleado(OrganizarDatos())) 
+                if (dtEmp.GuardarEmpleado(OrganizarDatos()))
                     CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
-                else 
+                else
                     CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             }
@@ -244,10 +261,10 @@ namespace ProyectoEyS
             string[] corte = nombres.Split(' ');
 
             empleado.PrimerNombre = corte[0];
-            for(int i = 0; i < corte.Length; i++) {
-                if(i + 1 != corte.Length-1)
+            for (int i = 0; i < corte.Length; i++) {
+                if (i + 1 != corte.Length - 1)
                     empleado.SegundoNombre += corte[i] + " ";
-                 else
+                else
                     empleado.SegundoNombre += corte[i];
             }
 
@@ -260,9 +277,16 @@ namespace ProyectoEyS
         }
 
         public int ComprobarCargo() {
-            foreach (Tbl_Cargo crg in listCargo) 
+            foreach (Tbl_Cargo crg in listCargo)
                 if (cbxCargo.ActiveText == crg.Nombre)
                     return listCargo.IndexOf(crg) + 1;
+            return -1;
+        }
+
+        public int ComprobarDept() {
+            foreach (Tbl_Departamento dept in listDept)
+                if (cbxEDep.ActiveText == dept.Nombre)
+                    return listDept.IndexOf(dept) + 1;
             return -1;
         }
 
