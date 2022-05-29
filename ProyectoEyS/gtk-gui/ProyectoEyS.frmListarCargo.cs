@@ -434,6 +434,7 @@ namespace ProyectoEyS
 			this.DefaultWidth = 531;
 			this.DefaultHeight = 475;
 			this.Show();
+			this.trvwCargo.CursorChanged += new global::System.EventHandler(this.OnTrvwCargoCursorChanged);
 			this.cbxEListarCar.Changed += new global::System.EventHandler(this.OnCbxEListarEmpChanged);
 			this.btnAntCar.Clicked += new global::System.EventHandler(this.OnBtnAntCarClicked);
 			this.btnSigCar.Clicked += new global::System.EventHandler(this.OnBtnSigCarClicked);

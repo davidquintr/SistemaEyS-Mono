@@ -839,6 +839,7 @@ namespace ProyectoEyS
 			this.DefaultWidth = 640;
 			this.DefaultHeight = 827;
 			this.Show();
+			this.trvwListEmp.CursorChanged += new global::System.EventHandler(this.OnTrvwListEmpCursorChanged);
 			this.cbxEListarUsr.Changed += new global::System.EventHandler(this.OnCbxEListarUsrChanged);
 			this.btnAntUsr.Clicked += new global::System.EventHandler(this.OnBtnAntUsrClicked);
 			this.btnSigUsr.Clicked += new global::System.EventHandler(this.OnBtnSigUsrClicked);

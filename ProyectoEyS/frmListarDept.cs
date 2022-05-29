@@ -21,16 +21,16 @@ namespace ProyectoEyS {
                 scrolled.Visible = false;
                 listDep = dtDep.ColocarVwDepart();
                 LlenarcbxeDepartamento();
-                MostrarDatos(id);
+
                 Title = "Listar Departamentos";
 
                 this.trvwDept.Model = dtDep.listarDepartamento();
-                string[] titulos = { "Id", "Nombre", "Extension", "Email", "Descripcion" };
+                string[] titulos = { "Id", "Nombre", "Email", "Extension" , "Descripcion" };
                 for (int i = 0; i < titulos.Length; i++) {
                     this.trvwDept.AppendColumn(titulos[i], new CellRendererText(), "text", i);
                 }
-
-            } catch (Exception ex) {
+                MostrarDatos(id);
+            } catch (Exception) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un departamento", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             };
@@ -54,9 +54,17 @@ namespace ProyectoEyS {
         }
 
         protected void LlenarcbxeDepartamento() {
-            for (int i = 0; i < listDep.Count; i++) {
-                this.cbxEListarDep.InsertText(i, listDep[i].Nombre);
-            }
+
+            TreeModel model = dtDep.listarDepartamento();
+            model.GetIterFirst(out TreeIter iter);
+            do {
+                int id = Convert.ToInt32(model.GetValue(iter, 0));
+                string nombre = model.GetValue(iter, 1).ToString();
+                model.SetValue(iter, 0, nombre);
+                model.SetValue(iter, 1, id.ToString());
+            } while (model.IterNext(ref iter));
+
+            this.cbxEListarDep.Model = model;
         }
 
         public void MostrarDatos(int id) {
@@ -112,6 +120,27 @@ namespace ProyectoEyS {
                 scrolled.Visible = false;
             else
                 scrolled.Visible = true;
+        }
+
+        protected void OnTrvwDeptCursorChanged(object sender, EventArgs e) {
+            TreeSelection seleccion = (sender as TreeView).Selection;
+            TreeIter iter;
+            TreeModel model;
+            if (seleccion.GetSelected(out model, out iter)) {
+
+                int active = 0;
+                TreeModel m = dtDep.listarDepartamento();
+                m.GetIterFirst(out TreeIter it);
+                do {
+                    int idtrv = Convert.ToInt32(model.GetValue(iter, 0));
+                    int id = Convert.ToInt32(m.GetValue(it, 0));
+
+                    if (idtrv == id)
+                        cbxEListarDep.Active = active;
+                    active++;
+
+                } while (m.IterNext(ref it));
+            }
         }
     }
 }

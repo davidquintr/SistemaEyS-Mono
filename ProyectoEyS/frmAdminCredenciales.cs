@@ -37,6 +37,28 @@ namespace ProyectoEyS {
             buttonEliminar.Visible = false;
         }
 
+
+        public void CambiarModo(Tbl_Vw_Usuario usuario) {
+            mode = 1;
+            Title = "Administrar Usuario";
+            labelTitulo.Text = "Seguridad: Editar Usuario";
+            this.usuario = usuario;
+            buttonEliminar.Visible = true;
+
+            entryID.Text = usuario.Id.ToString();
+            entryNombre.Text = usuario.Username;
+            entryContraseña.Text = usuario.Clave;
+
+            if (usuario.Empleado != string.Empty) {
+                cbeEmpleado.AppendText(usuario.Empleado);
+                formatoEmpleado.Add(usuario.Empleado);
+            }
+
+            SeleccionarRol();
+            SeleccionarEmp();
+        }
+
+
         private void LlenarComboRol() {
             int count = 0;
             cbeRol.Clear();
@@ -67,35 +89,14 @@ namespace ProyectoEyS {
             cbeEmpleado.AddAttribute(cell, "text", count);
 
             store.AppendValues("Sin empleado Asignado");
-            foreach (Tbl_Empleado emp in empleados) {
+            foreach (Tbl_Empleado emp in empleados) 
                 store.AppendValues(emp.PrimerNombre + " " + emp.PrimerApellido + " - " + emp.Cedula);
-            }
 
             cbeEmpleado.Model = store;
             cbeEmpleado.Entry.Completion = new EntryCompletion();
             cbeEmpleado.Entry.Completion.Model = store;
             cbeEmpleado.Entry.Completion.TextColumn = 0;
-            cbeEmpleado.Active = 0;
-        }
-
-        public void CambiarModo(Tbl_Vw_Usuario usuario) {
-            mode = 1;
-            Title = "Administrar Usuario";
-            labelTitulo.Text = "Seguridad: Editar Usuario";
-            this.usuario = usuario;
-            buttonEliminar.Visible = true;
-
-            entryID.Text = usuario.Id.ToString();
-            entryNombre.Text = usuario.Username;
-            entryContraseña.Text = usuario.Clave;
-
-            if (usuario.Empleado != string.Empty) {
-                cbeEmpleado.AppendText(usuario.Empleado);
-                formatoEmpleado.Add(usuario.Empleado);
-            }
-
-            SeleccionarRol();
-            SeleccionarEmp();
+            cbeEmpleado.Active = empleados.Count + 1;
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {

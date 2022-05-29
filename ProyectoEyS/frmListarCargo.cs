@@ -31,7 +31,8 @@ namespace ProyectoEyS {
                     this.trvwCargo.AppendColumn(titulos[i], new CellRendererText(), "text", i);
                 }
 
-            } catch (Exception ex) {
+            }
+            catch (Exception) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un cargo", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             };
@@ -42,22 +43,30 @@ namespace ProyectoEyS {
             if (!ngOpcRol.AccesoVentana(this.Title, selectedUser.IdRol)) {
                 CuadroMensaje("No tiene permisos suficientes para acceder a esta ventana, consulte a un administrador", MessageType.Warning, ButtonsType.Ok);
                 this.Destroy();
-            } else
+            }
+            else
                 this.selectedUser = selectedUser;
         }
 
         bool CuadroMensaje(string texto, MessageType typeMes, ButtonsType typeButt) {
             Gtk.MessageDialog msgEliminar;
             msgEliminar = new Gtk.MessageDialog(this, DialogFlags.DestroyWithParent, typeMes, typeButt, texto);
-            ResponseType respuesta = ( ResponseType )msgEliminar.Run();
+            ResponseType respuesta = (ResponseType)msgEliminar.Run();
             msgEliminar.Destroy();
             return respuesta == ResponseType.Yes ? true : false;
         }
 
         protected void LlenarComboCrg() {
-            for (int i = 0; i < listCargo.Count; i++) {
-                cbxEListarCar.InsertText(i, listCargo[i].Nombre);
-            }
+            TreeModel model = dtr.listarCargos();
+            model.GetIterFirst(out TreeIter iter);
+            do {
+                int id = Convert.ToInt32(model.GetValue(iter, 0));
+                string nombre = model.GetValue(iter, 1).ToString();
+                model.SetValue(iter, 0, nombre);
+                model.SetValue(iter, 1, id.ToString());
+            } while (model.IterNext(ref iter));
+
+            this.cbxEListarCar.Model = model;
         }
 
         public void MostrarDatos(int id) {
@@ -116,6 +125,27 @@ namespace ProyectoEyS {
             else
                 scrolled.Visible = true;
 
+        }
+
+        protected void OnTrvwCargoCursorChanged(object sender, EventArgs e) {
+            TreeSelection seleccion = (sender as TreeView).Selection;
+            TreeIter iter;
+            TreeModel model;
+            if (seleccion.GetSelected(out model, out iter)) {
+
+                int active = 0;
+                TreeModel m = dtr.listarCargos();
+                m.GetIterFirst(out TreeIter it);
+                do {
+                    int idtrv = Convert.ToInt32(model.GetValue(iter, 0));
+                    int id = Convert.ToInt32(m.GetValue(it, 0));
+
+                    if (idtrv == id)
+                        cbxEListarCar.Active = active;
+                    active++;
+
+                } while (m.IterNext(ref it));
+            }
         }
     }
 }

@@ -20,7 +20,6 @@ namespace ProyectoEyS {
             scrolled.Visible = false;
             listUsuarios = dtUsr.ColocarVwUsuarios();
             LlenarComboUser();
-            MostrarDatos(id);
             Title = "Listar Usuarios";
 
             this.trvwCredenciales.Model = dtUsr.listarCredenciales();
@@ -28,7 +27,7 @@ namespace ProyectoEyS {
             for (int i = 0; i < titulos.Length; i++) {
                 this.trvwCredenciales.AppendColumn(titulos[i], new CellRendererText(), "text", i);
             }
-            limpiarCampos();
+            MostrarDatos(id);
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -48,11 +47,6 @@ namespace ProyectoEyS {
         }
 
         private void LlenarComboUser() {
-
-            /*   
-             * for (int i = 0; i < listUsuarios.Count; i++) {
-                cbxEListarUsuario.InsertText(i, listUsuarios[i].Username);
-            }*/
 
             TreeModel model = dtUsr.listarCredenciales();
             model.GetIterFirst(out TreeIter iter);
@@ -121,14 +115,8 @@ namespace ProyectoEyS {
             TreeIter iter;
             TreeModel model;
             if (seleccion.GetSelected(out model, out iter)) {
-                this.lbID.Text = model.GetValue(iter, 0).ToString();
-                this.lbNombre.Text = model.GetValue(iter, 1).ToString();
-                this.lbContraseña.Text = model.GetValue(iter, 2).ToString();
-                this.lbEmpleado.Text = model.GetValue(iter, 3).ToString();
-                this.lbRol.Text = model.GetValue(iter, 4).ToString();
 
                 int active = 0;
-
                 TreeModel m = dtUsr.listarCredenciales();
                 m.GetIterFirst(out TreeIter it);
                 do {
@@ -140,18 +128,7 @@ namespace ProyectoEyS {
                     active++;
 
                 } while (m.IterNext(ref it));
-
-                //cbxEListarUsuario.Active = Int32.Parse(iter.ToString());
-                //lbCountCar.Text = "" + (id + 1) + "/" + listUsuarios.Count;
             }
-        }
-
-        protected void limpiarCampos() {
-            this.lbID.Text = "";
-            this.lbNombre.Text = "";
-            this.lbContraseña.Text = "";
-            this.lbEmpleado.Text = "";
-            this.lbRol.Text = "";
         }
     }
 }

@@ -292,8 +292,6 @@ namespace Datos {
         }
 
 
-
-
         public ListStore listarCargos() {
             ListStore datos = new ListStore(typeof(string),
                 typeof(string), typeof(string), typeof(string));

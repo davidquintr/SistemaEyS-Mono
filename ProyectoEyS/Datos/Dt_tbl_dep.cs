@@ -238,7 +238,7 @@ namespace Datos {
 
             IDataReader idr = null;
             sb.Clear();
-            sb.Append("SELECT id, nombre, ext, email, descripcion FROM BDSistemaEyS.Vw_Departamento where estado <> 3;");
+            sb.Append("SELECT id, nombre, email, ext, descripcion FROM BDSistemaEyS.Vw_Departamento where estado <> 3;");
             try {
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());

@@ -468,7 +468,7 @@ namespace ProyectoEyS
 			// Container child vbox13.Gtk.Box+BoxChild
 			this.scrolledwindow2 = new global::Gtk.ScrolledWindow();
 			this.scrolledwindow2.WidthRequest = 268;
-			this.scrolledwindow2.HeightRequest = 201;
+			this.scrolledwindow2.HeightRequest = 180;
 			this.scrolledwindow2.CanFocus = true;
 			this.scrolledwindow2.Name = "scrolledwindow2";
 			this.scrolledwindow2.ShadowType = ((global::Gtk.ShadowType)(1));
@@ -632,17 +632,17 @@ namespace ProyectoEyS
 			this.DefaultWidth = 1024;
 			this.DefaultHeight = 752;
 			this.Show();
-			this.ParamGenButt.Activated += new global::System.EventHandler(this.OnParamGenButtActivated);
+            this.ParamGenButt.Activated += new global::System.EventHandler(this.OnParamGenButtActivated);
 			this.CerrarSesinAction2.Activated += new global::System.EventHandler(this.OnCerrarSesinAction2Activated);
-			this.DepartamentoAdd.Activated += new global::System.EventHandler(this.OnDepartamentoAddActivated);
+            this.DepartamentoAdd.Activated += new global::System.EventHandler(this.OnDepartamentoAddActivated);
 			this.CargoAdd.Activated += new global::System.EventHandler(this.OnCargoAddActivated);
 			this.EmpleadoAdd.Activated += new global::System.EventHandler(this.OnEmpleadoAddActivated);
 			this.DepartamentosAction.Activated += new global::System.EventHandler(this.OnDepartamentoAction1Activated);
 			this.CargosAction.Activated += new global::System.EventHandler(this.OnCargoListarActivated);
 			this.EmpleadosAction.Activated += new global::System.EventHandler(this.OnEmpleadoListarActivated);
-			this.RolAction.Activated += new global::System.EventHandler(this.OnRolActionActivated);
+            this.RolAction.Activated += new global::System.EventHandler(this.OnRolActionActivated);
 			this.UsuarioAction.Activated += new global::System.EventHandler(this.OnUsuarioActionActivated);
-			this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);
+            this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);
 			this.restaurarCargo.Activated += new global::System.EventHandler(this.OnRestaurarCargoActivated);
 			this.restaurarEmp.Activated += new global::System.EventHandler(this.OnRestaurarEmpActivated);
 			this.restaurarUser.Activated += new global::System.EventHandler(this.OnRestaurarUserActivated);

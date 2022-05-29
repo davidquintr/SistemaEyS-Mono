@@ -1046,7 +1046,7 @@
                   <widget class="Gtk.ScrolledWindow" id="scrolledwindow2">
                     <property name="MemberName" />
                     <property name="WidthRequest">268</property>
-                    <property name="HeightRequest">201</property>
+                    <property name="HeightRequest">180</property>
                     <property name="CanFocus">True</property>
                     <property name="ShadowType">In</property>
                     <child>
@@ -4477,6 +4477,7 @@ Masculino</property>
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
+                <signal name="CursorChanged" handler="OnTrvwListEmpCursorChanged" />
               </widget>
             </child>
           </widget>
@@ -6615,6 +6616,7 @@ Masculino</property>
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
+                <signal name="CursorChanged" handler="OnTrvwDeptCursorChanged" />
               </widget>
             </child>
           </widget>
@@ -7149,6 +7151,7 @@ Masculino</property>
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
+                <signal name="CursorChanged" handler="OnTrvwCargoCursorChanged" />
               </widget>
             </child>
           </widget>
@@ -9965,6 +9968,7 @@ Masculino</property>
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
+                <signal name="CursorChanged" handler="OnTrvwRolesCursorChanged" />
               </widget>
             </child>
           </widget>
