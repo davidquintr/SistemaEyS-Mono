@@ -1,8 +1,8 @@
 ﻿using System;
-using Gtk;
-using Entidades;
-using Datos;
 using System.Collections.Generic;
+using Datos;
+using Entidades;
+using Gtk;
 using Vistas;
 
 namespace ProyectoEyS {
@@ -46,7 +46,8 @@ namespace ProyectoEyS {
             if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida == default(DateTime)) {
                 labelEnt.Text = "Hora de entrada: " + regAct.HoraEntrada.ToString("T");
                 buttonEntrada.Sensitive = false;
-            } else if(regAct.HoraEntrada == default(DateTime)) {
+                labelTiempo.Visible = true;
+            } else if (regAct.HoraEntrada == default(DateTime)) {
                 labelEnt.Text = "No se ha iniciado la jornada laboral";
                 labelTiempo.Text = "";
             }
@@ -69,11 +70,21 @@ namespace ProyectoEyS {
             GLib.Timeout.Add(100, new GLib.TimeoutHandler(Update));
         }
 
+        private void TiempoTrab() { // imp 1
+            if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida == default(DateTime)) {
+                labelTiempo.Text = "Tiempo trabajado : ";
+                TimeSpan tiempoTrab = DateTime.Now.Subtract(regAct.HoraEntrada);
+                for (int i = 0; i < 8; i++) {
+                    labelTiempo.Text += tiempoTrab.ToString("c")[i];
+                }
+            }
+        }
+
         //Dibujamos la hora y las lineas de las horas
         bool Update() {
+            TiempoTrab();
             drawingarea2.GdkWindow.Clear();
-            labelHora.Text = DateTime.Now.ToString("HH:mm:ss");
-
+            labelHora.Text = DateTime.Now.ToString("T");
             clock.DrawRing(drawingarea2.GdkWindow);
             clock.HourLine(drawingarea2.GdkWindow);
             clock.MinuteLine(drawingarea2.GdkWindow);

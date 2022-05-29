@@ -55,6 +55,7 @@ public partial class MainWindow : Gtk.Window {
             this.Hide();
         } else {
             AccederUser();
+            this.Hide();
         }
     }
 
