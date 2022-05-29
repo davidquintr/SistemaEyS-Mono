@@ -362,6 +362,7 @@ namespace ProyectoEyS
 			this.buttonVerContra2.Released += new global::System.EventHandler(this.OnButtonVerContra2Released);
 			this.buttonVerContra1.Pressed += new global::System.EventHandler(this.OnButtonVerContra1Pressed);
 			this.buttonVerContra1.Released += new global::System.EventHandler(this.OnButtonVerContra1Released);
+			this.buttonEliminar.Clicked += new global::System.EventHandler(this.OnButtonEliminarClicked);
 			this.buttonGuardar.Clicked += new global::System.EventHandler(this.OnButtonGuardarClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}

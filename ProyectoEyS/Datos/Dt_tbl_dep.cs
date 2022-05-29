@@ -7,8 +7,7 @@ using Entidades;
 using Negocio;
 using Vistas;
 
-namespace Datos
-{
+namespace Datos {
     public class Dt_tbl_dep {
 
         //Atributos
@@ -37,13 +36,11 @@ namespace Datos
                 }
                 idr.Close();
                 return departamentos;
-            } 
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
                 throw;
-            } 
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
         }
@@ -65,20 +62,18 @@ namespace Datos
                 while (idr.Read()) {
                     for (int i = 0; i < idr.FieldCount; i++) {
                         datos[i] = idr[i].ToString();
-                    }                    
+                    }
                     departamento = creacionDatos.CargarDepartamento(datos);
                     listaDepart.Add(departamento);
                 }//fin de while
                 return listaDepart;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -108,15 +103,13 @@ namespace Datos
                     listaDepart.Add(departamento);
                 }//fin de while
                 return listaDepart;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -162,10 +155,10 @@ namespace Datos
 
             sb.Clear();
 
-                sb.Append("INSERT INTO BDSistemaEyS.tbl_Departamento ");
-                sb.Append("(nombre, ext, email, descripcion, estado) ");
-                sb.Append("VALUES ('" + dep.Nombre + "','" + dep.Ext + "','" + dep.Email + "','" + dep.Descripcion + "','" + 1 + "')");
-                
+            sb.Append("INSERT INTO BDSistemaEyS.tbl_Departamento ");
+            sb.Append("(nombre, ext, email, descripcion, estado) ");
+            sb.Append("VALUES ('" + dep.Nombre + "','" + dep.Ext + "','" + dep.Email + "','" + dep.Descripcion + "','" + 1 + "')");
+
             try {
                 con.AbrirConexion();
                 x = con.Ejecutar(CommandType.Text, sb.ToString());
@@ -174,11 +167,9 @@ namespace Datos
                     guardado = true;
                 }
                 return guardado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("Error jiji " + e.ToString());
-            }
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
             return guardado;
@@ -208,11 +199,9 @@ namespace Datos
                     guardado = true;
                 }
                 return guardado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("Error jiji " + e.ToString());
-            }
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
             return guardado;
@@ -241,5 +230,36 @@ namespace Datos
             }
             return guardado;
         }
+
+        public ListStore listarDepartamento() {
+            ListStore datos = new ListStore(typeof(string),
+                typeof(string), typeof(string), typeof(string), typeof(string));
+
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("SELECT id, nombre, ext, email, descripcion FROM BDSistemaEyS.Vw_Departamento where estado <> 3;");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read()) {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString(),
+                        idr[2].ToString(), idr[3].ToString(), idr[4].ToString());
+                    //dr.Close();
+                }//fin de while
+                return datos;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+
     }
 }

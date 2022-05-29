@@ -4472,7 +4472,7 @@ Masculino</property>
             <property name="MemberName" />
             <property name="ShadowType">In</property>
             <child>
-              <widget class="Gtk.TreeView" id="treeview1">
+              <widget class="Gtk.TreeView" id="trvwListEmp">
                 <property name="MemberName" />
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
@@ -6610,7 +6610,7 @@ Masculino</property>
             <property name="MemberName" />
             <property name="ShadowType">In</property>
             <child>
-              <widget class="Gtk.TreeView" id="treeview1">
+              <widget class="Gtk.TreeView" id="trvwDept">
                 <property name="MemberName" />
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
@@ -7144,7 +7144,7 @@ Masculino</property>
             <property name="MemberName" />
             <property name="ShadowType">In</property>
             <child>
-              <widget class="Gtk.TreeView" id="treeview1">
+              <widget class="Gtk.TreeView" id="trvwCargo">
                 <property name="MemberName" />
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
@@ -8705,6 +8705,7 @@ Masculino</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">Eliminar</property>
                 <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonEliminarClicked" />
               </widget>
               <packing>
                 <property name="Expand">False</property>
@@ -9491,11 +9492,12 @@ Masculino</property>
             <property name="MemberName" />
             <property name="ShadowType">In</property>
             <child>
-              <widget class="Gtk.TreeView" id="treeview1">
+              <widget class="Gtk.TreeView" id="trvwCredenciales">
                 <property name="MemberName" />
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
+                <signal name="CursorChanged" handler="OnTrvwCredencialesCursorChanged" />
               </widget>
             </child>
           </widget>
@@ -9670,7 +9672,7 @@ Masculino</property>
             <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
-            <property name="Size">4</property>
+            <property name="Size">3</property>
             <property name="LayoutStyle">End</property>
             <child>
               <widget class="Gtk.Button" id="buttonFiltrar">
@@ -9687,20 +9689,6 @@ Masculino</property>
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Button" id="btnEliminar">
-                <property name="MemberName" />
-                <property name="CanFocus">True</property>
-                <property name="Type">TextOnly</property>
-                <property name="Label" translatable="yes">Eliminar</property>
-                <property name="UseUnderline">True</property>
-              </widget>
-              <packing>
-                <property name="Position">1</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
               <widget class="Gtk.Button" id="btnAdmin">
                 <property name="MemberName" />
                 <property name="WidthRequest">90</property>
@@ -9712,7 +9700,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnBtnAdminClicked" />
               </widget>
               <packing>
-                <property name="Position">2</property>
+                <property name="Position">1</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -9727,7 +9715,7 @@ Masculino</property>
                 <signal name="Clicked" handler="OnBtnCerrarClicked" />
               </widget>
               <packing>
-                <property name="Position">3</property>
+                <property name="Position">2</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
               </packing>
@@ -9972,7 +9960,7 @@ Masculino</property>
             <property name="MemberName" />
             <property name="ShadowType">In</property>
             <child>
-              <widget class="Gtk.TreeView" id="treeview1">
+              <widget class="Gtk.TreeView" id="trvwRoles">
                 <property name="MemberName" />
                 <property name="HeightRequest">150</property>
                 <property name="CanFocus">True</property>

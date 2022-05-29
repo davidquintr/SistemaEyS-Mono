@@ -273,5 +273,18 @@ namespace ProyectoEyS {
             buttonVerContra1.Name = "*";
         }
 
+        protected void OnButtonEliminarClicked(object sender, EventArgs e) {
+            if (!CuadroMensaje("¿Quieres eliminar este usuario?", MessageType.Question, ButtonsType.YesNo)) {
+                return;
+            }
+
+            if (dtUsr.EliminarUser(usuario.Id)) {
+                CuadroMensaje("Se ha eliminado el usuario", MessageType.Info, ButtonsType.Ok);
+            } else {
+                CuadroMensaje("La operación ha fallado", MessageType.Info, ButtonsType.Ok);
+            }
+            this.Destroy();
+        }
+
     }
 }

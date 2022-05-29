@@ -6,8 +6,7 @@ using Entidades;
 using Negocio;
 using Gtk;
 
-namespace ProyectoEyS 
-{
+namespace ProyectoEyS {
     public partial class frmListarRoles : Gtk.Window {
 
         Dt_tbl_rol dtRol = new Dt_tbl_rol();
@@ -26,6 +25,13 @@ namespace ProyectoEyS
             LlenarComboRol();
             Title = "Listar Roles";
             MostrarDatos(id);
+
+            this.trvwRoles.Model = dtRol.listarRoles();
+            string[] titulos = { "Id", "Nombre" };
+            for (int i = 0; i < titulos.Length; i++) {
+                this.trvwRoles.AppendColumn(titulos[i], new CellRendererText(), "text", i);
+            }
+
         }
 
         protected void LlenarComboRol() {
@@ -100,5 +106,5 @@ namespace ProyectoEyS
                 scrolled.Visible = true;
         }
     }
-    }
+}
 

@@ -8,8 +8,7 @@ using Gtk;
 using Negocio;
 using Vistas;
 
-namespace Datos 
-{
+namespace Datos {
 
     public class Dt_tbl_rol {
         public Dt_tbl_rol() {
@@ -79,15 +78,13 @@ namespace Datos
                     listaRol.Add(rol);
                 }//fin de while
                 return listaRol;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -143,6 +140,34 @@ namespace Datos
             }
             return guardado;
         }
+
+        public ListStore listarRoles() {
+            ListStore datos = new ListStore(typeof(string),
+                typeof(string));
+
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("SELECT id, nombre FROM BDSistemaEyS.Vw_Rol where estado <> 3;");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read()) {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString());
+                    //dr.Close();
+                }//fin de while
+                return datos;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
     }
 
 }

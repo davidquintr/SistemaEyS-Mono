@@ -1,37 +1,46 @@
 ﻿<Properties StartupConfiguration="{01746CE3-E502-4D9F-A4C9-365EF5B29285}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmParametrosGen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/Datos/Dt_tbl_cargo.cs">
     <Files>
       <File FileName="ProyectoEyS/frmAddDept.cs" Line="141" Column="1" />
       <File FileName="ProyectoEyS/frmAddCargo.cs" Line="221" Column="2" />
       <File FileName="ProyectoEyS/frmAddRol.cs" Line="66" Column="9" />
       <File FileName="ProyectoEyS/frmAddUsuario.cs" Line="296" Column="1" />
-      <File FileName="ProyectoEyS/frmAdminCredenciales.cs" Line="117" Column="10" />
+      <File FileName="ProyectoEyS/frmAdminCredenciales.cs" Line="280" Column="13" />
       <File FileName="ProyectoEyS/Negocio/Ng_tbl_evento.cs" Line="18" Column="1" />
       <File FileName="ProyectoEyS/MainWindow.cs" Line="72" Column="9" />
       <File FileName="ProyectoEyS/Datos/Dt_tbl_evento.cs" Line="55" Column="1" />
-      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="45" Column="62" />
-      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.vistaAdmin.cs" Line="645" Column="4" />
-      <File FileName="ProyectoEyS/Negocio/Ng_creacionDatos.cs" Line="117" Column="1" />
+      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="50" Column="86" />
+      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.vistaAdmin.cs" Line="642" Column="30" />
+      <File FileName="ProyectoEyS/Negocio/Ng_creacionDatos.cs" Line="117" Column="10" />
       <File FileName="ProyectoEyS/Datos/Conexion.cs" Line="75" Column="1" />
       <File FileName="ProyectoEyS/Entidades/Vistas/Tbl_Vw_Evento.cs" Line="10" Column="33" />
       <File FileName="ProyectoEyS/Entidades/Vistas/Tbl_Vw_OpcRol.cs" Line="1" Column="1" />
       <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.frm.cs" Line="1" Column="1" />
       <File FileName="ProyectoEyS/frmVistaUser.cs" Line="1" Column="1" />
       <File FileName="ProyectoEyS/frmEstablecerEventos.cs" Line="30" Column="41" />
-      <File FileName="ProyectoEyS/frmParametrosGen.cs" Line="16" Column="21" />
+      <File FileName="ProyectoEyS/frmParametrosGen.cs" Line="14" Column="53" />
+      <File FileName="ProyectoEyS/frmListarCredenciales.cs" Line="144" Column="1" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_usuario.cs" Line="282" Column="24" />
+      <File FileName="ProyectoEyS/frmListarUsr.cs" Line="33" Column="17" />
+      <File FileName="ProyectoEyS/frmListarCargo.cs" Line="28" Column="56" />
+      <File FileName="ProyectoEyS/frmHorarioAlmuerzo.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/frmListarDept.cs" Line="31" Column="18" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_dep.cs" Line="241" Column="39" />
+      <File FileName="ProyectoEyS/frmRestauracionEntidades.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/frmListarRoles.cs" Line="39" Column="42" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_rol.cs" Line="151" Column="84" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_cargo.cs" Line="328" Column="2" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_emp.cs" Line="306" Column="1" />
+      <File FileName="ProyectoEyS/Datos/Dt_tbl_registro.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProyectoEyS" expanded="True">
             <Node name="ProyectoEyS" expanded="True">
-              <Node name="Datos" expanded="True" />
-              <Node name="Entidades" expanded="True">
-                <Node name="Vistas" expanded="True" />
+              <Node name="Datos" expanded="True">
+                <Node name="Dt_tbl_cargo.cs" selected="True" />
               </Node>
-              <Node name="Negocio" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="frmParametrosGen.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -51,7 +60,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="166" column="37" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Datos/Dt_tbl_cargo.cs" relfile="ProyectoEyS/Datos/Dt_tbl_cargo.cs" line="290" column="1" />
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="77" column="28" />
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="83" column="27" />
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmVistaAdmin.cs" relfile="ProyectoEyS/frmVistaAdmin.cs" line="40" column="36" />
@@ -62,14 +70,6 @@
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Datos/Dt_tbl_evento.cs" relfile="ProyectoEyS/Datos/Dt_tbl_evento.cs" line="74" column="27" />
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Datos/Dt_tbl_evento.cs" relfile="ProyectoEyS/Datos/Dt_tbl_evento.cs" line="75" column="28" />
       <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Datos/Dt_tbl_evento.cs" relfile="ProyectoEyS/Datos/Dt_tbl_evento.cs" line="40" column="21" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="117" column="10" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="116" column="19" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="114" column="24" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="113" column="30" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="112" column="30" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="111" column="30" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="110" column="30" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/Negocio/Ng_creacionDatos.cs" relfile="ProyectoEyS/Negocio/Ng_creacionDatos.cs" line="109" column="30" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

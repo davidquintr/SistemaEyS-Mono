@@ -6,9 +6,8 @@ using Gtk;
 using Entidades;
 using Negocio;
 
-namespace ProyectoEyS
-{
-    public partial class frmListarUsr : Gtk.Window{
+namespace ProyectoEyS {
+    public partial class frmListarUsr : Gtk.Window {
 
         Dt_tbl_emp dtEmp = new Dt_tbl_emp();
         List<Tbl_Vw_Empleado> listEmp = new List<Tbl_Vw_Empleado>();
@@ -16,7 +15,7 @@ namespace ProyectoEyS
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
         int id = 0;
 
-        public frmListarUsr() :base(Gtk.WindowType.Toplevel){
+        public frmListarUsr() : base(Gtk.WindowType.Toplevel) {
             try {
                 this.Build();
                 listEmp = dtEmp.ColocarVwEmpleado();
@@ -24,11 +23,19 @@ namespace ProyectoEyS
                 MostrarDatos(id);
                 Title = "Listar Empleados";
                 scrolled.Visible = false;
-            }catch(Exception ex) {
+
+                this.trvwListEmp.Model = dtEmp.listarEmpleado();
+                string[] titulos = { "Id", "Username", "Nombre", "Apellido", "Sexo", "Cedula", "Departamento", "Cargo", "Email Corporativo", "Email Personal", "Fecha nacimiento", "Fecha ingreso", "Estado actividad", "Telefono", "Observacion" };
+                for (int i = 0; i < titulos.Length; i++) {
+                    this.trvwListEmp.AppendColumn(titulos[i], new CellRendererText(), "text", i);
+                }
+
+
+            } catch (Exception ex) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un empleado", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             };
-                
+
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -53,11 +60,11 @@ namespace ProyectoEyS
             }
         }
 
-        public void MostrarDatos(int id){
+        public void MostrarDatos(int id) {
 
             lbCedula.Text = listEmp[id].Cedula;
             lbID.Text = listEmp[id].Id.ToString();
-            lbUsername.Text = listEmp[id].Usuario == string.Empty ?"(Sin nombre de usuario)": listEmp[id].Usuario;
+            lbUsername.Text = listEmp[id].Usuario == string.Empty ? "(Sin nombre de usuario)" : listEmp[id].Usuario;
             lbNombre.Text = listEmp[id].Nombres;
             lbApellido.Text = listEmp[id].Apellidos;
             lbSexo.Text = listEmp[id].Sexo;
@@ -84,22 +91,22 @@ namespace ProyectoEyS
         }
 
         protected void OnBtnAntUsrClicked(object sender, EventArgs e) {
-            if (id > 0){
+            if (id > 0) {
                 id--;
                 MostrarDatos(id);
             }
         }
 
         protected void OnBtnSigUsrClicked(object sender, EventArgs e) {
-            if (id < listEmp.Count-1) {
+            if (id < listEmp.Count - 1) {
                 id++;
                 MostrarDatos(id);
             }
         }
 
         protected void OnCbxEListarUsrChanged(object sender, EventArgs e) {
-            foreach (Tbl_Vw_Empleado emp in listEmp){
-                if (listEmp.IndexOf(emp) == cbxEListarUsr.Active){
+            foreach (Tbl_Vw_Empleado emp in listEmp) {
+                if (listEmp.IndexOf(emp) == cbxEListarUsr.Active) {
                     id = listEmp.IndexOf(emp);
                     MostrarDatos(id);
                 }
@@ -123,9 +130,9 @@ namespace ProyectoEyS
         }
 
         protected void OnButtonFiltrarClicked(object sender, EventArgs e) {
-            if (scrolled.Visible) 
+            if (scrolled.Visible)
                 scrolled.Visible = false;
-             else
+            else
                 scrolled.Visible = true;
         }
     }

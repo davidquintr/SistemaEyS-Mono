@@ -6,13 +6,12 @@ using Gtk;
 using Negocio;
 using Entidades;
 
-namespace ProyectoEyS
-{
+namespace ProyectoEyS {
     public partial class frmListarDept : Gtk.Window {
 
         Dt_tbl_dep dtDep = new Dt_tbl_dep();
         List<Tbl_Vw_Departamento> listDep = new List<Tbl_Vw_Departamento>();
-        int id=0;
+        int id = 0;
         Tbl_Usuario selectedUser;
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
@@ -24,11 +23,18 @@ namespace ProyectoEyS
                 LlenarcbxeDepartamento();
                 MostrarDatos(id);
                 Title = "Listar Departamentos";
+
+                this.trvwDept.Model = dtDep.listarDepartamento();
+                string[] titulos = { "Id", "Nombre", "Extension", "Email", "Descripcion" };
+                for (int i = 0; i < titulos.Length; i++) {
+                    this.trvwDept.AppendColumn(titulos[i], new CellRendererText(), "text", i);
+                }
+
             } catch (Exception ex) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un departamento", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             };
-                
+
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -48,7 +54,7 @@ namespace ProyectoEyS
         }
 
         protected void LlenarcbxeDepartamento() {
-            for (int i = 0; i < listDep.Count; i++){
+            for (int i = 0; i < listDep.Count; i++) {
                 this.cbxEListarDep.InsertText(i, listDep[i].Nombre);
             }
         }
@@ -74,11 +80,11 @@ namespace ProyectoEyS
             this.Destroy();
         }
 
-        protected void OnCbxEListarDepChanged(object sender, EventArgs e){
+        protected void OnCbxEListarDepChanged(object sender, EventArgs e) {
             foreach (Tbl_Vw_Departamento dep in listDep) {
                 if (listDep.IndexOf(dep) == cbxEListarDep.Active) {
                     id = listDep.IndexOf(dep);
-                    MostrarDatos(id);        
+                    MostrarDatos(id);
                 }
             }
         }
@@ -91,7 +97,7 @@ namespace ProyectoEyS
         }
 
         protected void OnBtnSigDepClicked(object sender, EventArgs e) {
-            if (id < listDep.Count-1) {
+            if (id < listDep.Count - 1) {
                 id++;
                 MostrarDatos(id);
             }
@@ -108,4 +114,4 @@ namespace ProyectoEyS
                 scrolled.Visible = true;
         }
     }
-    }
+}

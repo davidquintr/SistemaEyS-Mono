@@ -6,8 +6,7 @@ using Gtk;
 using Entidades;
 using Negocio;
 
-namespace ProyectoEyS
-{
+namespace ProyectoEyS {
     public partial class frmListarCargo : Gtk.Window {
 
         Dt_tbl_cargo dtr = new Dt_tbl_cargo();
@@ -25,10 +24,18 @@ namespace ProyectoEyS
                 LlenarComboCrg();
                 MostrarDatos(id);
                 Title = "Listar Cargos";
+
+                this.trvwCargo.Model = dtr.listarCargos();
+                string[] titulos = { "Id", "Nombre", "Departamento", "Descripcion" };
+                for (int i = 0; i < titulos.Length; i++) {
+                    this.trvwCargo.AppendColumn(titulos[i], new CellRendererText(), "text", i);
+                }
+
             } catch (Exception ex) {
-                    CuadroMensaje("No existen datos mostrar, por favor, agregue un cargo", MessageType.Error, ButtonsType.Ok);
-                    this.Destroy();
+                CuadroMensaje("No existen datos mostrar, por favor, agregue un cargo", MessageType.Error, ButtonsType.Ok);
+                this.Destroy();
             };
+
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -108,7 +115,8 @@ namespace ProyectoEyS
                 scrolled.Visible = false;
             else
                 scrolled.Visible = true;
+
         }
     }
-    }
+}
 

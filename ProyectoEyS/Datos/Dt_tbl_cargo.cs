@@ -7,8 +7,7 @@ using Entidades;
 using Negocio;
 using Vistas;
 
-namespace Datos
-{
+namespace Datos {
     public class Dt_tbl_cargo {
         //Atrbituos 
         Conexion con = new Conexion();
@@ -39,13 +38,11 @@ namespace Datos
                 }
                 idr.Close();
                 return listaRol;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
                 throw;
-            }
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
         }
@@ -65,22 +62,20 @@ namespace Datos
                 string[] datos = new string[idr.FieldCount];
 
                 while (idr.Read()) {
-                    for(int i = 0; i < idr.FieldCount; i++) {
+                    for (int i = 0; i < idr.FieldCount; i++) {
                         datos[i] = idr[i].ToString();
                     }
                     cargo = creacionDatos.CargarCargo(datos);
                     listaCargo.Add(cargo);
                 }//fin de while
                 return listaCargo;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -110,15 +105,13 @@ namespace Datos
                     listaCargo.Add(cargo);
                 }//fin de while
                 return listaCargo;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -177,11 +170,9 @@ namespace Datos
                     guardado = true;
                 }
                 return guardado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("Error jiji " + e.ToString());
-            }
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
             return guardado;
@@ -211,15 +202,13 @@ namespace Datos
                     listaDepart.Add(departamento);
                 }//fin de while
                 return listaDepart;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -243,11 +232,9 @@ namespace Datos
                     guardado = true;
                 }
                 return guardado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("Error jiji " + e.ToString());
-            }
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
             return guardado;
@@ -261,7 +248,7 @@ namespace Datos
             sb.Clear();
 
             sb.Append("UPDATE BDSistemaEyS.tbl_Cargo ");
-            sb.Append("SET nombre = '" + crg.Nombre + "', descripcion = '" + crg.Descripcion + "', estado = '" + crg.Estado + "', idDepartamento = '" + crg.IdDept +  "' ");
+            sb.Append("SET nombre = '" + crg.Nombre + "', descripcion = '" + crg.Descripcion + "', estado = '" + crg.Estado + "', idDepartamento = '" + crg.IdDept + "' ");
             sb.Append("WHERE (idCargo = '" + id + "');");
 
             try {
@@ -272,11 +259,9 @@ namespace Datos
                     guardado = true;
                 }
                 return guardado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("Error jiji " + e.ToString());
-            }
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
             return guardado;
@@ -305,5 +290,39 @@ namespace Datos
             }
             return guardado;
         }
+
+
+
+
+        public ListStore listarCargos() {
+            ListStore datos = new ListStore(typeof(string),
+                typeof(string), typeof(string), typeof(string));
+
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("SELECT id,nombre,departamento,descripcion FROM BDSistemaEyS.Vw_Cargo where estado <> 3;");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read()) {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString(),
+                        idr[2].ToString(), idr[3].ToString());
+                    //dr.Close();
+                }//fin de while
+                return datos;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+
     }
 }

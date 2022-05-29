@@ -40,7 +40,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.ScrolledWindow scrolled;
 
-		private global::Gtk.TreeView treeview1;
+		private global::Gtk.TreeView trvwCredenciales;
 
 		private global::Gtk.HBox hbox2;
 
@@ -69,8 +69,6 @@ namespace ProyectoEyS
 		private global::Gtk.HButtonBox hbuttonbox6;
 
 		private global::Gtk.Button buttonFiltrar;
-
-		private global::Gtk.Button btnEliminar;
 
 		private global::Gtk.Button btnAdmin;
 
@@ -277,11 +275,11 @@ namespace ProyectoEyS
 			this.scrolled.Name = "scrolled";
 			this.scrolled.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child scrolled.Gtk.Container+ContainerChild
-			this.treeview1 = new global::Gtk.TreeView();
-			this.treeview1.HeightRequest = 150;
-			this.treeview1.CanFocus = true;
-			this.treeview1.Name = "treeview1";
-			this.scrolled.Add(this.treeview1);
+			this.trvwCredenciales = new global::Gtk.TreeView();
+			this.trvwCredenciales.HeightRequest = 150;
+			this.trvwCredenciales.CanFocus = true;
+			this.trvwCredenciales.Name = "trvwCredenciales";
+			this.scrolled.Add(this.trvwCredenciales);
 			this.vbox1.Add(this.scrolled);
 			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.scrolled]));
 			w18.Position = 3;
@@ -420,17 +418,6 @@ namespace ProyectoEyS
 			w31.Expand = false;
 			w31.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
-			this.btnEliminar = new global::Gtk.Button();
-			this.btnEliminar.CanFocus = true;
-			this.btnEliminar.Name = "btnEliminar";
-			this.btnEliminar.UseUnderline = true;
-			this.btnEliminar.Label = global::Mono.Unix.Catalog.GetString("Eliminar");
-			this.hbuttonbox6.Add(this.btnEliminar);
-			global::Gtk.ButtonBox.ButtonBoxChild w32 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.btnEliminar]));
-			w32.Position = 1;
-			w32.Expand = false;
-			w32.Fill = false;
-			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.btnAdmin = new global::Gtk.Button();
 			this.btnAdmin.WidthRequest = 90;
 			this.btnAdmin.HeightRequest = 30;
@@ -439,10 +426,10 @@ namespace ProyectoEyS
 			this.btnAdmin.UseUnderline = true;
 			this.btnAdmin.Label = global::Mono.Unix.Catalog.GetString("Administrar");
 			this.hbuttonbox6.Add(this.btnAdmin);
-			global::Gtk.ButtonBox.ButtonBoxChild w33 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.btnAdmin]));
-			w33.Position = 2;
-			w33.Expand = false;
-			w33.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w32 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.btnAdmin]));
+			w32.Position = 1;
+			w32.Expand = false;
+			w32.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.btnCerrar = new global::Gtk.Button();
 			this.btnCerrar.CanFocus = true;
@@ -450,15 +437,15 @@ namespace ProyectoEyS
 			this.btnCerrar.UseUnderline = true;
 			this.btnCerrar.Label = global::Mono.Unix.Catalog.GetString("Cerrar");
 			this.hbuttonbox6.Add(this.btnCerrar);
-			global::Gtk.ButtonBox.ButtonBoxChild w34 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.btnCerrar]));
-			w34.Position = 3;
+			global::Gtk.ButtonBox.ButtonBoxChild w33 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.btnCerrar]));
+			w33.Position = 2;
+			w33.Expand = false;
+			w33.Fill = false;
+			this.vbox1.Add(this.hbuttonbox6);
+			global::Gtk.Box.BoxChild w34 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbuttonbox6]));
+			w34.Position = 5;
 			w34.Expand = false;
 			w34.Fill = false;
-			this.vbox1.Add(this.hbuttonbox6);
-			global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbuttonbox6]));
-			w35.Position = 5;
-			w35.Expand = false;
-			w35.Fill = false;
 			this.Add(this.vbox1);
 			if ((this.Child != null))
 			{
@@ -467,6 +454,7 @@ namespace ProyectoEyS
 			this.DefaultWidth = 490;
 			this.DefaultHeight = 458;
 			this.Show();
+			this.trvwCredenciales.CursorChanged += new global::System.EventHandler(this.OnTrvwCredencialesCursorChanged);
 			this.cbxEListarUsuario.Changed += new global::System.EventHandler(this.OnCbxEListarUsuarioChanged);
 			this.btnAntCre.Clicked += new global::System.EventHandler(this.OnBtnAntCreClicked);
 			this.btnSigCre.Clicked += new global::System.EventHandler(this.OnBtnSigCreClicked);

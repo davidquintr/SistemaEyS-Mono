@@ -7,8 +7,7 @@ using Entidades;
 using Negocio;
 using Vistas;
 
-namespace Datos
-{
+namespace Datos {
     public class Dt_tbl_emp {
 
         //Atributos
@@ -34,7 +33,7 @@ namespace Datos
                 datos = new string[idr.FieldCount];
 
                 while (idr.Read()) {
-                    for(int i = 0; i < idr.FieldCount; i++) {
+                    for (int i = 0; i < idr.FieldCount; i++) {
                         datos[i] = idr[i].ToString();
                     }
                     empleado = creacionDatos.CargarEmpleado(datos);
@@ -42,15 +41,13 @@ namespace Datos
                 }//fin de while
 
                 return listaEmpleado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -82,15 +79,13 @@ namespace Datos
                 }//fin de while
 
                 return listaEmpleado;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
-            }
-            finally {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
@@ -175,21 +170,19 @@ namespace Datos
             sb.Clear();
             sb.Append("INSERT INTO BDSistemaEyS.tbl_Empleado");
             sb.Append("(cedula, primerNombre, segundoNombre, primerApellido, segundoApellido, direccion, observacion, telefono, emailPersonal, emailCorporativo, sexo, estadoActividad, estado, fechaNac, fechaIngreso, fechaAgregado, idCargo,idUsuario)");
-            sb.Append("VALUES ('" + emp.Cedula + "','" + emp.PrimerNombre + "','" + emp.SegundoNombre + "','" + emp.PrimerApellido + "','" + emp.SegundoApellido + "','" + emp.Direccion + "','" + emp.Observacion + "','" + emp.Telefono + "','" + emp.EmailPersonal + "','" + emp.EmailCorporativo + "', b'" + Convert.ToInt16(emp.Sexo) + "', b'" + Convert.ToInt16(emp.Actividad)  + "','" + 1 + "','" + emp.FechaNac.ToString("yy-MM-dd") + "','" + emp.FechaIngr.ToString("yy-MM-dd") + "','" + emp.FechaAgr.ToString("yy-MM-dd") + "','" + emp.IdCargo + "','" + 0 +"')");
+            sb.Append("VALUES ('" + emp.Cedula + "','" + emp.PrimerNombre + "','" + emp.SegundoNombre + "','" + emp.PrimerApellido + "','" + emp.SegundoApellido + "','" + emp.Direccion + "','" + emp.Observacion + "','" + emp.Telefono + "','" + emp.EmailPersonal + "','" + emp.EmailCorporativo + "', b'" + Convert.ToInt16(emp.Sexo) + "', b'" + Convert.ToInt16(emp.Actividad) + "','" + 1 + "','" + emp.FechaNac.ToString("yy-MM-dd") + "','" + emp.FechaIngr.ToString("yy-MM-dd") + "','" + emp.FechaAgr.ToString("yy-MM-dd") + "','" + emp.IdCargo + "','" + 0 + "')");
 
             try {
                 con.AbrirConexion();
                 x = con.Ejecutar(CommandType.Text, sb.ToString());
 
-                if(x > 0) {
+                if (x > 0) {
                     guardado = true;
                 }
                 return guardado;
-            } 
-            catch(Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("Error jiji " + e.ToString());
-            } 
-            finally {
+            } finally {
                 con.CerrarConexion();
             }
             return guardado;
@@ -231,7 +224,7 @@ namespace Datos
             sb.Clear();
 
             sb.Append("UPDATE BDSistemaEyS.tbl_Empleado ");
-            sb.Append("SET estado = '2' "); 
+            sb.Append("SET estado = '2' ");
             sb.Append("WHERE idEmpleado = '" + id + "' ");
             try {
                 con.AbrirConexion();
@@ -272,6 +265,40 @@ namespace Datos
             }
             return guardado;
         }
+
+
+        public ListStore listarEmpleado() {
+            ListStore datos = new ListStore(typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string),
+                typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string),
+                typeof(string), typeof(string), typeof(string));
+
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("SELECT id,usuario,nombres,apellidos,sexo,cedula,departamento,cargo,emailCorporativo,emailPersonal,fechaNac,fechaIngreso,activo,telefono,observacion,direccion FROM BDSistemaEyS.Vw_Empleado;");
+            try {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read()) {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString(), idr[2].ToString(), idr[3].ToString(), idr[4].ToString(), idr[5].ToString(),
+                    idr[7].ToString(), idr[8].ToString(), idr[9].ToString(), idr[10].ToString(), idr[11].ToString(), idr[12].ToString(), idr[13].ToString(),
+                    idr[14].ToString(), idr[15].ToString());
+                    //dr.Close();
+                }//fin de while
+                return datos;
+            } catch (Exception e) {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            } finally {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+
 
         #endregion
     }

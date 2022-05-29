@@ -38,7 +38,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.ScrolledWindow scrolled;
 
-		private global::Gtk.TreeView treeview1;
+		private global::Gtk.TreeView trvwCargo;
 
 		private global::Gtk.HBox hbox2;
 
@@ -254,11 +254,11 @@ namespace ProyectoEyS
 			this.scrolled.Name = "scrolled";
 			this.scrolled.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child scrolled.Gtk.Container+ContainerChild
-			this.treeview1 = new global::Gtk.TreeView();
-			this.treeview1.HeightRequest = 150;
-			this.treeview1.CanFocus = true;
-			this.treeview1.Name = "treeview1";
-			this.scrolled.Add(this.treeview1);
+			this.trvwCargo = new global::Gtk.TreeView();
+			this.trvwCargo.HeightRequest = 150;
+			this.trvwCargo.CanFocus = true;
+			this.trvwCargo.Name = "trvwCargo";
+			this.scrolled.Add(this.trvwCargo);
 			this.vbox1.Add(this.scrolled);
 			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.scrolled]));
 			w17.Position = 3;
