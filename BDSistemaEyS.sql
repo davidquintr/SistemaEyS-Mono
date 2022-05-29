@@ -79,6 +79,23 @@ SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = @saved_cs_client;
 
 --
+-- Temporary view structure for view `Vw_Evento`
+--
+
+DROP TABLE IF EXISTS `Vw_Evento`;
+/*!50001 DROP VIEW IF EXISTS `Vw_Evento`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `Vw_Evento` AS SELECT 
+ 1 AS `ID`,
+ 1 AS `Fecha Inicio`,
+ 1 AS `Fecha Fin`,
+ 1 AS `Razon`,
+ 1 AS `Descripcion`,
+ 1 AS `Nombres`*/;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Temporary view structure for view `Vw_OpcRol`
 --
 
@@ -268,7 +285,7 @@ CREATE TABLE `tbl_Empleado` (
 
 LOCK TABLES `tbl_Empleado` WRITE;
 /*!40000 ALTER TABLE `tbl_Empleado` DISABLE KEYS */;
-INSERT INTO `tbl_Empleado` VALUES (1,'0012405041023S','Erick','Oswaldo','Gonzalez','Gallegos','Mi casa','','87402508','erickgonzalez2004@gmail.com','erick.gonzalez13752@est.uca.edu.ni',_binary '',_binary '',1,'2004-05-24 00:00:00','2020-04-23 00:00:00','2022-05-20 00:00:00',1,1),(2,'0011901011009G','Armando','Alexander','Meza','López','asd','asd','12345678','armandocomelon@gmail.com','armando@sucks.empresa.com.ni',_binary '\0',_binary '\0',2,'2001-01-19 00:00:00','2021-05-19 00:00:00','2022-05-21 00:00:00',3,7),(3,'001190041016S','David','','Quintanilla','Ruiz','Camilo Ortega, de donde roban caña a la derecha.','Ninguna, está guapo.','77488103','davidquintr97@gmail.com','david.quintanilla13376@est.uca.edu.ni',_binary '',_binary '\0',1,'2004-04-19 00:00:00','2022-04-01 00:00:00','2022-05-24 00:00:00',1,3),(4,'0010808041004S','David','Sebastián','Parrales','Ponce','perroasado','es gay','9429553','gatito@gmail.com','gatito@gmail.com',_binary '\0',_binary '\0',1,'2004-08-08 00:00:00','2022-05-25 00:00:00','2022-05-25 00:00:00',2,2),(5,'0012405221004S','Erick','Oswaldo','González','Gallegos','','','12345678','erickoswaldo@gmail.com','erick.oswaldo@empresa.com.ni',_binary '\0',_binary '\0',2,'2004-05-24 00:00:00','2022-05-24 00:00:00','2022-05-24 00:00:00',1,6),(6,'000000000000','Riuske','Mateo','Nishime','Robleto','','','124324','fsdfdsf','fdsfsd',_binary '\0',_binary '\0',2,'2022-05-03 00:00:00','2022-05-24 00:00:00','2022-05-24 00:00:00',1,5),(7,'0011904041016S','Juan','Daniel','Gaturron','Treminio','','','12345678','asdsadasda','dasdasd',_binary '',_binary '\0',1,'2022-05-03 00:00:00','2022-05-10 00:00:00','2022-05-28 00:00:00',2,0),(8,'0011904041017S','Juan','Juan ','Gaturron','Treminio','','','12345678','asdasdasd','sadasd',_binary '',_binary '\0',1,'2022-06-07 00:00:00','2022-05-18 00:00:00','2022-05-28 00:00:00',2,0);
+INSERT INTO `tbl_Empleado` VALUES (1,'0012405041023S','Erick','Oswaldo','Gonzalez','Gallegos','Mi casa','','87402508','erickgonzalez2004@gmail.com','erick.gonzalez13752@est.uca.edu.ni',_binary '',_binary '',1,'2004-05-24 00:00:00','2020-04-23 00:00:00','2022-05-20 00:00:00',1,1),(2,'0011901011009G','Armando','Alexander','Meza','López','asd','asd','12345678','armandocomelon@gmail.com','armando@sucks.empresa.com.ni',_binary '\0',_binary '\0',2,'2001-01-19 00:00:00','2021-05-19 00:00:00','2022-05-21 00:00:00',3,7),(3,'001190041016S','David','','Quintanilla','Ruiz','Camilo Ortega, de donde roban caña a la derecha.','Ninguna, está guapo.','77488103','davidquintr97@gmail.com','david.quintanilla13376@est.uca.edu.ni',_binary '',_binary '\0',1,'2004-04-19 00:00:00','2022-04-01 00:00:00','2022-05-24 00:00:00',1,3),(4,'0010808041004S','David','Sebastián','Parrales','Ponce','perroasado','es gay','9429553','gatito@gmail.com','gatito@gmail.com',_binary '\0',_binary '\0',1,'2004-08-08 00:00:00','2022-05-25 00:00:00','2022-05-25 00:00:00',2,2),(5,'0012405221004S','Erick','Oswaldo','González','Gallegos','','','12345678','erickoswaldo@gmail.com','erick.oswaldo@empresa.com.ni',_binary '\0',_binary '\0',2,'2004-05-24 00:00:00','2022-05-24 00:00:00','2022-05-24 00:00:00',1,6),(6,'000000000000','Riuske','Mateo','Nishime','Robleto','','','124324','fsdfdsf','fdsfsd',_binary '\0',_binary '\0',2,'2022-05-03 00:00:00','2022-05-24 00:00:00','2022-05-24 00:00:00',1,5),(7,'0011904041016S','Juan','Daniel','Gaturron','Treminio','','','12345678','asdsadasda','dasdasd',_binary '',_binary '\0',1,'2022-05-03 00:00:00','2022-05-10 00:00:00','2022-05-28 00:00:00',2,8),(8,'0011904041017S','Juan','Juan ','Gaturron','Treminio','','','12345678','asdasdasd','sadasd',_binary '',_binary '\0',1,'2022-06-07 00:00:00','2022-05-18 00:00:00','2022-05-28 00:00:00',2,0);
 /*!40000 ALTER TABLE `tbl_Empleado` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -284,13 +301,13 @@ CREATE TABLE `tbl_Evento` (
   `fechaInicio` datetime NOT NULL,
   `fechaFin` datetime NOT NULL,
   `razon` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
-  `descripcion` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
+  `descripcion` varchar(500) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
   `estado` int NOT NULL,
   `idEmpleado` int NOT NULL,
   PRIMARY KEY (`idEvento`),
   UNIQUE KEY `idEvento_UNIQUE` (`idEvento`),
   KEY `Reftbl_Empleado51` (`idEmpleado`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -299,6 +316,7 @@ CREATE TABLE `tbl_Evento` (
 
 LOCK TABLES `tbl_Evento` WRITE;
 /*!40000 ALTER TABLE `tbl_Evento` DISABLE KEYS */;
+INSERT INTO `tbl_Evento` VALUES (1,'2022-05-28 00:00:00','2022-07-20 00:00:00','Prostitucion','Nuestro estimado presente, por motivos de falta de dinero y manutencion de la empresa.',1,1),(2,'2022-05-28 00:00:00','2022-05-31 00:00:00','Manutencion','El estimando panzoneó a la mujer y necesita tiempo para poder recapacitar en sus errores.',1,5);
 /*!40000 ALTER TABLE `tbl_Evento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -412,7 +430,7 @@ CREATE TABLE `tbl_Registro` (
 
 LOCK TABLES `tbl_Registro` WRITE;
 /*!40000 ALTER TABLE `tbl_Registro` DISABLE KEYS */;
-INSERT INTO `tbl_Registro` VALUES (1,NULL,'2022-05-23 10:00:00','2022-05-23 10:00:00','2022-05-23 10:00:00',1),(2,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(3,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(4,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(5,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(6,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(7,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(8,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(9,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(10,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(11,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(12,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(13,'2022-05-24 10:00:00','2022-05-24 22:37:15',NULL,NULL,1),(14,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(15,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(16,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(17,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(18,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(19,'0001-01-01 00:00:00',NULL,NULL,NULL,3),(20,'2022-05-24 22:28:22','2022-05-24 22:36:02',NULL,NULL,3),(21,'2022-05-25 22:38:54','2022-05-25 22:39:51',NULL,NULL,3),(22,'2022-05-25 23:13:04','2022-05-25 23:18:02','2022-05-25 23:15:38','2022-05-25 23:13:09',4),(23,'2022-05-24 23:19:10','2022-05-24 23:19:32','2022-05-24 23:19:25','2022-05-24 23:19:19',4),(24,'2022-05-24 23:31:47',NULL,'2022-05-24 23:32:29','2022-05-24 23:32:20',5),(25,'2022-05-24 23:34:23','2022-05-24 23:38:44','2022-05-24 23:38:27','2022-05-24 23:34:28',6),(26,'2022-05-25 13:27:01','2022-05-25 13:36:51','2022-05-25 13:36:24','2022-05-25 13:36:09',2),(27,'2022-05-25 16:12:26','2022-05-25 16:12:36','2022-05-25 16:12:34','2022-05-25 16:12:32',1),(28,'2022-05-28 15:46:59',NULL,NULL,NULL,3);
+INSERT INTO `tbl_Registro` VALUES (1,NULL,'2022-05-23 10:00:00','2022-05-23 10:00:00','2022-05-23 10:00:00',1),(2,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(3,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(4,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(5,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(6,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(7,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(8,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(9,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(10,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(11,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(12,'2022-05-01 10:00:00',NULL,NULL,NULL,1),(13,'2022-05-24 10:00:00','2022-05-24 22:37:15',NULL,NULL,1),(14,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(15,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(16,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(17,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(18,'2022-05-23 10:00:00',NULL,NULL,NULL,1),(19,'0001-01-01 00:00:00',NULL,NULL,NULL,3),(20,'2022-05-24 22:28:22','2022-05-24 22:36:02',NULL,NULL,3),(21,'2022-05-25 22:38:54','2022-05-25 22:39:51',NULL,NULL,3),(22,'2022-05-25 23:13:04','2022-05-25 23:18:02','2022-05-25 23:15:38','2022-05-25 23:13:09',4),(23,'2022-05-24 23:19:10','2022-05-24 23:19:32','2022-05-24 23:19:25','2022-05-24 23:19:19',4),(24,'2022-05-24 23:31:47',NULL,'2022-05-24 23:32:29','2022-05-24 23:32:20',5),(25,'2022-05-24 23:34:23','2022-05-24 23:38:44','2022-05-24 23:38:27','2022-05-24 23:34:28',6),(26,'2022-05-25 13:27:01','2022-05-25 13:36:51','2022-05-25 13:36:24','2022-05-25 13:36:09',2),(27,'2022-05-25 16:12:26','2022-05-25 16:12:36','2022-05-25 16:12:34','2022-05-25 16:12:32',1),(28,'2022-05-28 15:46:59','2022-05-28 16:40:41',NULL,NULL,3);
 /*!40000 ALTER TABLE `tbl_Registro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -459,7 +477,7 @@ CREATE TABLE `tbl_Usuario` (
   UNIQUE KEY `idUsuario_UNIQUE` (`idUsuario`),
   UNIQUE KEY `username_UNIQUE` (`username`),
   KEY `Reftbl_Rol56` (`idRol`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -468,7 +486,7 @@ CREATE TABLE `tbl_Usuario` (
 
 LOCK TABLES `tbl_Usuario` WRITE;
 /*!40000 ALTER TABLE `tbl_Usuario` DISABLE KEYS */;
-INSERT INTO `tbl_Usuario` VALUES (1,'eros','900',2,4),(2,'poncka','123',2,2),(3,'davidquint','1984',2,1),(4,'davidponce','123',1,0),(5,'riuskenishime','123',2,3),(6,'erickgay2','123',2,2),(7,'amezal','123',2,4),(8,'turca','puta',2,1);
+INSERT INTO `tbl_Usuario` VALUES (1,'eros','900',2,4),(2,'poncka','123',2,2),(3,'davidquint','1984',2,1),(4,'davidponce','123',1,0),(5,'riuskenishime','123',2,3),(6,'erickgay2','123',2,2),(7,'amezal','123',2,4),(9,'juandagaturron','1984',1,0),(8,'turca','puta',2,1),(10,'juanda17','asies',2,1),(11,'perritoasadito','gatito',1,1),(12,'perritosisis','1984',1,1),(13,'perritososad','123',1,1),(14,'apappaa','123',1,1);
 /*!40000 ALTER TABLE `tbl_Usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -522,6 +540,24 @@ UNLOCK TABLES;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `Vw_Empleado` AS select `emp`.`idEmpleado` AS `id`,`usr`.`username` AS `usuario`,concat(`emp`.`primerNombre`,' ',`emp`.`segundoNombre`) AS `nombres`,concat(`emp`.`primerApellido`,' ',`emp`.`segundoApellido`) AS `apellidos`,(case when (`emp`.`sexo` = 1) then 'Masculino' else 'Femenino' end) AS `sexo`,`emp`.`cedula` AS `cedula`,`dep`.`nombre` AS `departamento`,`car`.`nombre` AS `cargo`,`emp`.`emailCorporativo` AS `emailCorporativo`,`emp`.`emailPersonal` AS `emailPersonal`,`emp`.`fechaNac` AS `fechaNac`,`emp`.`fechaIngreso` AS `fechaIngreso`,(case when (`emp`.`estadoActividad` = 1) then 'Si' else 'No' end) AS `activo`,`emp`.`telefono` AS `telefono`,`emp`.`observacion` AS `observacion`,`emp`.`direccion` AS `direccion`,`emp`.`estado` AS `estado` from (((`tbl_Empleado` `emp` join `tbl_Cargo` `car` on((`emp`.`idCargo` = `car`.`idCargo`))) join `tbl_Departamento` `dep` on((`car`.`idDepartamento` = `dep`.`idDepartamento`))) left join `tbl_Usuario` `usr` on((`emp`.`idUsuario` = `usr`.`idUsuario`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `Vw_Evento`
+--
+
+/*!50001 DROP VIEW IF EXISTS `Vw_Evento`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `Vw_Evento` AS select `even`.`idEvento` AS `ID`,`even`.`fechaInicio` AS `Fecha Inicio`,`even`.`fechaFin` AS `Fecha Fin`,`even`.`razon` AS `Razon`,`even`.`descripcion` AS `Descripcion`,concat(`emp`.`primerNombre`,' ',`emp`.`primerApellido`,' - ',`emp`.`cedula`) AS `Nombres` from (`tbl_Evento` `even` left join `tbl_Empleado` `emp` on((`even`.`idEmpleado` = `emp`.`idEmpleado`))) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -607,4 +643,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-28 16:05:57
+-- Dump completed on 2022-05-28 21:03:24
