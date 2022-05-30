@@ -16,6 +16,9 @@ namespace ProyectoEyS {
         Ng_tbl_departamento ngDept = new Ng_tbl_departamento();
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
+        Tbl_Config cfg;
+        Dt_tbl_config dtCfg = new Dt_tbl_config();
+
 
         private int mode = 0;
         public frmAddDept() :
@@ -25,7 +28,8 @@ namespace ProyectoEyS {
             entryID.Text = ngDept.ContarDepts().ToString();
             entryNombre.GrabFocus();
             Title = "Agregar Departamento";
-
+            cfg = dtCfg.colocarConfig();
+            entryEmail.Text = cfg.EmailEmpresa;
         }
 
         public bool Comprobaciones() {

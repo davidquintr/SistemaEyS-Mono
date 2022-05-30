@@ -93,6 +93,7 @@ namespace ProyectoEyS {
 
             if (dtRol.GuardarRol(OrganizarDatos())) {
                 CuadroMensaje("Se ha guardado correctamente", MessageType.Info, ButtonsType.Ok);
+                CuadroMensaje("Este nuevo rol no tiene permisos, establecerlos manualmente si se necesitan permisos especiales", MessageType.Warning, ButtonsType.Ok);
                 this.Destroy();
             } else
                 CuadroMensaje("No se pudo guardar", MessageType.Error, ButtonsType.Ok);
