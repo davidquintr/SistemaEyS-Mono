@@ -25,11 +25,11 @@ namespace ProyectoEyS {
                 scrolled.Visible = false;
 
                 this.trvwListEmp.Model = dtEmp.listarEmpleado();
-                string[] titulos = { "Id", "Username", "Nombre", "Apellido", "Sexo", "Cedula", "Departamento", "Cargo", "Email Corporativo", "Email Personal", "Fecha nacimiento", "Fecha ingreso", "Estado actividad", "Telefono", "Observacion" };
+                string[] titulos = { "Id", "Username", "Nombre", "Apellido", "Sexo", "Cedula", "Departamento", "Cargo", "Email Corporativo", "Email Personal", "Fecha nacimiento", "Fecha ingreso", "Estado actividad", "Telefono", "Observacion", "Direccion"};
                 for (int i = 0; i < titulos.Length; i++) {
                     this.trvwListEmp.AppendColumn(titulos[i], new CellRendererText(), "text", i);
                 }
-
+                this.txbBuscar.Text = "";
 
             } catch (Exception) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un empleado", MessageType.Error, ButtonsType.Ok);
@@ -164,6 +164,12 @@ namespace ProyectoEyS {
 
                 } while (m.IterNext(ref it));
             }
+        }
+
+
+        protected void OnTxbBuscarChanged(object sender, EventArgs e)
+        {
+            this.trvwListEmp.Model = dtEmp.buscarEmp(this.txbBuscar.Text);
         }
     }
 }

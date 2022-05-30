@@ -131,5 +131,10 @@ namespace ProyectoEyS {
                 } while (m.IterNext(ref it));
             }
         }
+
+        protected void OnTxbBuscarChanged(object sender, EventArgs e)
+        {
+            this.trvwCredenciales.Model = dtUsr.buscarCred(this.txbBuscar.Text);
+        }
     }
 }

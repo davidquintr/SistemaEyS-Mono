@@ -133,6 +133,11 @@ namespace ProyectoEyS {
                 } while (m.IterNext(ref it));
             }
         }
+
+        protected void OnTxbBuscarChanged(object sender, EventArgs e)
+        {
+            this.trvwRoles.Model = dtRol.buscarRol(this.txbBuscar.Text);
+        }
     }
 }
 

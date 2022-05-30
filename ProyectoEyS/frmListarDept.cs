@@ -142,5 +142,10 @@ namespace ProyectoEyS {
                 } while (m.IterNext(ref it));
             }
         }
+
+        protected void OnTxbBuscarChanged(object sender, EventArgs e)
+        {
+            this.trvwDept.Model = dtDep.buscarDep(this.txbBuscar.Text);
+        }
     }
 }

@@ -28,11 +28,22 @@ namespace ProyectoEyS {
         public vistaAdmin() : base(Gtk.WindowType.Toplevel) {
             try {
                 this.Build();
+
+                this.trvwEmpleado.Model = dtus.listarEntradas();
+                string[] titulos = { "Nombres", "Apellidos", "Cedula", "Departamento", "Cargo", "Fecha", "Hora entrada", "Hora salida" };
+                for (int i = 0; i < titulos.Length; i++)
+                {
+                    this.trvwEmpleado.AppendColumn(titulos[i], new CellRendererText(), "text", i);
+                }
+
                 //Creamos un objeto de la clase WatchClock
                 clock = new WatchClock();
                 clock.ObtenerDimensiones(137, 137);
                 ClockStart();
                 TextoEvento();
+
+
+
 
             } catch (Exception ex) { }
         }

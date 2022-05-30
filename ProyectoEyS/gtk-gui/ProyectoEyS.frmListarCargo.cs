@@ -36,7 +36,15 @@ namespace ProyectoEyS
 
 		private global::Gtk.HSeparator hseparator1;
 
-		private global::Gtk.ScrolledWindow scrolled;
+		private global::Gtk.VBox scrolled;
+
+		private global::Gtk.HBox hbox8;
+
+		private global::Gtk.Label label4;
+
+		private global::Gtk.Entry txbBuscar;
+
+		private global::Gtk.ScrolledWindow GTKscrolled;
 
 		private global::Gtk.TreeView trvwCargo;
 
@@ -250,18 +258,52 @@ namespace ProyectoEyS
 			w15.Expand = false;
 			w15.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
-			this.scrolled = new global::Gtk.ScrolledWindow();
+			this.scrolled = new global::Gtk.VBox();
 			this.scrolled.Name = "scrolled";
-			this.scrolled.ShadowType = ((global::Gtk.ShadowType)(1));
-			// Container child scrolled.Gtk.Container+ContainerChild
+			this.scrolled.Spacing = 6;
+			// Container child scrolled.Gtk.Box+BoxChild
+			this.hbox8 = new global::Gtk.HBox();
+			this.hbox8.Name = "hbox8";
+			this.hbox8.Spacing = 6;
+			// Container child hbox8.Gtk.Box+BoxChild
+			this.label4 = new global::Gtk.Label();
+			this.label4.Name = "label4";
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Buscar:");
+			this.hbox8.Add(this.label4);
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.label4]));
+			w16.Position = 0;
+			w16.Expand = false;
+			w16.Fill = false;
+			// Container child hbox8.Gtk.Box+BoxChild
+			this.txbBuscar = new global::Gtk.Entry();
+			this.txbBuscar.CanFocus = true;
+			this.txbBuscar.Name = "txbBuscar";
+			this.txbBuscar.IsEditable = true;
+			this.txbBuscar.InvisibleChar = '•';
+			this.hbox8.Add(this.txbBuscar);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.txbBuscar]));
+			w17.Position = 1;
+			this.scrolled.Add(this.hbox8);
+			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.scrolled[this.hbox8]));
+			w18.Position = 0;
+			w18.Expand = false;
+			w18.Fill = false;
+			// Container child scrolled.Gtk.Box+BoxChild
+			this.GTKscrolled = new global::Gtk.ScrolledWindow();
+			this.GTKscrolled.Name = "GTKscrolled";
+			this.GTKscrolled.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GTKscrolled.Gtk.Container+ContainerChild
 			this.trvwCargo = new global::Gtk.TreeView();
 			this.trvwCargo.HeightRequest = 150;
 			this.trvwCargo.CanFocus = true;
 			this.trvwCargo.Name = "trvwCargo";
-			this.scrolled.Add(this.trvwCargo);
+			this.GTKscrolled.Add(this.trvwCargo);
+			this.scrolled.Add(this.GTKscrolled);
+			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.scrolled[this.GTKscrolled]));
+			w20.Position = 1;
 			this.vbox1.Add(this.scrolled);
-			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.scrolled]));
-			w17.Position = 3;
+			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.scrolled]));
+			w21.Position = 3;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.hbox2 = new global::Gtk.HBox();
 			this.hbox2.HeightRequest = 35;
@@ -276,10 +318,10 @@ namespace ProyectoEyS
 			this.vseparator5.WidthRequest = 18;
 			this.vseparator5.Name = "vseparator5";
 			this.hbox4.Add(this.vseparator5);
-			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.vseparator5]));
-			w18.Position = 0;
-			w18.Expand = false;
-			w18.Fill = false;
+			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.vseparator5]));
+			w22.Position = 0;
+			w22.Expand = false;
+			w22.Fill = false;
 			// Container child hbox4.Gtk.Box+BoxChild
 			this.hbox5 = new global::Gtk.HBox();
 			this.hbox5.Name = "hbox5";
@@ -293,24 +335,24 @@ namespace ProyectoEyS
 			this.cbxEListarCar.WidthRequest = 247;
 			this.cbxEListarCar.Name = "cbxEListarCar";
 			this.hbox7.Add(this.cbxEListarCar);
-			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.cbxEListarCar]));
-			w19.Position = 0;
-			w19.Expand = false;
-			w19.Fill = false;
+			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.cbxEListarCar]));
+			w23.Position = 0;
+			w23.Expand = false;
+			w23.Fill = false;
 			// Container child hbox7.Gtk.Box+BoxChild
 			this.vseparator6 = new global::Gtk.VSeparator();
 			this.vseparator6.WidthRequest = 18;
 			this.vseparator6.Name = "vseparator6";
 			this.hbox7.Add(this.vseparator6);
-			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.vseparator6]));
-			w20.Position = 1;
-			w20.Expand = false;
-			w20.Fill = false;
+			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.vseparator6]));
+			w24.Position = 1;
+			w24.Expand = false;
+			w24.Fill = false;
 			this.hbox5.Add(this.hbox7);
-			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.hbox7]));
-			w21.Position = 0;
-			w21.Expand = false;
-			w21.Fill = false;
+			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.hbox7]));
+			w25.Position = 0;
+			w25.Expand = false;
+			w25.Fill = false;
 			// Container child hbox5.Gtk.Box+BoxChild
 			this.hbox6 = new global::Gtk.HBox();
 			this.hbox6.Name = "hbox6";
@@ -324,20 +366,20 @@ namespace ProyectoEyS
 			this.btnAntCar.UseUnderline = true;
 			this.btnAntCar.Label = global::Mono.Unix.Catalog.GetString("<");
 			this.hbox6.Add(this.btnAntCar);
-			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnAntCar]));
-			w22.Position = 0;
-			w22.Expand = false;
-			w22.Fill = false;
+			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnAntCar]));
+			w26.Position = 0;
+			w26.Expand = false;
+			w26.Fill = false;
 			// Container child hbox6.Gtk.Box+BoxChild
 			this.lbCountCar = new global::Gtk.Label();
 			this.lbCountCar.WidthRequest = 98;
 			this.lbCountCar.Name = "lbCountCar";
 			this.lbCountCar.LabelProp = global::Mono.Unix.Catalog.GetString("999/999");
 			this.hbox6.Add(this.lbCountCar);
-			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.lbCountCar]));
-			w23.Position = 1;
-			w23.Expand = false;
-			w23.Fill = false;
+			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.lbCountCar]));
+			w27.Position = 1;
+			w27.Expand = false;
+			w27.Fill = false;
 			// Container child hbox6.Gtk.Box+BoxChild
 			this.btnSigCar = new global::Gtk.Button();
 			this.btnSigCar.WidthRequest = 48;
@@ -347,39 +389,39 @@ namespace ProyectoEyS
 			this.btnSigCar.UseUnderline = true;
 			this.btnSigCar.Label = global::Mono.Unix.Catalog.GetString(">");
 			this.hbox6.Add(this.btnSigCar);
-			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnSigCar]));
-			w24.Position = 2;
-			w24.Expand = false;
-			w24.Fill = false;
+			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnSigCar]));
+			w28.Position = 2;
+			w28.Expand = false;
+			w28.Fill = false;
 			this.hbox5.Add(this.hbox6);
-			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.hbox6]));
-			w25.Position = 1;
-			w25.Expand = false;
-			w25.Fill = false;
+			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.hbox6]));
+			w29.Position = 1;
+			w29.Expand = false;
+			w29.Fill = false;
 			this.hbox4.Add(this.hbox5);
-			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.hbox5]));
-			w26.Position = 1;
-			w26.Expand = false;
-			w26.Fill = false;
+			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.hbox5]));
+			w30.Position = 1;
+			w30.Expand = false;
+			w30.Fill = false;
 			// Container child hbox4.Gtk.Box+BoxChild
 			this.vseparator4 = new global::Gtk.VSeparator();
 			this.vseparator4.WidthRequest = 18;
 			this.vseparator4.Name = "vseparator4";
 			this.hbox4.Add(this.vseparator4);
-			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.vseparator4]));
-			w27.Position = 2;
-			w27.Expand = false;
-			w27.Fill = false;
+			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.vseparator4]));
+			w31.Position = 2;
+			w31.Expand = false;
+			w31.Fill = false;
 			this.hbox2.Add(this.hbox4);
-			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.hbox4]));
-			w28.Position = 0;
-			w28.Expand = false;
-			w28.Fill = false;
+			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.hbox4]));
+			w32.Position = 0;
+			w32.Expand = false;
+			w32.Fill = false;
 			this.vbox1.Add(this.hbox2);
-			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox2]));
-			w29.Position = 4;
-			w29.Expand = false;
-			w29.Fill = false;
+			global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox2]));
+			w33.Position = 4;
+			w33.Expand = false;
+			w33.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.hbuttonbox6 = new global::Gtk.HButtonBox();
 			this.hbuttonbox6.HeightRequest = 50;
@@ -394,9 +436,9 @@ namespace ProyectoEyS
 			this.buttonFiltrar.UseUnderline = true;
 			this.buttonFiltrar.Label = global::Mono.Unix.Catalog.GetString("Filtrar");
 			this.hbuttonbox6.Add(this.buttonFiltrar);
-			global::Gtk.ButtonBox.ButtonBoxChild w30 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonFiltrar]));
-			w30.Expand = false;
-			w30.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w34 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonFiltrar]));
+			w34.Expand = false;
+			w34.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonAdmin = new global::Gtk.Button();
 			this.buttonAdmin.WidthRequest = 90;
@@ -406,10 +448,10 @@ namespace ProyectoEyS
 			this.buttonAdmin.UseUnderline = true;
 			this.buttonAdmin.Label = global::Mono.Unix.Catalog.GetString("Administrar");
 			this.hbuttonbox6.Add(this.buttonAdmin);
-			global::Gtk.ButtonBox.ButtonBoxChild w31 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
-			w31.Position = 1;
-			w31.Expand = false;
-			w31.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w35 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
+			w35.Position = 1;
+			w35.Expand = false;
+			w35.Fill = false;
 			// Container child hbuttonbox6.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonClose = new global::Gtk.Button();
 			this.buttonClose.CanFocus = true;
@@ -417,23 +459,24 @@ namespace ProyectoEyS
 			this.buttonClose.UseUnderline = true;
 			this.buttonClose.Label = global::Mono.Unix.Catalog.GetString("Cerrar");
 			this.hbuttonbox6.Add(this.buttonClose);
-			global::Gtk.ButtonBox.ButtonBoxChild w32 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonClose]));
-			w32.Position = 2;
-			w32.Expand = false;
-			w32.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w36 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonClose]));
+			w36.Position = 2;
+			w36.Expand = false;
+			w36.Fill = false;
 			this.vbox1.Add(this.hbuttonbox6);
-			global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbuttonbox6]));
-			w33.Position = 5;
-			w33.Expand = false;
-			w33.Fill = false;
+			global::Gtk.Box.BoxChild w37 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbuttonbox6]));
+			w37.Position = 5;
+			w37.Expand = false;
+			w37.Fill = false;
 			this.Add(this.vbox1);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 531;
-			this.DefaultHeight = 475;
+			this.DefaultHeight = 538;
 			this.Show();
+			this.txbBuscar.Changed += new global::System.EventHandler(this.OnTxbBuscarChanged);
 			this.trvwCargo.CursorChanged += new global::System.EventHandler(this.OnTrvwCargoCursorChanged);
 			this.cbxEListarCar.Changed += new global::System.EventHandler(this.OnCbxEListarEmpChanged);
 			this.btnAntCar.Clicked += new global::System.EventHandler(this.OnBtnAntCarClicked);

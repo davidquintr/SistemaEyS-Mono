@@ -168,6 +168,49 @@ namespace Datos {
                 con.CerrarConexion();
             }
         }//fin del metodo
+
+
+        public ListStore buscarRol(String cadena)
+        {
+            ListStore datos = new ListStore(typeof(string),
+                typeof(string));
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE BDSistemaEyS;");
+            sb.Append("SELECT id, nombre FROM BDSistemaEyS.Vw_Rol ");
+            sb.Append("WHERE nombre like '%" + cadena + "%' and estado <> 3");
+           
+
+            try
+            {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read())
+                {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString());
+                    //dr.Close();
+                }//fin de while
+                return datos;
+            }
+            catch (Exception e)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                Console.WriteLine("Error: " + e.Message);
+                Console.WriteLine("Error: " + e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+
     }
 
 }

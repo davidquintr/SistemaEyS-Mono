@@ -350,6 +350,95 @@ namespace Datos {
 
 
 
+
+        public ListStore buscarEmp(String cadena)
+        {
+            ListStore datos = new ListStore(typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string),
+                typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string),
+                typeof(string), typeof(string), typeof(string));
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE BDSistemaEyS;");
+            sb.Append("SELECT id,usuario,nombres,apellidos,sexo,cedula,departamento,cargo,emailCorporativo,emailPersonal,fechaNac,fechaIngreso,activo,telefono,observacion,direccion FROM BDSistemaEyS.Vw_Empleado ");
+            sb.Append("WHERE (usuario like '%" + cadena + "%' ");
+            sb.Append("OR nombres like '%" + cadena + "%' ");
+            sb.Append("OR apellidos like '%" + cadena + "%' ");
+            sb.Append("OR departamento like '%" + cadena + "%' ");
+            sb.Append("OR cedula like '%" + cadena + "%' ");
+            sb.Append("OR cargo like '%" + cadena + "%') AND estado <> 3; ");
+            try
+            {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read())
+                {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString(), idr[2].ToString(), idr[3].ToString(), idr[4].ToString(), idr[5].ToString(), idr[6].ToString(),
+                    idr[7].ToString(), idr[8].ToString(), idr[9].ToString(), idr[10].ToString(), idr[11].ToString(), idr[12].ToString(), idr[13].ToString(),
+                    idr[14].ToString(), idr[15].ToString());
+                    //dr.Close();
+                }//fin de while
+                return datos;
+            }
+            catch (Exception e)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                Console.WriteLine("Error: " + e.Message);
+                Console.WriteLine("Error: " + e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+
+
+
+        public ListStore listarEntradas()
+        {
+            ListStore datos = new ListStore(typeof(string), typeof(string), typeof(string),
+                 typeof(string), typeof(string), typeof(string),
+                typeof(string), typeof(string));
+
+
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("SELECT * FROM BDSistemaEyS.Vw_inSesion;");
+            try
+            {
+                con.AbrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read())
+                {
+                    datos.AppendValues(idr[0].ToString(), idr[1].ToString(), 
+                        idr[2].ToString(), idr[3].ToString(), idr[4].ToString(),
+                        idr[5].ToString(), idr[6].ToString(), idr[7].ToString());
+                 
+                }//fin de while
+                return datos;
+            }
+            catch (Exception e)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+
         #endregion
     }
 }

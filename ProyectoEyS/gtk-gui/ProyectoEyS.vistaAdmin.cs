@@ -629,8 +629,8 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 1024;
-			this.DefaultHeight = 752;
+			this.DefaultWidth = 1120;
+			this.DefaultHeight = 693;
 			this.Show();
 			this.ParamGenButt.Activated += new global::System.EventHandler(this.OnParamGenButtActivated);
 			this.CerrarSesinAction2.Activated += new global::System.EventHandler(this.OnCerrarSesinAction2Activated);
@@ -642,7 +642,7 @@ namespace ProyectoEyS
 			this.EmpleadosAction.Activated += new global::System.EventHandler(this.OnEmpleadoListarActivated);
 			this.RolAction.Activated += new global::System.EventHandler(this.OnRolActionActivated);
 			this.UsuarioAction.Activated += new global::System.EventHandler(this.OnUsuarioActionActivated);
-			this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);
+				this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);
 			this.restaurarCargo.Activated += new global::System.EventHandler(this.OnRestaurarCargoActivated);
 			this.restaurarEmp.Activated += new global::System.EventHandler(this.OnRestaurarEmpActivated);
 			this.restaurarUser.Activated += new global::System.EventHandler(this.OnRestaurarUserActivated);
