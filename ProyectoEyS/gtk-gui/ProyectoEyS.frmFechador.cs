@@ -19,7 +19,7 @@ namespace ProyectoEyS
 			global::Stetic.Gui.Initialize(this);
 			// Widget ProyectoEyS.frmFechador
 			this.Name = "ProyectoEyS.frmFechador";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmFechador");
+			this.Title = global::Mono.Unix.Catalog.GetString("Establecer Fecha");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child ProyectoEyS.frmFechador.Gtk.Container+ContainerChild
 			this.vbox2 = new global::Gtk.VBox();

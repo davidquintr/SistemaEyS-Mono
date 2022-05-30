@@ -390,7 +390,7 @@ namespace ProyectoEyS
 			this.WidthRequest = 1024;
 			this.HeightRequest = 584;
 			this.Name = "ProyectoEyS.vistaAdmin";
-			this.Title = global::Mono.Unix.Catalog.GetString("vistaAdmin");
+			this.Title = global::Mono.Unix.Catalog.GetString("Panel Administrativo");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child ProyectoEyS.vistaAdmin.Gtk.Container+ContainerChild
 			this.vbox7 = new global::Gtk.VBox();
@@ -602,7 +602,6 @@ namespace ProyectoEyS
 			w29.Position = 0;
 			// Container child hbox3.Gtk.Box+BoxChild
 			this.image1 = new global::Gtk.Image();
-			this.image1.Name = "image1";
 			this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("ProyectoEyS.Texturas.userActive.png");
 			this.hbox3.Add(this.image1);
 			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.image1]));

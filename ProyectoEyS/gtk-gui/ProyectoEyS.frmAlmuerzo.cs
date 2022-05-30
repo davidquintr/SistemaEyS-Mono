@@ -37,7 +37,7 @@ namespace ProyectoEyS
 			global::Stetic.Gui.Initialize(this);
 			// Widget ProyectoEyS.frmAlmuerzo
 			this.Name = "ProyectoEyS.frmAlmuerzo";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmAlmuerzo");
+			this.Title = global::Mono.Unix.Catalog.GetString("Almuerzo");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.Resizable = false;
 			// Container child ProyectoEyS.frmAlmuerzo.Gtk.Container+ContainerChild
@@ -60,7 +60,6 @@ namespace ProyectoEyS
 			w1.Fill = false;
 			// Container child hbox8.Gtk.Box+BoxChild
 			this.image1 = new global::Gtk.Image();
-			this.image1.Name = "image1";
 			this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("ProyectoEyS.Texturas.iconCompletebreak.png");
 			this.hbox8.Add(this.image1);
 			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.image1]));
@@ -181,7 +180,7 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 515;
+			this.DefaultWidth = 442;
 			this.DefaultHeight = 312;
 			this.Show();
 			this.buttonComenazar.Clicked += new global::System.EventHandler(this.OnButtonComenazarClicked);

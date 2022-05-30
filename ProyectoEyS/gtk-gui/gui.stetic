@@ -9,7 +9,7 @@
   <widget class="Gtk.Window" id="MainWindow" design-size="480 241">
     <property name="MemberName" />
     <property name="WidthRequest">480</property>
-    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="Title" translatable="yes">Inicio de Sesión</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -266,7 +266,7 @@
   <widget class="Gtk.Window" id="ProyectoEyS.vistaUsuario" design-size="640 359">
     <property name="MemberName" />
     <property name="WidthRequest">640</property>
-    <property name="Title" translatable="yes">vistaUsuario</property>
+    <property name="Title" translatable="yes">Panel de Usuario</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -936,7 +936,7 @@
     <property name="MemberName" />
     <property name="WidthRequest">1024</property>
     <property name="HeightRequest">584</property>
-    <property name="Title" translatable="yes">vistaAdmin</property>
+    <property name="Title" translatable="yes">Panel Administrativo</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
       <widget class="Gtk.VBox" id="vbox7">
@@ -1266,9 +1266,9 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAlmuerzo" design-size="515 312">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAlmuerzo" design-size="442 312">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">frmAlmuerzo</property>
+    <property name="Title" translatable="yes">Almuerzo</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -1779,7 +1779,7 @@ Generales</property>
   </widget>
   <widget class="Gtk.Window" id="ProyectoEyS.frmTiempoGracia" design-size="393 111">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">frmTiempoGracia</property>
+    <property name="Title" translatable="yes">Tiempo de Gracia</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -5614,7 +5614,7 @@ Masculino</property>
   <widget class="Gtk.Window" id="ProyectoEyS.frmHorarioAlmuerzo" design-size="390 131">
     <property name="MemberName" />
     <property name="WidthRequest">390</property>
-    <property name="Title" translatable="yes">frmHorarioAlmuerzo</property>
+    <property name="Title" translatable="yes">Horario de Almuerzo</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -7516,7 +7516,7 @@ Masculino</property>
   </widget>
   <widget class="Gtk.Window" id="ProyectoEyS.frmSeguridadPermisos" design-size="596 473">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">frmSeguridadPermisos</property>
+    <property name="Title" translatable="yes">Opciones de Rol</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -7570,7 +7570,6 @@ Masculino</property>
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="Label" translatable="yes">Personalizado</property>
-                        <property name="Active">True</property>
                         <property name="DrawIndicator">True</property>
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
@@ -9240,7 +9239,7 @@ Masculino</property>
   </widget>
   <widget class="Gtk.Window" id="ProyectoEyS.frmFechador" design-size="424 242">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">frmFechador</property>
+    <property name="Title" translatable="yes">Establecer Fecha</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
       <widget class="Gtk.VBox" id="vbox2">
@@ -10679,7 +10678,7 @@ Masculino</property>
   </widget>
   <widget class="Gtk.Window" id="ProyectoEyS.frmAcercaDe" design-size="577 384">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">frmAcercaDe</property>
+    <property name="Title" translatable="yes">Acerca de</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
     <child>
@@ -10733,7 +10732,7 @@ Masculino</property>
                       </widget>
                       <packing>
                         <property name="Position">1</property>
-                        <property name="AutoSize">True</property>
+                        <property name="AutoSize">False</property>
                         <property name="Expand">False</property>
                         <property name="Fill">False</property>
                       </packing>
@@ -10761,7 +10760,7 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="label4">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Desarrollado por Team Factorizacion</property>
+                    <property name="LabelProp" translatable="yes">Desarrollado por Team Factorización</property>
                   </widget>
                   <packing>
                     <property name="Position">2</property>

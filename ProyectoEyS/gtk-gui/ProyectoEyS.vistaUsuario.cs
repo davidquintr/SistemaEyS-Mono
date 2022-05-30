@@ -56,7 +56,7 @@ namespace ProyectoEyS
 			// Widget ProyectoEyS.vistaUsuario
 			this.WidthRequest = 640;
 			this.Name = "ProyectoEyS.vistaUsuario";
-			this.Title = global::Mono.Unix.Catalog.GetString("vistaUsuario");
+			this.Title = global::Mono.Unix.Catalog.GetString("Panel de Usuario");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.Resizable = false;
 			// Container child ProyectoEyS.vistaUsuario.Gtk.Container+ContainerChild

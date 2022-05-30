@@ -48,7 +48,7 @@ namespace Negocio {
             sb.Clear();
 
             sb.Append("Select * from BDSistemaEyS.tbl_Departamento ");
-            sb.Append("where email = '" + correo + "' where idDepartamento <> " + idDept);
+            sb.Append("where email = '" + correo + "' and idDepartamento <> " + idDept);
             try {
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());

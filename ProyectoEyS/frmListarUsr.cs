@@ -59,7 +59,12 @@ namespace ProyectoEyS {
             model.GetIterFirst(out TreeIter iter);
             do {
                 int id = Convert.ToInt32(model.GetValue(iter, 0));
-                string nombre = model.GetValue(iter, 1).ToString();
+                string nombre;
+                nombre = model.GetValue(iter, 2).ToString().Split(' ')[0];
+                if (model.GetValue(iter, 2).ToString().Split(' ').Length > 1)
+                    nombre += " " + model.GetValue(iter, 2).ToString().Split(' ')[1];
+                nombre += " " + model.GetValue(iter, 3).ToString().Split(' ')[0];
+
                 model.SetValue(iter, 0, nombre);
                 model.SetValue(iter, 1, id.ToString());
             } while (model.IterNext(ref iter));

@@ -42,6 +42,7 @@ namespace ProyectoEyS {
             entryEmailcorp.Text = cfg.EmailEmpresa;
             cbxEDep.HasFrame = true;
             cbxEDep.FocusOnClick = true;
+            emp = new Tbl_Vw_Empleado();
         }
 
         public void CambiarModo(Tbl_Vw_Empleado emp) {

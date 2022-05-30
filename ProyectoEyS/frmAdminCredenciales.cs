@@ -144,8 +144,6 @@ namespace ProyectoEyS {
         }
 
         private void GuardarUsuario() {
-            try {
-
                 if (ngUsuario.ExisteUsername(entryNombre.Text)) {
                     CuadroMensaje("Ya existe un usuario", MessageType.Error, ButtonsType.Ok);
                     return;
@@ -161,7 +159,7 @@ namespace ProyectoEyS {
                     return;
                 }
 
-                if (entryContraseña.Text.Split(' ')[1] != null) {
+                if (entryContraseña.Text.Split(' ').Length > 1) {
                     CuadroMensaje("¡La contraseña no debe contener espacios!", MessageType.Error, ButtonsType.Ok);
                     return;
                 }
@@ -177,7 +175,7 @@ namespace ProyectoEyS {
 
                 string[] datos = cbeEmpleado.ActiveText.Split(' ');
 
-                if (cbeEmpleado.ActiveText != "Sin empleado Asignado" && cbeEmpleado.ActiveText != this.usuario.Empleado) {
+                if (cbeEmpleado.ActiveText != "Sin empleado Asignado") {
                     int idEmp = ngEmp.EncontrarEmpleado(datos[3]);
                     int idUsr = ngUsuario.EncontrarUsuario(usuario.Username);
                     dtEmp.AsignarUsuario(idUsr, idEmp);
@@ -187,7 +185,6 @@ namespace ProyectoEyS {
                     CuadroMensaje("Se ha agregado correctamente", MessageType.Info, ButtonsType.Ok);
 
                 this.Destroy();
-            } catch (Exception ex) { }
         }
 
         private void GuardarCambios() {
@@ -291,6 +288,15 @@ namespace ProyectoEyS {
         protected void OnButtonEliminarClicked(object sender, EventArgs e) {
             if (!CuadroMensaje("¿Quieres eliminar este usuario?", MessageType.Question, ButtonsType.YesNo)) {
                 return;
+            }
+
+            string[] datos;
+            int idEmpAnt;
+
+            if (this.usuario.Empleado != "Sin empleado asignado") {
+                datos = this.usuario.Empleado.Split(' ');
+                idEmpAnt = ngEmp.EncontrarEmpleado(datos[3]);
+                dtEmp.AsignarUsuario(0, idEmpAnt);
             }
 
             if (dtUsr.EliminarUser(usuario.Id)) {

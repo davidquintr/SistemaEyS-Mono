@@ -47,7 +47,7 @@ public partial class MainWindow
 		// Widget MainWindow
 		this.WidthRequest = 480;
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
+		this.Title = global::Mono.Unix.Catalog.GetString("Inicio de Sesión");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		this.Resizable = false;
 		// Container child MainWindow.Gtk.Container+ContainerChild
@@ -91,7 +91,6 @@ public partial class MainWindow
 		// Container child hbox10.Gtk.Box+BoxChild
 		this.image1 = new global::Gtk.Image();
 		this.image1.WidthRequest = 102;
-		this.image1.Name = "image1";
 		this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("ProyectoEyS.Texturas.iconPad.png");
 		this.hbox10.Add(this.image1);
 		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.image1]));

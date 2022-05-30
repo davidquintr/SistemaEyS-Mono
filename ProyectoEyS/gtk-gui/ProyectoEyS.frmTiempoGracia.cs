@@ -33,7 +33,7 @@ namespace ProyectoEyS
 			global::Stetic.Gui.Initialize(this);
 			// Widget ProyectoEyS.frmTiempoGracia
 			this.Name = "ProyectoEyS.frmTiempoGracia";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmTiempoGracia");
+			this.Title = global::Mono.Unix.Catalog.GetString("Tiempo de Gracia");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.Resizable = false;
 			// Container child ProyectoEyS.frmTiempoGracia.Gtk.Container+ContainerChild

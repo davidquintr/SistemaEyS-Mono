@@ -44,7 +44,7 @@ namespace ProyectoEyS
 			// Widget ProyectoEyS.frmHorarioAlmuerzo
 			this.WidthRequest = 390;
 			this.Name = "ProyectoEyS.frmHorarioAlmuerzo";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmHorarioAlmuerzo");
+			this.Title = global::Mono.Unix.Catalog.GetString("Horario de Almuerzo");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.Resizable = false;
 			// Container child ProyectoEyS.frmHorarioAlmuerzo.Gtk.Container+ContainerChild

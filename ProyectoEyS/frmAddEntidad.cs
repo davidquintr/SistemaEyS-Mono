@@ -21,10 +21,12 @@ namespace ProyectoEyS
         public void CargarDatos(int mode) {
             this.mode = mode;
             if(mode == 0) {
+                Title = "Nombre de empresa";
                 labelSubTitulo.Text = "Introduzca el nombre de la empresa: ";
                 entryParam.Text = cfg.NombreEmpresa;
             }
             else {
+                Title = "Dominio de empresa";
                 labelSubTitulo.Text = "Introduzca el dominio de la empresa: ";
                 if (cfg.EmailEmpresa == "")
                     entryParam.Text = "@" + cfg.NombreEmpresa + ".com";
