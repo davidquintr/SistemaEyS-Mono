@@ -16,5 +16,10 @@ namespace ProyectoEyS {
             fecha(calendar.GetDate());
             this.Destroy();
         }
+
+        protected void OnCalendarDaySelectedDoubleClick(object sender, EventArgs e) {
+            fecha(calendar.GetDate());
+            this.Destroy();
+        }
     }
 }

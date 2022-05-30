@@ -13,6 +13,7 @@ namespace ProyectoEyS {
         Dt_tbl_rol dtRol = new Dt_tbl_rol();
         Dt_tbl_emp dtEmp = new Dt_tbl_emp();
         Dt_tbl_usuario dtUsr = new Dt_tbl_usuario();
+        ListStore storeEmp;
 
         List<Tbl_Empleado> empleados = new List<Tbl_Empleado>();
         List<string> formatoEmpleado = new List<string>();
@@ -85,18 +86,17 @@ namespace ProyectoEyS {
             cbeEmpleado.Clear();
             CellRendererText cell = new CellRendererText();
             cbeEmpleado.PackStart(cell, false);
-            ListStore store = new ListStore(typeof(string));
+            storeEmp = new ListStore(typeof(string));
             cbeEmpleado.AddAttribute(cell, "text", count);
 
-            store.AppendValues("Sin empleado Asignado");
-            foreach (Tbl_Empleado emp in empleados) 
-                store.AppendValues(emp.PrimerNombre + " " + emp.PrimerApellido + " - " + emp.Cedula);
+            storeEmp.AppendValues("Sin empleado Asignado");
+            foreach (Tbl_Empleado emp in empleados)
+                storeEmp.AppendValues(emp.PrimerNombre + " " + emp.PrimerApellido + " - " + emp.Cedula);
 
-            cbeEmpleado.Model = store;
+            cbeEmpleado.Model = storeEmp;
             cbeEmpleado.Entry.Completion = new EntryCompletion();
-            cbeEmpleado.Entry.Completion.Model = store;
+            cbeEmpleado.Entry.Completion.Model = storeEmp;
             cbeEmpleado.Entry.Completion.TextColumn = 0;
-            cbeEmpleado.Active = empleados.Count + 1;
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -118,13 +118,7 @@ namespace ProyectoEyS {
         }
 
         private void SeleccionarEmp() {
-            for (int i = 0; i < formatoEmpleado.Count; i++) {
-                if (usuario.Empleado == formatoEmpleado[i]) {
-                    cbeEmpleado.Active = i + 1;
-                    return;
-                }
-            }
-            cbeEmpleado.Active = 0;
+            cbeEmpleado.Active = empleados.Count + 1;
         }
 
 

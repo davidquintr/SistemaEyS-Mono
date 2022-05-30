@@ -133,6 +133,7 @@ namespace ProyectoEyS
 			this.Name = "ProyectoEyS.frmSeguridadPermisos";
 			this.Title = global::Mono.Unix.Catalog.GetString("frmSeguridadPermisos");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+			this.Resizable = false;
 			// Container child ProyectoEyS.frmSeguridadPermisos.Gtk.Container+ContainerChild
 			this.vbox1 = new global::Gtk.VBox();
 			this.vbox1.Name = "vbox1";
@@ -175,7 +176,6 @@ namespace ProyectoEyS
 			this.rbPers = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Personalizado"));
 			this.rbPers.CanFocus = true;
 			this.rbPers.Name = "rbPers";
-			this.rbPers.Active = true;
 			this.rbPers.DrawIndicator = true;
 			this.rbPers.UseUnderline = true;
 			this.rbPers.Group = new global::GLib.SList(global::System.IntPtr.Zero);
@@ -691,7 +691,7 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 650;
+			this.DefaultWidth = 596;
 			this.DefaultHeight = 473;
 			this.Show();
 			this.rbPers.Clicked += new global::System.EventHandler(this.OnRbPersClicked);

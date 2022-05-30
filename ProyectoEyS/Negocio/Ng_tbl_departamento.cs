@@ -43,12 +43,12 @@ namespace Negocio {
             }
         }
 
-        public bool ExisteCorreo(string correo) {
+        public bool ExisteCorreo(string correo, int idDept) {
             IDataReader idr = null;
             sb.Clear();
 
             sb.Append("Select * from BDSistemaEyS.tbl_Departamento ");
-            sb.Append("where email = '" + correo + "'");
+            sb.Append("where email = '" + correo + "' where idDepartamento <> " + idDept);
             try {
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());

@@ -41,32 +41,35 @@ namespace ProyectoEyS {
 
         public void OrdenarDatos() {
             for (int i = 0; i < listHor.Count; i++) {
-                if(listHor[i].TipoHor == 1) {
-                    if (listHor[i].Activo)
-                        checkbutton1.Active = true;
-                    spHoraIR1.Value = listHor[i].HorarioIn.Hour;
-                    spHoraFR1.Value = listHor[i].HorarioIn.Minute;
 
-                    spHoraIR2.Value = listHor[i].HorarioOut.Hour;
-                    spHoraFR2.Value = listHor[i].HorarioOut.Minute;
-                
-                }else if(listHor[i].TipoHor == 2) {
-                    if (listHor[i].Activo)
-                        checkbutton2.Active = true;
-                    spHoraIS1.Value = listHor[i].HorarioIn.Hour;
-                    spHoraFS1.Value = listHor[i].HorarioIn.Minute;
+                switch (listHor[i].TipoHor) {
+                    case 1:
+                        if (listHor[i].Activo)
+                            checkbutton1.Active = true;
+                        spHoraIR1.Value = listHor[i].HorarioIn.Hour;
+                        spHoraFR1.Value = listHor[i].HorarioIn.Minute;
 
-                    spHoraIS2.Value = listHor[i].HorarioOut.Hour;
-                    spHoraFS2.Value = listHor[i].HorarioOut.Minute;
-                
-                } else if (listHor[i].TipoHor == 3) {
-                    if (listHor[i].Activo)
-                        checkbutton3.Active = true;
-                    spHoraID1.Value = listHor[i].HorarioIn.Hour;
-                    spHoraFD1.Value = listHor[i].HorarioIn.Minute;
+                        spHoraIR2.Value = listHor[i].HorarioOut.Hour;
+                        spHoraFR2.Value = listHor[i].HorarioOut.Minute;
+                        break;
+                    case 2:
+                        if (listHor[i].Activo)
+                            checkbutton2.Active = true;
+                        spHoraIS1.Value = listHor[i].HorarioIn.Hour;
+                        spHoraFS1.Value = listHor[i].HorarioIn.Minute;
 
-                    spHoraID2.Value = listHor[i].HorarioOut.Hour;
-                    spHoraFD2.Value = listHor[i].HorarioOut.Minute;
+                        spHoraIS2.Value = listHor[i].HorarioOut.Hour;
+                        spHoraFS2.Value = listHor[i].HorarioOut.Minute;
+                        break;
+                    case 3:
+                        if (listHor[i].Activo)
+                            checkbutton3.Active = true;
+                        spHoraID1.Value = listHor[i].HorarioIn.Hour;
+                        spHoraFD1.Value = listHor[i].HorarioIn.Minute;
+
+                        spHoraID2.Value = listHor[i].HorarioOut.Hour;
+                        spHoraFD2.Value = listHor[i].HorarioOut.Minute;
+                        break;
                 }
             }
         }

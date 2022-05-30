@@ -78,6 +78,7 @@ namespace ProyectoEyS
 			this.DefaultWidth = 424;
 			this.DefaultHeight = 242;
 			this.Show();
+			this.calendar.DaySelectedDoubleClick += new global::System.EventHandler(this.OnCalendarDaySelectedDoubleClick);
 			this.buttonGuardar.Clicked += new global::System.EventHandler(this.OnButtonGuardarClicked);
 			this.buttonClose.Clicked += new global::System.EventHandler(this.OnButtonCloseClicked);
 		}

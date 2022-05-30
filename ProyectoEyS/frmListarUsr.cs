@@ -31,7 +31,7 @@ namespace ProyectoEyS {
                 }
 
 
-            } catch (Exception ex) {
+            } catch (Exception) {
                 CuadroMensaje("No existen datos mostrar, por favor, agregue un empleado", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
             };
@@ -150,8 +150,10 @@ namespace ProyectoEyS {
             if (seleccion.GetSelected(out model, out iter)) {
 
                 int active = 0;
+
                 TreeModel m = dtEmp.listarEmpleado();
                 m.GetIterFirst(out TreeIter it);
+
                 do {
                     int idtrv = Convert.ToInt32(model.GetValue(iter, 0));
                     int id = Convert.ToInt32(m.GetValue(it, 0));

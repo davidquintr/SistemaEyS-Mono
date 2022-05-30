@@ -25,6 +25,9 @@ namespace ProyectoEyS {
         Tbl_Usuario selectedUser;
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
 
+        CellRendererText cell = new CellRendererText();
+        ListStore store = new ListStore(typeof(string));
+
         int idIndex;
         int limSup;
 
@@ -68,8 +71,15 @@ namespace ProyectoEyS {
                     CuadroMensaje("No hay elementos eliminados", MessageType.Info, ButtonsType.Ok);
                     this.Destroy();
                 }
+
+                cbxDyn.Model = store;
+                cbxDyn.Entry.Completion = new EntryCompletion();
+                cbxDyn.Entry.Completion.Model = store;
+                cbxDyn.Entry.Completion.TextColumn = 0;
+                cbxDyn.Active = 0;
+
                 MostrarDatos();
-            }catch(Exception ex) { };
+            }catch(Exception) {};
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -81,25 +91,57 @@ namespace ProyectoEyS {
         }
 
         protected void LlenarDepartamentoCbx() {
-            for (int i = 0; i < listDep.Count; i++) {
-                this.cbxDyn.InsertText(i, listDep[i].Nombre);
+            cell = new CellRendererText();
+            store = new ListStore(typeof(string));
+            int count = 0;
+            cbxDyn.Clear();
+            cbxDyn.PackStart(cell, false);
+            cbxDyn.AddAttribute(cell, "text", count);
+
+            foreach (Tbl_Vw_Departamento dep in listDep) {
+                store.AppendValues(dep.Nombre);
+                count++;
             }
         }
 
         protected void LlenarCargoCbx() {
-            for (int i = 0; i < listCargo.Count; i++) {
-                this.cbxDyn.InsertText(i, listCargo[i].Nombre);
+            cell = new CellRendererText();
+            store = new ListStore(typeof(string));
+            int count = 0;
+            cbxDyn.Clear();
+            cbxDyn.PackStart(cell, false);
+            cbxDyn.AddAttribute(cell, "text", count);
+
+            foreach (Tbl_Vw_Cargo carg in listCargo) {
+                store.AppendValues(carg.Nombre);
+                count++;
             }
         }
 
         protected void LlenarEmpCbx() {
-            for (int i = 0; i < listEmp.Count; i++) {
-                this.cbxDyn.InsertText(i, listEmp[i].Nombres.Split(' ')[0] + " " + listEmp[i].Apellidos.Split(' ')[0] + " - " + listEmp[i].Cedula);
+            cell = new CellRendererText();
+            store = new ListStore(typeof(string));
+            int count = 0;
+            cbxDyn.Clear();
+            cbxDyn.PackStart(cell, false);
+            cbxDyn.AddAttribute(cell, "text", count);
+
+            foreach (Tbl_Vw_Empleado emp in listEmp) {
+                store.AppendValues(emp.Nombres.Split(' ')[0] + " " + emp.Apellidos + " - " + emp.Cedula);
+                count++;
             }
         }
         protected void LlenarUsrCbc() {
-            for (int i = 0; i < listUsuarios.Count; i++) {
-                this.cbxDyn.InsertText(i, listUsuarios[i].Username);
+            cell = new CellRendererText();
+            store = new ListStore(typeof(string));
+            int count = 0;
+            cbxDyn.Clear();
+            cbxDyn.PackStart(cell, false);
+            cbxDyn.AddAttribute(cell, "text", count);
+
+            foreach (Tbl_Vw_Usuario user in listUsuarios) {
+                store.AppendValues(user.Username);
+                count++;
             }
         }
 
@@ -156,7 +198,6 @@ namespace ProyectoEyS {
             if(!CuadroMensaje("¿Deseas restaurar la entidad: " + EntryUser.Text + "?", MessageType.Question, ButtonsType.YesNo)) {
                 return;
             }
-
             bool guardado = false;
             switch (mode) {
                 case 1:
@@ -172,12 +213,17 @@ namespace ProyectoEyS {
                     guardado = dtUsr.RestaurarUsuario(listUsuarios[idIndex].Id);
                     break;
             }
+
             if (guardado)
                 CuadroMensaje("Se ha restaurado con éxito",MessageType.Info,ButtonsType.Ok);
             else
                 CuadroMensaje("Ha ocurrido un error...", MessageType.Error, ButtonsType.Ok);
-
             this.Destroy();
+        }
+
+        protected void OnCbxDynChanged(object sender, EventArgs e) {
+            this.idIndex = cbxDyn.Active;
+            MostrarDatos();
         }
     }
 }

@@ -58,7 +58,7 @@ namespace Datos {
             sb.Clear();
 
             sb.Append("UPDATE BDSistemaEyS.tbl_Config ");
-            sb.Append("SET nombreEmpresa = '" + cfg.NombreEmpresa + "', hAlmuerzoIn = '" + cfg.HAlmuerzoIn.ToString("yyyy-MM-dd H:mm:ss") + "', hAlmuerzoOut = '" + cfg.HAlmuerzoOut.ToString("yyyy-MM-dd H:mm:ss") + "', tiempoGracia = '" + cfg.TiempoGracia + "', emailEmpresa = '" + cfg.EmailEmpresa + "' ");
+            sb.Append("SET nombreEmpresa = '" + cfg.NombreEmpresa + "', hAlmuerzoIn = '" + cfg.HAlmuerzoIn.ToString("yyyy-MM-dd H:mm:ss") + "', hAlmuerzoOut = '" + cfg.HAlmuerzoOut.ToString("yyyy-MM-dd H:mm:ss") + "', tiempoGracia = '" + cfg.TiempoGracia + "', emailEmpresa = '" + cfg.EmailEmpresa + "' where idConfig = 1");
 
             try {
                 con.AbrirConexion();
@@ -78,5 +78,33 @@ namespace Datos {
             return guardado;
         }
         #endregion
+
+        public bool GuardarOpcion(Tbl_Config opc) {
+            bool guardado = false;
+            int x = 0;
+
+            sb.Clear();
+
+            sb.Append("INSERT INTO BDSistemaEyS.tbl_Config ");
+            sb.Append("(nombreEmpresa, hAlmuerzoIn, hAlmuerzoOut, tiempoGracia, emailEmpresa) ");
+            sb.Append("VALUES ('" + opc.NombreEmpresa + "','" + opc.HAlmuerzoIn.ToString("yyyy-MM-dd H:mm:ss") +"','" + opc.HAlmuerzoOut.ToString("yyyy-MM-dd H:mm:ss") + "','" + opc.TiempoGracia + "','" + opc.EmailEmpresa + "')");
+                
+            try {
+                con.AbrirConexion();
+                x = con.Ejecutar(CommandType.Text, sb.ToString());
+
+                if (x > 0) {
+                    guardado = true;
+                }
+                return guardado;
+            } catch (Exception e) {
+                Console.WriteLine("Error jiji " + e.ToString());
+            } finally {
+                con.CerrarConexion();
+            }
+            return guardado;
+        }
     }
+
+
 }

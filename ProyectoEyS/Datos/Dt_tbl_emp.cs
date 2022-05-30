@@ -188,6 +188,56 @@ namespace Datos {
             return guardado;
         }
 
+        public bool EditarEmpleado(Tbl_Empleado emp, int id) {
+            bool guardado = false;
+            int x = 0;
+
+            sb.Clear();
+
+            sb.Append("UPDATE BDSistemaEyS.tbl_Empleado ");
+            sb.Append($"SET cedula = '{emp.Cedula}', primerNombre = '{emp.PrimerNombre}', segundoNombre = '{emp.SegundoNombre}', primerApellido = '{emp.PrimerApellido}', segundoApellido = '{emp.SegundoApellido}', direccion = '{emp.Direccion}', observacion = '{emp.Observacion}', telefono = '{emp.Telefono}', emailPersonal = '{emp.EmailPersonal}', emailCorporativo = '{emp.EmailCorporativo}', sexo = b'{Convert.ToInt32(emp.Sexo).ToString()}', estado = '2', fechaNac = '{emp.FechaNac.ToString("yy-MM-dd")}', fechaIngreso = '{emp.FechaIngr.ToString("yy-MM-dd")}', idCargo = '{emp.IdCargo}' ");
+            sb.Append("WHERE (idEmpleado = '" + id + "');");
+
+            try {
+                con.AbrirConexion();
+                x = con.Ejecutar(CommandType.Text, sb.ToString());
+
+                if (x > 0) {
+                    guardado = true;
+                }
+                return guardado;
+            } catch (Exception e) {
+                Console.WriteLine("Error jiji " + e.ToString());
+            } finally {
+                con.CerrarConexion();
+            }
+            return guardado;
+        }
+
+        public bool RestaurarCargo(int id) {
+            bool guardado = false;
+            int x = 0;
+            sb.Clear();
+
+            sb.Append("update BDSistemaEyS.tbl_Cargo ");
+            sb.Append("SET estado = '2' ");
+            sb.Append("where idCargo = '" + id + "' ");
+            try {
+                con.AbrirConexion();
+                x = con.Ejecutar(CommandType.Text, sb.ToString());
+
+                if (x > 0) {
+                    guardado = true;
+                }
+                return guardado;
+            } catch (Exception e) {
+                Console.WriteLine("Error jiji " + e.ToString());
+            } finally {
+                con.CerrarConexion();
+            }
+            return guardado;
+        }
+
         public bool AsignarUsuario(int idUsr, int idEmp) {
             bool guardado = false;
             int x = 0;

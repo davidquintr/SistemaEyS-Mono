@@ -4,7 +4,7 @@
     <images-root-path>..</images-root-path>
   </configuration>
   <import>
-    <widget-library name="../bin/Release/ProyectoEyS.exe" internal="true" />
+    <widget-library name="../bin/Debug/ProyectoEyS.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="480 241">
     <property name="MemberName" />
@@ -449,6 +449,7 @@
                           <widget class="Gtk.Button" id="buttonSalida">
                             <property name="MemberName" />
                             <property name="HeightRequest">40</property>
+                            <property name="Sensitive">False</property>
                             <property name="CanFocus">True</property>
                             <property name="Type">TextOnly</property>
                             <property name="Label" translatable="yes">Marcar salida</property>
@@ -570,7 +571,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.vistaAdmin" design-size="1024 752">
+  <widget class="Gtk.Window" id="ProyectoEyS.vistaAdmin" design-size="1120 693">
     <action-group name="Default">
       <action id="MenAction">
         <property name="Type">Action</property>
@@ -1311,7 +1312,7 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label17">
+                  <widget class="Gtk.Label" id="tiempoRest">
                     <property name="MemberName" />
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Tiempo restante: HH:MM</property>
@@ -2064,7 +2065,7 @@ Generales</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="886 457">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="886 463">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmAddUsuario</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -2135,7 +2136,6 @@ Generales</property>
                 <child>
                   <widget class="Gtk.ComboBoxEntry" id="cbxEDep">
                     <property name="MemberName" />
-                    <property name="HeightRequest">30</property>
                     <property name="IsTextCombo">True</property>
                     <property name="Items" translatable="yes">Seleccione...</property>
                     <property name="Active">0</property>
@@ -2258,7 +2258,7 @@ Generales</property>
                 <child>
                   <widget class="Gtk.Entry" id="entryID">
                     <property name="MemberName" />
-                    <property name="HeightRequest">30</property>
+                    <property name="HeightRequest">0</property>
                     <property name="CanFocus">True</property>
                     <property name="IsEditable">False</property>
                     <property name="InvisibleChar">•</property>
@@ -2336,7 +2336,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label10">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Email corporativo:</property>
                   </widget>
@@ -2358,7 +2357,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label11">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Email personal:</property>
                   </widget>
@@ -2403,7 +2401,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label4">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">ID:</property>
                   </widget>
@@ -2423,7 +2420,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label5">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Nombre:</property>
                   </widget>
@@ -2445,7 +2441,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label6">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Apellidos:</property>
                   </widget>
@@ -2467,7 +2462,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label7">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Cédula:</property>
                   </widget>
@@ -2489,7 +2483,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label8">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Departamento:</property>
                   </widget>
@@ -2511,7 +2504,6 @@ Generales</property>
                   <widget class="Gtk.Label" id="label9">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Cargo:</property>
                   </widget>
@@ -2875,7 +2867,6 @@ Masculino</property>
         <child>
           <widget class="Gtk.HButtonBox" id="hbuttonbox6">
             <property name="MemberName" />
-            <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
             <property name="BorderWidth">10</property>
             <property name="Size">3</property>
@@ -3646,9 +3637,8 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="640 827">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="491 623">
     <property name="MemberName" />
-    <property name="WidthRequest">640</property>
     <property name="Title" translatable="yes">frmListarUsr</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Resizable">False</property>
@@ -3659,7 +3649,7 @@ Masculino</property>
         <child>
           <widget class="Gtk.Label" id="labelListUsr">
             <property name="MemberName" />
-            <property name="HeightRequest">35</property>
+            <property name="HeightRequest">23</property>
             <property name="Xalign">0.03</property>
             <property name="LabelProp" translatable="yes">Listar empleados</property>
           </widget>
@@ -3694,71 +3684,8 @@ Masculino</property>
                 <property name="RowSpacing">6</property>
                 <property name="ColumnSpacing">6</property>
                 <child>
-                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
-                    <property name="MemberName" />
-                    <property name="ShadowType">In</property>
-                    <child>
-                      <widget class="Gtk.TextView" id="lbObs">
-                        <property name="MemberName" />
-                        <property name="Sensitive">False</property>
-                        <property name="CanFocus">True</property>
-                        <property name="ShowScrollbars">True</property>
-                        <property name="Text" translatable="yes" />
-                        <property name="WrapMode">WordChar</property>
-                      </widget>
-                    </child>
-                  </widget>
-                  <packing>
-                    <property name="TopAttach">14</property>
-                    <property name="BottomAttach">15</property>
-                    <property name="LeftAttach">1</property>
-                    <property name="RightAttach">2</property>
-                    <property name="AutoSize">True</property>
-                    <property name="XOptions">Fill</property>
-                    <property name="YOptions">Fill</property>
-                    <property name="XExpand">False</property>
-                    <property name="XFill">True</property>
-                    <property name="XShrink">False</property>
-                    <property name="YExpand">False</property>
-                    <property name="YFill">True</property>
-                    <property name="YShrink">False</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
-                    <property name="MemberName" />
-                    <property name="ShadowType">In</property>
-                    <child>
-                      <widget class="Gtk.TextView" id="lbDirec">
-                        <property name="MemberName" />
-                        <property name="Sensitive">False</property>
-                        <property name="CanFocus">True</property>
-                        <property name="ShowScrollbars">True</property>
-                        <property name="Text" translatable="yes" />
-                        <property name="WrapMode">WordChar</property>
-                      </widget>
-                    </child>
-                  </widget>
-                  <packing>
-                    <property name="TopAttach">15</property>
-                    <property name="BottomAttach">16</property>
-                    <property name="LeftAttach">1</property>
-                    <property name="RightAttach">2</property>
-                    <property name="AutoSize">True</property>
-                    <property name="XOptions">Fill</property>
-                    <property name="YOptions">Fill</property>
-                    <property name="XExpand">False</property>
-                    <property name="XFill">True</property>
-                    <property name="XShrink">False</property>
-                    <property name="YExpand">False</property>
-                    <property name="YFill">True</property>
-                    <property name="YShrink">False</property>
-                  </packing>
-                </child>
-                <child>
                   <widget class="Gtk.Label" id="lbApellido">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
                   </widget>
@@ -3782,7 +3709,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbApellidoUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Apellidos:</property>
                   </widget>
@@ -3803,7 +3729,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbCargo">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
                   </widget>
@@ -3827,7 +3752,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbCargoUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Cargo:</property>
                   </widget>
@@ -3848,7 +3772,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbCedula">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">XXX-XXXXXX-XXXX</property>
                   </widget>
@@ -3872,7 +3795,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbCedulaUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Cédula:</property>
                   </widget>
@@ -3893,7 +3815,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbDept">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
                   </widget>
@@ -3917,7 +3838,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbDeptUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Departamento:</property>
                   </widget>
@@ -3936,9 +3856,33 @@ Masculino</property>
                   </packing>
                 </child>
                 <child>
+                  <widget class="Gtk.TextView" id="lbDirec">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">262</property>
+                    <property name="Sensitive">False</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Text" translatable="yes" />
+                    <property name="WrapMode">WordChar</property>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">15</property>
+                    <property name="BottomAttach">16</property>
+                    <property name="LeftAttach">1</property>
+                    <property name="RightAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
                   <widget class="Gtk.Label" id="lbEmailCorp">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">texto@ejemplo.com</property>
                   </widget>
@@ -3962,7 +3906,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbEmailCorpUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Email corporativo:</property>
                   </widget>
@@ -3983,7 +3926,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbEmailPer">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">texto@ejemplo.com</property>
                   </widget>
@@ -4007,7 +3949,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbEmailPerUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Email personal:</property>
                   </widget>
@@ -4028,7 +3969,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbFechaIngr">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">DD:MM:YY</property>
                   </widget>
@@ -4051,7 +3991,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbFechaNac">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">DD:MM:YY</property>
                   </widget>
@@ -4075,7 +4014,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbFecIngUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Fecha de ingreso:</property>
                   </widget>
@@ -4097,7 +4035,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbFecIngUsr2">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Fecha de nacimiento:</property>
                   </widget>
@@ -4118,7 +4055,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbID">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">XXXXXXXX</property>
                   </widget>
@@ -4159,7 +4095,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbNombre">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
                   </widget>
@@ -4183,7 +4118,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbNombreUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Nombres:</property>
                   </widget>
@@ -4202,10 +4136,33 @@ Masculino</property>
                   </packing>
                 </child>
                 <child>
+                  <widget class="Gtk.TextView" id="lbObs">
+                    <property name="MemberName" />
+                    <property name="Sensitive">False</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Text" translatable="yes" />
+                    <property name="WrapMode">WordChar</property>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">14</property>
+                    <property name="BottomAttach">15</property>
+                    <property name="LeftAttach">1</property>
+                    <property name="RightAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
                   <widget class="Gtk.Label" id="lbObsUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.2</property>
                     <property name="LabelProp" translatable="yes">Observación:</property>
@@ -4228,7 +4185,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbObsUsr1">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">21</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.2</property>
                     <property name="LabelProp" translatable="yes">Dirección:</property>
@@ -4250,7 +4206,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbSexo">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">M/F</property>
                   </widget>
@@ -4274,7 +4229,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbSexoUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Sexo:</property>
                   </widget>
@@ -4295,7 +4249,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbTel">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
                   </widget>
@@ -4319,7 +4272,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbTelUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Teléfono:</property>
                   </widget>
@@ -4340,7 +4292,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbTrab">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">SI / NO</property>
                   </widget>
@@ -4364,7 +4315,6 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbTrabUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Activo:</property>
                   </widget>
@@ -4385,7 +4335,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbUsername">
                     <property name="MemberName" />
-                    <property name="WidthRequest">400</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Sin usuario</property>
                   </widget>
@@ -4409,7 +4358,7 @@ Masculino</property>
                   <widget class="Gtk.Label" id="lbUsernameUsr">
                     <property name="MemberName" />
                     <property name="WidthRequest">175</property>
-                    <property name="HeightRequest">20</property>
+                    <property name="HeightRequest">0</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Nombre de Usuario:</property>
                   </widget>
@@ -4458,7 +4407,6 @@ Masculino</property>
         <child>
           <widget class="Gtk.HSeparator" id="hseparator1">
             <property name="MemberName" />
-            <property name="HeightRequest">19</property>
           </widget>
           <packing>
             <property name="Position">2</property>
@@ -4474,7 +4422,7 @@ Masculino</property>
             <child>
               <widget class="Gtk.TreeView" id="trvwListEmp">
                 <property name="MemberName" />
-                <property name="HeightRequest">150</property>
+                <property name="HeightRequest">110</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
                 <signal name="CursorChanged" handler="OnTrvwListEmpCursorChanged" />
@@ -4522,7 +4470,6 @@ Masculino</property>
                             <child>
                               <widget class="Gtk.ComboBoxEntry" id="cbxEListarUsr">
                                 <property name="MemberName" />
-                                <property name="WidthRequest">357</property>
                                 <property name="IsTextCombo">True</property>
                                 <property name="Items" translatable="yes" />
                                 <signal name="Changed" handler="OnCbxEListarUsrChanged" />
@@ -4660,9 +4607,8 @@ Masculino</property>
         <child>
           <widget class="Gtk.HButtonBox" id="hbuttonbox6">
             <property name="MemberName" />
-            <property name="HeightRequest">50</property>
             <property name="Spacing">4</property>
-            <property name="BorderWidth">10</property>
+            <property name="BorderWidth">7</property>
             <property name="Size">4</property>
             <property name="LayoutStyle">End</property>
             <child>
@@ -7394,10 +7340,11 @@ Masculino</property>
       <placeholder />
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmSeguridadPermisos" design-size="650 473">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmSeguridadPermisos" design-size="596 473">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmSeguridadPermisos</property>
     <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
     <child>
       <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
@@ -7449,7 +7396,6 @@ Masculino</property>
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="Label" translatable="yes">Personalizado</property>
-                        <property name="Active">True</property>
                         <property name="DrawIndicator">True</property>
                         <property name="HasLabel">True</property>
                         <property name="UseUnderline">True</property>
@@ -8758,7 +8704,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmRestauracionEntidades" design-size="500 204">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmRestauracionEntidades" design-size="496 204">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmRestauracionEntidades</property>
     <property name="WindowPosition">Center</property>
@@ -8951,6 +8897,7 @@ Masculino</property>
                         <property name="WidthRequest">211</property>
                         <property name="IsTextCombo">True</property>
                         <property name="Items" translatable="yes" />
+                        <signal name="Changed" handler="OnCbxDynChanged" />
                       </widget>
                       <packing>
                         <property name="Position">0</property>
@@ -9129,6 +9076,7 @@ Masculino</property>
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="DisplayOptions">35</property>
+            <signal name="DaySelectedDoubleClick" handler="OnCalendarDaySelectedDoubleClick" />
           </widget>
           <packing>
             <property name="Position">0</property>

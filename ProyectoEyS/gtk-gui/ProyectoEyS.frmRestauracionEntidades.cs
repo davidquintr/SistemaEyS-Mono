@@ -311,9 +311,10 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 500;
+			this.DefaultWidth = 496;
 			this.DefaultHeight = 204;
 			this.Show();
+			this.cbxDyn.Changed += new global::System.EventHandler(this.OnCbxDynChanged);
 			this.btnAntUsr.Clicked += new global::System.EventHandler(this.OnBtnAntUsrClicked);
 			this.btnSigUsr.Clicked += new global::System.EventHandler(this.OnBtnSigUsrClicked);
 			this.buttonRestaurar.Clicked += new global::System.EventHandler(this.OnButtonRestaurarClicked);

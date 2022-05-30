@@ -40,7 +40,7 @@ namespace ProyectoEyS {
                 return false;
             }
 
-            if (ngDept.ExisteCorreo(entryEmail.Text)) {
+            if (ngDept.ExisteCorreo(entryEmail.Text, depVw.Id)) {
                 CuadroMensaje("El correo del departamento ya existe, varíe un poco el correo", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }

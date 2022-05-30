@@ -17,19 +17,21 @@ namespace ProyectoEyS
         {
             this.Build();
             cfg = dtCfg.colocarConfig();
+
             CargarDatos();
         }
 
         private void CargarDatos() {
-            sbtHoraIn.Value = cfg.HAlmuerzoIn.Hour;
-            sbtMinutoIn.Value = cfg.HAlmuerzoIn.Minute;
-            sbtHoraOut.Value = cfg.HAlmuerzoOut.Hour;
-            sbtMinutoOut.Value = cfg.HAlmuerzoOut.Minute;
+            sbtHoraIn.Value = cfg.HAlmuerzoOut.Hour;
+            sbtMinutoIn.Value = cfg.HAlmuerzoOut.Minute;
+            sbtHoraOut.Value = cfg.HAlmuerzoIn.Hour;
+            sbtMinutoOut.Value = cfg.HAlmuerzoIn.Minute;
         }
 
         private void OrganizarDatos() {
-            cfg.HAlmuerzoIn = DateTime.Parse("2001-09-11 " + sbtHoraIn.Text + ":" + sbtMinutoIn.Text + ":" + "00");
-            cfg.HAlmuerzoOut = DateTime.Parse("2001-09-11 " + sbtHoraOut.Text + ":" + sbtMinutoOut.Text + ":" + "00");
+            cfg.HAlmuerzoOut = DateTime.Parse("2001-09-11 " + sbtHoraIn.Text + ":" + sbtMinutoIn.Text + ":" + "00");
+            cfg.HAlmuerzoIn = DateTime.Parse("2001-09-11 " + sbtHoraOut.Text + ":" + sbtMinutoOut.Text + ":" + "00");
+
         }
 
         protected void OnButtonCloseClicked(object sender, EventArgs e) {
@@ -37,12 +39,14 @@ namespace ProyectoEyS
         }
 
         protected void OnButtonAdminClicked(object sender, EventArgs e) {
-            if (CuadroMensaje("¿Deseas guardar?", MessageType.Question, ButtonsType.YesNo)) {
-                OrganizarDatos();
-                if (dtCfg.EditarConfig(cfg)) {
-                    CuadroMensaje("Se han guardado los cambios", MessageType.Info, ButtonsType.Ok);
-                    this.Destroy();
-                }
+            if (!CuadroMensaje("¿Deseas guardar?", MessageType.Question, ButtonsType.YesNo)) {
+                return;
+            }
+
+            OrganizarDatos();
+            if (dtCfg.EditarConfig(cfg)) {
+                CuadroMensaje("Se han guardado los cambios", MessageType.Info, ButtonsType.Ok);
+                this.Destroy();
             }
         }
 

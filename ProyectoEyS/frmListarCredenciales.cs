@@ -61,9 +61,10 @@ namespace ProyectoEyS {
         }
 
         public void MostrarDatos(int id) {
+            lbContraseña.Text = "";
             lbID.Text = listUsuarios[id].Id.ToString();
             lbNombre.Text = listUsuarios[id].Username;
-            lbContraseña.Text = listUsuarios[id].Clave;
+            for(int i = 0; i < listUsuarios[i].Clave.Length; i++) lbContraseña.Text += "*";
             lbEmpleado.Text = listUsuarios[id].Empleado == string.Empty ? "Sin empleado asignado" : listUsuarios[id].Empleado;
             lbRol.Text = listUsuarios[id].Rol;
             cbxEListarUsuario.Active = id;

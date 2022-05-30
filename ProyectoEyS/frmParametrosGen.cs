@@ -1,4 +1,5 @@
 ﻿using System;
+using Datos;
 using Entidades;
 using Gtk;
 using Negocio;
@@ -10,10 +11,24 @@ namespace ProyectoEyS
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
         Tbl_Usuario selectedUser;
 
+        Tbl_Config cfg;
+        Dt_tbl_config dtCfg = new Dt_tbl_config();
+
 
         public frmParametrosGen() : base(Gtk.WindowType.Toplevel) {
             this.Build();
             Title = "Parámetros Generales";
+            cfg = dtCfg.colocarConfig();
+
+            if (cfg.HAlmuerzoIn == default(DateTime)) {
+                cfg.HAlmuerzoIn = DateTime.Parse("2001-09-11 12:00:00");
+                cfg.HAlmuerzoOut = DateTime.Parse("2001-09-11 13:00:00");
+                cfg.EmailEmpresa = "@empresa.com";
+                cfg.TiempoGracia = 10;
+                cfg.NombreEmpresa = "Empresa";
+                dtCfg.GuardarOpcion(cfg);
+            }
+
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {

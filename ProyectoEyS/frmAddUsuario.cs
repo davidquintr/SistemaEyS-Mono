@@ -5,6 +5,7 @@ using Datos;
 using System.Collections.Generic;
 using Negocio;
 using Vistas;
+using System.Text.RegularExpressions;
 
 namespace ProyectoEyS {
     public partial class frmAddUsuario : Gtk.Window {
@@ -12,6 +13,9 @@ namespace ProyectoEyS {
         Ng_tbl_emp ngEmp = new Ng_tbl_emp();
         Ng_tbl_OpcRol ngOpcRol = new Ng_tbl_OpcRol();
         Tbl_Usuario selectedUser;
+
+        Tbl_Config cfg;
+        Dt_tbl_config dtCfg = new Dt_tbl_config();
 
         Dt_tbl_emp dtEmp = new Dt_tbl_emp();
         Dt_tbl_cargo dtCargo = new Dt_tbl_cargo();
@@ -26,6 +30,7 @@ namespace ProyectoEyS {
 
         public frmAddUsuario() : base(Gtk.WindowType.Toplevel) {
             this.Build();
+            cfg = dtCfg.colocarConfig();
             this.Title = "Agregar Empleado";
             listCargo = dtCargo.ColocarCargos();
             listDept = dtDept.ColocarDepart();
@@ -33,7 +38,7 @@ namespace ProyectoEyS {
             this.buttonBaja.Visible = false;
             entryID.Text = (ngEmp.ContarEmpleados() + 1).ToString();
             entryNombre.GrabFocus();
-
+            entryEmailcorp.Text = cfg.EmailEmpresa;
             cbxEDep.HasFrame = true;
             cbxEDep.FocusOnClick = true;
         }
@@ -71,46 +76,48 @@ namespace ProyectoEyS {
                 return false;
             }
 
-            if (entryCedu.Text.Length < 14) {
+            if (entryCedu.Text.Length < 14 || Int32.TryParse(entryCedu.Text[13].ToString(), out int result)) {
                 CuadroMensaje("Ingrese una cédula válida", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }
 
-            if (ngEmp.ExisteCedula(entryCedu.Text)) {
-                CuadroMensaje("Esta cédula ya existe, confirme sus datos", MessageType.Warning, ButtonsType.Ok);
-                return false;
-            }
-
-
-            if (cbxCargo.ActiveText == "") {
-                CuadroMensaje("Ingrese el cargo", MessageType.Warning, ButtonsType.Ok);
-                return false;
-            }
-
-            if (ngEmp.ExisteCorreo(entryEmailcorp.Text)) {
-                CuadroMensaje("Este correo corporativo ya está registrado, cree una variación del mismo", MessageType.Warning, ButtonsType.Ok);
-                return false;
-            }
-
-            int n;
-            bool result = Int32.TryParse(entryTelef.Text, out n);
-
-            if (!result) {
-                CuadroMensaje("Ingrese un número telefónico válido", MessageType.Warning, ButtonsType.Ok);
-                return false;
-            }
 
             if (entryFechaNac.Text == string.Empty || entryFechaIngr.Text == string.Empty || DateTime.Parse(entryFechaNac.Text).ToString("yyyy-MM-dd") == DateTime.Now.ToString("yyyy-MM-dd")) {
                 CuadroMensaje("Cambie las fechas ", MessageType.Warning, ButtonsType.Ok);
                 return false;
             }
 
+            if (cbxCargo.ActiveText == "") {
+                CuadroMensaje("Ingrese el cargo", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if(textvDirec.Buffer.Text.Length > 100) {
+                CuadroMensaje("La direccion no puede ser mayor a 100 carácteres, tienes: " + textvDirec.Buffer.Text.Length, MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (textvObservaciones.Buffer.Text.Length > 100) {
+                CuadroMensaje("Las observaciones no pueden ser mayor a 100 carácteres, tienes: " + textvDirec.Buffer.Text.Length, MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (ngEmp.ExisteCorreo(entryEmailcorp.Text,emp.Id)) {
+                CuadroMensaje("Este correo corporativo ya está registrado, cree una variación del mismo", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
+            if (ngEmp.ExisteCedula(entryCedu.Text,emp.Id)) {
+                CuadroMensaje("Esta cédula ya existe, confirme sus datos", MessageType.Warning, ButtonsType.Ok);
+                return false;
+            }
+
             return true;
         }
 
+
         private void LlenarCampos() {
             labelTitulo.Text = "Editar usuario: " + emp.Nombres.Split(' ')[0] + " " + emp.Apellidos.Split(' ')[0];
-
             entryID.Text = emp.Id.ToString();
             entryNombre.Text = emp.Nombres;
             entryApell.Text = emp.Apellidos;
@@ -225,14 +232,19 @@ namespace ProyectoEyS {
             if (!Comprobaciones()) {
                 return;
             }
-
             if (mode == 0) {
                 if (dtEmp.GuardarEmpleado(OrganizarDatos()))
                     CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
                 else
                     CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
                 this.Destroy();
+            } else {
+                if (dtEmp.EditarEmpleado(OrganizarDatos(),emp.Id))
+                    CuadroMensaje("Se ha guardado con éxito", MessageType.Info, ButtonsType.Ok);
+                else
+                    CuadroMensaje("La operación ha fallado con éxito", MessageType.Error, ButtonsType.Ok);
             }
+            this.Destroy();
         }
 
         private Tbl_Empleado OrganizarDatos() {
@@ -256,18 +268,19 @@ namespace ProyectoEyS {
         }
 
         public Tbl_Empleado normalizarDatos(Tbl_Empleado empleado) {
-            string nombres = entryNombre.Text;
-            string apellidos = entryApell.Text;
+            string nombres = entryNombre.Text + " ";
+            string apellidos = entryApell.Text + " ";
             string[] corte = nombres.Split(' ');
 
             empleado.PrimerNombre = corte[0];
-            for (int i = 0; i < corte.Length; i++) {
-                if (i + 1 != corte.Length - 1)
-                    empleado.SegundoNombre += corte[i] + " ";
-                else
-                    empleado.SegundoNombre += corte[i];
+            if (corte[1] != null) {
+                for (int i = 1; i < corte.Length; i++) {
+                    if (i != corte.Length - 1)
+                        empleado.SegundoNombre += corte[i] + " ";
+                    else
+                        empleado.SegundoNombre += corte[i];
+                }
             }
-
             corte = apellidos.Split(' ');
 
             empleado.PrimerApellido = corte[0];

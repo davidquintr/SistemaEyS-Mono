@@ -33,6 +33,7 @@ namespace ProyectoEyS {
                 clock.ObtenerDimensiones(137, 137);
                 ClockStart();
                 TextoEvento();
+
             } catch (Exception ex) { }
         }
 

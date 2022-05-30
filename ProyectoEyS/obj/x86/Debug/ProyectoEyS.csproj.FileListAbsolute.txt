@@ -346,7 +346,6 @@
 /home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Debug/K4os.Hash.xxHash.xml
 /home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Debug/K4os.Compression.LZ4.Streams.xml
 /home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/bin/Debug/MySql.Data.xml
-/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csprojAssemblyReference.cache
 /home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Debug/ProyectoEyS.exe.config
 /home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CoreCompileInputs.cache
 /home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/obj/x86/Debug/ProyectoEyS.csproj.CopyComplete

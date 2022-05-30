@@ -14,7 +14,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.Label label16;
 
-		private global::Gtk.Label label17;
+		private global::Gtk.Label tiempoRest;
 
 		private global::Gtk.HSeparator hseparator4;
 
@@ -70,12 +70,12 @@ namespace ProyectoEyS
 			w2.Expand = false;
 			w2.Fill = false;
 			// Container child vbox26.Gtk.Box+BoxChild
-			this.label17 = new global::Gtk.Label();
-			this.label17.Name = "label17";
-			this.label17.Xalign = 0F;
-			this.label17.LabelProp = global::Mono.Unix.Catalog.GetString("Tiempo restante: HH:MM");
-			this.vbox26.Add(this.label17);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.label17]));
+			this.tiempoRest = new global::Gtk.Label();
+			this.tiempoRest.Name = "tiempoRest";
+			this.tiempoRest.Xalign = 0F;
+			this.tiempoRest.LabelProp = global::Mono.Unix.Catalog.GetString("Tiempo restante: HH:MM");
+			this.vbox26.Add(this.tiempoRest);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.tiempoRest]));
 			w3.Position = 2;
 			w3.Expand = false;
 			w3.Fill = false;

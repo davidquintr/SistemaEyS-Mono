@@ -10,16 +10,17 @@ public partial class MainWindow : Gtk.Window {
 
     private vistaAdmin vistaAdmin;
     private vistaUsuario vistaUsuario = new vistaUsuario();
+
     private Tbl_Usuario selectedUser;
     private Tbl_Vw_Empleado selectedEmp;
     private Tbl_Vw_Usuario selectedVwUser;
 
-    Ng_tbl_usuario ngUsuario = new Ng_tbl_usuario();
-    Ng_tbl_emp ngEmp = new Ng_tbl_emp();
-    Ng_tbl_OpcRol ngOpRol = new Ng_tbl_OpcRol();
-    Ng_tbl_evento ngEvento = new Ng_tbl_evento();
+    private Ng_tbl_usuario ngUsuario = new Ng_tbl_usuario();
+    private Ng_tbl_emp ngEmp = new Ng_tbl_emp();
+    private Ng_tbl_OpcRol ngOpRol = new Ng_tbl_OpcRol();
+    private Ng_tbl_evento ngEvento = new Ng_tbl_evento();
 
-    Dt_tbl_usuario dtUsuario = new Dt_tbl_usuario();
+    private Dt_tbl_usuario dtUsuario = new Dt_tbl_usuario();
 
 
     public MainWindow() : base(Gtk.WindowType.Toplevel) {
@@ -55,7 +56,6 @@ public partial class MainWindow : Gtk.Window {
             this.Hide();
         } else {
             AccederUser();
-            this.Hide();
         }
     }
 
@@ -66,14 +66,14 @@ public partial class MainWindow : Gtk.Window {
         }
 
         if (ngEvento.ExisteEvento(selectedEmp.Id)) {
-            CuadroMensaje("Este usuario se fue de sabático, cariño.", MessageType.Warning, ButtonsType.Ok);
+            CuadroMensaje("Este usuario tiene un evento activo, consulte al administrador.", MessageType.Warning, ButtonsType.Ok);
             return;
-
         }
 
         vistaUsuario = new vistaUsuario();
         vistaUsuario.ConfigurarInicio(selectedEmp);
         vistaUsuario.CallMainWindow = this;
+        this.Hide();
     }
 
     protected void OnButtonCerrarClicked(object sender, EventArgs e) {

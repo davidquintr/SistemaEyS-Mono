@@ -10,13 +10,18 @@ namespace ProyectoEyS {
         WatchClock clock;
         Tbl_Vw_Empleado empleado;
         int indice = 0;
-        int id;
         bool inh = false;
+        int id;
 
+        private Dt_tbl_config dtCfg = new Dt_tbl_config();
+        private Tbl_Config cfg;
 
-        List<Tbl_Registro> listReg = new List<Tbl_Registro>();
-        Dt_tbl_registro dtReg = new Dt_tbl_registro();
-        Tbl_Registro regAct = new Tbl_Registro();
+        private List<Tbl_Registro> listReg = new List<Tbl_Registro>();
+        private Dt_tbl_registro dtReg = new Dt_tbl_registro();
+        private Tbl_Registro regAct = new Tbl_Registro();
+
+        private TimeSpan tiempoTrab;
+
 
         public vistaUsuario() : base(Gtk.WindowType.Toplevel) {
             this.Build();
@@ -28,6 +33,7 @@ namespace ProyectoEyS {
             clock = new WatchClock();
             clock.ObtenerDimensiones(123, 100);
             ClockStart();
+            cfg = dtCfg.colocarConfig();
         }
 
         public void ConfigurarInicio(Tbl_Vw_Empleado empleado) {
@@ -46,11 +52,22 @@ namespace ProyectoEyS {
             if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida == default(DateTime)) {
                 labelEnt.Text = "Hora de entrada: " + regAct.HoraEntrada.ToString("T");
                 buttonEntrada.Sensitive = false;
+                buttonSalida.Sensitive = true;
+                buttonAlmuerzo.Sensitive = true;
+
                 labelTiempo.Visible = true;
+
             } else if (regAct.HoraEntrada == default(DateTime)) {
                 labelEnt.Text = "No se ha iniciado la jornada laboral";
                 labelTiempo.Text = "";
+                buttonSalida.Sensitive = false;
+                buttonAlmuerzo.Sensitive = false;
             }
+
+            if (regAct.HoraAlmuerzoOut != default(DateTime) && regAct.HoraAlmuerzoIn == default(DateTime)) {
+                buttonSalida.Sensitive = false;
+            } else if (regAct.HoraAlmuerzoOut != default(DateTime))
+                buttonSalida.Sensitive = true;
 
             if (regAct.HoraSalida != default(DateTime)) {
                 buttonSalida.Sensitive = false;
@@ -59,9 +76,16 @@ namespace ProyectoEyS {
                 labelEnt.Text = "Ronda de trabajo finalizada";
                 labelHora.Text = "";
             }
+
             if (regAct.HoraAlmuerzoIn != default(DateTime)) {
                 buttonAlmuerzo.Sensitive = false;
-            }
+            } 
+           
+             if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida != default(DateTime)) {
+                labelTiempo.Text = "Tiempo trabajado : ";
+                tiempoTrab = regAct.HoraSalida.Subtract(regAct.HoraEntrada);
+                labelTiempo.Text += tiempoTrab.ToString("c");
+            } else labelTiempo.Text = "";
 
         }
 
@@ -70,14 +94,14 @@ namespace ProyectoEyS {
             GLib.Timeout.Add(100, new GLib.TimeoutHandler(Update));
         }
 
-        private void TiempoTrab() { // imp 1
-            if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida == default(DateTime)) {
-                labelTiempo.Text = "Tiempo trabajado : ";
-                TimeSpan tiempoTrab = DateTime.Now.Subtract(regAct.HoraEntrada);
-                for (int i = 0; i < 8; i++) {
-                    labelTiempo.Text += tiempoTrab.ToString("c")[i];
+        private void TiempoTrab() {
+            try {
+                if (regAct.HoraEntrada != default(DateTime) && regAct.HoraSalida == default(DateTime)) {
+                    labelTiempo.Text = "Tiempo trabajado : ";
+                    tiempoTrab = DateTime.Now.Subtract(regAct.HoraEntrada);
+                    labelTiempo.Text += tiempoTrab.ToString("c").Substring(0, 10);
                 }
-            }
+            } catch (Exception) { };
         }
 
         //Dibujamos la hora y las lineas de las horas
@@ -92,12 +116,20 @@ namespace ProyectoEyS {
             return true;
         }
 
-
         private Gtk.Window callMainWindow;
 
         public Window CallMainWindow { get => callMainWindow; set => callMainWindow = value; }
 
         protected void OnButtonAlmuerzoClicked(object sender, EventArgs e) {
+
+            string datosNorm = DateTime.Now.ToString("yyyy-M-d") + " " + cfg.HAlmuerzoOut.Hour + ":" + cfg.HAlmuerzoOut.Minute + ":" + cfg.HAlmuerzoOut.Second;
+            cfg.HAlmuerzoOut = DateTime.Parse(datosNorm);
+
+            if (cfg.HAlmuerzoOut.Hour > DateTime.Now.Hour) {
+                CuadroMensaje("¡Aún no es tiempo de almuerzo!, faltan: " + cfg.HAlmuerzoOut.Subtract(DateTime.Now).ToString().Substring(0,8), MessageType.Warning, ButtonsType.Ok);
+                return;
+            }
+
             frmAlmuerzo almuerzo = new frmAlmuerzo();
             if (regAct.HoraAlmuerzoOut != default(DateTime) && !inh)
                 almuerzo.AlternarButtons(1);
@@ -105,7 +137,7 @@ namespace ProyectoEyS {
                 almuerzo.AlternarButtons(0);
 
             almuerzo.CallVistaUser = this;
-
+            almuerzo.EstablecerHorarioAlm(cfg.HAlmuerzoIn,cfg.HAlmuerzoOut);
         }
 
         protected void OnButtonEntradaClicked(object sender, EventArgs e) {

@@ -106,12 +106,12 @@ namespace Negocio {
             }
         }
 
-        public bool ExisteCorreo(string correo) {
+        public bool ExisteCorreo(string correo,int idEmp) {
             IDataReader idr = null;
             sb.Clear();
 
             sb.Append("Select * from BDSistemaEyS.tbl_Empleado ");
-            sb.Append("where emailCorporativo = '" + correo + "'");
+            sb.Append("where emailCorporativo = '" + correo + "' and idEmpleado <> '" + idEmp +"'");
             try {
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());
@@ -135,12 +135,12 @@ namespace Negocio {
             }
         }
 
-        public bool ExisteCedula(string cedula) {
+        public bool ExisteCedula(string cedula,int idEmp) {
             IDataReader idr = null;
             sb.Clear();
 
             sb.Append("Select * from BDSistemaEyS.tbl_Empleado ");
-            sb.Append("where cedula = '" + cedula + "'");
+            sb.Append("where cedula = '" + cedula + "' and idEmpleado <> '" + idEmp + "'");
             try {
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());
