@@ -4,7 +4,7 @@
     <images-root-path>..</images-root-path>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/ProyectoEyS.exe" internal="true" />
+    <widget-library name="../bin/Release/ProyectoEyS.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="480 241">
     <property name="MemberName" />
@@ -9637,7 +9637,6 @@ Masculino</property>
                     <property name="CanFocus">True</property>
                     <property name="IsEditable">True</property>
                     <property name="InvisibleChar">•</property>
-                    <signal name="Changed" handler="OnTxbBuscarChanged" />
                   </widget>
                   <packing>
                     <property name="Position">1</property>
@@ -9662,7 +9661,6 @@ Masculino</property>
                     <property name="HeightRequest">150</property>
                     <property name="CanFocus">True</property>
                     <property name="ShowScrollbars">True</property>
-                    <signal name="CursorChanged" handler="OnTrvwCredencialesCursorChanged" />
                   </widget>
                 </child>
               </widget>
@@ -9711,7 +9709,6 @@ Masculino</property>
                             <property name="MemberName" />
                             <property name="IsTextCombo">True</property>
                             <property name="Items" translatable="yes" />
-                            <signal name="Changed" handler="OnCbxEListarUsuarioChanged" />
                           </widget>
                           <packing>
                             <property name="Position">0</property>
@@ -9753,7 +9750,6 @@ Masculino</property>
                             <property name="Type">TextOnly</property>
                             <property name="Label" translatable="yes">&lt;</property>
                             <property name="UseUnderline">True</property>
-                            <signal name="Clicked" handler="OnBtnAntCreClicked" />
                           </widget>
                           <packing>
                             <property name="Position">0</property>
@@ -9784,7 +9780,6 @@ Masculino</property>
                             <property name="Type">TextOnly</property>
                             <property name="Label" translatable="yes">&gt;</property>
                             <property name="UseUnderline">True</property>
-                            <signal name="Clicked" handler="OnBtnSigCreClicked" />
                           </widget>
                           <packing>
                             <property name="Position">2</property>
@@ -9852,7 +9847,6 @@ Masculino</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">Filtrar</property>
                 <property name="UseUnderline">True</property>
-                <signal name="Clicked" handler="OnButtonFiltrarClicked" />
               </widget>
               <packing>
                 <property name="Expand">False</property>
@@ -9868,7 +9862,6 @@ Masculino</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">Administrar</property>
                 <property name="UseUnderline">True</property>
-                <signal name="Clicked" handler="OnBtnAdminClicked" />
               </widget>
               <packing>
                 <property name="Position">1</property>
@@ -9883,7 +9876,6 @@ Masculino</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">Cerrar</property>
                 <property name="UseUnderline">True</property>
-                <signal name="Clicked" handler="OnBtnCerrarClicked" />
               </widget>
               <packing>
                 <property name="Position">2</property>

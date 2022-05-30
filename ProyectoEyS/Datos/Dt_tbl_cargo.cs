@@ -214,32 +214,7 @@ namespace Datos {
             }
         }
 
-        public bool GuardarDepartamento(Tbl_Departamento dep) {
-            bool guardado = false;
-            int x = 0;
-
-            sb.Clear();
-
-            sb.Append("INSERT INTO BDSistemaEyS.tbl_Departamento ");
-            sb.Append("(nombre, ext, email, descripcion, estado) ");
-            sb.Append("VALUES ('" + dep.Nombre + "','" + dep.Ext + "','" + dep.Email + "','" + dep.Descripcion + "','" + 1 + "')");
-
-            try {
-                con.AbrirConexion();
-                x = con.Ejecutar(CommandType.Text, sb.ToString());
-
-                if (x > 0) {
-                    guardado = true;
-                }
-                return guardado;
-            } catch (Exception e) {
-                Console.WriteLine("Error jiji " + e.ToString());
-            } finally {
-                con.CerrarConexion();
-            }
-            return guardado;
-        }
-
+       
 
         public bool EditarCargo(Tbl_Cargo crg, int id) {
             bool guardado = false;

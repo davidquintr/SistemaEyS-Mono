@@ -106,6 +106,7 @@ namespace Negocio {
             }
         }
 
+
         public bool ExisteCorreo(string correo,int idEmp) {
             IDataReader idr = null;
             sb.Clear();

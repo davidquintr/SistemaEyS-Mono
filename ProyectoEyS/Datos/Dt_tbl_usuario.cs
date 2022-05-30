@@ -18,42 +18,7 @@ namespace Datos
 
         #region metodos
 
-        public List<Tbl_Usuario> ColocarUsuarios() {
-
-            Ng_creacionDatos creacionDatos = new Ng_creacionDatos();
-            List<Tbl_Usuario> listaUsuarios = new List<Tbl_Usuario>();
-            Tbl_Usuario usuario;
-            IDataReader idr = null;
-            sb.Clear();
-            sb.Append("SELECT * FROM BDSistemaEyS.tbl_Usuario;");
-
-            try {
-                con.AbrirConexion();
-                idr = con.Leer(CommandType.Text, sb.ToString());
-                string[] datos = new string[idr.FieldCount];
-
-                while (idr.Read()) {
-                    for (int i = 0; i < idr.FieldCount; i++) {
-                        datos[i] = idr[i].ToString();
-                    }
-                    usuario = creacionDatos.CargarUsuario(datos);
-                    listaUsuarios.Add(usuario);
-                }//fin de while
-
-                return listaUsuarios;
-            } 
-            catch (Exception e) {
-                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
-                    ButtonsType.Ok, e.Message);
-                ms.Run();
-                ms.Destroy();
-                throw;
-            } 
-            finally {
-                idr.Close();
-                con.CerrarConexion();
-            }
-        }
+      
 
 
         public bool GuardarUsuario(Tbl_Usuario usuario) {

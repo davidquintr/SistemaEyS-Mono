@@ -496,14 +496,6 @@ namespace ProyectoEyS
 			this.DefaultWidth = 490;
 			this.DefaultHeight = 498;
 			this.Show();
-			this.txbBuscar.Changed += new global::System.EventHandler(this.OnTxbBuscarChanged);
-			this.trvwCredenciales.CursorChanged += new global::System.EventHandler(this.OnTrvwCredencialesCursorChanged);
-			this.cbxEListarUsuario.Changed += new global::System.EventHandler(this.OnCbxEListarUsuarioChanged);
-			this.btnAntCre.Clicked += new global::System.EventHandler(this.OnBtnAntCreClicked);
-			this.btnSigCre.Clicked += new global::System.EventHandler(this.OnBtnSigCreClicked);
-			this.buttonFiltrar.Clicked += new global::System.EventHandler(this.OnButtonFiltrarClicked);
-			this.btnAdmin.Clicked += new global::System.EventHandler(this.OnBtnAdminClicked);
-			this.btnCerrar.Clicked += new global::System.EventHandler(this.OnBtnCerrarClicked);
 		}
 	}
 }

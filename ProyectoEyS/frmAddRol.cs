@@ -43,6 +43,8 @@ namespace ProyectoEyS {
                 this.selectedUser = selectedUser;
         }
 
+        
+
         protected void OnButtonCloseClicked(object sender, EventArgs e) {
             if (CuadroMensaje("¿Quieres salir? los cambios no se guardarán", MessageType.Question, ButtonsType.YesNo))
                 this.Destroy();
@@ -65,6 +67,10 @@ namespace ProyectoEyS {
         }
 
         protected void OnButtonGuardarClicked(object sender, EventArgs e) {
+            if (entryNombre.Text.Length < 1) { 
+                CuadroMensaje("El campo nombre no puede estar vacio", MessageType.Warning, ButtonsType.Close);
+                return;
+            }
             if (mode == 0)
                 GuardarRol();
             else
@@ -76,6 +82,8 @@ namespace ProyectoEyS {
             Tbl_Rol rol = new Tbl_Rol();
             rol.Estado = 2;
             rol = OrganizarDatos();
+
+
 
             if (!CuadroMensaje("¿Quieres guardar los cambios?", MessageType.Question, ButtonsType.YesNo))
                 return;
