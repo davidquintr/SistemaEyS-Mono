@@ -76,7 +76,7 @@ namespace ProyectoEyS {
         public void LlenarCampos() {
             entryID.Text = crgVw.Id.ToString();
             entryNombre.Text = crgVw.Nombre;
-            cbxEDep.Active = EncontrarDepartamento(crgVw.Departamento);
+            cbxEDep.Active = EncontrarDepartamento(crgVw.Departamento) + 1;
             textvDesc.Buffer.Text = crgVw.Descripcion;
         }
 
@@ -96,6 +96,8 @@ namespace ProyectoEyS {
             cbxEDep.PackStart(cell, false);
             ListStore store = new ListStore(typeof(string));
             cbxEDep.AddAttribute(cell, "text", count);
+
+            store.AppendValues("Sin departamento seleccionado");
 
             foreach (Tbl_Vw_Departamento dept in depList) {
                 store.AppendValues(dept.Nombre);

@@ -407,11 +407,12 @@ namespace Datos {
                 typeof(string), typeof(string));
 
 
+
             IDataReader idr = null;
             sb.Clear();
-            sb.Append("SELECT * FROM BDSistemaEyS.Vw_inSesion;");
+            sb.Append("SELECT * FROM BDSistemaEyS.Vw_inSesion where Fecha = '"+ DateTime.Now.ToString("yyyy-M-dd") + "';");
             try
-            {
+            {   
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());
                 while (idr.Read())

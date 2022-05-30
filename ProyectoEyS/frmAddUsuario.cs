@@ -21,6 +21,7 @@ namespace ProyectoEyS {
         Dt_tbl_cargo dtCargo = new Dt_tbl_cargo();
         Dt_tbl_dep dtDept = new Dt_tbl_dep();
         private int mode = 0;
+        private int cantCarg;
 
         List<Tbl_Cargo> listCargo = new List<Tbl_Cargo>();
         List<Tbl_Departamento> listDept = new List<Tbl_Departamento>();
@@ -48,7 +49,28 @@ namespace ProyectoEyS {
             mode = 1;
             this.emp = emp;
             this.buttonBaja.Visible = true;
+            SeleccionarCbx();
             LlenarCampos();
+        }
+
+        private void SeleccionarCbx() { 
+
+            for(int i = 0; i < listDept.Count; i++) {
+                cbxEDep.Active = i;
+                if (cbxEDep.ActiveText == emp.Departamento) {
+                    cbxEDep.Active = i;
+                    break;
+                }
+            }
+
+            for(int i = 0; i < cantCarg; i++) {
+                cbxCargo.Active = i; 
+                if(cbxCargo.ActiveText == emp.Cargo) {
+                    cbxCargo.Active = i;
+                    break;
+                }
+            }
+
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -135,6 +157,7 @@ namespace ProyectoEyS {
 
         protected void LlenarComboCrg() {
             int count = 0;
+            this.cantCarg = 0;
             cbxCargo.Clear();
             CellRendererText cell = new CellRendererText();
             cbxCargo.PackStart(cell, false);
@@ -142,8 +165,10 @@ namespace ProyectoEyS {
             cbxCargo.AddAttribute(cell, "text", count);
 
             for (int i = 0; i < listCargo.Count; i++) {
-                if (listCargo[i].IdDept == ComprobarDept())
+                if (listCargo[i].IdDept == ComprobarDept()) {
                     store.AppendValues(listCargo[i].Nombre);
+                    this.cantCarg++;
+                }
             }
 
             cbxCargo.Model = store;
@@ -268,12 +293,12 @@ namespace ProyectoEyS {
         }
 
         public Tbl_Empleado normalizarDatos(Tbl_Empleado empleado) {
-            string nombres = entryNombre.Text + " ";
-            string apellidos = entryApell.Text + " ";
+            string nombres = entryNombre.Text;
+            string apellidos = entryApell.Text;
             string[] corte = nombres.Split(' ');
 
             empleado.PrimerNombre = corte[0];
-            if (corte[1] != null) {
+            if (corte.Length > 1) {
                 for (int i = 1; i < corte.Length; i++) {
                     if (i != corte.Length - 1)
                         empleado.SegundoNombre += corte[i] + " ";

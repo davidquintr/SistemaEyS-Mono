@@ -51,7 +51,6 @@ namespace ProyectoEyS {
                         LlenarCargoCbx();
                         this.limSup = listCargo.Count;
                         labelTitulo.Text = "Seguridad: Restauración de Cargos";
-
                         break;
                     case 3:
                         listEmp = dtEmp.ColocarVwEmpleadoElim();
@@ -76,10 +75,9 @@ namespace ProyectoEyS {
                 cbxDyn.Entry.Completion = new EntryCompletion();
                 cbxDyn.Entry.Completion.Model = store;
                 cbxDyn.Entry.Completion.TextColumn = 0;
-                cbxDyn.Active = 0;
-
                 MostrarDatos();
-            }catch(Exception) {};
+
+            } catch (Exception) { };
         }
 
         public void ComprobarPermiso(Tbl_Usuario selectedUser) {
@@ -91,56 +89,53 @@ namespace ProyectoEyS {
         }
 
         protected void LlenarDepartamentoCbx() {
-            cell = new CellRendererText();
-            store = new ListStore(typeof(string));
             int count = 0;
             cbxDyn.Clear();
+
             cbxDyn.PackStart(cell, false);
             cbxDyn.AddAttribute(cell, "text", count);
 
-            foreach (Tbl_Vw_Departamento dep in listDep) {
-                store.AppendValues(dep.Nombre);
+            foreach (Tbl_Vw_Departamento dept in listDep) {
+                store.AppendValues(dept.Nombre);
                 count++;
             }
         }
 
         protected void LlenarCargoCbx() {
-            cell = new CellRendererText();
-            store = new ListStore(typeof(string));
             int count = 0;
             cbxDyn.Clear();
+
             cbxDyn.PackStart(cell, false);
             cbxDyn.AddAttribute(cell, "text", count);
 
-            foreach (Tbl_Vw_Cargo carg in listCargo) {
-                store.AppendValues(carg.Nombre);
+            foreach (Tbl_Vw_Cargo cargo in listCargo) {
+                store.AppendValues(cargo.Nombre);
                 count++;
             }
         }
 
         protected void LlenarEmpCbx() {
-            cell = new CellRendererText();
-            store = new ListStore(typeof(string));
             int count = 0;
             cbxDyn.Clear();
+
             cbxDyn.PackStart(cell, false);
             cbxDyn.AddAttribute(cell, "text", count);
 
-            foreach (Tbl_Vw_Empleado emp in listEmp) {
-                store.AppendValues(emp.Nombres.Split(' ')[0] + " " + emp.Apellidos + " - " + emp.Cedula);
+            foreach (Tbl_Vw_Empleado empleado in listEmp) {
+                store.AppendValues(empleado.Nombres + " " + empleado.Apellidos + " - " + empleado.Cedula);
                 count++;
             }
         }
+
         protected void LlenarUsrCbc() {
-            cell = new CellRendererText();
-            store = new ListStore(typeof(string));
             int count = 0;
             cbxDyn.Clear();
+
             cbxDyn.PackStart(cell, false);
             cbxDyn.AddAttribute(cell, "text", count);
 
-            foreach (Tbl_Vw_Usuario user in listUsuarios) {
-                store.AppendValues(user.Username);
+            foreach (Tbl_Vw_Usuario usuario in listUsuarios) {
+                store.AppendValues(usuario.Username);
                 count++;
             }
         }
@@ -158,12 +153,12 @@ namespace ProyectoEyS {
                     break;
                 case 3:
                     EntryID.Text = listEmp[idIndex].Id.ToString();
-                    EntryUser.Text = listEmp[idIndex].Nombres + " " + listEmp[idIndex].Apellidos + " " + listEmp[idIndex].Cedula;
+                    EntryUser.Text = listEmp[idIndex].Nombres + " " + listEmp[idIndex].Apellidos + " - " + listEmp[idIndex].Cedula;
                     break;
                 case 4:
                     EntryID.Text = listUsuarios[idIndex].Id.ToString();
                     EntryUser.Text = listUsuarios[idIndex].Username;
-                   break;
+                    break;
             }
             cbxDyn.Active = idIndex;
         }
@@ -195,7 +190,7 @@ namespace ProyectoEyS {
         }
 
         protected void OnButtonRestaurarClicked(object sender, EventArgs e) {
-            if(!CuadroMensaje("¿Deseas restaurar la entidad: " + EntryUser.Text + "?", MessageType.Question, ButtonsType.YesNo)) {
+            if (!CuadroMensaje("¿Deseas restaurar la entidad: " + EntryUser.Text + "?", MessageType.Question, ButtonsType.YesNo)) {
                 return;
             }
             bool guardado = false;
@@ -215,15 +210,52 @@ namespace ProyectoEyS {
             }
 
             if (guardado)
-                CuadroMensaje("Se ha restaurado con éxito",MessageType.Info,ButtonsType.Ok);
+                CuadroMensaje("Se ha restaurado con éxito", MessageType.Info, ButtonsType.Ok);
             else
                 CuadroMensaje("Ha ocurrido un error...", MessageType.Error, ButtonsType.Ok);
             this.Destroy();
         }
 
         protected void OnCbxDynChanged(object sender, EventArgs e) {
-            this.idIndex = cbxDyn.Active;
-            MostrarDatos();
+            switch (mode) {
+                case 1:
+                    for (int i = 0; i < limSup; i++) {
+                        if (cbxDyn.ActiveText == listDep[i].Nombre) {
+                            idIndex = i;
+                            MostrarDatos();
+                            break;
+                        }
+                    }
+                    break;
+                case 2:
+                    for (int i = 0; i < limSup; i++) {
+                        if (cbxDyn.ActiveText == listCargo[i].Nombre) {
+                            idIndex = i;
+                            MostrarDatos();
+                            break;
+                        }
+                    }
+                    break;
+                case 3:
+                    for (int i = 0; i < limSup; i++) {
+                        string emp = listEmp[i].Nombres + " " + listEmp[i].Apellidos + " - " + listEmp[i].Cedula;
+                        if (cbxDyn.ActiveText == emp) {
+                            idIndex = i;
+                            MostrarDatos();
+                            break;
+                        }
+                    }
+                    break;
+                case 4:
+                    for (int i = 0; i < limSup; i++) {
+                        if (cbxDyn.ActiveText == listUsuarios[i].Username) {
+                            idIndex = i;
+                            MostrarDatos();
+                            break;
+                        }
+                    }
+                    break;
+            }
         }
     }
 }

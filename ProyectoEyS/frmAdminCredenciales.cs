@@ -156,6 +156,16 @@ namespace ProyectoEyS {
                     return;
                 }
 
+                if(entryContraseña.Text.Length < 4) {
+                    CuadroMensaje("¡La contraseña debe ser mayor a 4 carácteres!", MessageType.Error, ButtonsType.Ok);
+                    return;
+                }
+
+                if (entryContraseña.Text.Split(' ')[1] != null) {
+                    CuadroMensaje("¡La contraseña no debe contener espacios!", MessageType.Error, ButtonsType.Ok);
+                    return;
+                }
+
                 if (cbeRol.ActiveText == "Sin rol asignado") {
                     CuadroMensaje("Debe asignar un rol", MessageType.Error, ButtonsType.Ok);
                     return;
@@ -191,6 +201,16 @@ namespace ProyectoEyS {
 
                 if (entryContraseña.Text != entryContraseñaConf.Text) {
                     CuadroMensaje("¡Las contraseñas deben ser iguales!", MessageType.Error, ButtonsType.Ok);
+                    return;
+                }
+
+                if (entryContraseña.Text.Length < 4) {
+                    CuadroMensaje("¡La contraseña debe ser mayor a 4 carácteres!", MessageType.Error, ButtonsType.Ok);
+                    return;
+                }
+
+                if (entryContraseña.Text.Split(' ').Length > 1) {
+                    CuadroMensaje("¡La contraseña no debe contener espacios!", MessageType.Error, ButtonsType.Ok);
                     return;
                 }
 
@@ -231,7 +251,7 @@ namespace ProyectoEyS {
                 dtEmp.AsignarUsuario(this.usuario.Id, idEmp);
                 CuadroMensaje("Se ha guardado y reasignado correctamente", MessageType.Info, ButtonsType.Ok);
                 this.Destroy();
-            } catch (Exception ex) { }
+            } catch (Exception) { };
         }
 
 
