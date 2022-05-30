@@ -1,9 +1,13 @@
 ﻿<Properties StartupConfiguration="{01746CE3-E502-4D9F-A4C9-365EF5B29285}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmAlmuerzo.cs">
     <Files>
-      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="32" Column="39" />
+      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="187" Column="54" />
+      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.vistaAdmin.cs" Line="647" Column="4" />
+      <File FileName="ProyectoEyS/frmAcercaDe.cs" Line="9" Column="42" />
+      <File FileName="ProyectoEyS/frmFechador.cs" Line="26" Column="1" />
+      <File FileName="ProyectoEyS/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/gtk-gui/ProyectoEyS.frm.cs" Line="1" Column="1" />
       <File FileName="ProyectoEyS/frmVistaUser.cs" Line="1" Column="1" />
-      <File FileName="ProyectoEyS/frmRestauracionEntidades.cs" Line="139" Column="24" />
       <File FileName="ProyectoEyS/frmAlmuerzo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -11,11 +15,6 @@
         <State name="__root__">
           <Node name="ProyectoEyS" expanded="True">
             <Node name="ProyectoEyS" expanded="True">
-              <Node name="Datos" expanded="True" />
-              <Node name="Entidades" expanded="True">
-                <Node name="Vistas" expanded="True" />
-              </Node>
-              <Node name="Negocio" expanded="True" />
               <Node name="frmAlmuerzo.cs" selected="True" />
             </Node>
           </Node>
@@ -30,10 +29,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="77" column="28" />
-      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="83" column="27" />
-      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmAdminCredenciales.cs" relfile="ProyectoEyS/frmAdminCredenciales.cs" line="193" column="40" />
-      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="95" column="36" />
+      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="77" column="28" />
+      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="83" column="27" />
+      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmAdminCredenciales.cs" relfile="ProyectoEyS/frmAdminCredenciales.cs" line="193" column="40" />
+      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmRestauracionEntidades.cs" relfile="ProyectoEyS/frmRestauracionEntidades.cs" line="95" column="36" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

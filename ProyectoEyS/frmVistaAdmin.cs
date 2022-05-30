@@ -31,8 +31,7 @@ namespace ProyectoEyS {
 
                 this.trvwEmpleado.Model = dtus.listarEntradas();
                 string[] titulos = { "Nombres", "Apellidos", "Cedula", "Departamento", "Cargo", "Fecha", "Hora entrada", "Hora salida" };
-                for (int i = 0; i < titulos.Length; i++)
-                {
+                for (int i = 0; i < titulos.Length; i++) {
                     this.trvwEmpleado.AppendColumn(titulos[i], new CellRendererText(), "text", i);
                 }
 
@@ -53,12 +52,12 @@ namespace ProyectoEyS {
             eventos = dtEvento.colocarVwEventos();
             tvEvento.Buffer.Text = "";
 
-            for(int i = 0; i < eventos.Count; i++) {
+            for (int i = 0; i < eventos.Count; i++) {
                 tvEvento.Buffer.Text += "Evento # " + (i + 1) + "\n" +
                                      "Empleado: " + eventos[i].EmpleadoSel + "\n" +
                                      "Fecha de Inicio: " + eventos[i].FechaInicio.ToString("d") + "\n" +
-                                     "Fecha de Fin: " + eventos[i].FechaFin.ToString("d") + "\n" + 
-                                     "Razon: " + eventos[i].Razon + "\n" + 
+                                     "Fecha de Fin: " + eventos[i].FechaFin.ToString("d") + "\n" +
+                                     "Razon: " + eventos[i].Razon + "\n" +
                                      "Descripcion: " + eventos[i].Descripcion + "\n\n";
             }
         }
@@ -182,6 +181,10 @@ namespace ProyectoEyS {
             frmRestauracionEntidades restauracionEntidades = new frmRestauracionEntidades();
             restauracionEntidades.CambiarModo(4);
             restauracionEntidades.ComprobarPermiso(selectedUser);
+        }
+
+        protected void OnAcercaDeAction1Activated(object sender, EventArgs e) {
+            frmAcercaDe acercaDe = new frmAcercaDe();
         }
     }
 }

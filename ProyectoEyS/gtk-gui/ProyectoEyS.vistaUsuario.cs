@@ -200,6 +200,7 @@ namespace ProyectoEyS
 			// Container child vbox23.Gtk.Box+BoxChild
 			this.buttonSalida = new global::Gtk.Button();
 			this.buttonSalida.HeightRequest = 40;
+			this.buttonSalida.Sensitive = false;
 			this.buttonSalida.CanFocus = true;
 			this.buttonSalida.Name = "buttonSalida";
 			this.buttonSalida.UseUnderline = true;

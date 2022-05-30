@@ -526,6 +526,7 @@ namespace ProyectoEyS
 			this.label18 = new global::Gtk.Label();
 			this.label18.HeightRequest = 1;
 			this.label18.Name = "label18";
+			this.label18.Xalign = 0F;
 			this.label18.LabelProp = global::Mono.Unix.Catalog.GetString("Entradas:");
 			w15.Add(this.label18);
 			this.GtkScrolledWindow5.Add(w15);
@@ -633,6 +634,7 @@ namespace ProyectoEyS
 			this.DefaultHeight = 693;
 			this.Show();
 			this.ParamGenButt.Activated += new global::System.EventHandler(this.OnParamGenButtActivated);
+			this.AcercaDeAction1.Activated += new global::System.EventHandler(this.OnAcercaDeAction1Activated);
 			this.CerrarSesinAction2.Activated += new global::System.EventHandler(this.OnCerrarSesinAction2Activated);
 			this.DepartamentoAdd.Activated += new global::System.EventHandler(this.OnDepartamentoAddActivated);
 			this.CargoAdd.Activated += new global::System.EventHandler(this.OnCargoAddActivated);
@@ -642,7 +644,7 @@ namespace ProyectoEyS
 			this.EmpleadosAction.Activated += new global::System.EventHandler(this.OnEmpleadoListarActivated);
 			this.RolAction.Activated += new global::System.EventHandler(this.OnRolActionActivated);
 			this.UsuarioAction.Activated += new global::System.EventHandler(this.OnUsuarioActionActivated);
-				this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);
+			this.restaurarDept.Activated += new global::System.EventHandler(this.OnRestaurarDeptActivated);
 			this.restaurarCargo.Activated += new global::System.EventHandler(this.OnRestaurarCargoActivated);
 			this.restaurarEmp.Activated += new global::System.EventHandler(this.OnRestaurarEmpActivated);
 			this.restaurarUser.Activated += new global::System.EventHandler(this.OnRestaurarUserActivated);

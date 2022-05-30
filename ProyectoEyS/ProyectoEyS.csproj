@@ -115,6 +115,9 @@
     <EmbeddedResource Include="Texturas\referenceClock.png" />
     <EmbeddedResource Include="Texturas\iconPad.png" />
     <EmbeddedResource Include="Texturas\userActive.png" />
+    <EmbeddedResource Include="Texturas\entrada.png" />
+    <EmbeddedResource Include="Texturas\ICONapp.png" />
+    <EmbeddedResource Include="Texturas\ICONappred.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
@@ -207,6 +210,8 @@
     <Compile Include="Negocio\Ng_tbl_OpcRol.cs" />
     <Compile Include="Negocio\Ng_tbl_evento.cs" />
     <Compile Include="Entidades\Vistas\Tbl_Vw_Evento.cs" />
+    <Compile Include="frmAcercaDe.cs" />
+    <Compile Include="gtk-gui\ProyectoEyS.frmAcercaDe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

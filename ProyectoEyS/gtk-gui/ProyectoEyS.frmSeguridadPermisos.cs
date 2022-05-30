@@ -176,6 +176,7 @@ namespace ProyectoEyS
 			this.rbPers = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Personalizado"));
 			this.rbPers.CanFocus = true;
 			this.rbPers.Name = "rbPers";
+			this.rbPers.Active = true;
 			this.rbPers.DrawIndicator = true;
 			this.rbPers.UseUnderline = true;
 			this.rbPers.Group = new global::GLib.SList(global::System.IntPtr.Zero);
