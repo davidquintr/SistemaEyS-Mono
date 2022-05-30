@@ -3637,7 +3637,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="491 623">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="491 663">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarUsr</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -4416,17 +4416,63 @@ Masculino</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.ScrolledWindow" id="scrolled">
+          <widget class="Gtk.VBox" id="vbox2">
             <property name="MemberName" />
-            <property name="ShadowType">In</property>
+            <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.TreeView" id="trvwListEmp">
+              <widget class="Gtk.HBox" id="hbox3">
                 <property name="MemberName" />
-                <property name="HeightRequest">110</property>
-                <property name="CanFocus">True</property>
-                <property name="ShowScrollbars">True</property>
-                <signal name="CursorChanged" handler="OnTrvwListEmpCursorChanged" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label1">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Buscar:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="txbBuscar">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
               </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.TreeView" id="trvwListEmp">
+                    <property name="MemberName" />
+                    <property name="HeightRequest">110</property>
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <signal name="CursorChanged" handler="OnTrvwListEmpCursorChanged" />
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
             </child>
           </widget>
           <packing>

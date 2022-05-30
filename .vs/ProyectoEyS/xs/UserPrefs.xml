@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{01746CE3-E502-4D9F-A4C9-365EF5B29285}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmEstablecerHorarios.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoEyS/frmListarUsr.cs">
     <Files>
-      <File FileName="ProyectoEyS/frmVistaUser.cs" Line="87" Column="61" />
-      <File FileName="ProyectoEyS/frmHorarioAlmuerzo.cs" Line="32" Column="29" />
-      <File FileName="ProyectoEyS/frmVistaAdmin.cs" Line="85" Column="38" />
-      <File FileName="ProyectoEyS/MainWindow.cs" Line="56" Column="25" />
-      <File FileName="ProyectoEyS/frmAlmuerzo.cs" Line="51" Column="106" />
-      <File FileName="ProyectoEyS/frmEstablecerEventos.cs" Line="1" Column="1" />
-      <File FileName="ProyectoEyS/frmEstablecerHorarios.cs" Line="1" Column="1" />
+      <File FileName="ProyectoEyS/frmListarUsr.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +10,7 @@
             <Node name="ProyectoEyS" expanded="True">
               <Node name="Datos" expanded="True" />
               <Node name="Negocio" expanded="True" />
-              <Node name="frmEstablecerHorarios.cs" selected="True" />
+              <Node name="frmListarUsr.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -30,9 +24,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="77" column="28" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="83" column="27" />
-      <Breakpoint file="/home/davidquint/Escritorio/ProyectoEyS/SistemaEyS-Mono/ProyectoEyS/frmAdminCredenciales.cs" relfile="ProyectoEyS/frmAdminCredenciales.cs" line="121" column="60" />
+      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="77" column="28" />
+      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmSeguridadPermisos.cs" relfile="ProyectoEyS/frmSeguridadPermisos.cs" line="83" column="27" />
+      <Breakpoint file="/home/dspp/Projects/SistemaEyS-Mono/ProyectoEyS/frmAdminCredenciales.cs" relfile="ProyectoEyS/frmAdminCredenciales.cs" line="121" column="60" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
