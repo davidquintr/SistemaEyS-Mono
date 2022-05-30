@@ -1279,7 +1279,28 @@
             <property name="HeightRequest">256</property>
             <property name="Spacing">6</property>
             <child>
-              <placeholder />
+              <widget class="Gtk.VSeparator" id="vseparator2">
+                <property name="MemberName" />
+                <property name="WidthRequest">18</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Image" id="image1">
+                <property name="MemberName" />
+                <property name="Pixbuf">resource:ProyectoEyS.Texturas.iconCompletebreak.png</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
             </child>
             <child>
               <widget class="Gtk.VBox" id="vbox26">
@@ -1371,7 +1392,7 @@
                 </child>
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">2</property>
                 <property name="AutoSize">True</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
@@ -1383,7 +1404,7 @@
                 <property name="WidthRequest">18</property>
               </widget>
               <packing>
-                <property name="Position">2</property>
+                <property name="Position">3</property>
                 <property name="AutoSize">True</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>

@@ -8,6 +8,10 @@ namespace ProyectoEyS
 
 		private global::Gtk.HBox hbox8;
 
+		private global::Gtk.VSeparator vseparator2;
+
+		private global::Gtk.Image image1;
+
 		private global::Gtk.VBox vbox26;
 
 		private global::Gtk.HSeparator hseparator3;
@@ -46,6 +50,24 @@ namespace ProyectoEyS
 			this.hbox8.Name = "hbox8";
 			this.hbox8.Spacing = 6;
 			// Container child hbox8.Gtk.Box+BoxChild
+			this.vseparator2 = new global::Gtk.VSeparator();
+			this.vseparator2.WidthRequest = 18;
+			this.vseparator2.Name = "vseparator2";
+			this.hbox8.Add(this.vseparator2);
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vseparator2]));
+			w1.Position = 0;
+			w1.Expand = false;
+			w1.Fill = false;
+			// Container child hbox8.Gtk.Box+BoxChild
+			this.image1 = new global::Gtk.Image();
+			this.image1.Name = "image1";
+			this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("ProyectoEyS.Texturas.iconCompletebreak.png");
+			this.hbox8.Add(this.image1);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.image1]));
+			w2.Position = 1;
+			w2.Expand = false;
+			w2.Fill = false;
+			// Container child hbox8.Gtk.Box+BoxChild
 			this.vbox26 = new global::Gtk.VBox();
 			this.vbox26.WidthRequest = 238;
 			this.vbox26.Name = "vbox26";
@@ -55,39 +77,39 @@ namespace ProyectoEyS
 			this.hseparator3.HeightRequest = 25;
 			this.hseparator3.Name = "hseparator3";
 			this.vbox26.Add(this.hseparator3);
-			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.hseparator3]));
-			w1.Position = 0;
-			w1.Expand = false;
-			w1.Fill = false;
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.hseparator3]));
+			w3.Position = 0;
+			w3.Expand = false;
+			w3.Fill = false;
 			// Container child vbox26.Gtk.Box+BoxChild
 			this.label16 = new global::Gtk.Label();
 			this.label16.Name = "label16";
 			this.label16.Xalign = 0F;
 			this.label16.LabelProp = global::Mono.Unix.Catalog.GetString("Salida al almuerzo");
 			this.vbox26.Add(this.label16);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.label16]));
-			w2.Position = 1;
-			w2.Expand = false;
-			w2.Fill = false;
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.label16]));
+			w4.Position = 1;
+			w4.Expand = false;
+			w4.Fill = false;
 			// Container child vbox26.Gtk.Box+BoxChild
 			this.tiempoRest = new global::Gtk.Label();
 			this.tiempoRest.Name = "tiempoRest";
 			this.tiempoRest.Xalign = 0F;
 			this.tiempoRest.LabelProp = global::Mono.Unix.Catalog.GetString("Tiempo restante: HH:MM");
 			this.vbox26.Add(this.tiempoRest);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.tiempoRest]));
-			w3.Position = 2;
-			w3.Expand = false;
-			w3.Fill = false;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.tiempoRest]));
+			w5.Position = 2;
+			w5.Expand = false;
+			w5.Fill = false;
 			// Container child vbox26.Gtk.Box+BoxChild
 			this.hseparator4 = new global::Gtk.HSeparator();
 			this.hseparator4.HeightRequest = 25;
 			this.hseparator4.Name = "hseparator4";
 			this.vbox26.Add(this.hseparator4);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.hseparator4]));
-			w4.Position = 3;
-			w4.Expand = false;
-			w4.Fill = false;
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.hseparator4]));
+			w6.Position = 3;
+			w6.Expand = false;
+			w6.Fill = false;
 			// Container child vbox26.Gtk.Box+BoxChild
 			this.buttonComenazar = new global::Gtk.Button();
 			this.buttonComenazar.HeightRequest = 0;
@@ -95,10 +117,10 @@ namespace ProyectoEyS
 			this.buttonComenazar.Name = "buttonComenazar";
 			this.buttonComenazar.Label = global::Mono.Unix.Catalog.GetString("Comenzar");
 			this.vbox26.Add(this.buttonComenazar);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.buttonComenazar]));
-			w5.Position = 4;
-			w5.Expand = false;
-			w5.Fill = false;
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.buttonComenazar]));
+			w7.Position = 4;
+			w7.Expand = false;
+			w7.Fill = false;
 			// Container child vbox26.Gtk.Box+BoxChild
 			this.buttonConcluir = new global::Gtk.Button();
 			this.buttonConcluir.HeightRequest = 0;
@@ -107,29 +129,29 @@ namespace ProyectoEyS
 			this.buttonConcluir.Name = "buttonConcluir";
 			this.buttonConcluir.Label = global::Mono.Unix.Catalog.GetString("Concluir");
 			this.vbox26.Add(this.buttonConcluir);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.buttonConcluir]));
-			w6.Position = 5;
-			w6.Expand = false;
-			w6.Fill = false;
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox26[this.buttonConcluir]));
+			w8.Position = 5;
+			w8.Expand = false;
+			w8.Fill = false;
 			this.hbox8.Add(this.vbox26);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vbox26]));
-			w7.Position = 1;
-			w7.Expand = false;
-			w7.Fill = false;
+			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vbox26]));
+			w9.Position = 2;
+			w9.Expand = false;
+			w9.Fill = false;
 			// Container child hbox8.Gtk.Box+BoxChild
 			this.vseparator1 = new global::Gtk.VSeparator();
 			this.vseparator1.WidthRequest = 18;
 			this.vseparator1.Name = "vseparator1";
 			this.hbox8.Add(this.vseparator1);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vseparator1]));
-			w8.Position = 2;
-			w8.Expand = false;
-			w8.Fill = false;
+			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vseparator1]));
+			w10.Position = 3;
+			w10.Expand = false;
+			w10.Fill = false;
 			this.vbox25.Add(this.hbox8);
-			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox25[this.hbox8]));
-			w9.Position = 0;
-			w9.Expand = false;
-			w9.Fill = false;
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox25[this.hbox8]));
+			w11.Position = 0;
+			w11.Expand = false;
+			w11.Fill = false;
 			// Container child vbox25.Gtk.Box+BoxChild
 			this.hbuttonbox6 = new global::Gtk.HButtonBox();
 			this.hbuttonbox6.HeightRequest = 50;
@@ -146,14 +168,14 @@ namespace ProyectoEyS
 			this.buttonAdmin.UseUnderline = true;
 			this.buttonAdmin.Label = global::Mono.Unix.Catalog.GetString("Finalizar");
 			this.hbuttonbox6.Add(this.buttonAdmin);
-			global::Gtk.ButtonBox.ButtonBoxChild w10 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
-			w10.Expand = false;
-			w10.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w12 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox6[this.buttonAdmin]));
+			w12.Expand = false;
+			w12.Fill = false;
 			this.vbox25.Add(this.hbuttonbox6);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox25[this.hbuttonbox6]));
-			w11.Position = 1;
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.vbox25[this.hbuttonbox6]));
+			w13.Position = 1;
+			w13.Expand = false;
+			w13.Fill = false;
 			this.Add(this.vbox25);
 			if ((this.Child != null))
 			{
