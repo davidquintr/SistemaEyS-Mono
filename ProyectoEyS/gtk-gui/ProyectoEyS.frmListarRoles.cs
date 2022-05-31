@@ -58,7 +58,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.HBox hbox8;
 
-		private global::Gtk.ComboBoxEntry cbxEListarRol;
+		private global::Gtk.ComboBox cbxEListarRol;
 
 		private global::Gtk.VSeparator vseparator6;
 
@@ -311,7 +311,8 @@ namespace ProyectoEyS
 			this.hbox8.Name = "hbox8";
 			this.hbox8.Spacing = 6;
 			// Container child hbox8.Gtk.Box+BoxChild
-			this.cbxEListarRol = global::Gtk.ComboBoxEntry.NewText();
+			this.cbxEListarRol = global::Gtk.ComboBox.NewText();
+			this.cbxEListarRol.WidthRequest = 210;
 			this.cbxEListarRol.Name = "cbxEListarRol";
 			this.hbox8.Add(this.cbxEListarRol);
 			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.cbxEListarRol]));
@@ -460,7 +461,7 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 490;
+			this.DefaultWidth = 494;
 			this.DefaultHeight = 488;
 			this.Show();
 			this.txbBuscar.Changed += new global::System.EventHandler(this.OnTxbBuscarChanged);

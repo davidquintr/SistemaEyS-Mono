@@ -68,7 +68,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.HBox hbox8;
 
-		private global::Gtk.ComboBoxEntry cbxEListarDep;
+		private global::Gtk.ComboBox cbxEListarDep;
 
 		private global::Gtk.VSeparator vseparator6;
 
@@ -153,7 +153,6 @@ namespace ProyectoEyS
 			w4.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbDescripDep = new global::Gtk.Label();
-			this.lbDescripDep.WidthRequest = 175;
 			this.lbDescripDep.Name = "lbDescripDep";
 			this.lbDescripDep.Xalign = 0F;
 			this.lbDescripDep.Yalign = 0.2F;
@@ -180,7 +179,7 @@ namespace ProyectoEyS
 			w6.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbEmailDep = new global::Gtk.Label();
-			this.lbEmailDep.WidthRequest = 175;
+			this.lbEmailDep.WidthRequest = 110;
 			this.lbEmailDep.HeightRequest = 20;
 			this.lbEmailDep.Name = "lbEmailDep";
 			this.lbEmailDep.Xalign = 0F;
@@ -206,7 +205,6 @@ namespace ProyectoEyS
 			w8.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbExtDep = new global::Gtk.Label();
-			this.lbExtDep.WidthRequest = 175;
 			this.lbExtDep.HeightRequest = 20;
 			this.lbExtDep.Name = "lbExtDep";
 			this.lbExtDep.Xalign = 0F;
@@ -230,7 +228,6 @@ namespace ProyectoEyS
 			w10.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbIDDep = new global::Gtk.Label();
-			this.lbIDDep.WidthRequest = 175;
 			this.lbIDDep.HeightRequest = 20;
 			this.lbIDDep.Name = "lbIDDep";
 			this.lbIDDep.Xalign = 0F;
@@ -254,7 +251,6 @@ namespace ProyectoEyS
 			w12.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbNombreDep = new global::Gtk.Label();
-			this.lbNombreDep.WidthRequest = 175;
 			this.lbNombreDep.HeightRequest = 20;
 			this.lbNombreDep.Name = "lbNombreDep";
 			this.lbNombreDep.Xalign = 0F;
@@ -381,8 +377,8 @@ namespace ProyectoEyS
 			this.hbox8.Name = "hbox8";
 			this.hbox8.Spacing = 6;
 			// Container child hbox8.Gtk.Box+BoxChild
-			this.cbxEListarDep = global::Gtk.ComboBoxEntry.NewText();
-			this.cbxEListarDep.WidthRequest = 281;
+			this.cbxEListarDep = global::Gtk.ComboBox.NewText();
+			this.cbxEListarDep.WidthRequest = 212;
 			this.cbxEListarDep.Name = "cbxEListarDep";
 			this.hbox8.Add(this.cbxEListarDep);
 			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.cbxEListarDep]));
@@ -531,8 +527,8 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 565;
-			this.DefaultHeight = 540;
+			this.DefaultWidth = 496;
+			this.DefaultHeight = 539;
 			this.Show();
 			this.txbBuscar.Changed += new global::System.EventHandler(this.OnTxbBuscarChanged);
 			this.trvwDept.CursorChanged += new global::System.EventHandler(this.OnTrvwDeptCursorChanged);

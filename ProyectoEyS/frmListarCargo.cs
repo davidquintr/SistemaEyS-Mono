@@ -127,30 +127,14 @@ namespace ProyectoEyS {
 
         }
 
-        protected void OnTrvwCargoCursorChanged(object sender, EventArgs e) {
-            TreeSelection seleccion = (sender as TreeView).Selection;
-            TreeIter iter;
-            TreeModel model;
-            if (seleccion.GetSelected(out model, out iter)) {
-
-                int active = 0;
-                TreeModel m = dtr.listarCargos();
-                m.GetIterFirst(out TreeIter it);
-                do {
-                    int idtrv = Convert.ToInt32(model.GetValue(iter, 0));
-                    int id = Convert.ToInt32(m.GetValue(it, 0));
-
-                    if (idtrv == id)
-                        cbxEListarCar.Active = active;
-                    active++;
-
-                } while (m.IterNext(ref it));
-            }
-        }
-
         protected void OnTxbBuscarChanged(object sender, EventArgs e)
         {
             this.trvwCargo.Model = dtr.buscarCargo(this.txbBuscar.Text);
+        }
+
+        protected void OnCbxEListarCarChanged(object sender, EventArgs e) {
+            id = cbxEListarCar.Active;
+            MostrarDatos(id);
         }
     }
 }

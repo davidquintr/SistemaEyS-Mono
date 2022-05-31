@@ -74,12 +74,8 @@ namespace ProyectoEyS {
         }
 
         protected void OnCbxEListarRolChanged(object sender, EventArgs e) {
-            foreach (Tbl_Vw_Rol emp in listRol) {
-                if (listRol.IndexOf(emp) == cbxEListarRol.Active) {
-                    id = listRol.IndexOf(emp);
-                    MostrarDatos(id);
-                }
-            }
+            id = cbxEListarRol.Active;
+            MostrarDatos(id);
         }
 
         protected void OnBtnAntRolClicked(object sender, EventArgs e) {

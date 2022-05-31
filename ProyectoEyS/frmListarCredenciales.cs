@@ -112,24 +112,8 @@ namespace ProyectoEyS {
         }
 
         protected void OnTrvwCredencialesCursorChanged(object sender, EventArgs e) {
-            TreeSelection seleccion = (sender as TreeView).Selection;
-            TreeIter iter;
-            TreeModel model;
-            if (seleccion.GetSelected(out model, out iter)) {
-
-                int active = 0;
-                TreeModel m = dtUsr.listarCredenciales();
-                m.GetIterFirst(out TreeIter it);
-                do {
-                    int idtrv = Convert.ToInt32(model.GetValue(iter, 0));
-                    int id = Convert.ToInt32(m.GetValue(it, 0));
-
-                    if (idtrv == id)
-                        cbxEListarUsuario.Active = active;
-                    active++;
-
-                } while (m.IterNext(ref it));
-            }
+            id = cbxEListarUsuario.Active;
+            MostrarDatos(id);
         }
 
         protected void OnTxbBuscarChanged(object sender, EventArgs e)

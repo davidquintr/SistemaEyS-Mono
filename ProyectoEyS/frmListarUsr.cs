@@ -117,12 +117,8 @@ namespace ProyectoEyS {
         }
 
         protected void OnCbxEListarUsrChanged(object sender, EventArgs e) {
-            foreach (Tbl_Vw_Empleado emp in listEmp) {
-                if (listEmp.IndexOf(emp) == cbxEListarUsr.Active) {
-                    id = listEmp.IndexOf(emp);
-                    MostrarDatos(id);
-                }
-            }
+            id = cbxEListarUsr.Active;
+            MostrarDatos(id);
         }
 
         protected void OnButtonCloseClicked(object sender, EventArgs e) {

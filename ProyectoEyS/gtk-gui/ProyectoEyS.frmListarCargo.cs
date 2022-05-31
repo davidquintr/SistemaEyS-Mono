@@ -58,7 +58,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.HBox hbox7;
 
-		private global::Gtk.ComboBoxEntry cbxEListarCar;
+		private global::Gtk.ComboBox cbxEListarCar;
 
 		private global::Gtk.VSeparator vseparator6;
 
@@ -156,7 +156,6 @@ namespace ProyectoEyS
 			w5.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbDeptTxt = new global::Gtk.Label();
-			this.lbDeptTxt.WidthRequest = 175;
 			this.lbDeptTxt.HeightRequest = 20;
 			this.lbDeptTxt.Name = "lbDeptTxt";
 			this.lbDeptTxt.Xalign = 0F;
@@ -169,7 +168,6 @@ namespace ProyectoEyS
 			w6.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbDesCar = new global::Gtk.Label();
-			this.lbDesCar.WidthRequest = 175;
 			this.lbDesCar.HeightRequest = 30;
 			this.lbDesCar.Name = "lbDesCar";
 			this.lbDesCar.Xalign = 0F;
@@ -194,7 +192,7 @@ namespace ProyectoEyS
 			w8.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbIDCar = new global::Gtk.Label();
-			this.lbIDCar.WidthRequest = 175;
+			this.lbIDCar.WidthRequest = 139;
 			this.lbIDCar.HeightRequest = 20;
 			this.lbIDCar.Name = "lbIDCar";
 			this.lbIDCar.Xalign = 0F;
@@ -218,7 +216,6 @@ namespace ProyectoEyS
 			w10.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.lbNomCar = new global::Gtk.Label();
-			this.lbNomCar.WidthRequest = 175;
 			this.lbNomCar.HeightRequest = 20;
 			this.lbNomCar.Name = "lbNomCar";
 			this.lbNomCar.Xalign = 0F;
@@ -331,8 +328,8 @@ namespace ProyectoEyS
 			this.hbox7.Name = "hbox7";
 			this.hbox7.Spacing = 6;
 			// Container child hbox7.Gtk.Box+BoxChild
-			this.cbxEListarCar = global::Gtk.ComboBoxEntry.NewText();
-			this.cbxEListarCar.WidthRequest = 247;
+			this.cbxEListarCar = global::Gtk.ComboBox.NewText();
+			this.cbxEListarCar.WidthRequest = 210;
 			this.cbxEListarCar.Name = "cbxEListarCar";
 			this.hbox7.Add(this.cbxEListarCar);
 			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.cbxEListarCar]));
@@ -473,12 +470,11 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 531;
-			this.DefaultHeight = 538;
+			this.DefaultWidth = 494;
+			this.DefaultHeight = 515;
 			this.Show();
 			this.txbBuscar.Changed += new global::System.EventHandler(this.OnTxbBuscarChanged);
-			this.trvwCargo.CursorChanged += new global::System.EventHandler(this.OnTrvwCargoCursorChanged);
-			this.cbxEListarCar.Changed += new global::System.EventHandler(this.OnCbxEListarEmpChanged);
+			this.cbxEListarCar.Changed += new global::System.EventHandler(this.OnCbxEListarCarChanged);
 			this.btnAntCar.Clicked += new global::System.EventHandler(this.OnBtnAntCarClicked);
 			this.btnSigCar.Clicked += new global::System.EventHandler(this.OnBtnSigCarClicked);
 			this.buttonFiltrar.Clicked += new global::System.EventHandler(this.OnButtonFiltrarClicked);

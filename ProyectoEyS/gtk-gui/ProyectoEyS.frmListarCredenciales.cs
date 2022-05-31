@@ -60,7 +60,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.HBox hbox7;
 
-		private global::Gtk.ComboBoxEntry cbxEListarUsuario;
+		private global::Gtk.ComboBox cbxEListarUsuario;
 
 		private global::Gtk.VSeparator vseparator6;
 
@@ -352,7 +352,8 @@ namespace ProyectoEyS
 			this.hbox7.Name = "hbox7";
 			this.hbox7.Spacing = 6;
 			// Container child hbox7.Gtk.Box+BoxChild
-			this.cbxEListarUsuario = global::Gtk.ComboBoxEntry.NewText();
+			this.cbxEListarUsuario = global::Gtk.ComboBox.NewText();
+			this.cbxEListarUsuario.WidthRequest = 230;
 			this.cbxEListarUsuario.Name = "cbxEListarUsuario";
 			this.hbox7.Add(this.cbxEListarUsuario);
 			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.cbxEListarUsuario]));
@@ -493,7 +494,7 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 490;
+			this.DefaultWidth = 514;
 			this.DefaultHeight = 498;
 			this.Show();
 			this.txbBuscar.Changed += new global::System.EventHandler(this.OnTxbBuscarChanged);

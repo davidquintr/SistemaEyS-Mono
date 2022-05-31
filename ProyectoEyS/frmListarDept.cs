@@ -89,12 +89,8 @@ namespace ProyectoEyS {
         }
 
         protected void OnCbxEListarDepChanged(object sender, EventArgs e) {
-            foreach (Tbl_Vw_Departamento dep in listDep) {
-                if (listDep.IndexOf(dep) == cbxEListarDep.Active) {
-                    id = listDep.IndexOf(dep);
-                    MostrarDatos(id);
-                }
-            }
+            id = cbxEListarDep.Active;
+            MostrarDatos(id);
         }
 
         protected void OnBtnAntDepClicked(object sender, EventArgs e) {

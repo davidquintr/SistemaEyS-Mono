@@ -2088,7 +2088,7 @@ Generales</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="886 463">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmAddUsuario" design-size="856 463">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmAddUsuario</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -2572,10 +2572,8 @@ Generales</property>
                 <property name="RowSpacing">6</property>
                 <property name="ColumnSpacing">6</property>
                 <child>
-                  <widget class="Gtk.ComboBoxEntry" id="cboxSexo">
+                  <widget class="Gtk.ComboBox" id="cboxSexo">
                     <property name="MemberName" />
-                    <property name="WidthRequest">240</property>
-                    <property name="HeightRequest">30</property>
                     <property name="IsTextCombo">True</property>
                     <property name="Items" translatable="yes">Femenino
 Masculino</property>
@@ -2600,6 +2598,7 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Entry" id="entryTelef">
                     <property name="MemberName" />
+                    <property name="WidthRequest">210</property>
                     <property name="HeightRequest">30</property>
                     <property name="CanFocus">True</property>
                     <property name="IsEditable">True</property>
@@ -3660,7 +3659,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="491 663">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarUsr" design-size="534 663">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarUsr</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -4272,6 +4271,7 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbTel">
                     <property name="MemberName" />
+                    <property name="WidthRequest">300</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Texto de ejemplo</property>
                   </widget>
@@ -4538,8 +4538,9 @@ Masculino</property>
                             <property name="MemberName" />
                             <property name="Spacing">6</property>
                             <child>
-                              <widget class="Gtk.ComboBoxEntry" id="cbxEListarUsr">
+                              <widget class="Gtk.ComboBox" id="cbxEListarUsr">
                                 <property name="MemberName" />
+                                <property name="WidthRequest">250</property>
                                 <property name="IsTextCombo">True</property>
                                 <property name="Items" translatable="yes" />
                                 <signal name="Changed" handler="OnCbxEListarUsrChanged" />
@@ -6309,7 +6310,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarDept" design-size="565 540">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarDept" design-size="496 539">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarDept</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -6390,7 +6391,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbDescripDep">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.2</property>
                     <property name="LabelProp" translatable="yes">Descripción:</property>
@@ -6435,7 +6435,7 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbEmailDep">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
+                    <property name="WidthRequest">110</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Email:</property>
@@ -6479,7 +6479,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbExtDep">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Ext:</property>
@@ -6521,7 +6520,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbIDDep">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">ID:</property>
@@ -6563,7 +6561,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbNombreDep">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Nombre:</property>
@@ -6735,9 +6732,9 @@ Masculino</property>
                                 <property name="MemberName" />
                                 <property name="Spacing">6</property>
                                 <child>
-                                  <widget class="Gtk.ComboBoxEntry" id="cbxEListarDep">
+                                  <widget class="Gtk.ComboBox" id="cbxEListarDep">
                                     <property name="MemberName" />
-                                    <property name="WidthRequest">281</property>
+                                    <property name="WidthRequest">212</property>
                                     <property name="IsTextCombo">True</property>
                                     <property name="Items" translatable="yes" />
                                     <signal name="Changed" handler="OnCbxEListarDepChanged" />
@@ -6945,7 +6942,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCargo" design-size="531 538">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCargo" design-size="494 515">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarCargo</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -7048,7 +7045,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbDeptTxt">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Departamento:</property>
@@ -7070,7 +7066,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbDesCar">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="HeightRequest">30</property>
                     <property name="Xalign">0</property>
                     <property name="Yalign">0.2</property>
@@ -7113,7 +7108,7 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbIDCar">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
+                    <property name="WidthRequest">139</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">ID:</property>
@@ -7155,7 +7150,6 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="lbNomCar">
                     <property name="MemberName" />
-                    <property name="WidthRequest">175</property>
                     <property name="HeightRequest">20</property>
                     <property name="Xalign">0</property>
                     <property name="LabelProp" translatable="yes">Nombre:</property>
@@ -7265,7 +7259,6 @@ Masculino</property>
                     <property name="HeightRequest">150</property>
                     <property name="CanFocus">True</property>
                     <property name="ShowScrollbars">True</property>
-                    <signal name="CursorChanged" handler="OnTrvwCargoCursorChanged" />
                   </widget>
                 </child>
               </widget>
@@ -7310,12 +7303,12 @@ Masculino</property>
                         <property name="MemberName" />
                         <property name="Spacing">6</property>
                         <child>
-                          <widget class="Gtk.ComboBoxEntry" id="cbxEListarCar">
+                          <widget class="Gtk.ComboBox" id="cbxEListarCar">
                             <property name="MemberName" />
-                            <property name="WidthRequest">247</property>
+                            <property name="WidthRequest">210</property>
                             <property name="IsTextCombo">True</property>
                             <property name="Items" translatable="yes" />
-                            <signal name="Changed" handler="OnCbxEListarEmpChanged" />
+                            <signal name="Changed" handler="OnCbxEListarCarChanged" />
                           </widget>
                           <packing>
                             <property name="Position">0</property>
@@ -9309,7 +9302,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCredenciales" design-size="490 498">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarCredenciales" design-size="514 498">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarCredenciales</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -9708,8 +9701,9 @@ Masculino</property>
                         <property name="MemberName" />
                         <property name="Spacing">6</property>
                         <child>
-                          <widget class="Gtk.ComboBoxEntry" id="cbxEListarUsuario">
+                          <widget class="Gtk.ComboBox" id="cbxEListarUsuario">
                             <property name="MemberName" />
+                            <property name="WidthRequest">230</property>
                             <property name="IsTextCombo">True</property>
                             <property name="Items" translatable="yes" />
                             <signal name="Changed" handler="OnCbxEListarUsuarioChanged" />
@@ -9903,7 +9897,7 @@ Masculino</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoEyS.frmListarRoles" design-size="490 488">
+  <widget class="Gtk.Window" id="ProyectoEyS.frmListarRoles" design-size="494 488">
     <property name="MemberName" />
     <property name="Title" translatable="yes">frmListarRoles</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -10230,8 +10224,9 @@ Masculino</property>
                                 <property name="MemberName" />
                                 <property name="Spacing">6</property>
                                 <child>
-                                  <widget class="Gtk.ComboBoxEntry" id="cbxEListarRol">
+                                  <widget class="Gtk.ComboBox" id="cbxEListarRol">
                                     <property name="MemberName" />
+                                    <property name="WidthRequest">210</property>
                                     <property name="IsTextCombo">True</property>
                                     <property name="Items" translatable="yes" />
                                     <signal name="Changed" handler="OnCbxEListarRolChanged" />

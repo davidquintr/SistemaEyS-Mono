@@ -56,7 +56,7 @@ namespace ProyectoEyS
 
 		private global::Gtk.Table table4;
 
-		private global::Gtk.ComboBoxEntry cboxSexo;
+		private global::Gtk.ComboBox cboxSexo;
 
 		private global::Gtk.Entry entryTelef;
 
@@ -397,11 +397,9 @@ namespace ProyectoEyS
 			this.table4.RowSpacing = ((uint)(6));
 			this.table4.ColumnSpacing = ((uint)(6));
 			// Container child table4.Gtk.Table+TableChild
-			this.cboxSexo = global::Gtk.ComboBoxEntry.NewText();
+			this.cboxSexo = global::Gtk.ComboBox.NewText();
 			this.cboxSexo.AppendText(global::Mono.Unix.Catalog.GetString("Femenino"));
 			this.cboxSexo.AppendText(global::Mono.Unix.Catalog.GetString("Masculino"));
-			this.cboxSexo.WidthRequest = 240;
-			this.cboxSexo.HeightRequest = 30;
 			this.cboxSexo.Name = "cboxSexo";
 			this.cboxSexo.Active = 0;
 			this.table4.Add(this.cboxSexo);
@@ -414,6 +412,7 @@ namespace ProyectoEyS
 			w24.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table4.Gtk.Table+TableChild
 			this.entryTelef = new global::Gtk.Entry();
+			this.entryTelef.WidthRequest = 210;
 			this.entryTelef.HeightRequest = 30;
 			this.entryTelef.CanFocus = true;
 			this.entryTelef.Name = "entryTelef";
@@ -641,7 +640,7 @@ namespace ProyectoEyS
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 886;
+			this.DefaultWidth = 856;
 			this.DefaultHeight = 463;
 			this.Show();
 			this.cbxEDep.Changed += new global::System.EventHandler(this.OnCbxEDepChanged);
