@@ -10755,7 +10755,7 @@ Masculino</property>
                 <child>
                   <widget class="Gtk.Label" id="label4">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Desarrollado por Team Factorización</property>
+                    <property name="LabelProp" translatable="yes">Desarrollado por TeamFactorización™</property>
                   </widget>
                   <packing>
                     <property name="Position">2</property>

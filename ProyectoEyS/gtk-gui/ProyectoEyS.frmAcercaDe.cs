@@ -109,7 +109,7 @@ namespace ProyectoEyS
 			// Container child vbox4.Gtk.Box+BoxChild
 			this.label4 = new global::Gtk.Label();
 			this.label4.Name = "label4";
-			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Desarrollado por Team Factorización");
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Desarrollado por TeamFactorización™");
 			this.vbox4.Add(this.label4);
 			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.label4]));
 			w6.Position = 2;
