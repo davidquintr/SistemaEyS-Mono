@@ -214,31 +214,6 @@ namespace Datos {
             }
         }
 
-        public bool GuardarDepartamento(Tbl_Departamento dep) {
-            bool guardado = false;
-            int x = 0;
-
-            sb.Clear();
-
-            sb.Append("INSERT INTO BDSistemaEyS.tbl_Departamento ");
-            sb.Append("(nombre, ext, email, descripcion, estado) ");
-            sb.Append("VALUES ('" + dep.Nombre + "','" + dep.Ext + "','" + dep.Email + "','" + dep.Descripcion + "','" + 1 + "')");
-
-            try {
-                con.AbrirConexion();
-                x = con.Ejecutar(CommandType.Text, sb.ToString());
-
-                if (x > 0) {
-                    guardado = true;
-                }
-                return guardado;
-            } catch (Exception e) {
-                Console.WriteLine("Error jiji " + e.ToString());
-            } finally {
-                con.CerrarConexion();
-            }
-            return guardado;
-        }
 
 
         public bool EditarCargo(Tbl_Cargo crg, int id) {
@@ -321,8 +296,7 @@ namespace Datos {
             }
         }//fin del metodo
 
-        public ListStore buscarCargo(String cadena)
-        {
+        public ListStore buscarCargo(String cadena) {
             ListStore datos = new ListStore(typeof(string),
                 typeof(string), typeof(string), typeof(string));
 
@@ -333,20 +307,16 @@ namespace Datos {
             sb.Append("WHERE nombre like '%" + cadena + "%' ");
             sb.Append("OR departamento like '%" + cadena + "%' and estado <> 3;");
 
-            try
-            {
+            try {
                 con.AbrirConexion();
                 idr = con.Leer(CommandType.Text, sb.ToString());
-                while (idr.Read())
-                {
+                while (idr.Read()) {
                     datos.AppendValues(idr[0].ToString(), idr[1].ToString(),
                         idr[2].ToString(), idr[3].ToString());
                     //dr.Close();
                 }//fin de while
                 return datos;
-            }
-            catch (Exception e)
-            {
+            } catch (Exception e) {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                     ButtonsType.Ok, e.Message);
                 ms.Run();
@@ -354,9 +324,7 @@ namespace Datos {
                 Console.WriteLine("Error: " + e.Message);
                 Console.WriteLine("Error: " + e.StackTrace);
                 throw;
-            }
-            finally
-            {
+            } finally {
                 idr.Close();
                 con.CerrarConexion();
             }
